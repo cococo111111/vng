@@ -1,0 +1,12 @@
+#Configuation for PaymentAppsService service
+
+##########################################################################
+#PaymentAppsService-service info
+
+appservicePort=10114
+
+
+##########################################################################
+#admin - key
+adminkey=zjn9cr3djt5k3y
+admink=@dmjn5j9

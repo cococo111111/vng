@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+PROJECT=pay-credits
+JAR=$PROJECT-1.5.1.jar
+PIDFILE=pid_$PROJECT
+
+if [ -e "$PIDFILE" ]
+then
+kill -9 $(cat "$PIDFILE")
+rm "$PIDFILE"
+else
+echo "No pid file."
+fi
+

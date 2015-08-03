@@ -1,0 +1,20 @@
+#Configuation for Banking Gateway service
+##########################################################################
+storage_host = 10.30.22.138
+storage_port = 9778
+
+# Scribe Info
+scribe_host = 10.30.12.155
+scribe_port = 1463
+
+##########################################################################
+# ESALE
+ESALE_URL=http://10.30.8.221/Staging/eSaleAPIv2/ConfirmOrderBankService.asmx
+sha1_shared_key=eSale@123
+esale_redirect_url=https://esale2.zing.vn/thank.php?
+
+##########################################################################
+# vietTinBank
+TerminalCode1 = 10007901
+TerminalCode2 = 10007901
+SecretKey     = D9256F32E6E7DDBA1E86A36426E80642

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <globalConfiguration>
+  <parameter name="sendMultiRefs" value="true"/>
+  <parameter name="disablePrettyXML" value="true"/>
+  <parameter name="adminPassword" value="admin"/>
+  <parameter name="attachments.Directory" value="/usr/local/tomcat/webapps/axis/WEB-INF/attachments"/>
+  <parameter name="dotNetSoapEncFix" value="true"/>
+  <parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <parameter name="sendXMLDeclaration" value="true"/>
+  <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <parameter name="sendXsiTypes" value="true"/>
+  <requestFlow>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="session"/>
+   </handler>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="request"/>
+    <parameter name="extension" value=".jwr"/>
+   </handler>
+  </requestFlow>
+ </globalConfiguration>
+<handler name="soapmonitor" type="java:org.apache.axis.handlers.SOAPMonitorHandler">
+  <parameter name="wsdlURL" value="/axis/SOAPMonitorService-impl.wsdl"/>
+  <parameter name="namespace" value="http://tempuri.org/wsdl/2001/12/SOAPMonitorService-impl.wsdl"/>
+  <parameter name="serviceName" value="SOAPMonitorService"/>
+  <parameter name="portName" value="Demo"/>
+ </handler>
+ <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <requestFlow name="checks">
+  <handler type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+  <handler type="java:org.apache.axis.handlers.SimpleAuthorizationHandler"/>
+ </requestFlow>
+ <handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ 
+ <service name="AdminService" provider="java:MSG">
+  <parameter name="allowedMethods" value="AdminService"/>
+  <parameter name="enableRemoteAdmin" value="false"/>
+  <parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+ </service>
+ 
+ <service name="Version" provider="java:RPC">
+  <parameter name="allowedMethods" value="getVersion"/>
+  <parameter name="className" value="org.apache.axis.Version"/>
+ </service>
+ <service name="ReceiverMT" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlPortType" value="ReceiverMT"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlServicePort" value="ReceiverMT"/>
+  <parameter name="className" value="com.vng.rmt.ws.ReceiverMTSoapBindingSkeleton"/>
+  <parameter name="scope" value="Request"/>
+  <parameter name="wsdlTargetNamespace" value="http://ws.rmt.vng.com"/>
+  <parameter name="wsdlServiceElement" value="ReceiverMTService"/>
+ </service>
+
+ <service name="ReceiverMTN" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="wsdlPortType" value="ReceiverMTN"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlServicePort" value="ReceiverMTN"/>
+  <parameter name="className" value="com.vng.rmtn.ws.ReceiverMTSoapBindingSkeleton"/>
+  <parameter name="scope" value="Request"/>
+  <parameter name="wsdlTargetNamespace" value="http://ws.rmt.vng.com"/>
+  <parameter name="wsdlServiceElement" value="ReceiverMTService"/>
+ </service>
+
+
+ <service name="ZingReceiverMT" provider="java:RPC">
+	<parameter name="allowedMethods" value="*"/>
+	<parameter name="typeMappingVersion" value="1.2"/>
+	<parameter name="wsdlPortType" value="ZingReceiverMT"/>
+	<parameter name="scope" value="Request"/>
+	<parameter name="className" value="com.vng.zrmt.ws.ZingReceiverMTSoapBindingSkeleton"/>
+	<parameter name="wsdlServicePort" value="ZingReceiverMT"/>
+	<parameter name="wsdlTargetNamespace" value="http://ws.zrmt.vng.com"/>
+	<parameter name="wsdlServiceElement" value="ZingReceiverMTService"/>
+ </service>
+
+ <service name="AdsRMT" provider="java:RPC">
+	<parameter name="allowedMethods" value="*"/>
+	<parameter name="typeMappingVersion" value="1.2"/>
+	<parameter name="wsdlPortType" value="AdsRMT"/>
+	<parameter name="scope" value="Request"/>
+	<parameter name="className" value="com.vng.ads.ws.AdsRMTSoapBindingSkeleton"/>
+	<parameter name="wsdlServicePort" value="AdsRMT"/>
+	<parameter name="wsdlTargetNamespace" value="http://ws.ads.vng.com"/>
+	<parameter name="wsdlServiceElement" value="AdsRMTService"/>
+ </service>
+
+
+ <service name="SendMsgReceiver" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlPortType" value="SendMsgReceiver"/>
+  <parameter name="scope" value="Request"/>
+  <parameter name="className" value="com.vng.vmg.ws.SendMsgReceiverSoapBindingSkeleton"/>
+  <parameter name="wsdlServicePort" value="SendMsgReceiver"/>
+  <parameter name="wsdlTargetNamespace" value="http://ws.vmg.vng.com"/>
+  <parameter name="wsdlServiceElement" value="SendMsgReceiverService"/>
+ </service>
+
+ <service name="SummaryVoting" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="typeMappingVersion" value="1.2"/>
+  <parameter name="wsdlPortType" value="SummaryVoting"/>
+  <parameter name="scope" value="Request"/>
+  <parameter name="className" value="com.vng.voting.ws.SummaryVotingSoapBindingSkeleton"/>
+  <parameter name="wsdlServicePort" value="SummaryVoting"/>
+  <parameter name="wsdlTargetNamespace" value="http://ws.voting.vng.com"/>
+  <parameter name="wsdlServiceElement" value="SummaryVotingService"/>
+ </service>
+
+ <service name="SOAPMonitorService" provider="java:RPC">
+  <parameter name="allowedMethods" value="publishMessage"/>
+  <parameter name="className" value="org.apache.axis.monitor.SOAPMonitorService"/>
+  <parameter name="scope" value="Application"/>
+ </service>
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+  <parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </transport>
+ <transport name="local">
+  <responseFlow>
+   <handler type="LocalResponder"/>
+  </responseFlow>
+ </transport>
+</deployment>

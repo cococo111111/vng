@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+sh clean_export_balances
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#build & deploy to /zserver dir
+
+ant -f build.xml -Djavac.debug=true -Ddist.jar=dist/ExportBalances.jar jar
+cp -f dist/ExportBalances.jar /zserver/java/lib/zingcredits/ExportBalances-1.0.jar
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#final clean-up
+sh clean_export_balances
+
+echo "### /zserver/java/lib/zingcredits/ ####"
+echo "Count: `ls -lah  /zserver/java/lib/zingcredits/ |grep ExportBalances| wc -l`"
+echo "List:"
+ls -lah  /zserver/java/lib/zingcredits/ |grep ExportBalances
+ 

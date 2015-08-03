@@ -1,0 +1,36 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vng.bankinggateway.util;
+
+/**
+ *
+ * @author root
+ */
+public class CommonDef {
+    public static String ESALE_WEBSERVICE_URL = "";
+    public static String ESALE_REDIRECT_URL = "";
+    public static String SHA1_SHARED_KEY = "";
+    public static String STORAGE_HOST = "";
+    public static int STORAGE_PORT = 0;
+    public static int SCRIBE_PORT = 0;
+    public static String SCRIBE_HOST = "";
+    
+    public static class CONFIRM_TRANSACTION_STATUS {
+        public static final short PENDING = 0;
+        public static final short SUCCESS = 1;
+        public static final short FAILED_TRANSANPORT = 2;
+        public static final short CONNECTION_TIMEOUT = 3;
+        public static final short WEBSERVICE_RESPONSE_ERROR = 4;
+    }
+    
+    public static class REQUEST_TRANSAFER_RESPONSE {
+        public static final int INVALID_SIG = -1;
+        public static final int TRANSACTION_EXISTED = -2;
+    }
+    
+    public static byte[] sharedkey = {};
+
+    public static byte[] sharedvector = {};
+}

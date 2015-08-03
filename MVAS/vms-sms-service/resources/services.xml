@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) --><serviceGroup>
+    <service name="SmsNotificationService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.vng.mvas.vms.SmsNotificationServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.vng.mvas.vms.SmsNotificationServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="notifySmsDeliveryReceipt" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface">
+            <actionMapping>http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface/SmsNotification/notifySmsDeliveryReceiptRequest</actionMapping>
+            <outputActionMapping>http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface/SmsNotification/notifySmsDeliveryReceiptResponse</outputActionMapping>
+        </operation>
+        <operation name="notifySmsReception" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface">
+            <actionMapping>http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface/SmsNotification/notifySmsReceptionRequest</actionMapping>
+            <outputActionMapping>http://www.csapi.org/wsdl/parlayx/sms/notification/v2_2/interface/SmsNotification/notifySmsReceptionResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,77 @@
+[production]
+
+cachingfarm.list = adminsession
+
+cachingfarm.adminsession.enable           = true
+cachingfarm.adminsession.host             = 10.30.22.158
+cachingfarm.adminsession.port             = 11213
+
+
+common.log.path="/home/admin_credits/logs/contentfilter.log"
+
+common.db.path="/home/admin_credits/XMLDb"
+common.db.filename="ContentFilter.xml"
+
+acl.role.systemadmin = 1
+acl.role.admin = 2
+acl.role.user = 3
+
+acl.system.totalsystem = 1
+acl.system.all = -2
+acl.system.comment = 1
+acl.system.feed = 107
+acl.system.blog = 23
+
+acl.app.totalapp = 5
+acl.app.all = -2
+acl.app.feed = 107
+acl.app.photo_album = 100
+acl.app.blog = 23
+acl.app.photo = 28
+acl.app.quest_ask = 71
+
+#start date of log function..
+common.time.start = "16 January 2011"
+
+
+
+
+#get all game,register game,edit game server
+admin.url="http://mod-credits.me.zing.vn"
+gameinfor.host=10.30.22.153
+gameinfor.port=10114
+gameinfor.connection.sendtimeout=1000
+gameinfor.connection.recvtimeout=1000
+
+admin.host=10.30.22.153
+admin.port=10118
+admin.connection.sendtimeout=1000
+admin.connection.recvtimeout=1000
+
+balance.host=10.30.22.158
+balance.port=6161
+balance.connection.sendtimeout=1000
+balance.connection.recvtimeout=1000
+
+report.host=10.30.22.155
+report.port=10116
+report.connection.sendtimeout=10000
+report.connection.recvtimeout=10000
+
+report.database.host=10.30.22.155
+report.database.port=3307
+report.database.username="report"
+report.database.password="i9FTdUvK2EZDj"
+report.database.dbname="zingcredits_app"
+
+transaction.host=10.30.22.158
+transaction.port=5121
+transaction.connection.sendtimeout=1000
+transaction.connection.recvtimeout=1000
+
+stdprofile.host=10.30.22.173
+stdprofile.port=9281
+stdprofile.source=credits
+stdprofile.auth=9EpNVY
+
+admin.signature.key="4IUVwjb1R9OBP2W7EDSsByeECeznZtH+QoHImp+xD6Adkj9JryDclfAOf4wrGyo2"

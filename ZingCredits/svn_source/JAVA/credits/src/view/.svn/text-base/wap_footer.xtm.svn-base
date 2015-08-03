@@ -1,0 +1,7 @@
+ <div id="footer">
+      
+      <p><a href="{{CREDITS_URL}}/wap" class="curnav">WAP</a> &nbsp; <a href="{{DESKTOP_CREDITS_URL}}">Desktop</a> &nbsp; <a href="{{CREDITS_URL}}/m">Touch</a></p>
+
+    </div>
+</body>
+</html>

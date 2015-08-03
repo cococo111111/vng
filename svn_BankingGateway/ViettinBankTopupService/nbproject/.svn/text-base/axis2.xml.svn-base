@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
+    <service name="MerchantSVC">
+        <service-class>vng.bankinggateway.service.MerchantSVC</service-class>
+        <wsdl-url>file:/home/vinhcq/Downloads/MerchantSVC.asmx.wsdl</wsdl-url>
+        <java-generator databindingName="adb" serviceName="MerchantSVC" portName="MerchantSVCSoap" packageName="org.tempuri" sei="true" options="-s"/>
+    </service>
+</axis2>

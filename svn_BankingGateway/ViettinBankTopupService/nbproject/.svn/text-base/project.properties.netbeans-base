@@ -1,0 +1,220 @@
+annotation.processing.enabled=true
+annotation.processing.enabled.in.editor=false
+annotation.processing.processors.list=
+annotation.processing.run.all.processors=true
+annotation.processing.source.output=${build.generated.sources.dir}/ap-source-output
+application.title=ViettinBankTopupService
+application.vendor=root
+build.classes.dir=${build.dir}/classes
+build.classes.excludes=**/*.java,**/*.form
+# This directory is removed when the project is cleaned:
+build.dir=build
+build.generated.dir=${build.dir}/generated
+build.generated.sources.dir=${build.dir}/generated-sources
+# Only compile against the classpath explicitly listed here:
+build.sysclasspath=ignore
+build.test.classes.dir=${build.dir}/test/classes
+build.test.results.dir=${build.dir}/test/results
+# Uncomment to specify the preferred debugger connection transport:
+#debug.transport=dt_socket
+debug.classpath=\
+    ${run.classpath}
+debug.test.classpath=\
+    ${run.test.classpath}
+# This directory is removed when the project is cleaned:
+dist.dir=dist
+dist.jar=${dist.dir}/ViettinBankTopupService.jar
+dist.javadoc.dir=${dist.dir}/javadoc
+endorsed.classpath=\
+    ${libs.JAX-WS-ENDORSED.classpath}
+excludes=
+file.reference.activation-1.1.jar=lib/axis2-1.5.6/activation-1.1.jar
+file.reference.antlr-2.7.7.jar=lib/axis2-1.5.6/antlr-2.7.7.jar
+file.reference.axiom-api-1.2.12.jar=lib/axis2-1.5.6/axiom-api-1.2.12.jar
+file.reference.axiom-dom-1.2.12.jar=lib/axis2-1.5.6/axiom-dom-1.2.12.jar
+file.reference.axiom-impl-1.2.12.jar=lib/axis2-1.5.6/axiom-impl-1.2.12.jar
+file.reference.axis2-adb-1.5.6.jar=lib/axis2-1.5.6/axis2-adb-1.5.6.jar
+file.reference.axis2-adb-codegen-1.5.6.jar=lib/axis2-1.5.6/axis2-adb-codegen-1.5.6.jar
+file.reference.axis2-ant-plugin-1.5.6.jar=lib/axis2-1.5.6/axis2-ant-plugin-1.5.6.jar
+file.reference.axis2-clustering-1.5.6.jar=lib/axis2-1.5.6/axis2-clustering-1.5.6.jar
+file.reference.axis2-codegen-1.5.6.jar=lib/axis2-1.5.6/axis2-codegen-1.5.6.jar
+file.reference.axis2-corba-1.5.6.jar=lib/axis2-1.5.6/axis2-corba-1.5.6.jar
+file.reference.axis2-fastinfoset-1.5.6.jar=lib/axis2-1.5.6/axis2-fastinfoset-1.5.6.jar
+file.reference.axis2-java2wsdl-1.5.6.jar=lib/axis2-1.5.6/axis2-java2wsdl-1.5.6.jar
+file.reference.axis2-jaxbri-1.5.6.jar=lib/axis2-1.5.6/axis2-jaxbri-1.5.6.jar
+file.reference.axis2-jaxws-1.5.6.jar=lib/axis2-1.5.6/axis2-jaxws-1.5.6.jar
+file.reference.axis2-jibx-1.5.6.jar=lib/axis2-1.5.6/axis2-jibx-1.5.6.jar
+file.reference.axis2-json-1.5.6.jar=lib/axis2-1.5.6/axis2-json-1.5.6.jar
+file.reference.axis2-kernel-1.5.6.jar=lib/axis2-1.5.6/axis2-kernel-1.5.6.jar
+file.reference.axis2-metadata-1.5.6.jar=lib/axis2-1.5.6/axis2-metadata-1.5.6.jar
+file.reference.axis2-mtompolicy-1.5.6.jar=lib/axis2-1.5.6/axis2-mtompolicy-1.5.6.jar
+file.reference.axis2-saaj-1.5.6.jar=lib/axis2-1.5.6/axis2-saaj-1.5.6.jar
+file.reference.axis2-soapmonitor-servlet-1.5.6.jar=lib/axis2-1.5.6/axis2-soapmonitor-servlet-1.5.6.jar
+file.reference.axis2-spring-1.5.6.jar=lib/axis2-1.5.6/axis2-spring-1.5.6.jar
+file.reference.axis2-transport-http-1.5.6.jar=lib/axis2-1.5.6/axis2-transport-http-1.5.6.jar
+file.reference.axis2-transport-local-1.5.6.jar=lib/axis2-1.5.6/axis2-transport-local-1.5.6.jar
+file.reference.axis2-xmlbeans-1.5.6.jar=lib/axis2-1.5.6/axis2-xmlbeans-1.5.6.jar
+file.reference.BankingGatewayCommon.jar=lib/BankingGatewayCommon.jar
+file.reference.BankingStorage.jar=lib/BankingStorage.jar
+file.reference.bcel-5.1.jar=lib/axis2-1.5.6/bcel-5.1.jar
+file.reference.clhm-production-deprecated-0.1.jar=lib/clhm-production-deprecated-0.1.jar
+file.reference.commons-codec-1.3.jar=lib/axis2-1.5.6/commons-codec-1.3.jar
+file.reference.commons-fileupload-1.2.jar=lib/axis2-1.5.6/commons-fileupload-1.2.jar
+file.reference.commons-httpclient-3.1.jar=lib/axis2-1.5.6/commons-httpclient-3.1.jar
+file.reference.commons-io-1.4.jar=lib/axis2-1.5.6/commons-io-1.4.jar
+file.reference.commons-logging-1.1.1.jar=lib/axis2-1.5.6/commons-logging-1.1.1.jar
+file.reference.commons-pool-1.5.5.jar=lib/commons-pool-1.5.5.jar
+file.reference.geronimo-annotation_1.0_spec-1.1.jar=lib/axis2-1.5.6/geronimo-annotation_1.0_spec-1.1.jar
+file.reference.geronimo-jaxws_2.1_spec-1.0.jar=lib/axis2-1.5.6/geronimo-jaxws_2.1_spec-1.0.jar
+file.reference.geronimo-jta_1.1_spec-1.1.jar=lib/axis2-1.5.6/geronimo-jta_1.1_spec-1.1.jar
+file.reference.geronimo-saaj_1.3_spec-1.0.1.jar=lib/axis2-1.5.6/geronimo-saaj_1.3_spec-1.0.1.jar
+file.reference.geronimo-stax-api_1.0_spec-1.0.1.jar=lib/axis2-1.5.6/geronimo-stax-api_1.0_spec-1.0.1.jar
+file.reference.geronimo-ws-metadata_2.0_spec-1.1.2.jar=lib/axis2-1.5.6/geronimo-ws-metadata_2.0_spec-1.1.2.jar
+file.reference.httpcore-4.0.jar=lib/axis2-1.5.6/httpcore-4.0.jar
+file.reference.jalopy-1.5rc3.jar=lib/axis2-1.5.6/jalopy-1.5rc3.jar
+file.reference.jaxb-api-2.1.jar=lib/axis2-1.5.6/jaxb-api-2.1.jar
+file.reference.jaxb-impl-2.1.7.jar=lib/axis2-1.5.6/jaxb-impl-2.1.7.jar
+file.reference.jaxb-xjc-2.1.7.jar=lib/axis2-1.5.6/jaxb-xjc-2.1.7.jar
+file.reference.jaxen-1.1.1.jar=lib/axis2-1.5.6/jaxen-1.1.1.jar
+file.reference.jettison-1.0-RC2.jar=lib/axis2-1.5.6/jettison-1.0-RC2.jar
+file.reference.jibx-bind-1.2.1.jar=lib/axis2-1.5.6/jibx-bind-1.2.1.jar
+file.reference.jibx-run-1.2.1.jar=lib/axis2-1.5.6/jibx-run-1.2.1.jar
+file.reference.juli-6.0.16.jar=lib/axis2-1.5.6/juli-6.0.16.jar
+file.reference.log4j-1.2.15.jar=lib/axis2-1.5.6/log4j-1.2.15.jar
+file.reference.log4j-1.2.16.jar=lib/log4j-1.2.16.jar
+file.reference.mail-1.4.jar=lib/axis2-1.5.6/mail-1.4.jar
+file.reference.mex-1.5.6-impl.jar=lib/axis2-1.5.6/mex-1.5.6-impl.jar
+file.reference.neethi-2.0.5.jar=lib/axis2-1.5.6/neethi-2.0.5.jar
+file.reference.regexp-1.2.jar=lib/axis2-1.5.6/regexp-1.2.jar
+file.reference.scribe-upool-thrift9-1.02.jar=lib/scribe-upool-thrift9-1.02.jar
+file.reference.scribe-uppool-thrift6-1.02.jar=lib/scribe-uppool-thrift6-1.02.jar
+file.reference.slf4j-api-1.5.8.jar=lib/slf4j-api-1.5.8.jar
+file.reference.slf4j-log4j12-1.5.8.jar=lib/slf4j-log4j12-1.5.8.jar
+file.reference.tribes-6.0.16.jar=lib/axis2-1.5.6/tribes-6.0.16.jar
+file.reference.woden-api-1.0M8.jar=lib/axis2-1.5.6/woden-api-1.0M8.jar
+file.reference.woden-impl-dom-1.0M8.jar=lib/axis2-1.5.6/woden-impl-dom-1.0M8.jar
+file.reference.wsdl4j-1.6.2.jar=lib/axis2-1.5.6/wsdl4j-1.6.2.jar
+file.reference.wstx-asl-3.2.9.jar=lib/axis2-1.5.6/wstx-asl-3.2.9.jar
+file.reference.xalan-2.7.0.jar=lib/axis2-1.5.6/xalan-2.7.0.jar
+file.reference.xercesImpl-2.8.1.jar=lib/axis2-1.5.6/xercesImpl-2.8.1.jar
+file.reference.xml-resolver-1.2.jar=lib/axis2-1.5.6/xml-resolver-1.2.jar
+file.reference.xmlbeans-2.3.0.jar=lib/axis2-1.5.6/xmlbeans-2.3.0.jar
+file.reference.XmlSchema-1.4.3.jar=lib/axis2-1.5.6/XmlSchema-1.4.3.jar
+file.reference.zthrift-0.9.0.jar=lib/zthrift-0.9.0.jar
+includes=**
+jar.compress=false
+javac.classpath=\
+    ${file.reference.XmlSchema-1.4.3.jar}:\
+    ${file.reference.activation-1.1.jar}:\
+    ${file.reference.antlr-2.7.7.jar}:\
+    ${file.reference.axiom-api-1.2.12.jar}:\
+    ${file.reference.axiom-dom-1.2.12.jar}:\
+    ${file.reference.axiom-impl-1.2.12.jar}:\
+    ${file.reference.axis2-adb-1.5.6.jar}:\
+    ${file.reference.axis2-adb-codegen-1.5.6.jar}:\
+    ${file.reference.axis2-ant-plugin-1.5.6.jar}:\
+    ${file.reference.axis2-clustering-1.5.6.jar}:\
+    ${file.reference.axis2-codegen-1.5.6.jar}:\
+    ${file.reference.axis2-corba-1.5.6.jar}:\
+    ${file.reference.axis2-fastinfoset-1.5.6.jar}:\
+    ${file.reference.axis2-java2wsdl-1.5.6.jar}:\
+    ${file.reference.axis2-jaxbri-1.5.6.jar}:\
+    ${file.reference.axis2-jaxws-1.5.6.jar}:\
+    ${file.reference.axis2-jibx-1.5.6.jar}:\
+    ${file.reference.BankingGatewayCommon.jar}:\
+    ${file.reference.BankingStorage.jar}:\
+    ${file.reference.clhm-production-deprecated-0.1.jar}:\
+    ${file.reference.commons-pool-1.5.5.jar}:\
+    ${file.reference.log4j-1.2.16.jar}:\
+    ${file.reference.scribe-upool-thrift9-1.02.jar}:\
+    ${file.reference.scribe-uppool-thrift6-1.02.jar}:\
+    ${file.reference.slf4j-api-1.5.8.jar}:\
+    ${file.reference.slf4j-log4j12-1.5.8.jar}:\
+    ${file.reference.zthrift-0.9.0.jar}:\
+    ${file.reference.axis2-json-1.5.6.jar}:\
+    ${file.reference.axis2-kernel-1.5.6.jar}:\
+    ${file.reference.axis2-metadata-1.5.6.jar}:\
+    ${file.reference.axis2-mtompolicy-1.5.6.jar}:\
+    ${file.reference.axis2-saaj-1.5.6.jar}:\
+    ${file.reference.axis2-soapmonitor-servlet-1.5.6.jar}:\
+    ${file.reference.axis2-spring-1.5.6.jar}:\
+    ${file.reference.axis2-transport-http-1.5.6.jar}:\
+    ${file.reference.axis2-transport-local-1.5.6.jar}:\
+    ${file.reference.axis2-xmlbeans-1.5.6.jar}:\
+    ${file.reference.bcel-5.1.jar}:\
+    ${file.reference.commons-codec-1.3.jar}:\
+    ${file.reference.commons-fileupload-1.2.jar}:\
+    ${file.reference.commons-httpclient-3.1.jar}:\
+    ${file.reference.commons-io-1.4.jar}:\
+    ${file.reference.commons-logging-1.1.1.jar}:\
+    ${file.reference.geronimo-annotation_1.0_spec-1.1.jar}:\
+    ${file.reference.geronimo-jaxws_2.1_spec-1.0.jar}:\
+    ${file.reference.geronimo-jta_1.1_spec-1.1.jar}:\
+    ${file.reference.geronimo-saaj_1.3_spec-1.0.1.jar}:\
+    ${file.reference.geronimo-stax-api_1.0_spec-1.0.1.jar}:\
+    ${file.reference.geronimo-ws-metadata_2.0_spec-1.1.2.jar}:\
+    ${file.reference.httpcore-4.0.jar}:\
+    ${file.reference.jalopy-1.5rc3.jar}:\
+    ${file.reference.jaxb-api-2.1.jar}:\
+    ${file.reference.jaxb-impl-2.1.7.jar}:\
+    ${file.reference.jaxb-xjc-2.1.7.jar}:\
+    ${file.reference.jaxen-1.1.1.jar}:\
+    ${file.reference.jettison-1.0-RC2.jar}:\
+    ${file.reference.jibx-bind-1.2.1.jar}:\
+    ${file.reference.jibx-run-1.2.1.jar}:\
+    ${file.reference.juli-6.0.16.jar}:\
+    ${file.reference.log4j-1.2.15.jar}:\
+    ${file.reference.mail-1.4.jar}:\
+    ${file.reference.mex-1.5.6-impl.jar}:\
+    ${file.reference.neethi-2.0.5.jar}:\
+    ${file.reference.regexp-1.2.jar}:\
+    ${file.reference.tribes-6.0.16.jar}:\
+    ${file.reference.woden-api-1.0M8.jar}:\
+    ${file.reference.woden-impl-dom-1.0M8.jar}:\
+    ${file.reference.wsdl4j-1.6.2.jar}:\
+    ${file.reference.wstx-asl-3.2.9.jar}:\
+    ${file.reference.xalan-2.7.0.jar}:\
+    ${file.reference.xercesImpl-2.8.1.jar}:\
+    ${file.reference.xml-resolver-1.2.jar}:\
+    ${file.reference.xmlbeans-2.3.0.jar}
+# Space-separated list of extra javac options
+javac.compilerargs=
+javac.deprecation=false
+javac.processorpath=\
+    ${javac.classpath}
+javac.source=1.7
+javac.target=1.7
+javac.test.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+javac.test.processorpath=\
+    ${javac.test.classpath}
+javadoc.additionalparam=
+javadoc.author=false
+javadoc.encoding=${source.encoding}
+javadoc.noindex=false
+javadoc.nonavbar=false
+javadoc.notree=false
+javadoc.private=false
+javadoc.splitindex=true
+javadoc.use=true
+javadoc.version=false
+javadoc.windowtitle=
+main.class=viettinbanktopupservice.ViettinBankTopupService
+manifest.file=manifest.mf
+meta.inf.dir=${src.dir}/META-INF
+mkdist.disabled=false
+platform.active=default_platform
+run.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+# Space-separated list of JVM arguments used when running the project.
+# You may also define separate properties like run-sys-prop.name=value instead of -Dname=value.
+# To set system properties for unit tests define test-sys-prop.name=value:
+run.jvmargs=
+run.test.classpath=\
+    ${javac.test.classpath}:\
+    ${build.test.classes.dir}
+source.encoding=UTF-8
+src.dir=src
+test.src.dir=test

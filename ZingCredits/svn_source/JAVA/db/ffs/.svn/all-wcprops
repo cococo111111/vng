@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_zingcredits/!svn/ver/1225/JAVA/db/ffs
+END
+create_db
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/1225/JAVA/db/ffs/create_db
+END
+tbpayment_owner.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/1225/JAVA/db/ffs/tbpayment_owner.sql
+END
+tbpayment_1_500000.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/1225/JAVA/db/ffs/tbpayment_1_500000.sql
+END
+tbpayment_rand.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/1225/JAVA/db/ffs/tbpayment_rand.sql
+END

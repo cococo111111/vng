@@ -1,0 +1,18 @@
+[system]
+host=localhost
+port=81
+maxthread=100
+appinfo-cachesize=1024
+appinfo-sleepthread=5 #minute
+#maintain flag = 1: only alows list, 0:open
+maintain=0
+#whitelist user flag = 1: only alows list, 0:open
+whitelist=1
+
+[balance-cache]
+host=10.30.22.158
+port=5131
+[admin]
+host=10.30.22.153
+port=10114
+

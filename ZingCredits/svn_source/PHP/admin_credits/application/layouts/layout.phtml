@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>		
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="shortcut icon" HREF="images/zing_admin/icon.ico" />
+        <link href="<?= CSS_URL ?>/zing_admin/page.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= CSS_URL ?>/zing_admin/formapi.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= CSS_URL ?>/zing_admin/screen.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= CSS_URL ?>/zing_admin/jquery-calendar.css" rel="stylesheet" type="text/css"/>
+        <title>Payment Administrator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+        <script type="text/javascript">
+            var zme_avatar_width = 50;
+            var zme_avatar_heigth = 50;
+            var zme_avatar_tag = "span";
+            var zme_avatar_size = "50";         
+        </script>
+        <link href="<?= CSS_URL ?>/date_range_picker/jquery-ui-1.7.1.custom.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="/js/date_range_picker/jquery-ui-1.7.1.custom.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-calendar.js"></script>
+
+        <?php if ($this->logAction == true) {
+            ?>
+            <link href="<?= CSS_URL ?>/date_range_picker/ui.daterangepicker.css" rel="stylesheet" type="text/css"/>
+
+            <script type="text/javascript" src="/js/date_range_picker/jquery-ui-1.7.1.custom.min.js"></script>
+            <script type="text/javascript" src="/js/date_range_picker/daterangepicker.jQuery.js"></script>
+        <?php }
+        ?>
+
+        <script type="text/javascript" src="/js/md5/jquery.md5.js"></script>
+    </head>	
+    <body>
+        <div id="wrapper">
+            <div id="header">		
+                <div style="text-align: left;">
+                    <a title="Content Filter System">
+                        <img id="logo" src="<?php echo IMAGE_URL; ?>/zing_admin/logo_zingcredits.png" alt="Content Filter System"/>
+                    </a>
+                </div>
+                <div style="width: 100%;" id="header-status" class="clear-block">
+                    <?php if (!empty($this->name)) echo "Hi " . $this->name . "!  "; ?>
+                    <?php
+                    if ($this->showSignOut == true) {
+                        ?>
+                        <a href="/index/signout">[Logout]</a>
+                        <a href="/index/changepass">[Change Password]</a>
+                        <?php
+                    }
+                    ?>
+                </div>
+            </div>	
+
+            <div id="container">
+                <?php if (!empty($this->container)) echo $this->container; ?>
+            </div>
+        </div>
+    </body>
+</html>

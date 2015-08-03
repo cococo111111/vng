@@ -1,0 +1,72 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vng.bankinggateway.util;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Properties;
+import java.util.logging.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+/**
+ *
+ * @author root
+ */
+public class ConfigUtil {
+
+    public static Properties loadConfigFile(String filename) {
+        Properties config = new Properties();
+
+        try {
+            config.load(new FileInputStream(filename));
+        } catch (IOException ex) {
+            Logger.getLogger("appActions").warn(ex.getMessage());
+        } catch (Exception ex) {
+            Logger.getLogger("appActions").warn(ex.getMessage());
+        }
+
+        Enumeration en = config.keys();
+
+        // System.out.println("********** System configuration **********");
+        while (en.hasMoreElements()) {
+
+            String key = (String) en.nextElement();
+            String value = (String) config.get(key);
+            // System.out.println(key + " => " + value);
+            System.setProperty(key, value);
+        }
+
+        return config;
+    }
+    
+     
+    public static void initConfiguration() {
+        try {
+            String config = System.getProperty("config", "");
+            PropertyConfigurator.configure(config + "/log4j.properties");
+
+            ConfigUtil.loadConfigFile(config + "/banking.config");
+            CommonDef.HDBank_URL = System.getProperty("HDBank_url");
+            CommonDef.SHA1_SHARED_KEY = System.getProperty("sha1_shared_key", "");
+            CommonDef.STORAGE_HOST = System.getProperty("storage_host", "");
+            CommonDef.STORAGE_PORT = Integer.valueOf(System.getProperty("storage_port", "0"));
+            CommonDef.SCRIBE_HOST = System.getProperty("scribe_host", "");
+            CommonDef.SCRIBE_PORT = Integer.valueOf(System.getProperty("scribe_port", ""));
+            CommonDef.PROXY_HOST = System.getProperty("proxy_host", "");
+            CommonDef.PROXY_PORT = Integer.valueOf(System.getProperty("proxy_port", "80"));
+            CommonDef.ESALE_WEBSERVICE_URL = System.getProperty("ESALE_URL", "");
+            CommonDef.DURATION_TIME_PENDING = Integer.valueOf(System.getProperty("duration_time_pending", "900000"));
+            CommonDef.TIME_SLEEP = Integer.valueOf(System.getProperty("time_sleep_worker", "300000"));
+            CommonDef.PRIVATE_KEY_RECONCILE = System.getProperty("private_key_reconcile"); 
+            CommonDef.FOLDER_RECONCILE = System.getProperty("folder_reconcile");
+            CommonDef.REPORTER = System.getProperty("reporter");
+            Encryption.initEncryptionInfo(System.getProperty("sharedkey"), System.getProperty("sharedvector"));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+}

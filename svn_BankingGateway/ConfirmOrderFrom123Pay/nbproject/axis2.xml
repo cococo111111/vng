@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<axis2 xmlns="http://www.netbeans.org/ns/axis2/1">
+    <service name="ConfirmOrderService">
+        <service-class>vng.bankinggateway.service.ConfirmOrderService</service-class>
+        <generate-wsdl targetNamespace="http://service/bankinggateway/vng/" schemaNamespace="http://service/bankinggateway/vng/xsd"/>
+    </service>
+</axis2>

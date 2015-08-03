@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn_bankinggateway/!svn/ver/61/BankingGatewayService/lib
+END
+zthrift-0.9.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_bankinggateway/!svn/ver/2/BankingGatewayService/lib/zthrift-0.9.0.jar
+END
+BankingStorage.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_bankinggateway/!svn/ver/61/BankingGatewayService/lib/BankingStorage.jar
+END
+clhm-production-deprecated-0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_bankinggateway/!svn/ver/28/BankingGatewayService/lib/clhm-production-deprecated-0.1.jar
+END
+scribe-uppool-thrift6-1.02.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_bankinggateway/!svn/ver/2/BankingGatewayService/lib/scribe-uppool-thrift6-1.02.jar
+END
+zthriftpool-thrift9-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_bankinggateway/!svn/ver/2/BankingGatewayService/lib/zthriftpool-thrift9-1.2.0.jar
+END

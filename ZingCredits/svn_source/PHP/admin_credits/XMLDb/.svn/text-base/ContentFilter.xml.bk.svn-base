@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+	<!-- I. password: use md5 hash function in php. 
+		II. userrole: 
+			1 : system admin
+			2 :  admin 
+			3 : user 
+		III.controlblock: 
+			<systemId>_<appId> 
+			-SystemId: 
+				Comment : 1
+				Feed : 107
+				Blog : 23
+			-AppId: 
+				Feed : 107 
+				Photo-Album : 100 
+				Blog : 23 
+				Photo : 28 
+				Q&A : 71 
+	-->
+	<users>
+		<user userid="1">
+			<username>admin</username>
+			<password>e10adc3949ba59abbe56e057f20f883e</password>
+			<name>Admin</name>
+			<userrole>1</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="2">
+			<username>hiennmt</username>
+			<password>88bb6272dec4e878790fe8d333184517</password>
+			<name>Hien</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="3">
+			<username>duongvt</username>
+			<password>1faa52143ba1e672844b4cc726453ba7</password>
+			<name>Duong</name>
+			<userrole>2</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="4">
+			<username>khanv</username>
+			<password>ae54a2019cee22965e317f4fb45f203a</password>
+			<name>Kha Nguyen</name>
+			<userrole>1</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="5">
+			<username>mod1</username>
+			<password>13423fca4f53a14a4b2716b539dbe9db</password>
+			<name>Mod1</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="6">
+			<username>mod2</username>
+			<password>1eca0b6daecd024b605d232cc6b3e052</password>
+			<name>Mod2</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="7">
+			<username>mynx</username>
+			<password>592b83a6be2efc6fc9bd97edd7c4310f</password>
+			<name>MyNX</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="8">
+			<username>nhuctq</username>
+			<password>62a5391703fc421bb91a032f43a45695</password>
+			<name>NhuCTQ</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="9">
+			<username>mod3</username>
+			<password>a92170a36d5e4d48f77ecdb7e084c371</password>
+			<name>Mod3</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="10">
+			<username>mod4</username>
+			<password>964d418d39dfe3e6c9dacd8c9ba521a2</password>
+			<name>Mod4</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="11">
+			<username>testuser</username>
+			<password>cb0c0368af81d050ecb4e590cb91549c</password>
+			<name>testuser</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433016">
+			<username>hungnv</username>
+			<password>4b5ea69b4f59a7d19e62f0d9c8c95c56</password>
+			<name>Nguyễn Việt Hùng</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433058">
+			<username>triethm</username>
+			<password>1465ee430047c381b88120066b294d8b</password>
+			<name>Hồ Minh Triết</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433123">
+			<username>vutd</username>
+			<password>98ec1641593f5daa0df804091e8fd9f8</password>
+			<name>Trần Dạ Vũ</name><userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433141">
+			<username>lamhht</username>
+			<password>134135921ae5b76adfb135ff01aa0db3</password>
+			<name>Hoàng Hữu Thanh Lâm</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433159">
+			<username>thuatnv</username>
+			<password>51e0b46929b087a4abd2f930dacbaf9d</password>
+			<name>Nguyễn Vĩnh Thuật</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433191">
+			<username>tientv</username>
+			<password>376a3219a9d51723125dbec9afd4e139</password>
+			<name>Trần Văn Tiến</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433227">
+			<username>dienpb</username>
+			<password>cd522c977d386893c76556796b07ef9b</password>
+			<name>Phạm Bảo Điền</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433242">
+			<username>nhandb</username>
+			<password>05408c216a99aee363fe40045569e8cc</password>
+			<name>Đoàn Bá Nhân</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433252">
+			<username>nhannt</username>
+			<password>e051d12657d2ddb7ccd8982ab5798de1</password>
+			<name>Nguyễn Trung Nhân</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433263">
+			<username>locdt</username>
+			<password>9e6e176a8f57e6afbb86dbd335b1a655</password>
+			<name>Đỗ Tuấn Lộc</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433278">
+			<username>saona</username>
+			<password>11fd336a98172e80b72fb59fef7117e4</password>
+			<name>Nguyễn Ánh Sao</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433290">
+			<username>sangpd</username>
+			<password>99ce4635278950642d3d0c752c0d68d0</password>
+			<name>Phan Đình Sang</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433302">
+			<username>datnq</username>
+			<password>ef49c99b392a7d96171f2da298a805b6</password>
+			<name>Nguyễn Quốc Đạt</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+		<user userid="1298433318">
+			<username>datlt2</username>
+			<password>265798a5bbe67831115609e11e0326e0</password>
+			<name>Lương Tấn Đạt</name>
+			<userrole>3</userrole>
+			<controlblock>1_107;1_100;1_23;1_28;1_71;</controlblock>
+		</user>
+	</users>
+</database>

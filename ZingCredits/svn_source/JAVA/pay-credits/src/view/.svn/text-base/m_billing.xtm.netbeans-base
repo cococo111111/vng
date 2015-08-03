@@ -1,0 +1,52 @@
+	<div class="cont01">
+	  Bạn cần xác nhận trước khi thanh toán để chắc chắn những thông tin sau là chính xác:
+	  <ul>
+          <li>Tên sản phẩm</li>
+          <li>Giá của từng sản phẩm</li>
+          <li>Số lượng của từng sản phẩm</li>
+          <li>Tổng tiền thanh toán của sản phẩm</li>
+      </ul>
+	</div>
+ <form name="frm" id="frm" method="post" action="/m/bill">
+     <div class="head03">Thông tin giao dịch</div>
+    	<div class="cont02a">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="rw01">
+			<tbody>
+{{#ITEM}}
+<tr>
+			  <td height="25">Tên sản phẩm</td>
+				<td align="right">{{ITEMNAME}}</td>
+			</tr>
+<tr>
+			  <td height="25">Số lượng</td>
+				<td align="right">{{QUANTITY}}</td>
+			</tr>
+			<tr>
+			  <td height="25">Đơn giá</td>
+								<td align="right">{{PRICE}}</td>
+			</tr>
+{{/ITEM}}
+			<tr><td height="1" colspan="2" style="background:#c9d5e2"></td></tr>
+			<tr>
+				<td height="25"><strong>Tổng thanh toán</strong></td>
+				<td align="right" style="color:red;"><strong>{{PAYTOTAL}} Zing Xu</strong></td>
+			</tr>
+		</tbody></table>
+    </div>
+
+    <div class="paging">
+    	<input type='submit' class="btnsubmit2" value='Thanh toán'> <input type='button' class="btnsubmit2" value='Hủy' onclick="closePayment()">
+    </div>
+</div><!-- page -->
+<input type="hidden" name="appID" value="{{APPID}}">
+ <input type="hidden" name="userID" value="{{USERID}}">
+ <input type="hidden" name="data" value="{{DATA}}">
+ <input type="hidden" name="pToken" value="{{PTOKEN}}">
+ <input type="hidden" name="refID" value="{{REFID}}">
+<script type="text/javascript" >
+  function closePayment(){
+   //callbackPaymentHelper('{{REFID}}',1,-1);
+   history.go(-1);
+  }
+ </script>
+</form>

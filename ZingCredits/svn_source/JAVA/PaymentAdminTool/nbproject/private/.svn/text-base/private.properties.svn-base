@@ -1,0 +1,7 @@
+application.args=regg ntvv2 "N\u00f4ng tr\u1ea1i vui v\u1ebb 2" "N\u00f4ng tr\u1ea1i vui v\u1ebb 2" zing.vn /etc/zingme/ntvv.icon //game-simulator.me.zing.vn/response/index 1 e08515c236f547d3813f65bb1034ac07278409ece766d1fe4281c89a9fb10fa01d923f49af20dc95f00e7f8c2b1b2a36
+compile.on.save=true
+do.depend=false
+do.jar=true
+javac.debug=true
+javadoc.preview=true
+user.properties.file=/root/.netbeans/6.9/build.properties

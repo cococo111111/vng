@@ -1,0 +1,669 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vng.zingme.payment.backend;
+
+import ZGenerator.Generator;
+import com.reardencommerce.kernel.collections.shared.evictable.ConcurrentLinkedHashMap;
+import java.lang.management.ManagementFactory;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.locks.ReentrantLock;
+import javax.management.MBeanServer;
+import javax.management.ObjectName;
+import org.apache.log4j.Logger;
+import org.apache.thrift.TException;
+import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.ZooKeeper;
+import vng.zingme.payment.amq.AMQueueProducer;
+import vng.zingme.payment.bo.thrift.BalanceCacheHandler;
+import vng.zingme.payment.bo.thrift.SerializeDeserializeHandler;
+import vng.zingme.payment.bo.thrift.StorageHandler;
+import vng.zingme.payment.common.*;
+import vng.zingme.payment.common.worker.IWorkerRunable;
+import vng.zingme.payment.common.worker.Worker;
+import vng.zingme.payment.common.zk.ZKUtil;
+import vng.zingme.payment.thrift.*;
+import vng.zingme.util.LogUtil;
+
+/**
+ *
+ * @author root
+ */
+public class ZKBackEndMainWorker implements IWorkerRunable, ZKBackEndMainWorkerMBean {
+
+	private static ArrayBlockingQueue<BackEndData> workerQueue = null;
+
+	private ZKBackEndMainWorker() {
+
+		_recyclezk = new RecycleZKWorker();
+		_recyclezkworker = new Worker(_recyclezk);
+
+		_updatecache = new UpdateCacheWorker();
+		_updatecacheworker = new Worker(_updatecache);
+
+		int _modelQueueSize = Integer.parseInt(System.getProperty("modelqueuesize", "1024"));
+		workerQueue = new ArrayBlockingQueue<BackEndData>(_modelQueueSize, false);
+
+		MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
+		String mbeanName = "payment.push.be:type=" + System.getProperty("jmxName", "PaymentBackEnd");
+		try {
+			mbs.registerMBean(this, new ObjectName(mbeanName));
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+
+		_filter = ConcurrentLinkedHashMap.create(ConcurrentLinkedHashMap.EvictionPolicy.LRU, Integer.parseInt(System.getProperty("modelqueuesize", "1024")));
+
+		stHandler = StorageHandler.getMainInstance();
+		balHandler = BalanceCacheHandler.getMainInstance();
+
+		parentPath = ZookeeperListenerManager.getMainInstance().getParentTranxPath();
+		nodeStat = ZookeeperListenerManager.getMainInstance().getNodeStat();
+
+		multithreads_mode = Integer.parseInt(System.getProperty("multithreads_mode", "0"));
+
+		if (ZookeeperListenerManager.getAdapterCase() == ZKBackEndType.BE_TYPE_BILL) {
+			_producer = new AMQueueProducer();
+		}
+
+		aiCache = AppInfoCache.getInstance();
+                
+                REJECTED_DURATION_TIME = Long.valueOf(System.getProperty("rejected_duration_time", "864000")); // 10 days
+
+		gen_catalog = System.getProperty("zgen-catalog", "zingcredits");
+
+                // _genmaster = getGenClient();
+                // init pool for generator
+                GeneratorServiceClient.getInstance(System.getProperty("zgenHost", "localhost"), 
+                        Integer.parseInt(System.getProperty("zgenPort", "9090")));
+		try {
+			_genmaster.createGenerator(gen_catalog);
+		} catch (Exception ex) {
+			log.warn(LogUtil.stackTrace(ex));
+		}
+
+		if (ZookeeperListenerManager.getAdapterCase() == ZKBackEndType.BE_TYPE_BILL) {
+			sendtogameQueuetype = Integer.parseInt(System.getProperty("sendtogameQueuetype", "0"));
+			if (sendtogameQueuetype == INTERNAL_QUEUE) {
+				sendGameWorker = new SendToGameWorker();
+				listSendGameWorker = new LinkedList<Worker>();
+				int numSendGameThreads = Integer.parseInt(System.getProperty("num_SendGameWorker", "20"));
+				if (numSendGameThreads <= 0) {
+					numSendGameThreads = 10;
+				}
+				for (int i = 0; i < numSendGameThreads; ++i) {
+					listSendGameWorker.add(new Worker(sendGameWorker));
+				}
+			}
+		}
+		Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+
+			public void uncaughtException(Thread t, Throwable e) {
+				log.warn("Fatal exception in thread " + t.toString());
+				log.warn(LogUtil.stackTrace(e));
+				if (e instanceof OutOfMemoryError) {
+					System.exit(100);
+				}
+			}
+		});
+	}
+
+	public void run() {
+
+		while (!stoped) {
+
+			BackEndData bedata = null;
+
+			try {
+				bedata = workerQueue.take();
+			} catch (InterruptedException ex) {
+				log.warn(ex.getMessage());
+				continue;
+			}
+
+			doJob(bedata.tranxid, bedata.isRollback, bedata.isNoLog);
+
+		}
+	}
+
+	public void stop() {
+		stoped = true;
+	}
+	static boolean stoped = false;
+
+	public void pushJob(Object obj) {
+	}
+	private static Worker _recyclezkworker = null;
+	private static RecycleZKWorker _recyclezk = null;
+	private static Worker _updatecacheworker = null;
+	private static UpdateCacheWorker _updatecache = null;
+	private static final int HOPE_COUNT = 5;
+        private static long REJECTED_DURATION_TIME = 0;
+
+	public int getTotalItem() {
+		return workerQueue.size();
+	}
+
+	public double getOperatorRate() {
+		return ((totalOperator * (double) 1000000.0) / totalMicroSec);
+	}
+
+	public long getTotalOperator() {
+		return totalOperator;
+	}
+
+	public long getTotalRetryOperator() {
+		return totalRetryOperator;
+	}
+
+	public long getTotalDuplicate() {
+		return totalDuplicateTranx;
+	}
+	private volatile long totalOperator = 0;
+	private volatile long totalMicroSec = 0;
+	private volatile long totalRetryOperator = 0;
+	private volatile long totalDuplicateTranx = 0;
+
+	private void retryLater(long tranxID, boolean rollback, boolean isNoLog) {
+		try {
+			workerQueue.put(new BackEndData(tranxID, rollback, isNoLog));
+		} catch (InterruptedException ex) {
+			log.info(ex.getMessage());
+		}
+		++totalRetryOperator;
+	}
+	private static ConcurrentLinkedHashMap<Long, Byte> _filter;
+
+	public ConcurrentLinkedHashMap<Long, Byte> getFilter() {
+		return _filter;
+	}
+        
+	public Worker getRecyclezkworker() {
+		return _recyclezkworker;
+	}
+
+	public Worker getUpdatecacheworker() {
+		return _updatecacheworker;
+	}
+	private static ZKBackEndMainWorker _mainInstance = null;
+
+	public static ZKBackEndMainWorker getInstance() {
+		if (_mainInstance == null) {
+			synchronized (lockObj) {
+				if (_mainInstance == null) {
+					_mainInstance = new ZKBackEndMainWorker();
+				}
+			}
+		}
+		return _mainInstance;
+	}
+	private static AMQueueProducer _producer = null;
+	private static Object lockObj = new Object();
+
+	public double getLastTime() {
+		return lasttime / (double) 1000000.0;
+	}
+	private static volatile long lasttime = 0;
+	private static final Logger log = Logger.getLogger("appActions");
+        private static final Logger log_rerunTranx = Logger.getLogger("rerunTransactions");
+	private static StorageHandler stHandler = null;
+	private static BalanceCacheHandler balHandler = null;
+	private static String parentPath = "";
+	private static String nodeStat = "";
+
+	public int doJob(long tranxID, boolean isRollBack, boolean isNoLog) {
+		int retCode = PaymentReturnCode.ERROR_OPERATOR_FAIL;
+
+		ZooKeeper zk = ZookeeperListenerManager.getZk();
+
+		long tmp = System.nanoTime();
+
+		T_Transaction tranxdata = null;
+		String tranxPath = parentPath + CommonDef.FILE_SEP + tranxID;
+
+		byte[] b = null;
+		try {
+			b = zk.getData(tranxPath, false, null);
+		} catch (KeeperException ex) {
+			log.warn(ex.getMessage());
+
+			if (ex.code() == KeeperException.Code.NONODE) {
+                                log.error("NoNode for transactionID = " + tranxID);
+                                // Remove to retrun if transactionID is existed in Zookeeper
+				getFilter().remove(Long.valueOf(tranxID));
+				return PaymentReturnCode.ERROR_OPERATOR_FAIL;
+			} else {
+				if (ex.code() == KeeperException.Code.CONNECTIONLOSS || ex.code() == KeeperException.Code.SESSIONEXPIRED
+						|| ex.code() == KeeperException.Code.SESSIONMOVED) {
+					try {
+						zk.close();
+					} catch (Exception except) {
+						log.warn(LogUtil.stackTrace(except));
+					}
+					zk = ZookeeperListenerManager.reNewZookeeper();
+					retryLater(tranxID, isRollBack, isNoLog);
+					return PaymentReturnCode.SUCCESS;
+				}
+			}
+
+		} catch (InterruptedException ex) {
+			log.warn(ex.getMessage());
+			retryLater(tranxID, isRollBack, isNoLog);
+			return PaymentReturnCode.SUCCESS;
+		} catch (Exception ex) {
+			log.warn(ex.getMessage());
+			retryLater(tranxID, isRollBack, isNoLog);
+			return PaymentReturnCode.SUCCESS;
+		}
+
+		if (b != null) {
+			tranxdata = deserhandler.deserialize(b);
+			if (tranxdata == null) {
+				return PaymentReturnCode.ERROR_OPERATOR_FAIL;
+			}
+		} else {
+			return PaymentReturnCode.ERROR_OPERATOR_FAIL;
+		}
+                
+                // check transaction time to reject the transaction if duration time > 10 days
+                int currentTime = (int) (System.currentTimeMillis() / CommonDef.MILISECINSEC);
+                if((currentTime - tranxdata.txTime) > REJECTED_DURATION_TIME) {
+                    //recycle path in zookeeper
+                    _recyclezkworker.work(ZookeeperListenerManager.getMainInstance().getParentTranxPath()
+                            + CommonDef.FILE_SEP + tranxdata.txID);
+                    log_rerunTranx.error(tranxdata.toString());
+                    return PaymentReturnCode.ERROR_OPERATOR_FAIL;
+                } // end check
+
+		byte[] data = null;
+		try {
+			data = zk.getData(tranxPath + CommonDef.FILE_SEP + nodeStat, false, null);
+		} catch (KeeperException ex) {
+
+			if (ex.code() == KeeperException.Code.NONODE) {
+				data = null;
+			} else {
+				if (ex.code() == KeeperException.Code.CONNECTIONLOSS || ex.code() == KeeperException.Code.SESSIONEXPIRED
+						|| ex.code() == KeeperException.Code.SESSIONMOVED) {
+					log.warn(ex.getMessage());
+
+					try {
+						zk.close();
+					} catch (Exception except) {
+						log.warn(LogUtil.stackTrace(except));
+					}
+
+					zk = ZookeeperListenerManager.reNewZookeeper();
+
+					retryLater(tranxID, isRollBack, isNoLog);
+					return PaymentReturnCode.SUCCESS;
+				}
+			}
+
+		} catch (InterruptedException ex) {
+			log.warn(ex.getMessage());
+			retryLater(tranxID, isRollBack, isNoLog);
+			return PaymentReturnCode.SUCCESS;
+		}
+
+		T_Account acc = makeAccount(tranxdata, isRollBack);
+
+		if (acc == null) {
+			return PaymentReturnCode.ERROR_OPERATOR_FAIL;
+		}
+
+		++totalOperator;
+
+		if (data == null || Arrays.equals(data, PaymentZKStatValue.B_DONE) || isRollBack) {
+
+			int hope_count = 2;
+			T_AccResponse accRes = new T_AccResponse(PaymentReturnCode.ERROR_OPERATOR_FAIL, 0.0);
+			while (hope_count > 0 && accRes.code != PaymentReturnCode.SUCCESS) {
+				try {
+					accRes = balHandler.getBalance(tranxdata.userID);
+				} catch (TException ex) {
+					log.warn(LogUtil.stackTrace(ex));
+				}
+				if (accRes == null) {
+					accRes = new T_AccResponse(PaymentReturnCode.ERROR_OPERATOR_FAIL, 0.0);
+				}
+				--hope_count;
+			}
+
+			if (acc.txType == CommonDef.TRANX_TYPE.TT_DEDUCT_MONEY) {
+				acc.currentBalance = tranxdata.currentBalance;
+			} else {
+				tranxdata.currentBalance = accRes.currentBalance;
+				acc.currentBalance = tranxdata.currentBalance;
+			}
+
+			if (!isRollBack && !isNoLog) {
+				if (logTransaction(tranxdata) != PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+					retryLater(tranxID, isRollBack, isNoLog);
+					return retCode;
+				}
+                                // TODO LENTD: retry when DB error?
+			}
+
+			if (acc.txType == CommonDef.TRANX_TYPE.TT_DEDUCT_MONEY) {
+				retCode = deduct(tranxdata, acc, isRollBack, zk, tranxPath);
+			} else {
+				if (acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY 
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_CARD
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_SMS
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_ATM
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_IBANKING
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_ESALE
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_TELCO
+                                        || acc.txType == CommonDef.TRANX_TYPE.TT_GIVE_BACK_MONEY
+					|| acc.txType == CommonDef.TRANX_TYPE.TT_PRESENT_MONEY) {
+					tranxdata.txType = acc.txType;
+					retCode = push(tranxdata, acc, isRollBack, zk, tranxPath);
+				} else {
+					log.warn("Transaction txType not support, " + tranxdata.toString());
+				}
+			}
+
+		} else {
+			if (Arrays.equals(data, PaymentZKStatValue.B_DEDUCTED)) {
+				//put-to queue to send to GameServer
+				if (sendtogameQueuetype == ACTIVEMQ_QUEUE) {
+					int enAMQueueCode = _producer.enAMQueue(tranxdata);
+					if (enAMQueueCode != PaymentReturnCode.SUCCESS) {
+						log.error("AMQueue error not proceessed!");
+					}
+				}
+				if (sendtogameQueuetype == INTERNAL_QUEUE) {
+					sendGameWorker.pushJob(tranxdata);
+				}
+			} else {
+				log.warn("Status of node in zookeeper not support.");
+			}
+		}
+
+		lasttime = ((System.nanoTime() - tmp) / 1000);
+		totalMicroSec += lasttime;
+
+		return retCode;
+	}
+
+	public static ArrayBlockingQueue<BackEndData> getWorkerQueue() {
+		return workerQueue;
+	}
+	private static int multithreads_mode = 0;
+
+	public static int getMultithreads_mode() {
+		return multithreads_mode;
+	}
+
+	public static void execJob(long tranxID) {
+		if (checkTransaction(tranxID)) {
+			if (multithreads_mode == 0) {
+				ZKBackEndMainWorker.getInstance().doJob(tranxID, false, false);
+			} else {
+				ZookeeperListenerManager.getMainInstance().getBackgroundWorker().work(tranxID);
+			}
+		}
+	}
+
+	private int deduct(T_Transaction tranxdata, T_Account acc, boolean isRollBack, ZooKeeper zk, String tranxPath) {
+		int retCode = PaymentReturnCode.SUCCESS;
+
+		int updateResult = PaymentReturnCode.DatabaseCode.DB_ERROR;
+		for (int i = 0; i < HOPE_COUNT; ++i) {
+			try {
+				updateResult = stHandler.updateBalance(acc);
+			} catch (Exception ex) {
+				log.info(ex.getMessage());
+			}
+			if (updateResult == PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+				break;
+			}
+		}
+
+		if (updateResult == PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+			String tranxStatPath = parentPath + CommonDef.FILE_SEP + acc.txID + CommonDef.FILE_SEP + nodeStat;
+			if (!ZKUtil.createZKNode(zk, tranxStatPath, PaymentZKStatValue.B_DEDUCTED)) {
+				zk = ZookeeperListenerManager.reNewZookeeper();
+				ZKUtil.createZKNode(zk, tranxStatPath, PaymentZKStatValue.B_DEDUCTED);
+			}
+
+			tranxdata.responseCode = CommonDef.TRANX_STAT.TS_UPDATED_BALANCE;
+			String s_data_log = ScriberUtil.logme(tranxdata, CommonDef.TRANX_RES_CODE.TC_INPROCESS);
+
+			try {
+				ScriberUtil.getScribe().log(s_data_log);
+			} catch (Exception ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+
+			try {
+				datalog.info(s_data_log);
+			} catch (Exception ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+                        
+                        tryUpdateTranxStat(new T_TranStat(tranxdata.txID, (short) tranxdata.responseCode, (short) 0, CommonDef.TRANX_STAT.TSM_UPDATED_BALANCE));
+                        getUpdatecacheworker().work(new UpdateCacheWorkerData(tranxdata.agentID, tranxdata.userID, tranxdata.txID, tranxdata.responseCode, CommonDef.TRANX_STAT.TSM_UPDATED_BALANCE, tranxdata.currentBalance));
+
+			//put-to queue to send to GameServer
+			if (sendtogameQueuetype == ACTIVEMQ_QUEUE) {
+				int enAMQueueCode = _producer.enAMQueue(tranxdata);
+				if (enAMQueueCode != PaymentReturnCode.SUCCESS) {
+					log.error("AMQueue error not proceessed!");
+				}
+			}
+			if (sendtogameQueuetype == INTERNAL_QUEUE) {
+				sendGameWorker.pushJob(tranxdata);
+			}
+		} else {
+			//task does't complete - connection fail, ...
+			retCode = PaymentReturnCode.ERROR_CONNECT_FAIL;
+
+			log.info("task does't complete with transaction " + tranxdata.toString() + " code: " + String.valueOf(updateResult));
+			retryLater(tranxdata.txID, isRollBack, true);
+
+		}
+
+		return retCode;
+	}
+
+	private int push(T_Transaction tranxdata, T_Account acc, boolean isRollBack, ZooKeeper zk, String tranxPath) {
+		if (isRollBack) {
+			long rollbackid = getTranxID();
+			if (rollbackid > 0) {
+				acc.txID = rollbackid;
+			}
+		}
+		int retCode = PaymentReturnCode.SUCCESS;
+
+		T_AccResponse _balanceCacheRes = new T_AccResponse();
+		_balanceCacheRes.code = PaymentReturnCode.DatabaseCode.DB_ERROR;
+		for (int i = 0; i < HOPE_COUNT; ++i) {
+			try {
+				_balanceCacheRes = balHandler.add(acc);
+			} catch (Exception ex) {
+				log.warn(ex.getMessage());
+			}
+			if (_balanceCacheRes == null) {
+				_balanceCacheRes = new T_AccResponse();
+				_balanceCacheRes.code = PaymentReturnCode.DatabaseCode.DB_ERROR;
+			}
+			if (_balanceCacheRes.code == PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+                                /* LENTD: @date 14/12/2012: fix issue related to dupicate db log for transaction status 
+				if (isRollBack) {
+					tryUpdateTranxStat(new T_TranStat(tranxdata.txID, (short) CommonDef.TRANX_STAT.TS_UPDATED_BALANCE, CommonDef.TRANX_RES_CODE.TC_SUCCESS, "" + acc.txID));
+				} */
+				break;
+			}
+		}
+
+		if (_balanceCacheRes.code == PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+			if (!isRollBack) {
+				_updatecacheworker.work(new UpdateCacheWorkerData(tranxdata.agentID, tranxdata.userID, tranxdata.txID, CommonDef.TRANX_STAT.TS_CLOSE_SUCCESS, "", tranxdata.currentBalance));
+			}
+			_recyclezkworker.work(tranxPath);
+
+			if(isRollBack) { // for rollback
+                            tryUpdateTranxStat(new T_TranStat(tranxdata.txID, (short) CommonDef.TRANX_STAT.TS_ROLLBACK_BALANCE, CommonDef.TRANX_RES_CODE.TC_SUCCESS, 
+                                CommonDef.TRANX_STAT.TSM_ROLLBACK_BALANCE));
+                            tranxdata.responseCode = CommonDef.TRANX_STAT.TS_ROLLBACK_BALANCE;
+                        } else {
+                            tryUpdateTranxStat(new T_TranStat(tranxdata.txID, (short) CommonDef.TRANX_STAT.TS_UPDATED_BALANCE, CommonDef.TRANX_RES_CODE.TC_SUCCESS, 
+                                CommonDef.TRANX_STAT.TSM_UPDATED_BALANCE));
+                            tranxdata.responseCode = CommonDef.TRANX_STAT.TS_UPDATED_BALANCE;
+                        }
+
+			String s_data_log = ScriberUtil.logme(tranxdata, CommonDef.TRANX_RES_CODE.TC_SUCCESS);
+
+			try {
+
+				ScriberUtil.getScribe().log(s_data_log);
+			} catch (Exception ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+
+			try {
+				datalog.info(s_data_log);
+			} catch (Exception ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+
+		} else {
+			//task does't complete - connection fail, ...
+			retCode = PaymentReturnCode.ERROR_CONNECT_FAIL;
+
+			log.info("task does't complete with transaction " + tranxdata.toString() + "; code=" + String.valueOf(_balanceCacheRes.code));
+			retryLater(tranxdata.txID, isRollBack, true);
+
+		}
+
+		return retCode;
+	}
+
+	private int logTransaction(T_Transaction tranxdata) {
+		int hope_count = HOPE_COUNT;
+		int res = PaymentReturnCode.DatabaseCode.DB_ERROR;
+		while (hope_count != 0 && res != PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+			try {
+				res = stHandler.storeTx(tranxdata);
+			} catch (Exception ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+			--hope_count;
+		}
+		return res;
+	}
+
+	private T_Account makeAccount(T_Transaction tranxdata, boolean isRollBack) {
+		T_Account acc = null;
+		if (!isRollBack) {
+			acc = new T_Account(tranxdata.userID, tranxdata.currentBalance, tranxdata.amount, tranxdata.txID,
+					tranxdata.txType, tranxdata.agentID);
+		} else {
+			if (tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY 
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_CARD
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_SMS
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_ATM
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_IBANKING
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_ESALE
+                                || tranxdata.txType == CommonDef.TRANX_TYPE.TT_PUSH_MONEY_TELCO) {
+				return acc;
+			}
+			acc = new T_Account(tranxdata.userID, tranxdata.currentBalance, tranxdata.amount, tranxdata.txID,
+					(short) CommonDef.TRANX_TYPE.TT_GIVE_BACK_MONEY, tranxdata.agentID);
+		}
+		return acc;
+	}
+
+	public int tryUpdateTranxStat(T_TranStat ts) {
+		int hope_count = HOPE_COUNT, res = PaymentReturnCode.DatabaseCode.DB_ERROR;
+		while (hope_count > 0 && res != PaymentReturnCode.DatabaseCode.DB_SUCCESS) {
+			try {
+				res = stHandler.updateTransactionStatus(ts);
+			} catch (TException ex) {
+				log.warn(LogUtil.stackTrace(ex));
+			}
+			--hope_count;
+		}
+		return res;
+	}
+
+	public static boolean checkTransaction(long txID) {
+		boolean res = false;
+		try {
+			_locker.lock();
+			if (!ZKBackEndMainWorker.getInstance().getFilter().containsKey(txID)) {
+				ZKBackEndMainWorker.getInstance().getFilter().put(txID, Byte.MIN_VALUE);
+				res = true;
+			}
+		} finally {
+			_locker.unlock();
+		}
+		return res;
+	}
+	private static final ReentrantLock _locker = new ReentrantLock();
+
+	private static T_AppInfo getApp(String agentID) {
+		return aiCache.get(agentID);
+	}
+
+	public static String getKey(String agentID, int keyIdx) {
+		T_AppInfo ai = getApp(agentID);
+		if (keyIdx == 1) {
+			return ai.key1;
+		}
+		return ai.key2;
+	}
+
+	public static String getRESTURL(String agentID) {
+		T_AppInfo ai = getApp(agentID);
+
+		return ai.restURL;
+	}
+	private static AppInfoCache aiCache = null;
+	private static final Logger datalog = Logger.getLogger("dataActions");
+	private static Generator.Client _genmaster = null;
+
+//	private Generator.Client getGenClient() {
+//		Generator.Client client = null;
+//		try {
+//			TTransport socket = new TSocket(System.getProperty("zgenHost", "localhost"), Integer.parseInt(System.getProperty("zgenPort", "9090")));
+//			TProtocol protocol = new TBinaryProtocol(socket);
+//			socket.open();
+//			client = new Generator.Client(protocol);
+//		} catch (Exception ex) {
+//			log.warn(LogUtil.stackTrace(ex));
+//		}
+//		return client;
+//	}
+
+	private long getTranxID() {
+            return GeneratorServiceClient.getInstance(System.getProperty("zgenHost", "localhost"), 
+                Integer.parseInt(System.getProperty("zgenPort", "9090"))).getValue(gen_catalog);
+            
+//		long res = -1;
+//		int hope_count = 2;
+//		while (hope_count > 0 && res < 0) {
+//			try {
+//				res = _genmaster.getValue(gen_catalog);
+//			} catch (Exception ex) {
+//				log.warn(LogUtil.stackTrace(ex));
+//				_genmaster = getGenClient();
+//			}
+//			--hope_count;
+//		}
+//		return res;
+	}
+	private static String gen_catalog = "";
+	private SendToGameWorker sendGameWorker = null;
+	private List<Worker> listSendGameWorker = null;
+	private int sendtogameQueuetype = 0;
+	private static final int INTERNAL_QUEUE = 0;
+	private static final int ACTIVEMQ_QUEUE = 1;
+	private static final SerializeDeserializeHandler deserhandler = SerializeDeserializeHandler.getMainInstance();
+}

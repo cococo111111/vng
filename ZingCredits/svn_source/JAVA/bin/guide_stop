@@ -1,0 +1,9 @@
+Guide to stop the remaining zingcredits service
+
+1. ZooKeeper
+	sh ./zk/bin1/stop
+	sh ./zk/bin2/stop
+	sh ./zk/bin3/stop
+2. ActiveMQ
+	sh ./activemq/stop
+

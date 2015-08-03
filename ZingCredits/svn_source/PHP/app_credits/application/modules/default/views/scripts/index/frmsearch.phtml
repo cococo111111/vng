@@ -1,0 +1,85 @@
+			<form action="" method="get" name="frmSearch" id="frmSearch">
+				
+				<div class="search" id="divSystemSelect">
+					<div class="search-first"><span style="font-weight: bold;">System: </span></div>
+					<div class="search-second">
+			    	<select name="systemId" id="systemId" style="width: 200px;">
+							<?php echo $this->systemOptions;?>
+					  	<!-- 
+			 				<option value="-2">All</option>
+							<option value="1">Comment</option>					  	
+					  	 -->
+					</select>
+					</div>
+				</div>
+				
+				<div class="search" id="divAppSelect">	
+					<div class="search-first"><span style="font-weight: bold;">App: </span></div>
+					<div class="search-second">
+			    	<select name="appId" id="appId" style="width: 200px;">	
+							<?php echo $this->appOptions;?>
+					  	<!-- 
+				 			<option value="-2">All</option>
+							<option value="107">Feed</option>					  	
+					  	 -->
+					</select>
+					</div>
+				</div>
+				
+				<div class="search">
+					<div class="search-first"><span style="font-weight: bold;">To User: </span></div>
+			    	<!-- <input type="text" name="toUserId" id="toUserId" value="<?php echo $this->toUserId;?>"/> -->
+			    	<div class="search-second">
+			    	<select name="toUserId" id="toUserId" style="width: 200px;">
+				  		<option value="">All</option>
+				  		<?php echo $this->vipLB;?>
+					</select>
+					</div>
+				</div>
+				
+				<div class="search">
+					<div class="search-first"><span style="font-weight: bold;">Keyword: </span></div>
+					<div class="search-second">
+						<input type="text" name="keyWord" id="keyWord" value="<?php echo $this->keyWord;?>"/>						
+						<input class="button" type="submit" name="btnSearch" value="Search"/>
+					</div>
+				</div>
+			</form>
+			
+			<script type="text/javascript">
+				traceSelect();
+				
+				function traceSelect()
+				{
+					$("select#systemId option").each(function () {					
+						if($(this).val()==<?php if($this->systemId==NULL)echo "-2"; else echo $this->systemId;?>)
+							$(this).attr("selected", true);
+		            });
+	
+					$("select#appId option").each(function () {					
+						if($(this).val()==<?php if($this->appId==NULL)echo "-2"; else echo $this->appId;?>)
+							$(this).attr("selected", true);
+		            });
+	
+					$("select#toUserId option").each(function () {					
+						if($(this).val()==<?php if($this->toUserId==NULL)echo "''"; else echo $this->toUserId;?>)
+							$(this).attr("selected", true);
+		            });
+				}
+	
+				$("select#systemId").change(function () {
+					//alert($("select#systemId").attr("value"));
+					var selectedValue = $("select#systemId").val();
+					if(selectedValue!=<?php echo COMMENT_SYSTEM_ID;?>)//If user doesn't choose comment system...
+					{
+						$('select#appId option[value="<?php echo ALL_APP_ID;?>"]').attr('selected','selected');
+						$('#divAppSelect').hide();
+					}
+					else
+					{
+						//$('select#appId option[value="-2"]').attr('selected','selected');
+						$('#divAppSelect').show();
+					}
+			        })
+			        .trigger('change');
+			</script>

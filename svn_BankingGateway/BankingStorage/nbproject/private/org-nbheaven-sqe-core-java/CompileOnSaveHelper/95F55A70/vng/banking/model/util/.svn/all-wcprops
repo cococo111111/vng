@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util
+END
+Config.class
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/Config.class
+END
+AbstractStatsDeque.class
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/AbstractStatsDeque.class
+END
+DBConnectionFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/DBConnectionFactory.class
+END
+SQLUtil.class
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/SQLUtil.class
+END
+DBConnectionPool.class
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/DBConnectionPool.class
+END
+DBConnectionManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/DBConnectionManager.class
+END
+DBConnectionPoolMBean.class
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/banking/model/util/DBConnectionPoolMBean.class
+END

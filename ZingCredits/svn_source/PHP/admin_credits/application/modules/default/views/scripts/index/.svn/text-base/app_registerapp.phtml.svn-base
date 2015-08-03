@@ -1,0 +1,102 @@
+<div id="centerCont"> 
+		<strong>Payment Admin&gt;&gt; </strong> <?php
+if(isset($this->change) && $this->change){
+?>
+Modify Application
+<?php
+}
+else{
+?>
+Add new Application
+
+<?php
+}
+if(isset($this->validate)){
+?><ul style='color:red;'><?php
+	for($i=0;$i<count($this->validate);$i++){
+		$valid=$this->validate[$i];
+		?>
+		<li><?=$valid?></li>
+		<?php
+	}
+?></ul><?php	
+}
+?>			
+<form name="frmCreateUser" id="frmCreateUser" action="registerappsubmit" method="post">
+<?php
+if(isset($this->change) && $this->change){
+?>
+<input type='hidden' id='change' name='change' value='true'>
+<input type='hidden' id='appid' name='appid' value='<?=$this->appid?>'>
+<?php
+}
+
+?>
+<table class="mainTab" width="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">AppId</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="appid" id="appid"
+				style="width: 200px;" maxlength="50"  value='<?=$this->currentApp['appid']?>'
+				class="required" type="text" <?php
+if(isset($this->change) && $this->change){
+?>
+READONLY='READONLY'
+<?php
+}
+?>></td>
+		</tr>
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">AppName</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="appname" id="appname"
+				style="width: 200px;" maxlength="1000"
+				class="required" type="text" value='<?=$this->currentApp['appname']?>'></td>
+		</tr>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">App Description</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="appdesc" id="appdesc"
+				style="width: 200px;" maxlength="1000" value='<?=$this->currentApp['appdesc']?>'
+				 class="required"
+				type="text"></td>
+		</tr>
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">App Logo</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="applogo" id="applogo"
+				style="width: 200px;" maxlength="1000" value='<?=$this->currentApp['applogo']?>'
+				class="required" type="text"></td>
+		</tr>		
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">App URL</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="appurl" id="appurl"
+				style="width: 200px;" maxlength="1000" value='<?=$this->currentApp['appurl']?>'
+				class="required" type="text"></td>
+		</tr>
+<tr>
+			<td class="hligh1" width="20%"><label for="viewname">App Rest URL</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="appresturl" id="appresturl"
+				style="width: 200px;" maxlength="1000" value='<?=$this->currentApp['appresturl']?>'
+				class="required" type="text"></td>
+		</tr>	
+		<tr>
+			<td class="hligh2"></td>
+			<td class="hligh2"><input name="btnCreate" id="btnCreate"
+				value="<?php
+if(isset($this->change) && $this->change){
+?>
+Thay Đổi
+<?php
+}
+else{
+?>
+Đăng Ký<?php }?>"  class="button" type="submit"></td>
+		</tr>
+	</tbody>
+</table>
+</form>

@@ -1,0 +1,11 @@
+<div id="footer">
+<div class="vers">
+    	Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558</strong>
+    </div>
+	<div class="vers">Đi đến: <a href="{{CREDITS_URL}}/m" class="curnav">Ví Zing Me</a></div>
+
+	
+    <div class="copyright">© 2011 Zing </div>
+</div>
+</body>
+</html>

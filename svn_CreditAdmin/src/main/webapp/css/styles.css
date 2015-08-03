@@ -1,0 +1,16 @@
+.mainTable {
+	width: 100%;
+}
+
+#page-header{
+	height: 75px;
+}
+
+#nav-container{
+	height: 30px;
+	background-color: #bfbfbf;
+}
+
+#left-nav-container{
+	width: 150px;
+}

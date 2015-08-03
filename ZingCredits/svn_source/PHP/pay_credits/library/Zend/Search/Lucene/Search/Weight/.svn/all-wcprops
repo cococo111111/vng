@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight
+END
+Term.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight/Term.php
+END
+Empty.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight/Empty.php
+END
+Boolean.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight/Boolean.php
+END
+MultiTerm.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight/MultiTerm.php
+END
+Phrase.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Weight/Phrase.php
+END

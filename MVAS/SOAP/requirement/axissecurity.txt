@@ -1,0 +1,46 @@
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/services</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>wsuser</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+
+	<security-role>
+		<role-name>webservice</role-name>
+	</security-role>
+   
+
+Add "wsuser" to your $TOMCAT_HOME/conf/tomcat-users.xml file this:
+
+	<user username="wsuser" password="wspwd"
+              fullName="WS User" roles="webservice"/>
+
+
+private void fixSoapAction (org.apache.axis.client.Call _call) {
+    _call.setProperty(
+        org.apache.axis.client.Call.SESSION_MAINTAIN_PROPERTY, 
+        new Boolean(true));
+    _call.setProperty(
+        org.apache.axis.transport.http.HTTPConstants.HEADER_COOKIE2, 
+        "\r\nSOAPAction: " + _call.getSOAPActionURI());
+}
+
+
+import StockInfoNamespace.*;
+import org.apache.axis.client.Stub;
+import org.apache.axis.client.Call;
+
+StockInfoServiceLocator locator = new StockInfoServiceLocator();
+StockInfoService service = locator.getStockService();
+
+// to use Basic HTTP Authentication:
+((Stub) service)._setProperty(Call.USERNAME_PROPERTY, "user name");
+((Stub) service)._setProperty(Call.PASSWORD_PROPERTY, "password");
+
+service.GetStockInfo("FOO"); s

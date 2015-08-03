@@ -1,0 +1,22 @@
+[production]
+cachingfarm.list = adminsession
+cachingfarm.adminsession.enable           = true
+cachingfarm.adminsession.host             = 10.30.22.158
+cachingfarm.adminsession.port             = 11213
+
+common.db.path="/home/app_credits/XMLDb"
+common.db.filename="ContentFilter.xml"
+
+#get all game,register game,edit game server
+admin.url="http://report-credits.me.zing.vn"
+gameinfor.host=10.30.22.153
+gameinfor.port=10114
+gameinfor.connection.sendtimeout=1000
+gameinfor.connection.recvtimeout=1000
+
+report.database.host=10.30.22.155
+report.database.port=3307
+report.database.username="reportread"
+report.database.password="report123abc"
+report.database.dbname="zingcredits_app"
+

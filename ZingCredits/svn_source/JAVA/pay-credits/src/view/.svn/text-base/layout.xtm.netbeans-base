@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{{PAYTITLE}}</title>
+  <meta http-equiv="description" content="" />
+  <meta http-equiv="keywords" content="" />
+  <link href="{{STATIC_URL}}/layout/css/credits-1.0.css" rel="stylesheet" type="text/css" />
+  <link href="{{STATIC_URL}}/css/passport_screen_1.14.css" rel="stylesheet" type="text/css" />
+  <link href="http://css.me.zdn.vn/zmjs/zm.ui-1.08.css" rel="stylesheet" type="text/css" />
+  <link href="{{STATIC_URL}}/css/mexu.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript"  src="{{STATIC_URL}}/js/zmCore-1.26.min.js"></script>
+  <script type="text/javascript">
+   var zme_avatar_width=75;
+   var zme_avatar_heigth = 75;
+   var zme_avatar_tag = "span";
+   var zme_avatar_size = "160";
+   {{#DOMAINV2}}
+    document.domain = 'zing.vn';
+   {{/DOMAINV2}}
+   
+  </script>
+  <script type="text/javascript"  src="http://widget.me.zing.vn/js/zingme_widget_ex_1.2.1.min.js"></script>
+ </head>
+ <body>
+  <style type="text/css" >
+   .btsbmzc {
+    background: none repeat scroll 0 0 #80A5D5;
+    border: 1px solid #486DA4;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 2px 6px;
+    text-align: center;
+    margin:5px;
+    cursor:pointer;
+
+   }
+   a.btsbmzc:hover{
+    color:white;
+    text-decoration:none;
+   }
+   .yel {
+    color: #FF5C02;
+    font-size: 16px;
+    font-weight: bold;
+   }
+  </style>
+  <div style="max-width:800px;min-width:595px;width: 100%;margin:0 auto">
+   <form name="frm" id="frm" method="post" action="/billing/bill">
+    <div>
+     <div class="blog_login bgblogin">
+      <div class="toplogin">
+       <p class="fl_left"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+       <p class="fl_right"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+      </div>
+      <div class="infologin">
+       <img alt="Ví Zing Me | Hệ Thống Thanh Toán An Toàn Trên Zing Me"  src="{{STATIC_URL}}/images/logo_zingcredits.png"/>
+       <div class="loadframe" style='width:100%'>
+        <div class="msgnote"><strong>{{header-top}}</strong></div>
+        <div class="blog_photo">
+         <div class="cntPhoto mgl">
+          <div class="heightLD">
+           <div id="layout_mexu">
+            {{>top}}
+            {{#BILLING_REQUEST_FORM}}
+            {{>billing}}
+            {{/BILLING_REQUEST_FORM}}
+            {{#BILLING_SUCCESS_FORM}}
+            {{>success}}
+            {{/BILLING_SUCCESS_FORM}}
+            {{#BILLING_FAIL_FORM}}
+            {{>error}}
+            {{/BILLING_FAIL_FORM}}
+            {{#BILLING_ERROR_FORM}}
+            {{>error}}
+            {{/BILLING_ERROR_FORM}}
+            {{>footer}}
+           </div>
+{{#USERAPP}}
+<style>
+#alert {
+    background: none repeat scroll 0 0 #FFF9D7;
+    border-bottom: 1px solid #E2C822;
+    position: relative;
+    width: 100%;
+    margin-left: -10px;
+    margin-right: 0;
+    margin-top: -10px;
+    padding-right: 20px;
+margin-bottom: -12px;
+}
+.blue {
+    background: none repeat scroll 0 0 #D5FCFE !important;
+    border-bottom: 1px solid #4CDDE6 !important;
+}
+.ctnAlert {
+    padding: 5px;
+    position: relative;
+}
+
+.ctnAlert .contentAlert {
+    min-height: 15px;
+    position: relative;
+    vertical-align: middle;
+}
+.zme-boxy-modal{
+background:none;
+}
+</style>
+<script type='text/javascript' src='http://static.me.zing.vn/zmjs/zm.ui-1.24.min.js'></script>
+<script>
+	var isboxy=false;
+	function ufora(){
+		var isLite=zm('#lite').attr('checked');
+		var title='';
+		if(isLite && !isboxy){
+		isboxy=true;
+		title='{{billing-success-quick-confirm1}} <b>{{APPNAME}}</b>?';
+		}
+		if(!isLite && !isboxy){
+		isboxy=true;
+		title='{{billing-success-quick-confirm2}} <b>{{APPNAME}}</b>?';
+		}
+		if(isboxy){
+		new zmCore.Boxy({
+        	title: 'Ví Zing Me - Xác nhận',
+                content: title,
+                modal: true,
+                okButton: 'Xác nhận',
+                cancelButton: 'Bỏ qua',
+		onOk:function(){
+	     	zm.post('{{PAYURL}}/billing/ufora',
+	     	{"appID":"{{APPID}}","lite":isLite?"1":"0"},
+		function(data){isboxy=false;});
+        	},
+		onCancel:function(){zm('#lite').attr('checked',!isLite);isboxy=false;}
+        	}).show();
+		}
+		return false;
+
+	}
+</script>
+<div class="blue" id="alert">
+    <div class="ctnAlert">
+        <div class="icoEvent"></div>
+
+        <div class="contentAlert">
+<input type='checkbox' onchange='ufora()' id='lite' style='position: absolute;' {{#LITE_CHECKED}}checked=checked{{/LITE_CHECKED}}> <span style='padding-left:23px;cursor:pointer' onclick='zm("#lite").click()'>{{billing-success-quick}}</span>
+	</div>
+
+    </div>
+</div>
+
+{{/USERAPP}}
+          </div><div class="btmlogin">
+           <p class="bl_left"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+           <p class="bl_right"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+          </div>          
+          <table width='100%'>
+           <tr>
+            <td align="center"> Nếu có vấn đề xin gửi email <a href="javascript:poptastic();"><b>liên hệ</b></a> hoặc gọi vào đường dây nóng: <b>1900.561.558</b></td></tr></table>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="btmlogin">
+       <p class="bl_left"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+       <p class="bl_right"><img src="{{STATIC_URL}}/images/space.gif" alt=" " width="1" height="1" /></p>
+      </div>
+     </div>
+    </div>
+    <div id="footer"></div>
+   </form>
+  </div>
+ </body>
+</html>

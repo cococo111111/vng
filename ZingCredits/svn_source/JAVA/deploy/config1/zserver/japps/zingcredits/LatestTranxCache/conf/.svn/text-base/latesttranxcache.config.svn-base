@@ -1,0 +1,11 @@
+#Configuation for latesttranxcache service
+
+##########################################################################
+#latest-cache info
+
+latestPort=5121
+
+#cache-size 6M
+cachesize=4000000
+#cache for 1 user
+cacheonuser=10

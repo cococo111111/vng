@@ -1,0 +1,102 @@
+<!-- left menu -->
+<div id="sidebar-left">
+<h2>Content Filter System</h2>
+<div id="admin_menu">
+<ul class="menu">
+	<li class="leaf"><a href="index">Content Filter</a></li>
+	<?php if($this->userrole<=2) {?>
+	<li class="expanded"><a href="log">Log</a></li>
+	<?php }?>
+	<?php if($this->userrole==1) {?>
+	<li class="leaf last"><a href="user">User</a></li>
+	<?php }?>
+</ul>
+</div>
+</div>
+<!-- end left menu -->
+
+<div id="content">
+<div id="centerCont"><strong>ContentFilter &gt;&gt; </strong> Log <br />
+<br />
+<form action="" method="get" name="frmSubmit" id="frmSubmit">
+<div>User: <br />
+<select id="userId" name="userId">
+<?php
+foreach($this->allUser as $item)
+{
+	?>
+	<option value="<?php echo $item->userid;?>"
+	<?php if($this->userId==$item->userid) echo "selected";?>><?php echo $item->name;?>
+	</option>
+	<?php
+}
+?>
+</select> <br />
+Date range (mm/dd/yyyy - mm/dd/yyyy): <br />
+<input type="text" name="dateRange" id="dateRange"
+	value="<?php if(!empty($this->dateRange)) echo $this->dateRange;?>" />
+<br />
+<input class="button" type="submit" class="button" name="btnLog"
+	value="View log >>" /></div>
+<br />
+<div id="paginationControl" align="right"><?php if(!empty($this->paginationLink)) echo $this->paginationLink;?>
+</div>
+
+<?php if(!empty($this->table)) echo $this->table;?>
+<table class="mainTab" width="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="tabTit" width="5%">#</td>
+			<td class="tabTit" width="15%">System</td>
+			<td class="tabTit" width="15%">Application</td>
+			<td class="tabTit" width="15%">Account</td>
+			<td class="tabTit" width="15%">Remove</td>
+			<td class="tabTit" width="15%">Approve</td>
+			<td class="tabTit" width="20%">Day</td>
+		</tr>
+		<?php
+		if(!empty($this->arrLogInfo))
+		{
+			for($i=0;$i<count($this->arrLogInfo);$i++)
+			{
+				?>
+		<tr>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo ($i+1);?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->systemName;?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->appName;?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->vipName;?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->removeCount;?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->approveCount;?></td>
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><?php echo $this->arrLogInfo[$i]->date;?></td>
+		</tr>
+		<?php
+			}
+		}
+		?>
+
+	</tbody>
+</table>
+
+</form>
+
+
+<div id="paginationControl" align="right"><?php if(!empty($this->paginationLink)) echo $this->paginationLink;?>
+</div>
+
+
+</div>
+</div>
+
+<script type="text/javascript">	
+	$(function(){
+		  $('#dateRange').daterangepicker({arrows:true}); 
+	 });
+</script>

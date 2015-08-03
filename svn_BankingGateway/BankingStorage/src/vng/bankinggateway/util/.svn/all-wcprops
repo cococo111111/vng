@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_bankinggateway/!svn/ver/19/BankingStorage/src/vng/bankinggateway/util
+END
+TranzType.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/TranzType.java
+END
+TimedStatsDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/TimedStatsDeque.java
+END
+AbstractStatsDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/AbstractStatsDeque.java
+END
+IDGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/IDGen.java
+END
+Zing_Util_Period.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/Zing_Util_Period.java
+END
+KeyHashing.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/util/KeyHashing.java
+END

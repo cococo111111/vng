@@ -1,0 +1,51 @@
+{{>m_header}}
+<div id="content">
+	<div class="subnav snzme">
+    	Lịch sử giao dịch
+    </div>
+
+{{#TRANXS_NOTFOUND}}
+<div class="cont01" style='color:#FF5A00'>
+KHÔNG TỒN TẠI GIAO DỊCH NÀO GẦN ĐÂY!
+</div>
+{{/TRANXS_NOTFOUND}}
+{{#TRANXS_FOUND_PAGE}}
+<div id="page">
+
+	<div class="paging">
+    	Trang {{PAGE}}
+    </div>
+{{/TRANXS_FOUND_PAGE}}
+{{#TRANXS_FOUND}}
+    <div class="cont01 wcomt">
+        <div class="num01">{{INDEX}}.</div>
+        <div class="trans01"><a href="{{CREDITS_URL}}/m{{TX_DETAIL_URL}}"><strong> Mã giao dịch: {{TX_ID}} </strong><span class="clr2">({{TX_TIME}}) </span></a><br>
+Ứng dụng: {{TX_APPNAME}} <br>
+Giá trị giao dịch: <strong>{{TX_AMOUNT}} Zing Xu </strong><br>
+Trạng thái:
+{{#TX_DXL}}
+<span class="transwait">Đang chờ xử lý</span>
+{{/TX_DXL}}
+{{#TX_TC}}
+<span class="transok">Thành công</span>
+{{/TX_TC}}
+{{#TX_TB}}
+<span class="transfail">Thất bại</span>
+{{/TX_TB}}
+
+
+</div>
+    </div>
+{{/TRANXS_FOUND}}
+
+    <div class="oldfeed">
+{{#BEFORE}}
+		<span class="navleft">« <a href="{{CREDITS_URL}}/m{{TX_URL}}&page={{PREPAGE}}">Trước</a> &nbsp; &nbsp;</span>
+{{/BEFORE}}
+{{#AFTER}}
+		<span class="navright"><a href="{{CREDITS_URL}}/m{{TX_URL}}&page={{NEXTPAGE}}">Sau</a> »</span>
+{{/AFTER}}
+    </div>
+</div><!-- page -->
+</div>
+{{>m_footer}}

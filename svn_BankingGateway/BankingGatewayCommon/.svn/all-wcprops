@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_bankinggateway/!svn/ver/56/BankingGatewayCommon
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/manifest.mf
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/build.xml
+END

@@ -1,0 +1,26 @@
+#!/bin/sh
+HOST=10.30.22.140
+
+PROJECT=BankingGateway
+JAR=$PROJECT.jar
+MAINCLASS=vng.bankinggateway.client.ExportDataForReconcile
+
+CURDIR=`pwd`
+HOME=$CURDIR
+CONF=$HOME/conf
+DEPLOY_DIR=$HOME/dist
+CLASSPATH=$DEPLOY_DIR/$JAR
+for jar in $DEPLOY_DIR/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+echo "Run Reconfirm"
+if [ $2 -eq NULL ]
+then
+  java -cp $CLASSPATH -Dzname=$PROJECT -Dconfig=$CONF -Dday=$DAY $MAINCLASS $1
+
+else 
+  java -cp $CLASSPATH -Dzname=$PROJECT -Dconfig=$CONF -Dday=$DAY $MAINCLASS $1 $2
+fi
+
+echo "Done!"

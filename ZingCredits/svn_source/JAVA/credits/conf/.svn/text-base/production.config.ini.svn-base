@@ -1,0 +1,65 @@
+[system]
+host=localhost
+port=8008
+maxthread=100
+appinfo-cachesize=1024
+appinfo-sleepthread=2 #minute
+credits-title="Ví Zing Me"
+credits-url="http://credits-me.zing.vn"
+static-credits-url=dev.stc.credits.zdn.vn
+mobile-touch-credits-url="http://credits-me.m.zing.vn"
+mobile-wap-credits-url="http://credits-me.m.zing.vn"
+napthe-url="https://quickpay.zing.vn/client/napthe.html?pid=78&acc="
+napatm-url="https://pay.zing.vn/zingxuzme/index.html"
+napatm-thankyou-url="https://pay.zing.vn/zingxuzme/thankyou"
+#0: disable napthe tab, 1: enable napthe tab
+napthe-enable=1
+me-url="http://me.zing.vn"
+credits-appname="credits"
+public-path=/zserver/japps/zingcredits/credits/public
+#maintain flag = 1: maintain, 0:open
+maintain=0
+maintain-text="Hệ Thống ZingCredits đang được bảo trì. Mời bạn quay lại sau."
+maintain-secret-key="XrWG9vap29sdtbKVYFgTsAtWgWFYDwD4rfSMssTf"
+#whitelist user flag = 1: only alows list, 0:open
+whitelist=0
+#alow payment when system is maintain:loidcit,nhutnguyenhong,namnq,hung.vo,andqt83,sitvn:pay,tranduclen,fortinet
+user-allows="15948941,11298436,3804482,487796,382344,487891,487579,67025283"
+secret-key=V8jHmryfqTCU5uD4kkKe
+timeout-key=10#minute
+#allow user for new feature: banglt_vng, nam.nq, phuongquyvnn,itquangnguyen,pmqc.01,fortinet,tranduclen,dzobanbe
+feature-white-list="60333746,3804482,38850069,15949861,7761461,67025283,487579"
+[balance]
+host=10.30.22.158
+port=5131
+[admin]
+host=10.30.22.153
+port=10114
+[hugelist]
+read-host = 10.30.12.215
+read-port = 10201
+appid = 1002
+
+[SSO]
+host="10.30.12.180"
+port=8080
+[stdprofile2]
+host="10.30.22.173"
+port=9281
+source=credits
+auth=9EpNVY
+[lastedCached]
+host=10.30.22.158
+port=5121
+[avatarpath]
+default=http://avatar.me.zdn.vn/avatar_files
+180=http://b2.avatar.zdn.vn/180
+50=http://%s.1.s50.avatar.zdn.vn/avatar_files
+75=http://avatar.me.zdn.vn/avatar_files
+120=http://avatar.me.zdn.vn/avatar_files
+160=http://avatar.me.zdn.vn/avatar_files
+[memcache-app-sort]
+host=10.30.22.158
+port=11214
+[css-version]
+credits=1.0

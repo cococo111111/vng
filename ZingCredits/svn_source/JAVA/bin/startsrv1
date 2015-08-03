@@ -1,0 +1,11 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+sh ./3_start_AccountBalanceCache
+sh ./4_start_LatestTranxCache
+sh ./6_start_PaymentZKBackEnd_bill
+sh ./7_start_PaymentGateway
+
+sh ./11_start_pay-credits
+sh ./13_start_credits

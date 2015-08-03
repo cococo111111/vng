@@ -1,0 +1,14 @@
+#!/bin/sh
+
+. ./set_env
+PROJECT=PaymentAdmin
+JAR=$PROJECT-1.5.jar
+PIDFILE=pid_$PROJECT
+
+CURDIR=`pwd`
+HOME=$CURDIR/../$PROJECT
+CONF=$HOME/conf
+
+java -Dzname=$PROJECT -Dconfpath="$HOME/" -Dconfig="$CONF" -jar "$DEPLOY_DIR/$JAR" &
+/bin/echo -n $! > "$PIDFILE"
+

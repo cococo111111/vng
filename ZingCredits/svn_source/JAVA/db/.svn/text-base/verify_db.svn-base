@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mysql -uroot -S /data/mysql1/mysql1.sock -e "show databases; select user,host from mysql.user; select user,host,db from mysql.db;"
+

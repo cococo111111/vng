@@ -1,0 +1,7 @@
+30/8/2012 9:51:55 : INFO: CDRServer:@Getting data from queue table
+30/8/2012 10:26:43 : INFO: FTP:@ starting FTP cdr file
+30/8/2012 10:26:55 : INFO: FTP: true
+30/8/2012 10:26:55 : INFO: backup file: from: CDROUT/vinagame_20100420_2932.cdr to: ./CDRSENT/2012-08-30/vinagame_20100420_2932.cdr
+30/8/2012 10:26:55 : INFO: FTP : file name: vinagame_20100420_2932.cdr# filesize: 2029074 bytes
+30/8/2012 11:23:45 : INFO: FTP:@ starting FTP cdr file
+30/8/2012 11:23:45 : INFO: FTP @No CDR file found, sleep in 1 min

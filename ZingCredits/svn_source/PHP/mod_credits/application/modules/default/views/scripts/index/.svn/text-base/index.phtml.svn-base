@@ -1,0 +1,57 @@
+<!-- left menu -->
+<div id="sidebar-left">			
+	<h2>Payment Administrator</h2>
+	<div id="admin_menu">
+       	<ul class="menu">
+	      
+               <li class="expanded"><a>Người Dùng</a></li>
+	      <ul>
+              <li class="expanded"><a href="/app/userbalance">Truy Vấn ZingXu</a></li>             
+              <li class="expanded"><a href="/app/lastedtranx">Giao Dịch Gần Nhất</a></li>
+              <li class="expanded"><a href="/app/tranxbyuser">TK Giao Dịch</a></li>
+	      </ul>
+<?php /**
+	      <li class="expanded"><a>Thống kê App</a></li>
+	      <ul>
+             <li class="expanded"><a href="/app/tranxbyappsummary">Summary</a></li>	    
+	      <li class="expanded"><a href="/app/tranxbyapp">Chi Tiết</a></li>
+	      </ul>
+**/?>
+             
+       	</ul>
+	</div>
+</div>
+<!-- end left menu -->
+	
+<div id="content">
+	<div id="centerCont"> 
+		
+		<p></p>
+		
+		<?php if(!empty($this->frmSearch)) echo $this->frmSearch;?>
+		<br/><br/><br/>
+		<form action="submit" method="post" name="frmSubmit" id="frmSubmit">
+			
+		  	<!-- <input type="hidden" id="hidSystemId" name="hidSystemId" <?php if(!empty($this->systemId)) echo "value='$this->systemId'";?>/>
+		  	<input type="hidden" id="hidAppId" name="hidAppId" <?php if(!empty($this->appId)) echo "value='$this->appId'";?>/>
+		  	<input type="hidden" id="hidKeyWord" name="hidKeyWord" <?php if(!empty($this->keyWord)) echo "value='$this->keyWord'";?>/>
+		  	<input type="hidden" id="hidToUserId" name="hidToUserId" <?php if(!empty($this->toUserId)) echo "value='$this->toUserId'";?>/>
+			-->
+		  	
+
+	  	 	<input type="hidden" value="" id="hidRemoveString" name="hidRemoveString"/>
+  			<input type="hidden" value="" id="hidApproveString" name="hidApproveString"/>
+  			
+  			
+  					
+			<?php if(!empty($this->table)) echo $this->table;?>
+		</form>
+		
+		
+		<div id="paginationControl" align="right">
+			<?php if(!empty($this->paginationLink)) echo $this->paginationLink;?>
+		</div>
+		
+			  
+	</div>					
+</div>

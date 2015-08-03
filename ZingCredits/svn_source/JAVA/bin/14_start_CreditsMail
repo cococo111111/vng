@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. ./set_env
+PROJECT=CreditsMail
+JAR=$PROJECT-1.0.0.jar
+MAINCLASS=com.vng.zing.credits.report.mail.ZAppDaemon
+
+PIDFILE=pid_$PROJECT
+APPENV=staging
+
+CURDIR=`pwd`
+HOME=$CURDIR/../$PROJECT
+CONF=$HOME/conf
+
+CLASSPATH=$DEPLOY_DIR/$JAR
+for jar in $HOME/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+java -cp $CLASSPATH -Dzname=$PROJECT -Dport=8020 -Dmaxthread=100 -Dconfig=$CONF -Dappenv=$APPENV -Dapppath=$HOME $MAINCLASS &
+/bin/echo -n $! > $PIDFILE

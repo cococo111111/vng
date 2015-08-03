@@ -1,0 +1,9 @@
+demo.reporting.jasperreport
+vng.zingme.stats.bean
+vng.zingme.stats.controller
+vng.zingme.stats.dao
+vng.zingme.stats.dao.impl
+vng.zingme.stats.dto
+vng.zingme.stats.mySqlConnectionPool
+vng.zingme.stats.service
+vng.zingme.stats.service.impl

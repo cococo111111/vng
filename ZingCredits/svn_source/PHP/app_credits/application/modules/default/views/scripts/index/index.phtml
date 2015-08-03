@@ -1,0 +1,48 @@
+
+<div id="sidebar-left">			
+	<h2><?=$this->appname?></h2>
+	<div id="admin_menu">
+       	<ul class="menu">
+	     
+	      <li class="expanded">Thống kê App</li>
+	      <ul>
+              <li class="expanded"><a href="/app/tranxbyappsummary">Summary</a></li>
+		 </ul>
+		<?php if(!empty($this->app_credits_report)){?>
+		 <li class="expanded">Report</li>
+		<ul>
+	     <li class="expanded"><a href="/app/report">Report xuất ZingXu</a></li>
+		 <li class="expanded"><a href="/app/reportsummary" title='BÁO CÁO TỔNG HỢP NHẬP XUẤT TỒN TÚI XU ZING CREDIT'>Tổng hợp nhập-xuất ZingXu</a></li>
+		<li class="expanded"><a href="/app/reportdetail" title='BÁO CÁO CHI TIẾT NHẬP XUẤT TỒN TÚI XU ZING CREDIT'>Chi tiết nhập-xuất ZingXu</a></li>
+		 </ul>
+		<?php }?>
+	      </ul>
+              
+       	</ul>
+	</div>
+</div>
+	
+<div id="content">
+	<div id="centerCont"> 
+		
+		<p></p>
+		
+		<?php if(!empty($this->frmSearch)) echo $this->frmSearch;?>
+		<br/><br/><br/>
+		<form action="submit" method="post" name="frmSubmit" id="frmSubmit">
+	  	 	<input type="hidden" value="" id="hidRemoveString" name="hidRemoveString"/>
+  			<input type="hidden" value="" id="hidApproveString" name="hidApproveString"/>
+  			
+  			
+  					
+			<?php if(!empty($this->table)) echo $this->table;?>
+		</form>
+		
+		
+		<div id="paginationControl" align="right">
+			<?php if(!empty($this->paginationLink)) echo $this->paginationLink;?>
+		</div>
+		
+			  
+	</div>					
+</div>

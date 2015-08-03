@@ -1,0 +1,4 @@
+. /zserver/java/set_env
+ant -f CreditsMail/build.xml -Ddist.jar=dist/CreditsMail.jar jar
+cp -f CreditsMail/dist/CreditsMail.jar /zserver/java/lib/zingcredits/CreditsMail-1.0.0.jar
+

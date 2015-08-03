@@ -1,0 +1,184 @@
+<div class="box_mexu">
+    <p><strong>Bạn đang xem chi tiết các giao dịch gần đây nhất</strong>
+</div>
+<div class="table_mexu">
+    <div style='overflow:auto;max-height:450px'>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="lstitle" width="15%">Thời gian</td>
+                <td class="lstitle" width="10%">Loại</td>
+                <td class="lstitle" width="15%">Mã GD</td>
+                <td class="lstitle" width="10%">Giá trị GD (Zing Xu)</td>
+                <td class="lstitle" width="15%">Ứng dụng</td>
+                <td class="lstitle" width="10%">Tình trạng</td>
+                <td class="lstitle" width="25%">Mô tả</td>
+            </tr>
+            {{#TRANXS_NOTFOUND}}
+            <tr>
+                <td colspan='7' align='center' style='height: 90px;font-weight: bold;'>
+                    <strong style='color:#FF5A00'>KHÔNG TỒN TẠI GIAO DỊCH NÀO GẦN ĐÂY!</strong>
+                </td>
+            </tr>
+            {{/TRANXS_NOTFOUND}}
+
+            {{#TRANXS_FOUND}}
+            <tr>
+                <td>{{TX_TIME}}</td>
+                <td>
+                    {{#NAPTIEN}}
+                    Nạp tiền
+                    {{/NAPTIEN}}
+                    {{#CHUYENTIEN}}
+                    Chuyển tiền
+                    {{/CHUYENTIEN}}
+                    {{#TANGTIEM}}
+                    Tặng tiền
+                    {{/TANGTIEM}}
+                    {{#THANHTOAN}}
+                    Thanh toán
+                    {{/THANHTOAN}}
+                    {{#HOANTIEN}}
+                    Hoàn tiền
+                    {{/HOANTIEN}}
+                    {{#THEMTIEN}}
+                    Thêm tiền
+                    {{/THEMTIEN}}
+                    {{#GIAMTIEN}}
+                    Giảm tiền
+                    {{/GIAMTIEN}}
+                </td>
+                <td>{{TX_ID}}</td>
+                <td style='text-align:center'><span class="zc-noiconzc">{{TX_AMOUNT}}</span></td>
+                <td>{{TX_APPNAME}}</td>
+                <td style='text-align:center'>
+                    {{#TX_DXL}}
+                    <div class='zc-dxl'></div>
+                    {{/TX_DXL}}
+                    {{#TX_TC}}
+                    <div class='zc-gdtc'></div>
+                    {{/TX_TC}}
+                    {{#TX_TB}}
+                    <div class='zc-gdtb'></div>
+                    {{/TX_TB}}
+                </td>
+                <td style='text-align:left;padding-left:5px'>
+                    {{#DETAIL_NAPTIEN}}
+                    Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản
+                    {{/DETAIL_NAPTIEN}}
+                    {{#DETAIL_CHUYENTIEN}}
+                    Được Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản
+                    {{/DETAIL_CHUYENTIEN}}
+                    {{#DETAIL_TANGTIEN}}
+                    Được tặng <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản
+                    {{/DETAIL_TANGTIEN}}
+                    {{#DETAIL_THANHTOAN}}
+                    Mua {{TX_ITEMQUANTITIES}} <b>{{TX_ITEMNAMES}}</b> tốn <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu
+                    {{/DETAIL_THANHTOAN}}
+                    {{#DETAIL_HOANTIEN}}
+                    Được hoàn lại <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu
+                    {{/DETAIL_HOANTIEN}}
+                    {{DETAIL_OTHER_DESC}}
+                    
+                </td>
+
+            </tr>
+            {{/TRANXS_FOUND}}
+        </table>
+    </div>
+</div>
+<div><br><span class='zc-icon-title'> Ý nghĩa các ký hiệu: </span><span style="float:left">&nbsp;&nbsp;&nbsp;&nbsp;GD: Giao Dịch</span><span class="zc-gdtc"> Giao dịch thành công</span><span class="zc-dxl"> Giao dịch đang xử lý</span> <span class="zc-gdtb"> Giao dịch thất bại</span>	</div><div style='clear:both'></div>
+<div class='box_mexu'>
+    <p>
+        <strong>Các ứng dụng đang dùng Ví Zing Me</strong>
+    </p>
+</div>
+<div id='zcproducts'>
+    <table width='100%'><tr><td width='30px'>
+                <div id='appshowback' style='display:none'>
+                    <a href='#' onclick='appBack()'><img src='{{STATIC_URL}}/images/app_go_back.png'></a>
+                </div>
+            </td><td width='657px'>
+
+                <ul class='ImgGame' id='appshow'>
+
+                </ul>
+            </td><td  width='30px'>
+                <div id='appshownext' style='display:none'>
+                    <a href='#' onclick='appNext()'><img src='{{STATIC_URL}}/images/app_go_forward.png'></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" >
+    apps=new Array();
+    {{APPS_JS}}
+    currentPage=0;
+
+    function appNext(){
+        currentPage++;
+        renderApps();
+    }
+    function appBack(){
+        currentPage--;
+        renderApps();
+    }
+    function renderApps(){
+        var html=new Array();
+        if(currentPage>=apps.length){
+            return;
+        }
+        var currentAppPage=apps[currentPage];
+        var currentAppPage_length=currentAppPage.length;
+        for(var i=0;i<currentAppPage_length;i++){
+            var currentApp=currentAppPage[i];
+            html.push("<li><a target='_blank' title='");
+            html.push(currentApp[3]);
+            html.push("' href='");
+            html.push(currentApp[0]);
+            html.push("'><img width='64px' height='64px' src='{{STATIC_URL}}/images/");
+            html.push(currentApp[1]);
+            html.push("'></a><br><strong><a title='");
+            html.push(currentApp[3]);
+            html.push("' target='_blank' href='");
+            html.push(currentApp[0]);
+            html.push("'>");
+            html.push(renderAppName(currentApp[2]));
+            html.push("</a></strong></li>");
+        }
+        document.getElementById('appshow').innerHTML=html.join('');
+        renderAppsNext();
+        renderAppsBack();
+    }
+    function renderAppsNext(){
+
+        if(currentPage<apps.length-1){
+            document.getElementById('appshownext').style.display='block';
+        }
+        else{
+            document.getElementById('appshownext').style.display='none';
+        }
+    }
+    function renderAppsBack(){
+        if(currentPage!=0){
+            document.getElementById('appshowback').style.display='block';
+        }
+        else{
+            document.getElementById('appshowback').style.display='none';
+        }
+    }
+	function renderAppName( appName ) {
+		var maxLength = 23;
+		
+		if ( appName.length > maxLength ) {
+			if ( appName.charAt(maxLength - 4) == " " )
+				appName = appName.substring(0, maxLength - 4) + " ...";
+			else {
+				appName = appName.substring(0, maxLength - 4);
+				appName = appName.substring(0, appName.lastIndexOf(" ")) + " ...";
+			}
+		}
+		return appName;
+	}
+    renderApps();
+</script>

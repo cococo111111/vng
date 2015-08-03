@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol
+END
+config.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.m4
+END
+config.log
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.log
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/configure.in
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.status
+END
+run-tests.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/run-tests.php
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.guess
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.h
+END
+ltmain.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/ltmain.sh
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.sub
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.h.in
+END
+Makefile.fragments
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/Makefile.fragments
+END
+libtool
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/libtool
+END
+Makefile.objects
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/Makefile.objects
+END
+acinclude.m4
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/acinclude.m4
+END
+.deps
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/.deps
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/missing
+END
+php_thrift_protocol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/php_thrift_protocol.cpp
+END
+Makefile.global
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/Makefile.global
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/aclocal.m4
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/Makefile
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/install-sh
+END
+php_thrift_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/php_thrift_protocol.h
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/mkinstalldirs
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/configure
+END
+config.nice
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Apache/Thrift/ext/thrift_protocol/config.nice
+END

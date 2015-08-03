@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<system>
+		<name>mysql</name>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://10.30.22.138:3306</url>
+		<username>staging</username>
+		<password>urubHnJAL8UAES</password>		
+		<dbName>zingcredits</dbName>
+		<timeOut>2000</timeOut>
+		<maxPoolSize>1000</maxPoolSize>
+		<maxQueueSize>1000</maxQueueSize>
+	</system>
+	<system>
+		<name>billing</name>
+		<host>localhost</host>
+		<port>9701</port>
+		<jmx>9702</jmx>				
+	</system>
+	
+	<system>
+		<name>queue</name>
+		<host>localhost</host>
+		<port>9702</port>		
+		<host2>localhost</host2>
+		<port2>9703</port2>
+		<NumOfQueueWorker>10</NumOfQueueWorker>
+		<jmx>9704</jmx>				
+	</system>
+	
+	<system>
+		<name>transaction</name>
+		<host>localhost</host>
+		<port>9705</port>				
+		<GTXTransactionCacheMaxItem>100</GTXTransactionCacheMaxItem>
+		<T_TransactionCacheMaxItem>100</T_TransactionCacheMaxItem>
+		<TransactionCommitLog>/tmp/transaction.log</TransactionCommitLog>
+		<TransactionCommitFile>10</TransactionCommitFile>
+		<T_InvoiceCacheMaxItem>100</T_InvoiceCacheMaxItem>
+		<T_InvoiceCommitLog>/tmp/transaction.log</T_InvoiceCommitLog>
+		<T_InvoiceCommitFile>10</T_InvoiceCommitFile>
+		<T_AccountCacheMaxItem>50</T_AccountCacheMaxItem>
+		<T_AccountCommitLog>/tmp/transaction.log</T_AccountCommitLog>
+		<T_AccountCommitFile>10</T_AccountCommitFile>
+		<jmx>9706</jmx>							
+	</system>	
+	<system>
+		<name>pg</name>
+		<host>localhost</host>
+		<port>9707</port>
+		<jmx>9708</jmx>
+	</system>
+	<system>
+		<name>cache</name>
+		<host>localhost</host>
+		<port>9709</port>
+		<jmx>9710</jmx>		
+	</system>
+		
+</configuration>

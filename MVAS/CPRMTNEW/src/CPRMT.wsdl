@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.cp.vng.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.cp.vng.com" xmlns:intf="http://ws.cp.vng.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="mtReceiverRequest">
+
+      <wsdl:part name="requestID" type="soapenc:string"/>
+      
+      <wsdl:part name="userID" type="soapenc:string"/>
+
+      <wsdl:part name="serviceID" type="soapenc:string"/>
+
+      <wsdl:part name="commandCode" type="soapenc:string"/>
+
+      <wsdl:part name="message" type="soapenc:string"/>
+      
+      <wsdl:part name="messageType" type="xsd:int"/>
+      
+      <wsdl:part name="mobileOperator" type="soapenc:string"/>
+      
+      <wsdl:part name="sumMT" type="xsd:int"/>
+      
+      <wsdl:part name="partnerUsername" type="soapenc:string"/>
+
+      <wsdl:part name="partnerPassword" type="soapenc:string"/>
+
+   </wsdl:message>
+
+   <wsdl:message name="mtReceiverResponse">
+
+      <wsdl:part name="mtReceiverReturn" type="xsd:int"/>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CPRMT">
+
+      <wsdl:operation name="mtReceiver" parameterOrder="requestID userID serviceID commandCode message messageType mobileOperator sumMT partnerUsername partnerPassword">
+
+         <wsdl:input message="impl:mtReceiverRequest" name="mtReceiverRequest"/>
+
+         <wsdl:output message="impl:mtReceiverResponse" name="mtReceiverResponse"/>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CPRMTSoapBinding" type="impl:CPRMT">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="mtReceiver">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="mtReceiverRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.cp.vng.com" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="mtReceiverResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.cp.vng.com" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CPRMTService">
+
+      <wsdl:port binding="impl:CPRMTSoapBinding" name="CPRMT">
+
+         <wsdlsoap:address location="http://localhost:8080/axis/services/CPRMT"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

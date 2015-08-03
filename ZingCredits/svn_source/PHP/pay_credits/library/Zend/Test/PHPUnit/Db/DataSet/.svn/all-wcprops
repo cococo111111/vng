@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet
+END
+DbTableDataSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet/DbTableDataSet.php
+END
+DbRowset.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet/DbRowset.php
+END
+QueryDataSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet/QueryDataSet.php
+END
+DbTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet/DbTable.php
+END
+QueryTable.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/DataSet/QueryTable.php
+END

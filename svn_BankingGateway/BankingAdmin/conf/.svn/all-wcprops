@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/conf
+END
+staging.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/conf/staging.log4j.ini
+END
+production.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/conf/production.config.ini
+END
+staging.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/conf/staging.config.ini
+END
+production.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/conf/production.log4j.ini
+END
+app_urls.ini
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/conf/app_urls.ini
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/conf/config.xml
+END

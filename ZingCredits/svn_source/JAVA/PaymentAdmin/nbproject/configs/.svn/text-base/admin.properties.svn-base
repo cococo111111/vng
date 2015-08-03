@@ -1,0 +1,2 @@
+main.class=vng.zingme.payment.admin.AdminMain
+run.jvmargs=-Dconfig=conf

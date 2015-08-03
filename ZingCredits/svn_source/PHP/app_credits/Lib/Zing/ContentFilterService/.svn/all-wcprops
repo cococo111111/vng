@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/ContentFilterService
+END
+LogWrite.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/ContentFilterService/LogWrite.php
+END
+LogRead.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/ContentFilterService/LogRead.php
+END
+ContentFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/ContentFilterService/ContentFilter.php
+END

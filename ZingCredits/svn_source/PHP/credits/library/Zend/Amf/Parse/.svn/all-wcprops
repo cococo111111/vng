@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse
+END
+Deserializer.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse/Deserializer.php
+END
+TypeLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse/TypeLoader.php
+END
+Serializer.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse/Serializer.php
+END
+InputStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse/InputStream.php
+END
+OutputStream.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Parse/OutputStream.php
+END

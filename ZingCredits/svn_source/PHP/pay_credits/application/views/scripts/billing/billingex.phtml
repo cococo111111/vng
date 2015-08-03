@@ -1,0 +1,86 @@
+<?php //require_once APPLICATION_PATH . '/includes/topmenu.php';?>
+<?php
+    if(!$this->tranx){
+    header('Location:/error/error');
+    return;
+    }  
+    $tx=$this->tranx;
+    $userID = $this->userID;
+    $itemsID = $tx->itemIDs;
+    $itemNames = $tx->itemNames;
+    $quantities = $tx->itemQuantities;
+    $prices =$tx->itemPrices;
+    $amount = $tx->amount;
+    $valid = false;
+    if($itemsID != null){
+        $arrItemID = split(BillingController::DILIMITER, $itemsID);
+	$arrItemNames=split(BillingController::DILIMITER, $itemNames);
+        $arrQty = split(BillingController::DILIMITER, $quantities);
+        $arrPrice = split(BillingController::DILIMITER, $prices);
+	 $arrAmount = split(BillingController::DILIMITER, $amount);
+        if($arrItemID != null && count($arrItemID)== count($arrQty)
+                && count($arrItemID)== count($arrPrice)){
+            $valid = true;
+        }
+    }
+	
+?>
+<?php require_once APPLICATION_PATH . 'includes/header1.php';?>
+<div class="right_mexu">
+    <?php if(!$valid){
+          header('Location:/error/error');
+    } else {?>
+	<br>
+	<span class='protected'>Ví Zing Me bảo đảm thanh toán an toàn, tiện lợi cho các ứng dụng trên Zing Me.</span><br>
+	Bạn cần xác nhận trước khi thanh toán để chắc chắn những thông tin sau là chính xác:<br>
+<ul style='padding-left:50px'>
+<li>Tên sản phẩm</li>
+<li>Giá của từng sản phẩm</li>
+<li>Số lượng của từng sản phẩm</li>
+<li>Tổng tiền thanh toán của sản phẩm</li>
+</ul>
+Sau khi xác nhận các thông tin bên dưới là chính xác, hãy click <b><strong>"Xác Nhận"</strong></b>.
+	<br><br>
+<style>
+table.billing THEAD td{
+background:none repeat scroll 0 0 #486fa6;
+color:white;
+}
+</style>
+    <table class='billing' border="1" style='width:100%;border-collapse:collapse;border-color:#E7E7E7' cellpadding="5px">
+        <THEAD><td width="40%" align="center"><b>Tên sản phẩm</b></td><td width="20%" align="center"><b>Số lượng</td>
+            <td width="20%" align="center"><b>Đơn giá (Zing Xu)</b></td><td width="20%" align="center"><b>Giá (Zing Xu)</b></td></THEAD>
+        <?php
+$total=0;
+ for ($i=0; $i< count($arrItemID); $i++) {
+            $amt = $arrPrice[$i] * $arrQty[$i];
+            $amount= $arrAmount[$i];	
+	    $total+=$amount;
+            ?>
+<tr><td align='center'>Mua <strong><?=$arrItemNames[$i]?></strong></td><td align='center'><?=$arrQty[$i]?></td><td align="center"><?= strpos($arrPrice[$i],'$')?$arrPrice[$i]:$arrPrice[$i]?></td>
+<td align="center"><b><span class='yel zc-iconzc'><?=$amount?></span></b></td></tr>
+        <?php } ?>
+	<tr><td colspan='3' align='right' style='font-weight:bold'>Tổng Thanh Toán:</td><td align="center"><b><span class='yel zc-iconzc'><?=$total?></span></b></td></tr>
+    </table>
+<br>
+<table width='100%'>
+ 	<tr><td align='center'>
+        <input type="submit" class="btsbmzc" value="Xác Nhận"/>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btsbmzc" value="&nbsp;&nbsp;Hủy&nbsp;&nbsp;" onclick="closePayment()"/></td></table>
+<br>
+<script>
+function closePayment(){
+callbackPaymentHelper('<?=$tx->refID?>',1,-1);
+}
+</script>
+<div style='color:red'>* Lưu ý: 
+<?php //<li>ZingCredit sẽ không chịu trách nhiệm giải quyết nếu bạn mua không đúng vật phẩm đã xác nhận.</li>?>
+Bạn sẽ không thanh toán được nếu số dư tài khoản nhỏ hơn tổng giá thanh toán.
+</div>
+<?php /**<input type="submit" value="cancel"/>*/?>
+    <?php } ?>
+        <input type="hidden" name="appID" value="<?=$_REQUEST['appID']?>">
+        <input type="hidden" name="userID" value="<?=$this->userID?>">
+        <input type="hidden" name="data" value="<?=$this->data?>">
+	<input type="hidden" name="pToken" value="<?=$this->pToken?>">
+	<input type="hidden" name="refID" value="<?=$tx->refID?>">
+<?php require_once APPLICATION_PATH . 'includes/footer.php';?>

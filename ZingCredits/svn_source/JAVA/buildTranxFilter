@@ -1,0 +1,4 @@
+. /zserver/java/set_env
+ant -f TranxFilter/build.xml -Ddist.jar=dist/TranxFilter.jar jar
+cp -f TranxFilter/dist/TranxFilter.jar /zserver/java/lib/zingcredits/TranxFilter-1.0.0.jar
+

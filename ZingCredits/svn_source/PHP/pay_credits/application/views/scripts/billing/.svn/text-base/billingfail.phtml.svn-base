@@ -1,0 +1,44 @@
+<?php require_once APPLICATION_PATH . 'includes/header1.php';?>
+<div class="right_mexu">
+  	<?php
+  	
+	if($this->billresult=='0'){
+	?>
+	<div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Giao dịch thanh toán thành công.</div>
+	<?php }
+	else{
+	?>
+	<div style='color:red;padding-bottom: 6px;text-align:center;font-size:16px'>Giao dịch thanh toán không thành công:
+	<?php 	
+	
+	switch($this->billresult){
+	  case -2:
+	    echo 'Dữ liệu không hợp lệ';
+	    break;
+	  case -3:
+	    echo 'Bạn không đủ tiền';
+	    break;
+	  case -5:
+	    echo '<br>Ví Zing Me chưa hỗ trợ thanh toán cho ứng dụng "'.$appInfo->appName.'".';
+	    break;
+
+	  default:
+	    echo 'Yêu cầu không hợp lệ';
+	    break;
+
+	}
+?>	  
+</div>
+	<?php }?>
+	<div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Xem lại các <a href="<?=$appcredit_url?>"  target="_blank">giao dịch</a>.</div>
+<br>
+<table width='100%'>
+ 	<tr><td align='center'>
+        <input type="button" class="btsbmzc" value="&nbsp;&nbsp;Đóng&nbsp;&nbsp;" onclick="closePayment()"/></td></table>
+ <script>
+function closePayment(){
+callbackPaymentHelper('<?=$this->billNo?>',2,-2);
+}
+</script>
+<br>
+<?php require_once APPLICATION_PATH . 'includes/footer.php';?>

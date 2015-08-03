@@ -1,0 +1,6 @@
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\bin\Debug\TestApp4_TestHttpRequest.exe.config
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\bin\Debug\TestApp4_TestHttpRequest.exe
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\bin\Debug\TestApp4_TestHttpRequest.pdb
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\obj\Debug\ResolveAssemblyReference.cache
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\obj\Debug\TestApp4_TestHttpRequest.exe
+D:\UserSpace\Projects\TestApp\TestApp4_TestHttpRequest\obj\Debug\TestApp4_TestHttpRequest.pdb

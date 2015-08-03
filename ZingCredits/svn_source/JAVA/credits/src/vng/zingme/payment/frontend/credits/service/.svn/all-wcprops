@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/2708/JAVA/credits/src/vng/zingme/payment/frontend/credits/service
+END
+IndexMobileController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/IndexMobileController.java
+END
+IndexWapController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/IndexWapController.java
+END
+CreditsServerMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/CreditsServerMBean.java
+END
+DepositZingXuController.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn_zingcredits/!svn/ver/2708/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/DepositZingXuController.java
+END
+IndexController.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2706/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/IndexController.java
+END
+CreditsDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/CreditsDaemon.java
+END
+CreditsServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/2706/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/CreditsServer.java
+END
+FixAppUrlsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/2453/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/FixAppUrlsController.java
+END
+ResourceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2178/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/ResourceHandler.java
+END
+CreditsCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/2705/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/CreditsCore.java
+END
+MaintainController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2131/JAVA/credits/src/vng/zingme/payment/frontend/credits/service/MaintainController.java
+END

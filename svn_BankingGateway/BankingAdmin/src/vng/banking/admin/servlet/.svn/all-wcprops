@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/servlet
+END
+Servlet404.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/vng/banking/admin/servlet/Servlet404.java
+END
+LogTasksServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/servlet/LogTasksServlet.java
+END
+TranxByConfirmStatusController.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/servlet/TranxByConfirmStatusController.java
+END
+BaseServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/vng/banking/admin/servlet/BaseServlet.java
+END
+TranxByStatusController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/servlet/TranxByStatusController.java
+END
+StatsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/vng/banking/admin/servlet/StatsServlet.java
+END

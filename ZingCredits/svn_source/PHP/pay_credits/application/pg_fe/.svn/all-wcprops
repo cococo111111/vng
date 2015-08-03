@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe
+END
+Billing.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe/Billing.php
+END
+LastedCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe/LastedCache.php
+END
+MAC.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe/MAC.php
+END
+TokenGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe/TokenGenerator.php
+END
+Warmup.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/application/pg_fe/Warmup.php
+END

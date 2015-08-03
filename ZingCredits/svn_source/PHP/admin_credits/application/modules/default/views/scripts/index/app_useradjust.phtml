@@ -1,0 +1,98 @@
+<div id="centerCont"> 
+		<strong>Payment Admin&gt;&gt; </strong> Account Adjustion
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate?></li></ul>
+<?php 
+}
+?>
+<?php if(isset($this->messages)){?>
+<ul style='color:#009DDC'><li><?=$this->messages?></li></ul>
+<?php }?>
+<br>Nhập thông tin mã user name, số tiền thay đổi(Ví dụ 100 hay -100) và nguyên nhân thay đổi.<br> Có thể <a href='/app/userbalance'><u>Click vào đây</u></a> để kiểm tra số dư tài khoản của User
+<br><br><form action="/app/useradjustsubmit" method="post" name="frmuseradjust" id="frmuseradjust">
+<input type='hidden' name='reason' id='reason'>
+<table>
+<tr>
+  <td>Mã User:   <span class="require">*</span></td>
+  <td><input name='username' id='username'><span style='background:#EFEFEF;color:#009DDC;padding-bottom:2px;padding-right:6px;padding-top:4px;'><input value='1' name='isuid' type='checkbox'><strong>là UserID</strong></span></td>  
+</tr>
+
+<tr>
+  <td>Tăng(Giảm) số Zing Xu:   <span class="require">*</span></td>
+  <td><input id='balance' name='balance'> ZingXu</td>
+</tr>
+<tr><td colspan=2><i>(Ví dụ nhập 100 để tăng 100 XingXu, nhập -100 để giảm 100 ZingXu)</i></td></tr>
+
+
+<tr><td style='height:20px'></td></tr>
+<tr>
+<td colspan='2'><input type='radio' id='type1' name='radio' onclick='disabledForm(this,"nnkngd","nnk")'>Nguyên nhân thay đổi do khiếu nại giao dịch:</td>
+</tr>
+<tr>
+<td colspan='2' style='border:1px dashed #E2D7CE'><table id='nnkngd'>
+<tr>
+	<td>Mã giao dịch:   <span class="require">*</span></td>
+  <td><input name='tranxid' id='tranxid' size='14'></td><td>Ngày giao dịch   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+
+</tr>
+<tr><td/><td colspan='3'><input type='button' onclick='getTranx()' value='Lấy Thông Tin'></td></tr>
+
+<tr>
+<td>Nội dung:</td>
+<td colspan='3'>
+<input type='text' name='reasonseen' id='reasonseen' size='43' readonly>
+</td>
+</tr>
+</table></td>
+</tr>
+<tr><td style='height:20px'></td></tr>
+
+<tr>
+<td colspan='2'><input type='radio' id='type2' name='radio' CHECKED onclick='disabledForm(this,"nnk","nnkngd")'>Nguyên nhân thay đổi khác:</td>
+</tr>
+<tr>
+<td colspan='2' style='border:1px dashed #E2D7CE'><table id='nnk'>
+<tr>
+ <td>Nội dung:   <span class="require">*</span></td>
+  <td colspan='3'><input id='reason2' name='reason2' size='43'></td>
+</tr>
+</table></td>
+</tr>
+
+
+
+<tr>
+  <td></td>
+  <td><input type='submit' value='Submit' onclick='submitCheck()'></td>
+</tr>
+</table>
+</form>
+<script>
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+		$("#nnkngd").find('input').attr('disabled','true');
+			});
+function disabledForm(obj,available,unavailable){
+var this_=$(obj);
+available=$('#'+available);
+unavailable=$('#'+unavailable);
+if(this_.attr('checked')){
+available.find('input').removeAttr('disabled');
+unavailable.find('input').attr('disabled','true');
+}
+}
+function submitCheck(){
+if($('#type1').attr('checked')){
+$('#reason').val($('#reasonseen').val());
+}
+else{
+$('#reason').val($('#reason2').val());
+}
+}
+function getTranx(){
+var tranxID=$('#tranxid').val();var fromdate=$('#fromdate').val();
+$.get('<?=$url?>/app/tranxinfo', { tranxid:tranxID,fromdate: fromdate },
+    function(data){ var array=new Array();eval(data);if(array[0]>0){$('#balance').val(array[0]);$('#reasonseen').val(array[1]);}if(array.length==3){$('#username').val(array[2])};
+});
+}
+	</script>

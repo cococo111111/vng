@@ -1,0 +1,193 @@
+<?php
+$param=$this->param;
+$config = Zend_Registry::get('configuration');
+$url=$config->admin->url;
+?>
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+Thống kê đối soát với ứng dụng trên Ví Zing Me:<br>
+
+<form method='post' action='<?=$url?>/app/reportsubmit'>
+<table><tr><td>Tên Ứng Dụng:</td>
+<td>
+<select name='appid[]' MULTIPLE style='height:150px'>
+<option value='0' <?php if(isset($param['appid']) && in_array("0",$param['appid'])){echo 'selected="selected"';}?>>-- Tất cả --</option>
+<?php
+$uApps = array_keys($this->uApps);
+foreach($uApps as $app){
+?><option value='<?=$app?>' <?php if(isset($param['appid']) && in_array($app,$param['appid'])){echo 'selected="selected"';}?>><?=$this->uApps[$app]?> (<?=$app?>)</option>
+<?php
+}
+
+?>   
+</select>
+</td>
+<td/><td/></tr>
+<tr><td>Từ Ngày   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+<td>Đến Ngày   <span class='require'>*</span></td><td><input type='text' id='todate' name='todate' value='<?=$param['todate']?>'></td></tr>
+<?php /*
+<tr><td>Report được nhóm theo</td><td colspan='3'><input type='radio' name='radiogroup' id='radiogroup' value='1'   <?php if($param['radiogroup']==1){echo 'checked="checked"';}?>>Ngày
+<input type='radio' name='radiogroup' id='radiogroup' value='2'  <?php if($param['radiogroup']==2){echo 'checked="checked"';}?>>Khoảng thời gian
+</td></tr>
+*/?>
+<tr><td></td><td colspan='3'><input type='submit'  name='summary' value='Report' onclick='document.getElementById("page").value=0'></td></tr>
+</table>
+<input type='hidden' id='page' name='page' value='<?=$param['page']?>'>	
+
+<?php /*if(count($this->tranxs)!=0){
+?>
+<input type='submit' value='Cũ Hơn' onclick='document.getElementById("page").value=<?=$param['page']+1?>'>
+<?php }?>
+<?php if($param['page']!=1){?>
+<input type='submit' value='Mới Hơn' onclick='document.getElementById("page").value=<?=$param['page']-1?>'>
+<?php } */?>
+</form>
+<?php if(!empty($this->data)){?>
+<a target='_blank' href='<?=$url?>/app/reportsubmit?export=csv&appid=<?php
+$i=0;
+foreach($param['appid'] as $appid){
+	$i++;
+	echo $appid;
+	if($i<count($param['appid'])){
+	echo ',';
+	}
+}
+?>&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<style>
+.bo{
+background:#CCCCCC;
+color:black;
+}
+.bo td{
+border: 1px dotted white;
+}
+.bo2{
+//background:#EFEFEF;
+color:black;
+text-align:right;
+}
+.bo2 td{
+border: 1px dotted #CCCCCC;
+}
+</style>
+<tbody>
+	<tr class="tabTit bo">
+		   
+                    <td>Ngày</td><td>Tổng ZingXu Nạp</td><td colspan='<?=count($uApps)?>'>ZingXu đã thanh toán theo ứng dụng</td>
+		</tr><tr class='bo'>
+<td></td><td style='text-align:center'><i>(từ Zing Pay)</i></td>
+<?php
+$appchoices=$this->appChoices;
+foreach($appchoices as $app){
+if($app=='zing'||$app=='admin'){continue;}
+?>
+<td><b><?=$app?></b></td>
+<?php }?>
+  	</tr>
+
+<?php
+$data=$this->data;
+$fromDate=$param['fromdate'];
+$toDate=$param['todate'];
+$exeDate=$param['fromdate'];
+while(true){
+$dateData = $data[$exeDate.' 00:00:00'];
+if(empty($dateData)){
+?>
+<tr  class='bo2'><td style='text-align:center'><?=$exeDate?></td><td></td>
+<?php
+foreach($appchoices as $app){
+if($app=='zing'||$app=='admin'){continue;}
+?>
+<td></td>
+
+<?php
+ }
+?>
+</tr>
+<?php
+}
+else{
+?>
+<tr class='bo2'>
+<td style='text-align:center'><?=$exeDate?></td>
+
+
+<?php
+$appAmounts=$data[$exeDate.' 00:00:00'];
+?>
+<td><?=$appAmounts['zing']?></td>
+<?php
+foreach($appchoices as $app){
+if($app=='zing'||$app=='admin'){continue;}
+?>
+<td><?=$appAmounts[$app]==0?'':$appAmounts[$app]?></td>
+
+<?php
+ }
+?>
+</tr>
+<?php
+
+}
+if($exeDate==$toDate){
+break;
+}
+$exeDate=date("Y-m-d",strtotime("+1 day", strtotime($exeDate.' 00:00:00')));
+
+}
+?>
+
+
+
+
+
+
+</tbody>
+</table>
+<a target='_blank' href='<?=$url?>/app/reportsubmit?export=csv&appid=<?php
+$i=0;
+foreach($param['appid'] as $appid){
+	$i++;
+	echo $appid;
+	if($i<count($param['appid'])){
+	echo ',';
+	}
+}
+?>&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+
+<?php }else{
+?>
+<font color='red'>Chưa có data hiển thị</font>
+<?php
+}?>
+<script>
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+	</script>
+
+<script>
+
+function getTranxDetail(tranxID,tranxType,txLocalTime){
+    if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td align='center' ><img src='/images/zing_admin/indicator3.gif'></td>");
+      }
+      else{
+      $('#row_'+tranxID).after("<tr class='temp'><td align='center'><img src='/images/zing_admin/indicator3.gif'></td></tr>");
+      }
+
+    $.get('<?=$url?>/app/tranxbyusersubmit', { ajax:1, tranxid:tranxID,tranxtype:tranxType, localtime: txLocalTime },
+    function(data){
+      if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td></td><td colspan='10' >"+data+"</td>");
+      }else{
+      $('#row_'+tranxID).after("<tr class='temp'><td></td><td colspan='10' >"+data+"</td></tr>");
+      }
+    });
+  }
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+  
+</script>

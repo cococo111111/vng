@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn_bankinggateway/!svn/ver/58/ViettinBankTopupService/src/vng/bankinggateway/worker
+END
+BankingGatewayWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_bankinggateway/!svn/ver/58/ViettinBankTopupService/src/vng/bankinggateway/worker/BankingGatewayWorker.java
+END
+IWorkerRunable.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_bankinggateway/!svn/ver/38/ViettinBankTopupService/src/vng/bankinggateway/worker/IWorkerRunable.java
+END

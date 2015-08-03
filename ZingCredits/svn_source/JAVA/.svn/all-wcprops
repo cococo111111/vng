@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn_zingcredits/!svn/ver/2568/JAVA
+END
+rm_svnfiles
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn_zingcredits/!svn/ver/1225/JAVA/rm_svnfiles
+END
+buildCredits
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn_zingcredits/!svn/ver/2538/JAVA/buildCredits
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn_zingcredits/!svn/ver/2424/JAVA/build
+END
+buildCreditsMail
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/2480/JAVA/buildCreditsMail
+END
+buildTranxFilter
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/2518/JAVA/buildTranxFilter
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn_zingcredits/!svn/ver/2424/JAVA/clean
+END
+buildd
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_zingcredits/!svn/ver/2424/JAVA/buildd
+END

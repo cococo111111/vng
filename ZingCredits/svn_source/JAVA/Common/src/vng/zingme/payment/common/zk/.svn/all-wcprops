@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1441/JAVA/Common/src/vng/zingme/payment/common/zk
+END
+ZKUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1441/JAVA/Common/src/vng/zingme/payment/common/zk/ZKUtil.java
+END
+MultiServerZookeeper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/zk/MultiServerZookeeper.java
+END

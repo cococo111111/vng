@@ -1,0 +1,81 @@
+
+server   LIVE/DEV
+sv-1: 10.30.22.158/135 
+sv-2: 10.30.22.153/138
+sv-3: 10.30.22.155/140
+
+PROJECTS_SOURCE:
+/zserver/japps/zingcredits/
+
+DEPLOY_PATH(jar file):
+/zserver/java/lib/zingcredits/
+
+sv-1:
+	Service			Project					Start/stop Cmd					Service-type
+
+ActiveMQ			      	(thirdparty)									(java)
++ Credits(Web)		credits					13_start/stop_credits						java JETTY-Web server
++ PayCredits(Web)	pay-credits				11_start/stop_pay-credits					java JETTY-Web server
+XCache				(service Mr Nam)								(c++ process)
+Memcache		(memcache)											(c++ process)
++ BE_Bill			PaymentZKBackEnd			6_start/stop_PaymentZKBackEnd_bill		(java process)
+ZK(1)				(thirdparty)										(java)
++ BalCache			AccountBalanceCache		3_start/stop_AccountBalanceCache				java process
++ PG_Bill			PaymentGateway			7_start/stop_PaymentGateway					java process
++ LatestTXCache		LatestTranxCache			4_start/stop_LatestTranxCache					java process
+
+
+sv-2: 
+    Service			Project					Start/stop Cmd					Service-type
+
++ BE_Push			PaymentZKBackEnd			5_start/stop_PaymentZKBackEnd_push			java process
++ AppService		PaymentAppsService			8_start/stop_PaymentAppsService					java process
++ AdminService		PaymentAdmin				12_start_PaymentAdmin						java process
+ZK(3)				(thirdparty)										(java process)
++ PG_Push			PaymentGateway			sh ./ws/start					/zserver/java/apache-tomcat-7.0.8/webapps/axis2.war
++ Storage			Storage					2_start/stop_Storage					java process
++ TokenService		TokenServer				1_start/stop_TokenServer					java process
+
+
+sv-3:
+	Service			Project					Start/stop Cmd					Service-type
+
+ZK(2)				(thirdparty)										(java process)
++ Report(Java)		PaymentReport				9_start/stop_PaymentReport					java process
++ GetBalance(Web)	pay-credits-balance			10_start/stop_paycreditsBalance						java process
++ Report(Web)		PHP/app_credits												java JETTY-Web server
+Scriber				(log)
++ AdminTool(Web)	PHP/admin_credits											PHP
+
+
+
+SERVER_BUILD:
+10.30.22.135
+
+Cac buoc update service:
+>>> edit source
+>>> sync source
+
+>>> sync project.properties (Neu co update reference ...)
+>>> buidd
+>>> sync jar qua hai server con lai
+(135->138)(135-140)
+sudo rsync -aurv 10.30.22.135:/zserver/java/lib/zingcredits/* 10.30.22.138:/zserver/java/lib/zingcredits/
+>> . /zserver/java/set_env
+>> stop -> start
+
+
+Problem: Tang mem PG_Push
+>>> update PG_Push
+
+
+
+Note:
+Kiem tra version trong file run GIONG version da build
+
+
+Bill log file (sv-1):
+pay-credits.log
+pg.log
+zkbackend_bill.log
+

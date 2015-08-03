@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Validate/Db
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Validate/Db/Abstract.php
+END
+NoRecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Validate/Db/NoRecordExists.php
+END
+RecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Validate/Db/RecordExists.php
+END

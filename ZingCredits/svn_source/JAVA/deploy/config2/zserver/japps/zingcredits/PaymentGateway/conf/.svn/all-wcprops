@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/2218/JAVA/deploy/config2/zserver/japps/zingcredits/PaymentGateway/conf
+END
+paymentgateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn_zingcredits/!svn/ver/2218/JAVA/deploy/config2/zserver/japps/zingcredits/PaymentGateway/conf/paymentgateway.config
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn_zingcredits/!svn/ver/1225/JAVA/deploy/config2/zserver/japps/zingcredits/PaymentGateway/conf/config.xml
+END
+scribe.ini
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn_zingcredits/!svn/ver/1225/JAVA/deploy/config2/zserver/japps/zingcredits/PaymentGateway/conf/scribe.ini
+END

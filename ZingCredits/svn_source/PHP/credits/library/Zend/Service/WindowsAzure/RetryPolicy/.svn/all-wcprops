@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/WindowsAzure/RetryPolicy
+END
+RetryPolicyAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/WindowsAzure/RetryPolicy/RetryPolicyAbstract.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/WindowsAzure/RetryPolicy/Exception.php
+END
+NoRetry.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/WindowsAzure/RetryPolicy/NoRetry.php
+END
+RetryN.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/WindowsAzure/RetryPolicy/RetryN.php
+END

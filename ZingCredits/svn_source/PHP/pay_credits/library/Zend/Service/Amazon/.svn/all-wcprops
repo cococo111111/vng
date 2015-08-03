@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Query.php
+END
+Sqs.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Sqs.php
+END
+Ec2.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Ec2.php
+END
+ListmaniaList.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/ListmaniaList.php
+END
+OfferSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/OfferSet.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Image.php
+END
+CustomerReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/CustomerReview.php
+END
+S3.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/S3.php
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/ResultSet.php
+END
+EditorialReview.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/EditorialReview.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Exception.php
+END
+Item.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Item.php
+END
+SimilarProduct.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/SimilarProduct.php
+END
+Offer.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Offer.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Abstract.php
+END
+Accessories.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/Amazon/Accessories.php
+END

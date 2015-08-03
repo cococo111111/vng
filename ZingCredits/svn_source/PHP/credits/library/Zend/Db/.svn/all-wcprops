@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db
+END
+Statement.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Statement.php
+END
+Table.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Table.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Exception.php
+END
+Expr.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Expr.php
+END
+Select.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Select.php
+END
+Profiler.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Db/Profiler.php
+END

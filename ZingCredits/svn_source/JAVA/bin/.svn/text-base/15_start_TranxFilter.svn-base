@@ -1,0 +1,22 @@
+#!/bin/sh
+
+. ./set_env
+PROJECT=TranxFilter
+JAR=$PROJECT-1.0.0.jar
+MAINCLASS=com.vng.zing.credits.tranxfilter.ZAppDaemon
+
+PIDFILE=pid_$PROJECT
+APPENV=staging
+
+CURDIR=`pwd`
+HOME=$CURDIR/../$PROJECT
+CONF=$HOME/conf
+
+CLASSPATH=$DEPLOY_DIR/$JAR
+for jar in $HOME/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+#java -cp $CLASSPATH -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=4444,suspend=n -Dzname=$PROJECT -Dport=8020 -Dmaxthread=100 -Dconfig=$CONF -Dappenv=$APPENV -Dapppath=$HOME $MAINCLASS &
+java -cp $CLASSPATH -Dzname=$PROJECT -Dport=8050 -Dmaxthread=100 -Dconfig=$CONF -Dappenv=$APPENV -Dapppath=$HOME $MAINCLASS &
+/bin/echo -n $! > $PIDFILE

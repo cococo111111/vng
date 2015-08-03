@@ -1,0 +1,57 @@
+<div class="right_mexu">
+ {{credits-info}}
+ <style type="text/css" >
+  table.billing THEAD td{
+   background:none repeat scroll 0 0 #486fa6;
+   color:white;
+  }
+ </style>
+ <table class='billing' border="1" style='width:100%;border-collapse:collapse;border-color:#E7E7E7' cellpadding="5px">
+  <THEAD><td width="40%" align="center"><b>{{billing-table-column1}}</b></td><td width="20%" align="center"><b>{{billing-table-column2}}</td>
+  <td width="20%" align="center"><b>{{billing-table-column3}}</b></td><td width="20%" align="center"><b>{{billing-table-column4}}</b></td></THEAD>
+  {{#ITEM}}
+  <tr><td align='center'>{{billing-table-column5}} <strong>{{ITEMNAME}}</strong></td><td align='center'>{{QUANTITY}}</td><td align="center">{{PRICE}}</td>
+   <td align="center"><b><span class='yel zc-iconzc'>{{AMOUNT}}</span></b></td></tr>
+  {{/ITEM}}
+  <tr><td colspan='3' align='right' style='font-weight:bold'>{{billing-table-column6}}:</td><td align="center"><b><span class='yel zc-iconzc'>{{PAYTOTAL}}</span></b></td></tr>
+ </table>
+ <br>
+ <table width='100%'>
+  <tr>
+      <td align='center'>
+          {{#ADDMONEY}}
+          <p style="color: red">
+              Bạn không đủ Zing Xu để thực hiện giao dịch này
+          </p>
+          <input type='button' class="btsbmzc" value='Nạp thêm Zing Xu' onclick="goDeposit('{{SYSTEM_CREDITS_URL}}/v2/deposit?_t={{_t}}');">
+          {{/ADDMONEY}}
+          {{#BILL}}
+          <input type="submit" class="btsbmzc" value="Xác Nhận"/>    
+          {{/BILL}}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="btsbmzc" value="&nbsp;&nbsp;Hủy&nbsp;&nbsp;" onclick="closePayment()"/>
+      </td>
+ </table>
+ <br>
+ <script type="text/javascript" >
+  function closePayment(){
+   callbackPaymentHelper('{{REFID}}',1,-1);
+  }
+  function goDeposit(url){
+   var url_redirect = encodeURIComponent(window.location);
+        url = url + "&url_redirect="+url_redirect;
+        window.location.href = url;
+  }
+  
+ </script>
+ <div style='color:red'>{{billing-footer}} </div>
+
+ <input type="hidden" name="appID" value="{{APPID}}">
+ <input type="hidden" name="userID" value="{{USERID}}">
+ <input type="hidden" name="data" value="{{DATA}}">
+ <input type="hidden" name="pToken" value="{{PTOKEN}}">
+ <input type="hidden" name="refID" value="{{REFID}}">
+ <input type="hidden" name="_v" value="{{MEVERSION}}">
+ <input type="hidden" name="_t" value="{{_t}}">
+ <input type="hidden" name="_url" value="{{_url}}">
+<input type="hidden" name="_type" value="{{VIEWTYPE}}">
+</div>

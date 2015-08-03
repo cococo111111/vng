@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt
+END
+Rsa.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt/Rsa.php
+END
+DiffieHellman.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt/DiffieHellman.php
+END
+Hmac.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt/Hmac.php
+END
+Math.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt/Math.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Crypt/Exception.php
+END

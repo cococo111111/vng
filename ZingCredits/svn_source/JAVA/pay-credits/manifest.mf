@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.3
+Created-By: 1.7.0_05-b05 (Oracle Corporation)
+Main-Class: vng.zingme.payment.frontend.credits.service.CreditsDaemon
+Class-Path: /zserver/java/lib/zingcredits/Util-1.0.jar /zserver/java/l
+ ib/zingcredits/Common-1.6.jar /zserver/java/lib/clhm-production-depre
+ cated-0.1.jar /zserver/java/lib/jetty/jetty-continuation-7.1.6.v20100
+ 715.jar /zserver/java/lib/jetty/jetty-http-7.1.6.v20100715.jar /zserv
+ er/java/lib/jetty/jetty-io-7.1.6.v20100715.jar /zserver/java/lib/jett
+ y/jetty-jmx-7.1.6.v20100715.jar /zserver/java/lib/jetty/jetty-server-
+ 7.1.6.v20100715.jar /zserver/java/lib/jetty/jetty-servlet-7.1.6.v2010
+ 0715.jar /zserver/java/lib/jetty/jetty-util-7.1.6.v20100715.jar /zser
+ ver/java/lib/commons-cli-1.1.jar /zserver/java/lib/commons-codec-1.2.
+ jar /zserver/java/lib/commons-collections-3.2.1.jar /zserver/java/lib
+ /commons-configuration-1.6.jar /zserver/java/lib/commons-lang-2.5.jar
+  /zserver/java/lib/commons-io-1.4.jar /zserver/java/lib/commons-loggi
+ ng-1.1.1.jar /zserver/java/lib/commons-pool-1.5.5.jar /zserver/java/l
+ ib/high-scale-lib-1.0.jar /zserver/java/lib/libthrift-0.5.0.jar /zser
+ ver/java/lib/log4j-1.2.14.jar /zserver/java/lib/slf4j-api-1.5.8.jar /
+ zserver/java/lib/perf4j-0.9.12.jar /zserver/java/lib/slf4j-log4j12-1.
+ 5.8.jar /zserver/java/lib/servlet-api-2.5.jar /zserver/java/lib/sw/zc
+ ypher/jzcypher-sw-1.0.jar /zserver/java/lib/thrift/stdprofile/vng.std
+ profile-1.0.jar /zserver/java/lib/hapax-2.3.4.jar /zserver/java/lib/z
+ m_corelib/vng.zingpackages-hugelistint-1.0.jar /zserver/java/lib/memc
+ ached-2.5.jar /zserver/java/lib/zm_corelib/ZME_JCoreLib-1.0.jar /zser
+ ver/java/lib/zm_corelib/vng.zingpackages-vngauth-1.0.jar /zserver/jav
+ a/lib/thrift/scribe/vng.scribe.thrift-0.1.jar /zserver/java/lib/sw/zc
+ ommon/jzcommon-sw-1.0.jar /zserver/java/lib/thrift/stdprofile2/jzcomm
+ on-thrift-1.0.jar /zserver/java/lib/thrift/stdprofile2/jstdprofile2-t
+ hrift-1.0.jar /home/lentd/ZingCredits/svn_source/JAVA/pay-credits/bui
+ ld/classes
+

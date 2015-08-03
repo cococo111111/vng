@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_bankinggateway/!svn/ver/2/BankingStorage/conf
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/2/BankingStorage/conf/log4j.properties
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_bankinggateway/!svn/ver/2/BankingStorage/conf/config.xml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client
+END
+ServerIntrospection.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/ServerIntrospection.php
+END
+ServerProxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/ServerProxy.php
+END
+IntrospectException.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/IntrospectException.php
+END
+FaultException.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/FaultException.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/Exception.php
+END
+HttpException.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/XmlRpc/Client/HttpException.php
+END

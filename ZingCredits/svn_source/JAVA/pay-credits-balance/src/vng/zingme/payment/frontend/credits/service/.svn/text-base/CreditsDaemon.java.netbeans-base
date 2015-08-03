@@ -1,0 +1,42 @@
+package vng.zingme.payment.frontend.credits.service;
+
+import java.io.File;
+
+import vng.wte.common.LogUtil;
+
+
+
+public class CreditsDaemon {
+	
+		
+	public static void main(String[] args) throws Exception {
+		LogUtil.init();
+		CreditsServer webserver = new CreditsServer();
+		
+		String pidFile = System.getProperty("pidfile");
+
+		try {
+			if (pidFile != null) {
+				new File(pidFile).deleteOnExit();
+			}
+			if (System.getProperty("foreground") == null) {
+				System.out.close();
+				System.err.close();
+			}
+			webserver.start();
+		
+		} catch (Throwable e) {
+//			String msg = "Exception encountered during startup.";
+//			logger_.error(msg, e);
+//	
+//			// try to warn user on stdout too, if we haven't already detached
+//			System.out.println(msg);
+//			logger_.error("Uncaught exception: " + e.getMessage());
+	
+			System.exit(3);
+		}
+		
+		
+	}
+	
+}

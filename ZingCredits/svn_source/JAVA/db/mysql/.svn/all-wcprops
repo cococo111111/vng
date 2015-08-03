@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn_zingcredits/!svn/ver/1225/JAVA/db/mysql
+END
+grant.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn_zingcredits/!svn/ver/1225/JAVA/db/mysql/grant.sql
+END
+revoke.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn_zingcredits/!svn/ver/1225/JAVA/db/mysql/revoke.sql
+END

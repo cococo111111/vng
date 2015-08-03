@@ -1,0 +1,16 @@
+[APP]
+domain      =   http://tranxfilter.zing.vn
+resource    =   /zserver/japps/zingcredits/TranxFilter/static
+
+[MYSQL]
+driver      =   com.mysql.jdbc.Driver
+host        =   10.30.22.155
+port        =   3306
+username    =   zingcredits
+password    =   2jn9cr3d1t5wy52l
+dbname      =   zingcredits
+
+[USER]
+sign_key    =   sdaklfjdsslkajflkjslkfjalks
+sysadmin    =   1
+admin       =   2

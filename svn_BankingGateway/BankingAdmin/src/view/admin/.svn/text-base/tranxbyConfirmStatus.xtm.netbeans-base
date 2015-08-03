@@ -1,0 +1,86 @@
+<script src="http://widget.me.zing.vn/js/zingme_widget_ex_1.3.min.js"></script>
+Thống kê giao dịch <br>
+{{message}}
+<form method='post' action='tranxbyConfirmStatus'>
+        <table>
+                <tr>
+                        <td>Ngày <span class='require'>*</span></td><td><input type='text' id='viewdate' name='viewdate' value="{{viewdate}}"></td>
+                </tr>
+
+                <tr><td>Confirm Status: </td>
+                        <td colspan="3">
+                                <select id="status" name="status">
+                                        <option value="-1"> --Tất cả-- </option>
+                                        <option value="0"> Pending </option>
+                                        <option value="1">Success</option>
+                                        <option value="2">Error</option>
+                                        <option value="3">Network Error</option>
+                                        <option value="4">Failed</option>
+                                </select>
+                        </td>
+                </tr>
+
+                <tr><td>BANK :</td>
+                    <td colspan="3">
+                        <select id="bankCode" name="bankCode">
+                            <option value="0">--Tất cả--</option>
+                            <option value="HDBANK">HDBANK</option>
+                            <option value="VIETTIN">VIETTIN</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr><td></td><td colspan='3'><input type='submit'  name='summary' value='Thống Kê Chi Tiết' onclick='document.getElementById("page").value = 0'></td></tr>
+        </table>
+        <input type="hidden" value="" name="page" id="page">
+        {{#NEWER}}
+        <input type="submit" onclick="document.getElementById('page').value = {{page}} + 1" value="Mới hơn">
+        {{/NEWER}}
+        {{#OLDER}}
+        <input type="submit" onclick="document.getElementById('page').value = {{page}} - 1" value="Cũ Hơn">
+        {{/OLDER}}
+</form>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mainTab">
+        <tbody>
+                <tr>
+                        <td width="10%" class="tabTit">TxID</td>
+                        <td width="5%" class="tabTit">TxType</td>
+                        <td width="10%" class="tabTit">Time</td>
+                        <td width="8%" class="tabTit">Username</td>
+                        <td width="8%" class="tabTit">AgencyCode</td>
+                        <td width="8%" class="tabTit">ProviderCode</td>
+                        <td width="5%" class="tabTit">RefID</td>
+                        <td width="9%" class="tabTit">Amount</td>
+                        <td width="10%" class="tabTit">ClientIP</td>
+                        <td width="5%" class="tabTit">Status</td>
+                        <td width="8%" class="tabTit">ResponseCode</td>
+                        <td width="8%" class="tabTit">ConfirmStatus</td>
+                </tr>
+                {{#TRANX}}
+                <tr id='row_{{txID}}' class ={{class}}>
+                        <td align='center'>{{txID}}</td>
+                        <td align='center'>{{txType}}</td>
+                        <td align='center'>{{time}}</td>
+                        <td align='center'>{{userName}}</td>
+                        <td align='center'>{{agencyCode}}</td>
+                        <td align='center'>{{providerCode}}</td>
+                        <td align='center'>{{refID}}</td>
+                        <td align='center'>{{amount}}</td>
+                        <td align='center'>{{clientIP}}</td>
+                        <td align='center'>{{txStatus}}</td>
+                        <td align='center'>{{responseCode}}</td>
+                        <td align='center'>{{confirmStatus}}</td>
+                </tr>
+                {{/TRANX}}
+
+        </tbody>
+</table>
+
+<script>
+                                $(function() {
+                                $("#viewdate").datepicker({dateFormat: 'yy-mm-dd'});
+                                $("#todate").datepicker({dateFormat: 'yy-mm-dd'});
+                        });
+</script>
+

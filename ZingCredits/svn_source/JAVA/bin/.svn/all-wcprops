@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn_zingcredits/!svn/ver/2520/JAVA/bin
+END
+9_stop_PaymentReport
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/9_stop_PaymentReport
+END
+exportOldData20110426_20110713
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/exportOldData20110426_20110713
+END
+15_stop_TranxFilter
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_zingcredits/!svn/ver/2517/JAVA/bin/15_stop_TranxFilter
+END
+php_importer_0426_to_0628.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/2066/JAVA/bin/php_importer_0426_to_0628.sh
+END
+13_start_credits
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_zingcredits/!svn/ver/2487/JAVA/bin/13_start_credits
+END
+9_start_PaymentReport
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/9_start_PaymentReport
+END
+8_stop_PaymentAppsService
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/8_stop_PaymentAppsService
+END
+stopall
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn_zingcredits/!svn/ver/1826/JAVA/bin/stopall
+END
+4_stop_LatestTranxCache
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/4_stop_LatestTranxCache
+END
+startall
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn_zingcredits/!svn/ver/1225/JAVA/bin/startall
+END
+6_stop_PaymentZKBackEnd_bill
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/2351/JAVA/bin/6_stop_PaymentZKBackEnd_bill
+END
+11_stop_pay-credits
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_zingcredits/!svn/ver/2375/JAVA/bin/11_stop_pay-credits
+END
+1_stop_TokenServer
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/1_stop_TokenServer
+END
+2_start_Storage
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/2_start_Storage
+END
+1_start_TokenServer
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/1_start_TokenServer
+END
+13_stop_credits
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn_zingcredits/!svn/ver/2343/JAVA/bin/13_stop_credits
+END
+exportOldData20110426_20110523
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1621/JAVA/bin/exportOldData20110426_20110523
+END
+startsrv1
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_zingcredits/!svn/ver/1826/JAVA/bin/startsrv1
+END
+14_stop_CreditsMail
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_zingcredits/!svn/ver/2479/JAVA/bin/14_stop_CreditsMail
+END
+startsrv2
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_zingcredits/!svn/ver/1814/JAVA/bin/startsrv2
+END
+guide_start
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn_zingcredits/!svn/ver/1814/JAVA/bin/guide_start
+END
+startsrv3
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn_zingcredits/!svn/ver/1815/JAVA/bin/startsrv3
+END
+3_stop_AccountBalanceCache
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/3_stop_AccountBalanceCache
+END
+exportOldData20110426_20110628
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/exportOldData20110426_20110628
+END
+14_start_CreditsMail
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2479/JAVA/bin/14_start_CreditsMail
+END
+10_stop_paycreditsBalance
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/10_stop_paycreditsBalance
+END
+5_stop_PaymentZKBackEnd_push
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/2427/JAVA/bin/5_stop_PaymentZKBackEnd_push
+END
+15_start_TranxFilter
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2520/JAVA/bin/15_start_TranxFilter
+END
+3_start_AccountBalanceCache
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/3_start_AccountBalanceCache
+END
+8_start_PaymentAppsService
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/8_start_PaymentAppsService
+END
+5_start_PaymentZKBackEnd_push
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/2427/JAVA/bin/5_start_PaymentZKBackEnd_push
+END
+7_stop_PaymentGateway
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/7_stop_PaymentGateway
+END
+10_start_paycreditsBalance
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/10_start_paycreditsBalance
+END
+2_stop_Storage
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/2_stop_Storage
+END
+4_start_LatestTranxCache
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/4_start_LatestTranxCache
+END
+12_stop_PaymentAdmin
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/12_stop_PaymentAdmin
+END
+6_start_PaymentZKBackEnd_bill
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/2433/JAVA/bin/6_start_PaymentZKBackEnd_bill
+END
+7_start_PaymentGateway
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/7_start_PaymentGateway
+END
+11_start_pay-credits
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2375/JAVA/bin/11_start_pay-credits
+END
+guide_stop
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_zingcredits/!svn/ver/1225/JAVA/bin/guide_stop
+END
+set_env
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn_zingcredits/!svn/ver/1225/JAVA/bin/set_env
+END
+12_start_PaymentAdmin
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/2220/JAVA/bin/12_start_PaymentAdmin
+END

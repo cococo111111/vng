@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<excludes>
+		<pattern>/META-INF/*</pattern>
+		<pattern>/index</pattern>
+		<pattern>/js/*</pattern>
+		<pattern>/jsp/*</pattern>
+		<pattern>/WEB-INF/decorators/taglib.jsp</pattern>
+		
+	</excludes>
+
+	<decorator name="layout" page="/WEB-INF/decorators/layout.jsp">
+		<pattern>/app/*</pattern>
+		<pattern>/admin/*</pattern>
+		<pattern>/report/*</pattern>
+		<pattern>/layout</pattern>
+		<pattern>/personal/*</pattern>
+		<pattern>/superadmin/*</pattern>
+		<pattern>/reportsum/*</pattern>
+		<pattern>/reportdetail/*</pattern>
+	<!-- 	<pattern>/*</pattern> -->
+	</decorator>
+
+</decorators>

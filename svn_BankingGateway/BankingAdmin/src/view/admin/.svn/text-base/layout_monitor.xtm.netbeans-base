@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+                <link href="http://adm.zing.vn/css/zing_admin/page.css" rel="stylesheet" type="text/css"/>
+                <link href="http://adm.zing.vn/css/zing_admin/formapi.css" rel="stylesheet" type="text/css"/>
+                <link href="http://adm.zing.vn/css/zing_admin/screen.css" rel="stylesheet" type="text/css"/>
+                <link href="http://adm.zing.vn/css/zing_admin/jquery-calendar.css" rel="stylesheet" type="text/css"/>
+                <link href="http://adm.zing.vn/css/date_range_picker/jquery-ui-1.7.1.custom.css" rel="stylesheet" type="text/css"/>
+                <script type="text/javascript" src="http://adm.zing.vn/js/jquery-1.4.2.js"></script>
+                <script type="text/javascript" src="http://adm.zing.vn/js/date_range_picker/jquery-ui-1.7.1.custom.min.js"></script>
+                <script type="text/javascript" src="http://adm.zing.vn/js/jquery-calendar.js"></script>
+                <script type="text/javascript" src="http://adm.zing.vn/js/md5/jquery.md5.js"></script>
+
+        </head>
+        <body>
+                <div id="wrapper">
+                        <div id="header">
+                                <div style="text-align: left;">
+                                        <a title="Banking Admin">
+                                                <img id="logo" src="/images/zing_admin/logo_zingcredits.png" alt="Banking Admin"/>
+                                        </a>
+                                </div>
+                                <div style="width: 100%;" id="header-status" class="clear-block">
+                                        Hi {{name}} !
+                                        <a href="">[Logout]</a>
+                                        <a href="">[Change Password]</a>
+                                </div>
+                        </div>
+
+                        <div id="container">
+                                <!-- left menu -->
+                                <div id="sidebar-left">
+                                        <h2>Banking Administrator</h2>
+                                        <div id="admin_menu">
+                                                <ul class="menu">
+                                                        <li class="expanded"><a href="/monitor/tranxbyStatus">tranxbyStatus</a></li>
+                                                        <li class="expanded"><a href="/monitor/tranxbyConfirmStatus">tranxbyConfirmStatus</a></li>
+                                                        <li class="expanded"><a href="/logTasks">Task Manager</a></li>
+                                                        
+                                                </ul>
+                                        </div>
+                                </div>
+                                <!-- end left menu -->
+                                <div id="content">
+                                        <div id="centerCont">
+
+                                                {{>tranxbyConfirmStatus}}
+                                                {{>tranxbyStatus}}
+                                                {{>logTask}}
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>

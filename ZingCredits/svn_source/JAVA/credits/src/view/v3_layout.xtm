@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{{CREDITS_TITLE}}</title>
+		<meta http-equiv="description" content="" />
+		<meta http-equiv="keywords" content="" />
+		<link href="{{STATIC_URL}}/layout/css/credits-1.0.css" rel="stylesheet" type="text/css" />
+		<link href="{{STATIC_URL}}/layout/css/screen-1.0.css" rel="stylesheet" type="text/css" />
+		<link href="{{STATIC_URL}}/layout/css/dhtmlwindow-1.0.css" rel="stylesheet" type="text/css" />
+		<link href="{{STATIC_URL}}/layout/css/catmenu-{{CSSVERSION}}.css" rel="stylesheet" type="text/css" />
+
+		<script>
+			var zme_avatar_width=75;
+			var zme_avatar_heigth = 75;
+			var zme_avatar_tag = "span";
+			var zme_avatar_size = "160";
+		</script>
+		<script src="http://widget.me.zing.vn/v3/js/zmwg-3.06.min.js"></script>
+		<script type="text/javascript" src="http://static.me.zing.vn/zmjs/zmCore-1.31.min.js" ></script>
+		<script type="text/javascript" src="http://static.me.zing.vn/v3/js/zm.xcall-1.01.js" ></script>
+	</head>
+	<body>
+		
+		<div class="title-pub"> <span class="txt"><a href="#"><span class="name" id='fn_{{USERID}}'></span></a></span><span class=" skin icon"></span> <span class="txt">Quản lý Ví Zing Me</span><div class="clr"></div></div>
+		<div id="credit">
+			<div class="desc">
+				<p class="name"></p>
+				<p>Số dư tài khoản:</p>
+				<p class="yel"><span class="zc-ico1 bgs"></span> {{BALANCE}}</p>
+			</div>
+			<div class="conR">
+				<p><b>Ví Zing Me</b> hỗ trợ thanh toán cho các ứng dụng trên Zing Me. <br>
+				<b>Ví Zing Me</b> bảo đảm an toàn, tiện lợi, bảo mật thanh toán và nhanh chóng giúp bạn thỏa sức khám phá các ứng dụng tuyệt vời trên Zing Me. [<a href="http://me.zing.vn/b/credits.support" target="_blank"> Xem thêm ...</a>] <br>
+                                <b>Thẻ Zing đã mua, ZingXu đã nạp không được trả lại trong bất kỳ trường hợp nào.</b>
+                                <br>                                    
+                                </p>
+				<div class="mt8">
+					<span class="zc-ico2 bgs">Bạn có thể: </span>
+					<span class="zc-ico3 bgs"><a target="_blank" href="https://pay.zing.vn/zingxu/doizingxu.zingcredit.html"> Chuyển Zing Xu về Ví Zing Me</a> |</span> <span class="zc-ico4 bgs">
+						<a href="https://pay.zing.vn/zingxu/index.html" target="_blank"> Nạp Zing Xu</a> | </span><span><a href="http://me.zing.vn/b/credits.support?t=fp_credits.support" target="_blank">Xem trợ giúp tại đây</a></span>
+					<br class="clr">
+				</div>
+			</div>
+			
+			<div class="clr"></div>
+			
+			<!--Tabs menu-->
+			{{>v3_layout_tabs}}
+			<!--End of Tabs menu-->
+			
+			{{#TRANXS}}
+			{{>v3_tranxs}}
+			{{/TRANXS}}
+                        
+                        {{#SMS}}
+			{{>sms_info}}
+			{{/SMS}}
+
+			<table width="100%" class="mt8">
+				<tbody>
+					<tr>
+						<td width="50%" align="left"><a href="http://me.zing.vn/bi/credits.support/index/showinfo?v=blog" target="_blank">Hướng dẫn</a>  | <a href="http://me.zing.vn/b/credits.support?t=fp_credits.support" target="_blank">Câu hỏi thường gặp</a> | <a href="http://me.zing.vn/b/credits.support?t=fp_credits.support" target="_blank">Báo lỗi</a></td>
+						<td width="50%" align="right">Đường dây nóng: <b>1900.561.558</b></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="clr"></div><script type="text/javascript">zm.ready(function(){zmXCall.resizeParent("credits");zwg.addItem("fn_{{USERID}}" ,"ZMED_{{USERID}}?id=1&l=3&m=1");zwg.fillWg();});</script>
+	</body>
+</html>

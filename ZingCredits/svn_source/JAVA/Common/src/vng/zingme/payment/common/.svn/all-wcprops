@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/2730/JAVA/Common/src/vng/zingme/payment/common
+END
+ResponseCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/ResponseCode.java
+END
+ZKBackEndType.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/ZKBackEndType.java
+END
+TClientPoolConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1706/JAVA/Common/src/vng/zingme/payment/common/TClientPoolConfig.java
+END
+CommonDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/2730/JAVA/Common/src/vng/zingme/payment/common/CommonDef.java
+END
+ScriberUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/ScriberUtil.java
+END
+PaymentZKStatValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/PaymentZKStatValue.java
+END
+VerifyCardCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/2726/JAVA/Common/src/vng/zingme/payment/common/VerifyCardCode.java
+END
+PaymentCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1225/JAVA/Common/src/vng/zingme/payment/common/PaymentCode.java
+END
+PaymentReturnCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1249/JAVA/Common/src/vng/zingme/payment/common/PaymentReturnCode.java
+END
+AppInfoCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1997/JAVA/Common/src/vng/zingme/payment/common/AppInfoCache.java
+END

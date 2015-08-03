@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/2504/JAVA/CreditsMail/src/com/vng/zing/credits/report/mail
+END
+ZAppDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/2475/JAVA/CreditsMail/src/com/vng/zing/credits/report/mail/ZAppDaemon.java
+END
+CreditsMail.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/2497/JAVA/CreditsMail/src/com/vng/zing/credits/report/mail/CreditsMail.java
+END
+ZAppServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/2493/JAVA/CreditsMail/src/com/vng/zing/credits/report/mail/ZAppServer.java
+END
+ZAppServerMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_zingcredits/!svn/ver/2475/JAVA/CreditsMail/src/com/vng/zing/credits/report/mail/ZAppServerMBean.java
+END

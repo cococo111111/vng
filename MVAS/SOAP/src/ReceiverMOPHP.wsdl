@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:receivermo" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:receivermo">
+<types>
+<xsd:schema targetNamespace="urn:receivermo">
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/"/>
+</xsd:schema>
+</types>
+<message name="moReceiveRequest">
+  <part name="MO_ID" type="xsd:int"/>
+  <part name="userID" type="xsd:string"/>
+  <part name="serviceID" type="xsd:string"/>
+  <part name="commandCode" type="xsd:string"/>
+  <part name="message" type="xsd:string"/>
+  <part name="operator" type="xsd:string"/>
+  <part name="partnerUsername" type="xsd:string"/>
+  <part name="partnerPassword" type="xsd:string"/>
+  <part name="requestTime" type="xsd:string"/></message>
+<message name="moReceiveResponse">
+  <part name="return" type="xsd:int"/></message>
+<portType name="ReceiverMOPortType">
+  <operation name="moReceive">
+    <documentation>Return code to the caller</documentation>
+    <input message="tns:moReceiveRequest"/>
+    <output message="tns:moReceiveResponse"/>
+  </operation>
+</portType>
+<binding name="ReceiverMOBinding" type="tns:ReceiverMOPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="moReceive">
+    <soap:operation soapAction="urn:receivermo#moReceive" style="rpc"/>
+    <input><soap:body use="encoded" namespace="urn:receivermo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="urn:receivermo" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+</binding>
+<service name="ReceiverMO">
+  <port name="ReceiverMOPort" binding="tns:ReceiverMOBinding">
+    <soap:address location="http://localhost/nusoap/ReceiverMO.php"/>
+  </port>
+</service>
+</definitions>

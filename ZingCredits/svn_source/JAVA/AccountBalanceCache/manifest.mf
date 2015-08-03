@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.3
+Created-By: 1.7.0_05-b05 (Oracle Corporation)
+Main-Class: vng.zingme.payment.cache.accountbalance.AccBalCacheMain
+Class-Path: /zserver/java/lib/libthrift-0.5.0.jar /zserver/java/lib/lo
+ g4j-1.2.14.jar /zserver/java/lib/clhm-production-deprecated-0.1.jar /
+ zserver/java/lib/zookeeper/zookeeper-3.3.2.jar /zserver/java/lib/comm
+ ons-pool-1.5.5.jar /zserver/java/lib/zingcredits/Common-1.6.jar /zser
+ ver/java/lib/zingcredits/Util-1.0.jar /home/lentd/ZingCredits/svn_sou
+ rce/JAVA/AccountBalanceCache/build/classes /zserver/java/lib/slf4j-ap
+ i-1.5.8.jar /zserver/java/lib/slf4j-log4j12-1.5.8.jar /zserver/java/l
+ ib/commons-logging-1.1.1.jar
+

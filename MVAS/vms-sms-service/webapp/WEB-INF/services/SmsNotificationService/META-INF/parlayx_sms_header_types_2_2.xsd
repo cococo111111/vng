@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:parlayx_sms_header_xsd="http://www.huawei.com.cn/schema/common/v2_1" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.huawei.com.cn/schema/common/v2_1">
+    <xsd:element name="NotifySOAPHeader" type="parlayx_sms_header_xsd:NotifySOAPHeader"/>
+    <xsd:complexType name="NotifySOAPHeader">
+        <xsd:sequence>
+            <xsd:element name="spRevId" type="xsd:string"/>
+            <xsd:element name="spRevpassword" type="xsd:string"/>
+            <xsd:element name="spId" type="xsd:string"/>
+            <xsd:element name="serviceId" type="xsd:string"/>
+            <xsd:element name="timeStamp" type="xsd:string"/>
+            <xsd:element name="traceUniqueID" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="RequestSOAPHeader" type="parlayx_sms_header_xsd:RequestSOAPHeader"/>
+    <xsd:complexType name="RequestSOAPHeader">
+        <xsd:sequence>
+            <xsd:element name="spId" type="xsd:string"/>
+            <xsd:element name="spPassword" type="xsd:string"/>
+            <xsd:element name="serviceId" type="xsd:string"/>
+            <xsd:element name="timeStamp" type="xsd:string"/>
+            <xsd:element name="OA" type="xsd:string"/>
+            <xsd:element name="FA" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

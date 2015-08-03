@@ -1,0 +1,28 @@
+[MYSQL]
+driver      =   com.mysql.jdbc.Driver
+host        =   10.30.22.138
+port        =   3306
+username    =   staging
+password    =   urubHnJAL8UAES
+dbname      =   zingcredits
+
+[COMPENSATION]
+host        =   10.30.22.138
+port        =   10118
+sig         =   4IUVwjb1R9OBP2W7EDSsByeECeznZtH+QoHImp+xD6Adkj9JryDclfAOf4wrGyo2
+reason      =   Hoàn tiền GD lúc %s - Mã GD: %s
+
+[XCACHE]
+host        =   localhost
+port        =   10091
+auth        =   l@t35ttx
+
+[STORAGE]
+host        =   localhost
+port        =   9702
+
+[COMPENSATE]
+sig         =   4IUVwjb1R9OBP2W7EDSsByeECeznZtH+QoHImp+xD6Adkj9JryDclfAOf4wrGyo2
+;list compensate account by appid
+appID       = test
+userID        =   67919172

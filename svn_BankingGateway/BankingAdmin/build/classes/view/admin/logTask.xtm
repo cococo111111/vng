@@ -1,0 +1,71 @@
+<script>
+    function loadXMLDoc(TaskId)
+    {
+        var xmlhttp;
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function()
+        {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+            {
+                //                                        alert(TaskId.toString());
+                switch (TaskId.toString()) {
+                    case "DOISOAT_HD_BANK":
+                        document.getElementById("DOISOAT_HD_BANK").innerHTML = xmlhttp.responseText;
+                        break;
+                    case "DOISOAT_ESALE":
+                        document.getElementById("DOISOAT_ESALE").innerHTML = xmlhttp.responseText;
+                        break;
+                    case "PENDING":
+                        document.getElementById("PENDING").innerHTML = xmlhttp.responseText;
+                        break;
+                    case "RUN_RECONFIRM":
+                        document.getElementById("RUN_RECONFIRM").innerHTML = xmlhttp.responseText;
+                        break;
+                    case "DAILY_UPDATE":
+                        document.getElementById("DAILY_UPDATE").innerHTML = xmlhttp.responseText;
+                        break;
+                }
+                window.location.reload();
+            }
+        }
+        xmlhttp.open("POST", "/logTasks?taskId="+TaskId, true);
+        xmlhttp.send();
+    }
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mainTab">
+    <tbody>
+        <tr>
+            <td width="15%" class="tabTit">TaskId</td>
+            <td width="15%" class="tabTit">TaskName</td>
+            <td width="5%" class="tabTit">Status</td>
+            <td width="15%" class="tabTit">Date</td>
+            <td width="15%" class="tabTit">StartTime</td>
+            <td width="15%" class="tabTit">EndTime</td>
+            <td width="10%" class="tabTit">isRerun</td>
+        </tr>
+                                
+        {{#list_section}}
+        <tr>
+            <td>{{TaskId}}</td>
+            <td align='center'>{{TaskName}}</td>
+            <td align='center'>{{Status}}</td>
+            <td align='center'>{{Date}}</td>
+            <td align='center'>{{StartTime}}</td>
+            <td align='center'>{{EndTime}}</td>
+            <td align='center'>{{Check}}</td>
+            {{#ReRun}}
+            <td><text id="{{TaskId}}"></td>
+            <td><button id="hor-minimalist-b" name="runBtn" onclick="loadXMLDoc('{{TaskId}}')">rerun</button></td>
+             {{/ReRun}}
+        </tr>
+        {{/list_section}}
+    </tbody>
+</table>
+

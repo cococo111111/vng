@@ -1,0 +1,84 @@
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate[0]?></li></ul>
+<?php 
+}
+//var_dump($this->userData);die();
+?>
+<form name="frmCreateUser" id="frmCreateUser" action="editusersubmit" method="post">
+<table class="mainTab" width="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">ID Đăng nhập</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="txtUserName" id="txtUserName"
+				type="hidden" value='<?=$this->userData['txtUserName']?>'><input name="appidold" id="appidold"
+				type="hidden" value='<?=$this->userData['appid']?>'><label><?=$this->userData['txtUserName']?></td>
+		</tr>
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">Tên Admin</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="txtName" id="txtName"
+				style="width: 200px;" maxlength="50" title="Please Enter Name"
+				class="required" type="text" value='<?=$this->userData['txtName']?>'></td>
+		</tr>		
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">Quyền quản lý</label><span
+				class="require">*</span></td>
+			<td class="hligh2">
+<input type='radio' name='gbn' id='gbn1' <?=$this->userData['adminflg']!="0"?"checked":""?> onclick='refresh()' value='1'> <u>Quản lý theo nhóm:</u><br>
+<table style='padding-left:20px' id='nhomtb'><tr><td><input type='radio' name='nhom' value='1' <?=$this->userData['adminflg']=="1"?"checked":""?>> Nhóm 1 : Xem tất cả</td><td style='padding-left:20px'><input type='radio' name='nhom' value='2' <?=$this->userData['adminflg']=="2"?"checked":""?>> Nhóm 2 : Xem tất cả - [ZingPay + Admin]</td></tr></table>
+
+<input type='radio' name='gbn' onclick='refresh()' value='2' <?=$this->userData['adminflg']=="0"?"checked":""?>><u>Quản lý theo ứng dụng:</u><br>
+
+<table id='udtb'>
+				    <?php 
+					$i=0;
+				      foreach($this->allApps as $app){					
+					if(($i%3)==0){
+					?>
+					<tr>
+					<?php	
+					}
+					?><td><input <?= isset($this->userData['appid'][''.$app->appID])?" checked='checked' ":"";?> type="checkbox" name="appid[]" value='<?=$app->appID?>' /> <?=$app->appName?> (<?=$app->appID?>)</td>
+					<?php
+					if(($i%3)==2){
+					?>
+					</tr>
+					<?php
+					}
+					$i++;
+				      }
+				    ?> 
+</table>
+
+				   
+<br><u>Quản lý khác:</u><br>
+<input <?= isset($this->userData['appid']['credits_report'])?" checked='checked' ":"";?> type="checkbox" name="appid[]" value='credits_report' /><b>Xem Report(Xem thống kê đối soát các game quản lý)</b>
+
+</td>
+		</tr>
+		
+		<tr>
+			<td class="hligh2"></td>
+			<td class="hligh2"><input name="btnCreate" id="btnCreate"
+				value="Thay Đổi Tài Khoản Này" class="button" type="submit"></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+<script>
+$(document).ready(function() {
+refresh();
+});
+function refresh(){
+if($('#gbn1').attr('checked')){
+$('#udtb input').attr('disabled','true').attr("checked",false);
+$('#nhomtb input').removeAttr('disabled');
+}
+else{
+$('#nhomtb input').attr('disabled','true').attr("checked",false);
+$('#udtb input').removeAttr('disabled');
+}
+}
+</script>

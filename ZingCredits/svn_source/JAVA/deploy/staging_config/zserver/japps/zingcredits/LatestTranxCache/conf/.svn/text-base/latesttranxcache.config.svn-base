@@ -1,0 +1,20 @@
+#Configuation for latesttranxcache service
+
+##########################################################################
+#latest-cache info
+
+latestPort=5121
+
+#cache-size in byte
+cachesize=4000000
+#cache for 1 user
+cacheonuser=10
+
+##########################################################################
+xcacheHost=10.30.22.135
+xcachePort=10091
+
+##########################################################################
+reportHost=10.30.22.140
+reportPort=10116
+

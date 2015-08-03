@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn_zingcredits/!svn/ver/2630/JAVA/credits/conf
+END
+app_urls.ini
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/2630/JAVA/credits/conf/app_urls.ini
+END
+staging.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/conf/staging.config.ini
+END
+production.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/2077/JAVA/credits/conf/production.log4j.ini
+END
+development.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/conf/development.config.ini
+END
+development.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/conf/development.log4j.ini
+END
+production.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/conf/production.config.ini
+END
+staging.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_zingcredits/!svn/ver/2601/JAVA/credits/conf/staging.log4j.ini
+END

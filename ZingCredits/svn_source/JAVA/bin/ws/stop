@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sh /zserver/java/apache-tomcat-7.0.8/bin/shutdown.sh

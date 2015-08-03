@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/storage/client
+END
+BankingStorageClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/storage/client/BankingStorageClient.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/storage/client/Command.java
+END
+BankingStorageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_bankinggateway/!svn/ver/36/BankingStorage/src/vng/bankinggateway/storage/client/BankingStorageTest.java
+END
+BankingStorageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_bankinggateway/!svn/ver/2/BankingStorage/src/vng/bankinggateway/storage/client/BankingStorageFactory.java
+END

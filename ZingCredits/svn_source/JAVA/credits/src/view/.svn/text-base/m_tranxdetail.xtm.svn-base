@@ -1,0 +1,40 @@
+{{>m_header}}
+{{#TRANXS_FOUND}}
+<div id="content">
+	<div class="subnav snzme"><strong>Mã giao dịch: {{TX_ID}}</strong></div>
+<div id="page">
+
+	<div class="paging"><span class="clr2">{{TX_TIME}}</span></div>
+         <div class="cont01 wcomt">
+             <div class="num02"><img src="{{STATIC_URL}}/images/{{IMAGE}}" alt="" /></div>
+             <div class="trans02">
+                Ứng dụng: {{TX_APPNAME}} <br/>
+                Giá trị giao dịch: <strong>{{TX_AMOUNT}} Zing Xu </strong><br/>
+                Trạng thái:
+{{#TX_DXL}}
+<span class="transwait">đang chờ xử lý</span>
+{{/TX_DXL}}
+{{#TX_TC}}
+<span class="transok">Thành công</span>
+{{/TX_TC}}
+{{#TX_TB}}
+<span class="transfail">Thất bại</span>
+{{/TX_TB}}
+<br><br>
+Loại: {{#NAPTIEN}}Nạp tiền{{/NAPTIEN}}{{#CHUYENTIEN}}Chuyển tiền{{/CHUYENTIEN}}{{#TANGTIEM}}Tặng tiền{{/TANGTIEM}}{{#THANHTOAN}}Thanh toán{{/THANHTOAN}}{{#HOANTIEN}}Hoàn tiền{{/HOANTIEN}}{{#THEMTIEN}}Thêm tiền{{/THEMTIEN}}{{#GIAMTIEN}}Giảm tiền{{/GIAMTIEN}}<br/>
+Mô tả: {{#DETAIL_NAPTIEN}}Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_NAPTIEN}}{{#DETAIL_CHUYENTIEN}}Được Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_CHUYENTIEN}}{{#DETAIL_TANGTIEN}}Được tặng <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_TANGTIEN}}{{#DETAIL_THANHTOAN}}Mua {{TX_ITEMQUANTITIES}} <b>{{TX_ITEMNAMES}}</b> tốn <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu{{/DETAIL_THANHTOAN}}{{#DETAIL_HOANTIEN}}Được hoàn lại <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu{{/DETAIL_HOANTIEN}}{{DETAIL_OTHER_DESC}}
+</div></div>
+{{/TRANXS_FOUND}}
+  <div class="oldfeed">
+{{#BEFORE}}
+		<span class="navleft">« <a href="{{CREDITS_URL}}/m{{TX_DETAIL_BACK_URL}}">Trước</a> &nbsp; &nbsp;</span>
+{{/BEFORE}}
+{{#AFTER}}
+		<span class="navright"><a href="{{CREDITS_URL}}/m{{TX_DETAIL_NEXT_URL}}">Sau</a> »</span>
+{{/AFTER}}
+    </div>
+
+
+</div><!-- page -->
+</div>
+{{>m_footer}}

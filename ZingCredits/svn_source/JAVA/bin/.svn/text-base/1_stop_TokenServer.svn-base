@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. ./set_env
+PROJECT=TokenServer
+JAR=$PROJECT-1.5.jar
+PIDFILE=pid_$PROJECT
+
+if [ -e "$PIDFILE" ]
+then
+kill -9 $(cat "$PIDFILE")
+rm "$PIDFILE"
+else
+echo "No pid file."
+fi
+

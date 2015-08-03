@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1221/PHP/pay_credits/library/Zing/Token/Cache
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zing/Token/Cache/Adapter.php
+END
+Memcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1221/PHP/pay_credits/library/Zing/Token/Cache/Memcache.php
+END

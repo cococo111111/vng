@@ -1,0 +1,84 @@
+#Configuation for ZKBackEnd service
+
+##########################################################################
+#zookeeper-server info
+
+zkHostPort.1=10.30.22.135:2183
+zkHostPort.2=10.30.22.140:2184
+zkHostPort.3=10.30.22.138:2185
+zkTimeOut=3000
+
+##########################################################################
+#working-path
+
+vng.zingme.payment.pull.tranx.path=/vng/zingme/payment/pull/tranx
+
+vng.zingme.payment.push.tranx.path=/vng/zingme/payment/push/tranx
+
+vng.zingme.payment.bill.tranx.path=/vng/zingme/payment/bill/tranx
+
+
+##########################################################################
+#zkBackEnd-service info
+
+zkBEPort=4118
+
+#server-type: 1 for pull, 2 for push, 3 for bill, 0 for all (not implement yet)
+zkBEServerType=3
+
+##########################################################################
+#listen-node
+
+zkZMNodeStat=stat
+
+
+##########################################################################
+#storage-service info
+
+storageHost=10.30.22.138
+storagePort=9702
+
+
+##########################################################################
+#latest-cache info
+
+latestHost=10.30.22.135
+latestPort=5121
+
+
+##########################################################################
+#accbal-cache info
+
+accbalHost=10.30.22.135
+accbalPort=5131
+
+##########################################################################
+#queue-info
+
+#mapzk-queuesize
+modelqueuesize=2097152
+
+recyclezkqueuesize=1024
+updatecachequeuesize=1024
+
+
+##########################################################################
+#in seconds
+covermissinterval=5
+
+##########################################################################
+#num-extern-main-worker
+externworkers=15
+
+
+##########################################################################
+#event - mode: 0 using watcher-event; else: using thrift (call one-way)
+eventmode=1
+
+
+##########################################################################
+multithreads_mode=0
+
+##########################################################################
+adminHost=10.30.22.138
+adminPort=10114

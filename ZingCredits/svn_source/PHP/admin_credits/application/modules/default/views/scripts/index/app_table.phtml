@@ -1,0 +1,68 @@
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+	<tr>
+	    <td class="tabTit" width="5%">#</td>
+	    <td class="tabTit" width="5%">AppId</td>
+		<td class="tabTit" width="20%">App Name</td>
+		<?php /*<td class="tabTit" width="10%">Desc</td>	*/?>
+		<?php /*<td class="tabTit" width="10%">App URL</td>*/?>
+		<?php /*<td class="tabTit" width="10%">App Logo</td>*/?>		
+		<td class="tabTit" width="10%">App RestURL</td>
+		<td class="tabTit" width="30%">Key</td>		
+		<td class="tabTit" width="30%">Action</td>
+  	</tr>
+<?php 
+//var_dump($this->allApps);
+for($i=0;$i<count($this->allApps);$i++){//continue;
+	$app=$this->allApps[$i];
+	?>
+<tr class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>">
+	    <td><?=$i+1?></td>
+	    <td><a href='#' onclick='printApp("<?=$app->appID?>","<?=$app->appName?>","<?=$app->appDes?>","<?=$app->appURL?>","<?=$app->key1?>","<?=$app->key2?>","<?=$app->restURL?>")'><?=$app->appID?></a></td>
+		<td><?=$app->appName?></td>
+		<?php /*<td><?=$app->appDes?></td>	*/?>
+		<?php /*<td><?=$app->appURL?></td>*/?>
+		<?php /*<td><?=$app->iconPath?></td>*/?>
+		<td><?=$app->restURL?></td>
+		<td>Key1:<?=$app->key1?><br>
+		Key 2:<?=$app->key2?></td>
+		
+	        <td>
+		<a href='whitelist?appid=<?=$app->appID?>' title='WhiteList for this App'>[WL]</a>
+	        <?php
+	        if($app->isEnabled=='1'){
+		  ?>
+		  <a href='change?appid=<?=$app->appID?>&isEnable=0'>[Disable]</a>
+		  <?php
+	        }
+	        if($app->isEnabled=='0'){
+		  ?>
+		  <a href='change?appid=<?=$app->appID?>&isEnable=1'>[Enable]</a>
+		  <?php
+	        }
+	        ?>
+	        <a href='changeapp?appid=<?=$app->appID?>'>[Update]</a>		
+	       </td>
+	     
+  	</tr>
+<?php
+}
+?>
+</tbody>
+</table>
+<script>
+function printApp(appid,appname,appdesc,appurl,appkey1,appkey2,appresturl){
+var s="Ví Zing Me - Registered Application:\n";
+s+="Application ID: "+appid+"\n";
+s+="Application Name: "+appname+"\n";
+s+="Application Description: "+appdesc+"\n";
+s+="Application URL: "+appurl+"\n";
+s+="Application Secret Key 1: "+appkey1+"\n";
+s+="Application Secret Key 2: "+appkey2+"\n";
+s+="Application Result Update URL: "+appresturl+"\n";
+alert(s);
+}
+</script>
+

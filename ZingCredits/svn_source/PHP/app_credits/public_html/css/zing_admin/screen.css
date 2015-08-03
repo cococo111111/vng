@@ -1,0 +1,76 @@
+.clear {
+	clear:both;
+	height:1px;
+}
+
+/*center content*/
+#centerCont { 
+	width:98%; 
+	margin:10px 0 10px 0; 
+	float:left;
+}
+#centerCont span { 
+	font-size:10px; color:#FF0000; 
+}
+#centerCont a { 
+	font-weight:bold ;
+}
+#centerCont .mainTab {
+	border-bottom:1px solid #DDDDDD; border-right:1px solid #DDDDDD; 
+}
+#centerCont .mainTab a { 
+	text-decoration:underline; 
+}
+#centerCont .mainTab a:hover { 
+	text-decoration:none; 
+}
+#centerCont .mainTab input { 
+	margin:0 0 4px 0; 
+}
+.tabTit {
+	background:none repeat scroll 0 0 #E3E3E3;color:black;
+	 padding:6px 0 0px 0; font-weight:bold; text-align:center; 
+}
+.hligh1 {
+	border-left:1px solid #DDD; background:#FFFFFF; padding:3px;
+}
+.hligh2 {
+	border-left:1px solid #DDD; background:#F1F1F1; padding:3px;
+}
+.hlight3 { 
+	text-align:center; 
+}
+
+label { width: 10em; float: left; }
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+
+/*Khanv update*/
+div.search-first {
+	float:left;
+	width:100px;
+}
+
+div.search-second {
+	float:left;
+	width:200px;
+}
+
+div.search{
+	clear:both;
+	/*position:relative;*/
+	width:100%;
+}
+
+tr.profanity td{
+	border-left:1px solid #DDD; background:#EED5B7; padding:3px;
+}
+
+div.divErr
+{	
+	color: red;
+	/*font-weight: bold;*/
+}
+
+/*view point change log*/
+.Curpage{  text-decoration: underline; }
+.NotCurpage{  text-decoration: none; }

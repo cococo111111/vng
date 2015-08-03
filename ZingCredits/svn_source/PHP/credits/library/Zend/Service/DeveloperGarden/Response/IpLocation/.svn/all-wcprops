@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation
+END
+RegionType.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/RegionType.php
+END
+GeoCoordinatesType.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/GeoCoordinatesType.php
+END
+IPAddressLocationType.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/IPAddressLocationType.php
+END
+CityType.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/CityType.php
+END
+LocateIPResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/LocateIPResponse.php
+END
+LocateIPResponseType.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Service/DeveloperGarden/Response/IpLocation/LocateIPResponseType.php
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_zingcredits/!svn/ver/2680/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service
+END
+CreditsServerMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn_zingcredits/!svn/ver/1335/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service/CreditsServerMBean.java
+END
+CreditsDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn_zingcredits/!svn/ver/2680/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service/CreditsDaemon.java
+END
+CreditsServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn_zingcredits/!svn/ver/1788/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service/CreditsServer.java
+END
+CreditsCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn_zingcredits/!svn/ver/1335/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service/CreditsCore.java
+END
+BalanceController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn_zingcredits/!svn/ver/2680/JAVA/pay-credits-balance/src/vng/zingme/payment/frontend/credits/service/BalanceController.java
+END

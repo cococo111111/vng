@@ -1,0 +1,23 @@
+<?php require_once APPLICATION_PATH . 'includes/header1.php';?>
+<div class="right_mexu">
+  	<?php
+	if($this->billresult=='0'){
+	?>
+	<div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Giao dịch thanh toán thành công.</div>
+	<?php }
+	else{
+	?>
+	<div style='color:red;padding-bottom: 6px;text-align:center;font-size:16px'>Giao dịch thanh toán không thành công: <?php if($this->billresult=='-2'):?>Dữ liệu không hợp lệ<?php elseif($this->billresult=='-3'):?>Bạn không đủ tiền<?php else:?>Yêu cầu không hợp lệ<?php endif;?></div>
+	<?php }?>
+	<div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Xem lại các <a href="<?=$appcredit_url?>" target="_blank">giao dịch</a>.</div>
+<br>
+<table width='100%'>
+ 	<tr><td align='center'>
+        <input type="button" class="btsbmzc" value="&nbsp;&nbsp;Đóng&nbsp;&nbsp;" onclick="closePayment();"/></td></table>
+ <script>
+function closePayment(){
+callbackPaymentHelper('<?=$tx->refID?>',1,-2);
+}
+</script>
+<br>
+<?php require_once APPLICATION_PATH . 'includes/footer.php';?>

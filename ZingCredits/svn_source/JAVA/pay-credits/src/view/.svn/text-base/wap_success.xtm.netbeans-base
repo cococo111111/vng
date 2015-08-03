@@ -1,0 +1,10 @@
+<div id='billresult' style='color:green;padding-bottom: 6px;font-size:16px'>
+	 Hệ thống đã thực hiện giao dịch của bạn
+</div>
+
+<div class="cont01"><a href="{{CREDITSURL}}/wap">
+    	Xem lại lịch sử giao dịch
+    </a></div>
+<div class="paging">
+    	<a href='{{APPFULLURL}}'><input type='button' class="btnsubmit2" value='Đóng lại'></a>
+    </div>

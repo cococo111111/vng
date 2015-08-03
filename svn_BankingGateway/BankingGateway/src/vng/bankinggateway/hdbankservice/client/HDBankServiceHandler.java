@@ -1,0 +1,61 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vng.bankinggateway.hdbankservice.client;
+
+import org.apache.axis2.transport.http.HTTPConstants;
+import org.apache.axis2.transport.http.HttpTransportProperties;
+import org.apache.log4j.Logger;
+import vng.bankinggateway.common.util.CommonDef;
+import vng.bankinggateway.hdbankservice.stub.OnlinePaymentServiceStub;
+import vng.bankinggateway.util.InitUtil;
+
+/**
+ *
+ * @author root
+ */
+public class HDBankServiceHandler {
+
+    private String url = "";
+    private static HDBankServiceHandler instance = null;
+     private static Logger log = Logger.getLogger("systemActions");
+
+    public HDBankServiceHandler(String url) {
+        this.url = url;
+    }
+
+    public static HDBankServiceHandler getInstance(String url) {
+        if (instance == null) {
+            instance = new HDBankServiceHandler(url);
+        }
+
+        return instance;
+    }
+
+    public String callOnlinePaymentService(String requestStr) {
+        try {
+            OnlinePaymentServiceStub stub = new OnlinePaymentServiceStub(this.url);
+            HttpTransportProperties.ProxyProperties proxyProperties =
+                    new HttpTransportProperties.ProxyProperties();
+            proxyProperties.setProxyName(InitUtil.PROXY_HOST);
+            proxyProperties.setProxyPort(InitUtil.PROXY_PORT);
+            stub._getServiceClient().getOptions().setProperty(HTTPConstants.HTTP_PROTOCOL_VERSION, HTTPConstants.HEADER_PROTOCOL_10);
+
+            // comment out because of unused proxy for HDBANK
+            if (!InitUtil.PROXY_HOST.contains("noproxy")) {
+                stub._getServiceClient().getOptions().setProperty(HTTPConstants.PROXY, proxyProperties);
+            }
+            OnlinePaymentServiceStub.ReqExecute reqExecute = new OnlinePaymentServiceStub.ReqExecute();
+            reqExecute.setReqExecuteGet(requestStr);
+            OnlinePaymentServiceStub.ReqExecuteResponse reqExecuteResponse = stub.reqExecute(reqExecute);
+
+            return reqExecuteResponse.getReqExecuteReturn();
+
+        } catch (Exception ex) {
+            log.error(ex.getMessage());
+            return CommonDef.INVALID_CONNECTION;
+        }
+
+    }
+}

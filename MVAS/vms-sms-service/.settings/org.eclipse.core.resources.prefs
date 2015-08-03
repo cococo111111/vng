@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/_interface/SmsNotification.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationBindingStub.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationService.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationServiceLocator.java=UTF-8

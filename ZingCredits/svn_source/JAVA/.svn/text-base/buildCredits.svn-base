@@ -1,0 +1,4 @@
+. /zserver/java/set_env
+ant -f credits/build.xml -Djavac.debug=true -Ddist.jar=dist/credits.jar
+cp -f credits/dist/credits.jar /zserver/java/lib/zingcredits/credits-1.5.3.jar
+

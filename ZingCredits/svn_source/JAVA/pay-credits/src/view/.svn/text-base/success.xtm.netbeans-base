@@ -1,0 +1,66 @@
+<div class="right_mexu">
+    <style type="text/css" >
+        table.billing THEAD td{
+            background:none repeat scroll 0 0 #486fa6;
+            color:white;
+        }
+        table.billing td{
+            text-align:center;
+        }
+        .box_mexu {
+            background: none repeat scroll 0 0 #F2F4F7;
+            border: 1px solid #C9D5E2;
+            margin-top: 15px;
+            padding: 5px;
+            width: 98%;
+        }
+    </style>
+
+   <div  id='billresult'>
+        <div style='text-align:center;font-size:14px;color:#F47B20'><i>{{billing-success-waiting}}</i>
+            <br><br><img alt="Ví Zing Me - Hệ Thống Thanh Toán An Toàn Trên Zing Me"  src='{{STATIC_URL}}/images/loading_small.gif'><br><br>
+        </div>
+    </div>
+    <div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Xem lại các <a href="{{CREDITSURL}}"  target="_blank">giao dịch</a>.</div>
+    <br>
+    <table width='100%'>
+        <tr><td align='center'>
+                <input type="button" class="btsbmzc" value="&nbsp;&nbsp;Đóng&nbsp;&nbsp;" onclick="closePayment()"/></td></table>
+    <script type="text/javascript" >
+        responseValue=1;
+        function closePayment(){
+            callbackPaymentHelper('{{REFID}}',2,responseValue);
+        }
+
+        function billmonitor(){
+            zm.post('{{BILLSTATUS_URL}}/billing/billstatus',
+            {"appID":"{{APPID}}",'refID':"{{TRANXID}}"},
+            function(data){
+                if(data.length==1){
+                    renderBill(data);
+                }
+                else{
+                    window.setTimeout("billmonitor()",1000);
+                }
+
+            });
+        }
+        function renderBill(data){
+            var html=new Array();
+            if(data=='1'){
+                responseValue=0;
+                html.push('<div style="color:green;padding-bottom: 6px;text-align:center;font-size:16px">{{billing-success-success}}.</div>');
+            }
+            else{
+                responseValue=-2;
+                html.push('<div style="color:red;padding-bottom: 6px;text-align:center;font-size:16px">{{billing-success-unsuccess}}.</div>');
+            }
+            zm('#billresult').html(html.join(''));
+        }
+        zm.ready(function(){
+            window.setTimeout("billmonitor()",1000);
+        });
+
+    </script>
+    <br>
+</div>

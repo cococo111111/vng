@@ -1,0 +1,54 @@
+{{>m_header}}
+
+<div id="content">
+<div id="page">
+  <div id="userbox">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+            <tbody><tr>
+                <td class="bavatar">
+<img width="75" height="75" src="{{AVATA}}" alt="{{USERNAME}}" onerror="this.src='http://widget.me.zing.vn/images/75.gif';">
+</td>
+                <td class="userinfo">
+                  <div class="fname">{{DISPLAYNAME}}</div>
+                    <div class="subtxt">Đang có: <span class="point"><strong>{{BALANCE}} <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_zxu.png" alt="" width="24" height="24" /></strong></span></div>
+                </td>
+            </tr>
+
+        </tbody></table>
+  </div>
+    <div class="cont01">
+        <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_exchange.png" alt="" /> <a href="https://pay.zing.vn/zingxu/doizingxu.zingcredit.html">Chuyển Zing Xu về Ví Zing Me</a>
+    </div>
+    <div class="cont01">
+        <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_add.png" alt="" /> <a href="https://pay.zing.vn/zingxu/index.html">Nạp thêm Zing Xu</a></div>
+
+    <div class="cont01">
+        <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_transaction.png" alt="" /> <a href="{{CREDITS_URL}}/m{{TX_URL}}">Xem lịch sử giao dịch</a>
+    </div>
+    <div class="paging">
+        <strong>Ví Zing Me</strong> hỗ trợ việc thanh toán cho các ứng dụng trên Zing Me trở nên đơn giản và thuận tiện hơn
+    </div>
+	<div class="head03">Game/Ứng dụng đang dùng Ví Zing Me</div>
+
+	<div class="cont01">
+        {{#APP}}
+    	<div class="cont10">
+        	<p><img src="{{STATIC_URL}}/images/{{IMAGE}}" alt="" /></p><p>{{NAME}}</p>
+        </div>
+        {{/APP}}
+        
+        <div class="oldfeed">
+            {{#BEFORE}}
+            <span class="navleft">« <a href="{{CREDITS_URL}}/m?page={{PREPAGE}}">Trước</a> &nbsp; &nbsp;</span>
+            {{/BEFORE}}
+            {{#AFTER}}
+            <span class="navright"><a href="{{CREDITS_URL}}/m?page={{NEXTPAGE}}">Sau</a> »</span>
+            {{/AFTER}}
+        </div>
+        <br class="clear"/>
+    </div>
+    
+</div>
+</div>
+{{>m_footer}}

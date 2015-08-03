@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web
+Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>Apache-Axis</display-name>
+    
+    <listener>
+        <listener-class>org.apache.axis.transport.http.AxisHTTPSessionListener</listener-class>
+    </listener>
+    
+  <servlet>
+    <servlet-name>AxisServlet</servlet-name>
+    <display-name>Apache-Axis Servlet</display-name>
+    <servlet-class>
+        org.apache.axis.transport.http.AxisServlet
+    </servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Log4jInit</servlet-name>
+    <servlet-class>com.vng.rmt.server.Log4jInit</servlet-class>
+    <init-param>
+      <param-name>ReceiverMT_config_file</param-name>
+      <param-value>WEB-INF/config-log.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Log4jInitN</servlet-name>
+    <servlet-class>com.vng.rmtn.server.Log4jInit</servlet-class>
+    <init-param>
+      <param-name>ReceiverMT_config_file</param-name>
+      <param-value>WEB-INF/config-logn.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+
+  <servlet>
+	<servlet-name>ZPLog4jInit</servlet-name> 
+	<servlet-class>com.vng.zrmt.server.Log4jInit</servlet-class> 
+		<init-param>
+			<param-name>ReceiverZP_config_file</param-name> 
+		  	<param-value>WEB-INF/ZP_config-log.xml</param-value> 
+		</init-param>
+	<load-on-startup>1</load-on-startup> 
+   </servlet>
+
+  <servlet>
+	<servlet-name>ADSLog4jInit</servlet-name> 
+	<servlet-class>com.vng.ads.server.Log4jInit</servlet-class> 
+		<init-param>
+			<param-name>ReceiverADS_config_file</param-name> 
+		  	<param-value>WEB-INF/ADS_config-log.xml</param-value> 
+		</init-param>
+	<load-on-startup>1</load-on-startup> 
+   </servlet>
+
+
+  <servlet>
+    <servlet-name>VMGLog4jInit</servlet-name>
+    <servlet-class>com.vng.vmg.server.Log4jInit</servlet-class>
+    <init-param>
+      <param-name>ReceiverMT_config_file</param-name>
+      <param-value>WEB-INF/VMG_config-log.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>VOTINGLog4jInit</servlet-name>
+    <servlet-class>com.vng.voting.server.Log4jInit</servlet-class>
+    <init-param>
+      <param-name>Voting_config_file</param-name>
+      <param-value>WEB-INF/VOTING_config-log.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <display-name>Axis Admin Servlet</display-name>
+    <servlet-class>
+        org.apache.axis.transport.http.AdminServlet
+    </servlet-class>
+    <load-on-startup>100</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SOAPMonitorService</servlet-name>
+    <display-name>SOAPMonitorService</display-name>
+    <servlet-class>
+        org.apache.axis.monitor.SOAPMonitorService
+    </servlet-class>
+    <init-param>
+      <param-name>SOAPMonitorPort</param-name>
+      <param-value>5001</param-value>
+    </init-param>
+    <load-on-startup>100</load-on-startup>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>ServletConfigurator</servlet-name>
+    <servlet-class>org.logicalcobwebs.proxool.configuration.ServletConfigurator</servlet-class>
+    <init-param>
+      <param-name>propertyFile</param-name>
+      <param-value>WEB-INF/smsgw_database.config</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>  
+
+  <servlet-mapping>
+    <servlet-name>AxisServlet</servlet-name>
+    <url-pattern>/servlet/AxisServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AxisServlet</servlet-name>
+    <url-pattern>*.jws</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AxisServlet</servlet-name>
+    <url-pattern>/services/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SOAPMonitorService</servlet-name>
+    <url-pattern>/SOAPMonitor</url-pattern>
+  </servlet-mapping>
+
+ <!-- uncomment this if you want the admin servlet -->
+ <!--
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/servlet/AdminServlet</url-pattern>
+  </servlet-mapping>
+ -->
+
+    <session-config>
+        <!-- Default to 5 minute session timeouts -->
+        <session-timeout>5</session-timeout>
+    </session-config>
+
+    <!-- currently the W3C havent settled on a media type for WSDL;
+    http://www.w3.org/TR/2003/WD-wsdl12-20030303/#ietf-draft
+    for now we go with the basic 'it's XML' response -->
+  <mime-mapping>
+    <extension>wsdl</extension>
+     <mime-type>text/xml</mime-type>
+  </mime-mapping>
+  
+
+  <mime-mapping>
+    <extension>xsd</extension>
+    <mime-type>text/xml</mime-type>
+  </mime-mapping>
+
+  <welcome-file-list id="WelcomeFileList">
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jws</welcome-file>
+  </welcome-file-list>
+
+</web-app>

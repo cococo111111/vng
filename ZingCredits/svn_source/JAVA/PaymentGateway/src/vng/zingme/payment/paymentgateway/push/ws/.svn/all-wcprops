@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws
+END
+YTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/YTransaction.java
+END
+GetMoney_out.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetMoney_out.java
+END
+GetUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetUser.java
+END
+ZTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/ZTransaction.java
+END
+AddMoneyResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoneyResponse.java
+END
+AddMoneyServiceStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoneyServiceStub.java
+END
+ExtensionMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/ExtensionMapper.java
+END
+XTransactionE.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XTransactionE.java
+END
+XGetSumOutputE.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetSumOutputE.java
+END
+ZTransactionE.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/ZTransactionE.java
+END
+AddMoney_in.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoney_in.java
+END
+PushMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/PushMoney.java
+END
+YResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/YResponse.java
+END
+AddMoney_out.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoney_out.java
+END
+AddMoneyServiceMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoneyServiceMessageReceiverInOut.java
+END
+XGetUserInputE.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetUserInputE.java
+END
+XResponseE.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XResponseE.java
+END
+AddMoneyServiceCallbackHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoneyServiceCallbackHandler.java
+END
+YResponseE.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/YResponseE.java
+END
+GetUserResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetUserResponse.java
+END
+ZResponseE.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/ZResponseE.java
+END
+GetUser_in.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetUser_in.java
+END
+GetSum.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetSum.java
+END
+GetUser_out.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetUser_out.java
+END
+PushMoneyResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/PushMoneyResponse.java
+END
+GetMoney_in.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetMoney_in.java
+END
+PushMoney_out.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/PushMoney_out.java
+END
+XGetSumInputE.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetSumInputE.java
+END
+GetSumResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetSumResponse.java
+END
+YTransactionE.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/YTransactionE.java
+END
+XGetUserInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetUserInput.java
+END
+XResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XResponse.java
+END
+XGetUserOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetUserOutput.java
+END
+GetMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetMoney.java
+END
+ZResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/ZResponse.java
+END
+GetSum_in.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetSum_in.java
+END
+GetSum_out.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetSum_out.java
+END
+XGetUserOutputE.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetUserOutputE.java
+END
+AddMoney.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoney.java
+END
+GetMoneyResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/GetMoneyResponse.java
+END
+AddMoneyServiceSkeletonInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn_zingcredits/!svn/ver/2286/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/AddMoneyServiceSkeletonInterface.java
+END
+XGetSumInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetSumInput.java
+END
+XTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XTransaction.java
+END
+PushMoney_in.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/PushMoney_in.java
+END
+XGetSumOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/2285/JAVA/PaymentGateway/src/vng/zingme/payment/paymentgateway/push/ws/XGetSumOutput.java
+END

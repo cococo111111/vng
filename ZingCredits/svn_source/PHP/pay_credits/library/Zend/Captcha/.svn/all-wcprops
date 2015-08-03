@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Exception.php
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Adapter.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Image.php
+END
+Dumb.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Dumb.php
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Base.php
+END
+Figlet.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Figlet.php
+END
+ReCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/ReCaptcha.php
+END
+Word.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Captcha/Word.php
+END

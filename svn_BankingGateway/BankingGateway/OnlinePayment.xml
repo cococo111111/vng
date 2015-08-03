@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.hdbo" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.hdbo" xmlns:intf="http://ws.hdbo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ws.hdbo" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="reqExecute">
+    <complexType>
+     <sequence>
+      <element name="reqExecuteGet" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="reqExecuteResponse">
+    <complexType>
+     <sequence>
+      <element name="reqExecuteReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="reqExecuteResponse">
+
+      <wsdl:part element="impl:reqExecuteResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="reqExecuteRequest">
+
+      <wsdl:part element="impl:reqExecute" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="OnlinePayment">
+
+      <wsdl:operation name="reqExecute">
+
+         <wsdl:input message="impl:reqExecuteRequest" name="reqExecuteRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:reqExecuteResponse" name="reqExecuteResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="OnlinePaymentSoapBinding" type="impl:OnlinePayment">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="reqExecute">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="reqExecuteRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="reqExecuteResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="OnlinePaymentService">
+
+      <wsdl:port binding="impl:OnlinePaymentSoapBinding" name="OnlinePayment">
+
+         <wsdlsoap:address location="http://118.69.222.207:8088/ZION/services/OnlinePayment"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

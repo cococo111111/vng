@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Credits - Auto Report</title>
+        <style type="text/css">
+            html {
+                font-size: 12px;
+                font-family:"Times New Roman", Times, serif;
+            }
+            table {
+                width: 605px; font-family: arial,tahoma,Helvetica,verdana,sans-serif; font-size: 12px;
+            }
+            table caption, table th, table td {
+                margin: 3px;
+                padding: 2px 5px;
+                vertical-align: middle;            
+                font-family: arial,tahoma,Helvetica,verdana,sans-serif; 
+                font-size: 12px;
+            }
+            table td input {  font-size: 11px;
+    width: 50px;}
+            
+            table td textArea {width: 170px;font-family: arial,tahoma,Helvetica,verdana,sans-serif; font-size: 12px;padding-left: 0px;padding-right: 0px}
+            th {
+                background: none repeat scroll 0 0 #D3DCE3;
+                color: #000000;
+                font-weight: bold;
+            }
+            tr td{
+                border-bottom: 1px solid #e7e7e7;
+            }
+        </style>
+        <script src="http://static.me.zing.vn/zmjs/zmCore-1.31.min.js" type="text/javascript"></script>
+    </head>	
+    <body>
+        <div id="wrapper">            
+            <div>
+                {{#LOGIN}}
+                {{>login}}
+                {{/LOGIN}}
+                {{#MAILINGLIST}}
+                {{>mailinglist}}
+                {{/MAILINGLIST}}                
+            </div>
+        </div>        
+    </body>
+</html>

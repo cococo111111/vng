@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri
+END
+ExecuteResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/ExecuteResponse.java
+END
+ExtensionMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/ExtensionMapper.java
+END
+Execute.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/Execute.java
+END
+MerchantSVCSkeleton.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/MerchantSVCSkeleton.java
+END
+MerchantSVCSkeletonInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/MerchantSVCSkeletonInterface.java
+END
+MerchantSVCMessageReceiverInOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/MerchantSVCMessageReceiverInOut.java
+END
+HelloWorldResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/HelloWorldResponse.java
+END
+HelloWorld.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/src/org/tempuri/HelloWorld.java
+END

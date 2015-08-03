@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene
+END
+PriorityQueue.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/PriorityQueue.php
+END
+MultiSearcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/MultiSearcher.php
+END
+TermStreamsPriorityQueue.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/TermStreamsPriorityQueue.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Exception.php
+END
+Document.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Document.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Interface.php
+END
+Proxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Proxy.php
+END
+LockManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/LockManager.php
+END
+Field.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Field.php
+END
+FSMAction.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/FSMAction.php
+END
+FSM.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/FSM.php
+END

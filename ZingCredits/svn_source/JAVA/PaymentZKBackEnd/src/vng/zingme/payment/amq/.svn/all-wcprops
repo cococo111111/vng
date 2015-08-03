@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/amq
+END
+AMQueueProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/2238/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/amq/AMQueueProducer.java
+END
+LogAMQueueProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/amq/LogAMQueueProducer.java
+END

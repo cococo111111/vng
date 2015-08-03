@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/2677/JAVA/Storage/src/vng/zingme/payment/storage
+END
+StorageDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/2123/JAVA/Storage/src/vng/zingme/payment/storage/StorageDaemon.java
+END
+StorageFaceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/2677/JAVA/Storage/src/vng/zingme/payment/storage/StorageFaceImpl.java
+END
+StorageFaceImplMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1225/JAVA/Storage/src/vng/zingme/payment/storage/StorageFaceImplMBean.java
+END

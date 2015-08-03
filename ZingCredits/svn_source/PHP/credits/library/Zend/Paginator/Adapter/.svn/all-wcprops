@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/Interface.php
+END
+DbSelect.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/DbSelect.php
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/Iterator.php
+END
+Null.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/Null.php
+END
+DbTableSelect.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/DbTableSelect.php
+END
+Array.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Paginator/Adapter/Array.php
+END

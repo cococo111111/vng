@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/2225/JAVA/AdjustDbBalances
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/2085/JAVA/AdjustDbBalances/build.xml
+END
+clean_adjust_balances
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/2085/JAVA/AdjustDbBalances/clean_adjust_balances
+END
+buildd_adjust_balances
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/2085/JAVA/AdjustDbBalances/buildd_adjust_balances
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/2085/JAVA/AdjustDbBalances/manifest.mf
+END

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ant -f build.xml -Djavac.debug=true -Ddist.jar=pay-credits-1.0.jar jar
+

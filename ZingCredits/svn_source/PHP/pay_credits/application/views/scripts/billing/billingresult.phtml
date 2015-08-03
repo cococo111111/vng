@@ -1,0 +1,66 @@
+<?php require_once APPLICATION_PATH . 'includes/header1.php';?>
+<style>
+table.billing THEAD td{
+background:none repeat scroll 0 0 #486fa6;
+color:white;
+}
+table.billing td{
+text-align:center;
+}
+.box_mexu {
+    background: none repeat scroll 0 0 #F2F4F7;
+    border: 1px solid #C9D5E2;
+    margin-top: 15px;
+    padding: 5px;
+    width: 98%;
+}
+</style>
+<div class="right_mexu">
+	<div  id='billresult'>
+	<div style='text-align:center;font-size:14px;color:#F47B20'><i>Xin đợi. Hệ thống đang thực hiện giao dịch</i>
+	<br><br><img src='<?=$payment_url?>/images/loading_small.gif'><br><br>
+	</div>
+	</div>
+	<div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Xem lại các <a href="<?=$appcredit_url?>"  target="_blank">giao dịch</a>.</div>
+<br>
+<table width='100%'>
+ 	<tr><td align='center'>
+        <input type="button" class="btsbmzc" value="&nbsp;&nbsp;Đóng&nbsp;&nbsp;" onclick="closePayment()"/></td></table>
+ <script>
+	responseValue=1;
+	function closePayment(){
+	      callbackPaymentHelper('<?=$this->billNo?>',2,responseValue);
+	}
+
+	function billmonitor(){
+	      zm.post('<?=$payment_url?>/billing/billstatus',
+	      {"appID":"<?=$appInfo->appID?>",'refID':"<?=$this->refID?>"},
+	      function(data){		
+		if(data.length==1){
+		renderBill(data);
+		}
+		else{
+		   window.setTimeout("billmonitor()",1000);
+		}
+	      
+	      });
+	}
+	function renderBill(data){
+	   var html=new Array();
+	   if(data=='1'){
+	   responseValue=0;
+	   html.push('<div style="color:green;padding-bottom: 6px;text-align:center;font-size:16px">Giao dịch thanh toán thành công.</div>');
+	   }
+	   else{
+	   responseValue=-2;
+	   html.push('<div style="color:red;padding-bottom: 6px;text-align:center;font-size:16px">Giao dịch thanh toán không thành công.</div>');
+	   }
+	   zm('#billresult').html(html.join(''));
+	}
+	 zm.ready(function(){
+	     window.setTimeout("billmonitor()",1000);
+	  });
+
+</script>
+<br>
+<?php require_once APPLICATION_PATH . 'includes/footer.php';?>

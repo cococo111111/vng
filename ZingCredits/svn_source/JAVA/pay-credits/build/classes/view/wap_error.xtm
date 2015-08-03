@@ -1,0 +1,25 @@
+          <div class="fr">
+          <div class="cont01" style="color:red">
+Giao dịch thanh toán không thành công do :
+        {{#BILL_RESULT__2}}
+        Dữ liệu không hợp lệ
+        {{/BILL_RESULT__2}}
+        {{#BILL_RESULT__3}}
+        Bạn không đủ tiền
+        {{/BILL_RESULT__3}}
+        {{#BILL_RESULT__4}}
+        Bạn đang thực hiện giao dịch trái phép
+        {{/BILL_RESULT__4}}
+        {{#BILL_RESULT__5}}
+        Bạn đã thực hiện giao dịch này rồi
+        {{/BILL_RESULT__5}}
+        {{#BILL_RESULT_OTHER}}
+        Yêu cầu không hợp lệ
+        {{/BILL_RESULT_OTHER}}
+    </div>
+          </div>
+<div class="paging">
+    	<a href='{{APPFULLURL}}'><input type='button' class="btnsubmit2" value='Đóng lại'></a>
+    </div>
+      <div class="cont03 fzs"> Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558 </strong></div>
+	

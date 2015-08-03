@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_zingcredits/!svn/ver/2227/JAVA/ExportBalances
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/2008/JAVA/ExportBalances/manifest.mf
+END
+clean_export_balances
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/2008/JAVA/ExportBalances/clean_export_balances
+END
+buildd_export_balances
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/2008/JAVA/ExportBalances/buildd_export_balances
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/2008/JAVA/ExportBalances/build.xml
+END

@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_zingcredits/!svn/ver/1996/JAVA/thrift/gen-java/vng/zingme/payment/thrift
+END
+T_Stat.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_Stat.java
+END
+TReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1996/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TReport.java
+END
+TPayment.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1296/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TPayment.java
+END
+T_Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_Token.java
+END
+TAdminServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1792/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TAdminServer.java
+END
+TLatestCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1522/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TLatestCache.java
+END
+TToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TToken.java
+END
+T_ReportTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1827/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_ReportTransaction.java
+END
+T_Transaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_Transaction.java
+END
+TTokenResCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TTokenResCode.java
+END
+TStatCaching.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TStatCaching.java
+END
+T_ReportSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1549/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_ReportSummary.java
+END
+T_Account.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_Account.java
+END
+T_AppInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1996/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_AppInfo.java
+END
+TZKBackEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TZKBackEnd.java
+END
+T_Response.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_Response.java
+END
+T_TranStat.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_TranStat.java
+END
+TBalanceCaching.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TBalanceCaching.java
+END
+T_AccResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/T_AccResponse.java
+END
+TStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1225/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TStorage.java
+END
+TAppServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1996/JAVA/thrift/gen-java/vng/zingme/payment/thrift/TAppServer.java
+END

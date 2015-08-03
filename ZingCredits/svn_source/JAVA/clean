@@ -1,0 +1,92 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#clean
+ant -f Util/build.xml clean
+ant -f Common/build.xml clean
+ant -f jdbcModel/build.xml clean
+ant -f PaymentAdmin/build.xml clean
+#main projects
+ant -f AccountBalanceCache/build.xml clean
+ant -f LatestTranxCache/build.xml clean
+ant -f PaymentGateway/build.xml clean
+ant -f PaymentZKBackEnd/build.xml clean
+ant -f Storage/build.xml clean
+ant -f TokenServer/build.xml clean
+ant -f PaymentReport/build.xml clean
+ant -f pay-credits-balance/build.xml clean
+ant -f PaymentDailyReport/build.xml clean
+ant -f pay-credits/build.xml clean
+ant -f PaymentAppsService/build.xml clean
+ant -f credits/build.xml clean
+
+#clean-up
+rm -rf Util/build
+rm -rf Util/dist
+rm -rf Common/build
+rm -rf Common/dist
+rm -rf jdbcModel/build
+rm -rf jdbcModel/dist
+rm -rf PaymentAdmin/build
+rm -rf PaymentAdmin/dist
+#main projects
+rm -rf AccountBalanceCache/build
+rm -rf AccountBalanceCache/dist
+rm -rf LatestTranxCache/build
+rm -rf LatestTranxCache/dist
+rm -rf PaymentGateway/build
+rm -rf PaymentGateway/dist
+rm -rf PaymentZKBackEnd/build
+rm -rf PaymentZKBackEnd/dist
+rm -rf Storage/build
+rm -rf Storage/dist
+rm -rf TokenServer/build
+rm -rf TokenServer/dist
+
+rm -rf PaymentReport/build
+rm -rf PaymentReport/dist
+
+rm -rf pay-credits-balance/build
+rm -rf pay-credits-balance/dist
+
+rm -rf PaymentDailyReport/build
+rm -rf PaymentDailyReport/dist
+
+rm -rf pay-credits/build
+rm -rf pay-credits/dist
+
+rm -rf PaymentAppsService/build
+rm -rf PaymentAppsService/dist
+
+rm -rf credits/build
+rm -rf credits/dist
+#webservice
+rm -f /zserver/java/axis2-1.5.6/repository/services/vng.zingme.payment.paymentgateway.PaymentGatewayServerHandler.aar
+rm -f /zserver/java/axis2-1.5.6/dist/axis2.war
+rm -f /zserver/java/axis2-1.5.6/lib/Common-1.5.jar
+rm -f /zserver/java/axis2-1.5.6/lib/Util-1.0.jar
+rm -f /zserver/java/axis2-1.5.6/lib/libthrift-0.5.0.jar
+rm -f /zserver/java/axis2-1.5.6/lib/zookeeper-3.3.2.jar
+
+rm -f /zserver/java/axis2-1.5.6/lib/commons-lang-2.5.jar
+rm -f /zserver/java/axis2-1.5.6/lib/commons-lang3-3.0.1.jar
+rm -f /zserver/java/axis2-1.5.6/lib/commons-pool-1.5.5.jar
+rm -f /zserver/java/axis2-1.5.6/lib/commons-configuration-1.6.jar
+rm -f /zserver/java/axis2-1.5.6/lib/clhm-production-deprecated-0.1.jar
+
+rm -f /zserver/java/axis2-1.5.6/lib/commons-collections-3.2.1.jar
+rm -f /zserver/java/axis2-1.5.6/lib/slf4j-api-1.5.8.jar
+rm -f /zserver/java/axis2-1.5.6/lib/slf4j-log4j12-1.5.8.jar
+
+rm -f /zserver/java/axis2-1.5.6/lib/vng.scribe.thrift-0.1.jar
+rm -f /zserver/java/axis2-1.5.6/lib/high-scale-lib-1.0.jar
+#rm -f /zserver/java/axis2-1.5.6/lib/commons-codec-1.2.jar
+rm -f /zserver/java/axis2-1.5.6/lib/vng.zingpakages-wtcommon-0.1.jar
+
+rm -f /zserver/java/axis2-1.5.6/lib/memcached-2.5.jar
+
+rm -f /zserver/java/axis2-1.5.6/lib/zthriftpool-1.0.jar
+rm -f /zserver/java/axis2-1.5.6/lib/jzcommon-thrift-1.0.jar
+rm -f /zserver/java/axis2-1.5.6/lib/jstdprofile2-thrift-1.0.jar

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/model/db/dao
+END
+LogTasksDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/model/db/dao/LogTasksDao.java
+END
+TransactionsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_bankinggateway/!svn/ver/46/BankingStorage/src/vng/bankinggateway/model/db/dao/TransactionsDao.java
+END

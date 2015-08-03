@@ -1,0 +1,12 @@
+<div class="left_mexu">
+ <table style='width:100%'>
+  <tr>
+   <td style='float:left'><img alt="" src="{{STATIC_URL}}/images/{{APPICON}}">
+   </td>
+   <td style='color:green;font-weight: bold;text-align:left'>
+       <p>Số dư tài khoản:</p>
+       <p class="yel"><span class="zc-ico1 bgs"></span> {{BALANCE}}</p>
+       <br/>{{payfor}} <span style="color:red">{{APPNAME}}</span>
+  </tr>
+ </table>
+</div>

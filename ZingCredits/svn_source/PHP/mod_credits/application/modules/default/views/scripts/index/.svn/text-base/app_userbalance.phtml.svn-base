@@ -1,0 +1,42 @@
+<div id="centerCont"> 
+		<strong>Payment Admin&gt;&gt; </strong> Account Balance
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate?></li></ul>
+<?php 
+}
+?>
+<?php if(isset($this->messages)){?>
+<ul style='color:#009DDC'><li><?=$this->messages?></li></ul>
+<?php 
+}
+?>
+<br>Nhập thông tin mã user để kiểm tra số ZingXu trong tài khoản.<br>
+Mặc định là nhập username.Check UserID để kiểm tra theo userID
+<br>
+<form action="/app/userbalancesubmit" method="post" name="frmuseradjust" id="frmuseradjust"><table>
+<tr>
+  <td>Nhập Mã User <span class='require'>*</span></td>
+  <td><input name='username'><span style='background:#EFEFEF;color:#009DDC;padding-bottom:2px;padding-right:6px;padding-top:4px;'><input value='1' name='isuid' type='checkbox' <?php if($param['isuid']=='1'){echo 'checked="checked"';}?>><strong>là UserID</strong></span></td>  
+</tr>
+<tr>
+  <td></td>
+  <td><input type='submit' value='Xem Số Dư'></td>
+</tr>
+</table>
+<?php
+if(isset($this->balance)){
+?>
+
+<div style='padding-left:50px'>
+<br><br>
+
+<div style='background:#EFE8CE;width:300px;border:1px dashed red;text-align: center;'>
+Tài khoản:<?=$this->username?><br>
+Số Dư:<?=($this->balance->currentBalance)?> ZingXu
+</div>
+
+</div>
+<?php 
+}
+?>
+</form>

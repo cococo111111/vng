@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/zserver/php/bin/php /home/warmup_report_credits/CreditImporter.php production
+

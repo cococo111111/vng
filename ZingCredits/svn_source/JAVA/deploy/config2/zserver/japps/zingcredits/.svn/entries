@@ -1,0 +1,58 @@
+10
+
+dir
+2568
+http://10.30.12.15:443/svn_zingcredits/JAVA/deploy/config2/zserver/japps/zingcredits
+http://10.30.12.15:443/svn_zingcredits
+
+
+
+2011-11-14T04:12:14.266640Z
+2355
+loidc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ac52edf0-9975-48b0-88d2-f1ff4ca5fa29
+
+PaymentReport
+dir
+
+PaymentZKBackEnd
+dir
+
+PaymentDailyReport
+dir
+
+LatestTranxCache
+dir
+
+PaymentGateway
+dir
+
+PaymentAppsService
+dir
+
+Storage
+dir
+
+AccountBalanceCache
+dir
+
+PaymentAdmin
+dir
+
+TokenServer
+dir
+

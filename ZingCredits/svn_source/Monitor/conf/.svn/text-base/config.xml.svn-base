@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monitor>
+	<delay>1000</delay>
+	<bean>
+		<name>vng.zingme.pg:type=PG_MySql</name>
+		<host>localhost</host>
+		<port>9704</port>
+		<enable>true</enable>
+	</bean>		
+	<bean>
+		<name>vng.zingme.pg:type=MEP_Storage</name>
+		<host>localhost</host>
+		<port>9704</port>
+		<enable>true</enable>		
+	</bean>	
+	<bean>
+		<name>vng.zingme.pg:type=T_AccountCache</name>
+		<host>localhost</host>
+		<port>9802</port>
+		<enable>true</enable>	
+	</bean>	
+</monitor>

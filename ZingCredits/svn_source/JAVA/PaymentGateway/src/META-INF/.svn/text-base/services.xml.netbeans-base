@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.5.3  Built on : Nov 12, 2010 (02:24:07 CET) -->
+<serviceGroup>
+    <service name="AddMoneyService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="vng.zingme.payment.paymentgateway.push.ws.AddMoneyServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">vng.zingme.payment.paymentgateway.PaymentGatewayServerHandler</parameter>
+        <parameter name="useOriginalwsdl">false</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="GetMoney" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.push.paymentgateway.payment.zingme.vng/">
+            <actionMapping>urn:ws.push.paymentgateway.payment.zingme.vng#GetMoney</actionMapping>
+            <outputActionMapping>http://ws.push.paymentgateway.payment.zingme.vng/AddMoneyPortType/GetMoneyResponse</outputActionMapping>
+        </operation>
+        <operation name="AddMoney" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.push.paymentgateway.payment.zingme.vng/">
+            <actionMapping>urn:ws.push.paymentgateway.payment.zingme.vng#AddMoney</actionMapping>
+            <outputActionMapping>http://ws.push.paymentgateway.payment.zingme.vng/AddMoneyPortType/AddMoneyResponse</outputActionMapping>
+        </operation>
+        <operation name="PushMoney" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.push.paymentgateway.payment.zingme.vng/">
+            <actionMapping>urn:ws.push.paymentgateway.payment.zingme.vng#PushMoney</actionMapping>
+            <outputActionMapping>http://ws.push.paymentgateway.payment.zingme.vng/AddMoneyPortType/AddMoneyResponse</outputActionMapping>
+        </operation>
+        <operation name="GetUser" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.push.paymentgateway.payment.zingme.vng/">
+            <actionMapping>urn:ws.push.paymentgateway.payment.zingme.vng#GetUser</actionMapping>
+            <outputActionMapping>http://ws.push.paymentgateway.payment.zingme.vng/AddMoneyPortType/AddMoneyResponse</outputActionMapping>
+        </operation>
+        <operation name="GetSum" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.push.paymentgateway.payment.zingme.vng/">
+            <actionMapping>urn:ws.push.paymentgateway.payment.zingme.vng#GetSum</actionMapping>
+            <outputActionMapping>http://ws.push.paymentgateway.payment.zingme.vng/AddMoneyPortType/AddMoneyResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

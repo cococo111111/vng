@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn_bankinggateway/!svn/ver/60/BankingGateway/src/vng/bankinggateway/client
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_bankinggateway/!svn/ver/2/BankingGateway/src/vng/bankinggateway/client/Command.java
+END
+BankingServiceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_bankinggateway/!svn/ver/2/BankingGateway/src/vng/bankinggateway/client/BankingServiceFactory.java
+END
+BankingServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_bankinggateway/!svn/ver/35/BankingGateway/src/vng/bankinggateway/client/BankingServiceClient.java
+END
+RunManualError.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_bankinggateway/!svn/ver/64/BankingGateway/src/vng/bankinggateway/client/RunManualError.java
+END
+RunReconfirmStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_bankinggateway/!svn/ver/60/BankingGateway/src/vng/bankinggateway/client/RunReconfirmStatus.java
+END
+ExportDataForReconcile.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn_bankinggateway/!svn/ver/55/BankingGateway/src/vng/bankinggateway/client/ExportDataForReconcile.java
+END

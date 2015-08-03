@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Server.php
+END
+Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Request.php
+END
+Constants.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Constants.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Exception.php
+END
+Response.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Amf/Response.php
+END

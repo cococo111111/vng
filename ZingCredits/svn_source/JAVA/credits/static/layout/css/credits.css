@@ -1,0 +1,77 @@
+#credit{ display:block; widows:100%; height:1%; position:relative;}
+.bgs { background:url(../images/credit-sprite.gif) no-repeat;height:16px; float:left; display:inline-block;padding-left: 20px; padding-right:5px;}
+.zc-ico1{ background-position:0 -18px;}
+.zc-ico2{ background-position:0 0;}
+.zc-ico3{ background-position:0 -37px;}
+.zc-ico4{ background-position:0 -58px;}
+.zc-ico5{ background-position:0 -78px;}
+.zc-ico6{ background-position:0 -99px;}
+.zc-ico7{ background-position:0 -122px;}
+.desc {
+    float: left;
+    height: 70px;
+    width: 106px;
+	color:#d6ad08;
+}
+.desc p.name {
+    color: #476DA4;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.conR{ float:left; width:670px;}
+.yel {
+    color: #FF5C02;
+    font-size: 16px;
+    font-weight: bold;line-height: 14px;padding-top: 5px; 
+}
+.box_mexu {
+background: #F6F9FE;
+ margin-top: 15px;
+    padding: 5px; font-weight:bold;
+}
+.table_mexu {
+    background:#FFFFFF;
+    margin-top: 10px;
+    width:auto;
+	border: 1px solid #E7E7E7;
+	border-bottom:none;
+	text-align:center;
+	
+}
+.table_mexu table td {
+    height: 30px;
+    border-bottom: 1px solid #E7E7E7;
+}
+.table_mexu table .lstitle {
+    background:#004D81;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 26px;
+}
+.padc{ margin-top:20px;color: #888888;}
+.padc span{ padding-right:30px;}
+.ImgGame {
+    margin: 10px 0;
+    text-align: center;
+}
+ul.ImgGame li {
+    float: left;
+    list-style: none outside none;
+    padding:10px 0;
+    text-align: center;
+    width: 145px;
+}
+.zc-noiconzc {
+    color: #FF5C02;
+    font-size: 13px;
+    font-weight: bold;
+}
+a.pointer{
+    cursor: pointer;
+}
+default{
+    cursor: default;
+}

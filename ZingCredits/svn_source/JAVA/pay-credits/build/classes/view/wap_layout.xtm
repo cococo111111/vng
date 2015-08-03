@@ -1,0 +1,21 @@
+{{>wap_header}}
+<div class="contain">
+		<div class="main">
+
+ {{>wap_top}}
+            {{#BILLING_REQUEST_FORM}}
+            {{>wap_billing}}
+            {{/BILLING_REQUEST_FORM}}
+            {{#BILLING_SUCCESS_FORM}}
+            {{>wap_success}}
+            {{/BILLING_SUCCESS_FORM}}
+            {{#BILLING_FAIL_FORM}}
+            {{>wap_error}}
+            {{/BILLING_FAIL_FORM}}
+            {{#BILLING_ERROR_FORM}}
+            {{>wap_error}}
+            {{/BILLING_ERROR_FORM}}
+
+</div>
+</div>
+{{>wap_footer}}

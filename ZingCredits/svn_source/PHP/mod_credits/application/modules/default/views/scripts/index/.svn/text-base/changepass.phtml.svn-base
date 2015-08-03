@@ -1,0 +1,94 @@
+<!-- left menu -->
+<div id="sidebar-left">
+<h2>Payment Administrator</h2>
+<div id="admin_menu">
+<ul class="menu">
+	   <li class="expanded"><a href="/app/index">Applications</a></li>
+
+</ul>
+</div>
+</div>
+<!-- end left menu -->
+
+<div id="content">
+<div id="centerCont"><strong>ContentFilter &gt;&gt; </strong>Change Password
+<div id="divErr" name="divErr" class="divErr"></div>
+<form name="frmChangePass" id="frmChangePass" action="" method="get">
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">Current Password</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="txtCurrPass" id="txtCurrPass"
+				style="width: 200px;" maxlength="50" title="Please Enter Current Password"
+				class="required" type="password"></td>
+		</tr>
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">Password</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="txtNewPass" id="txtNewPass"
+				style="width: 200px;" maxlength="50" title="Please Enter New Password"
+				class="required" type="password"></td>
+		</tr>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">Confirm Password</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="txtConfirmPass" id="txtConfirmPass"
+				style="width: 200px;" maxlength="50"
+				title="Please Enter Confirm Password" class="required"
+				type="password"></td>
+		</tr>
+		<tr>
+			<td class="hligh1"></td>
+			<td class="hligh1"><input name="btnChangePass" id="btnChangePass"
+				value="Change" class="button" type="button"></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+</div>
+<!-- END centerCont --></div>
+<!-- END content -->
+
+<script type="text/javascript">
+	$('#btnChangePass').click(function() {
+
+		$("#divErr").html("");
+		
+		var currpassword = $.md5($('#txtCurrPass').val());
+		var password = $.md5($('#txtNewPass').val());
+		var confirmpassword = $.md5($('#txtConfirmPass').val());
+		var passlength = $('#txtNewPass').val().length;
+		$.ajax({
+			   type: "POST",
+			   url: "changepass",
+			   	data: { currpassword: currpassword, 
+		   				password: password,
+		   				confirmpassword: confirmpassword,
+		   				passlength: passlength
+		   				 },
+			   	error: function (){
+					alert("There's an unknown error occured!");
+				},		   
+			   	success: function(stringData){
+					var obj = JSON.parse(stringData);
+					if(obj.success==true)
+					{
+						alert("Change pass successfully");
+						$('#txtCurrPass').val("");
+						$('#txtNewPass').val("");
+						$('#txtConfirmPass').val("");
+					}
+					else
+					{
+						alert("Change pass failed!");
+						var divErrHTML = "";
+						var index = 0;						
+						for(index=0;index<obj.error.length;index++)
+							divErrHTML += (index+1)+". "+obj.error[index]+"<br/>";
+						$("#divErr").html(divErrHTML);
+					}			
+			   }
+			 });
+	});
+</script>

@@ -1,0 +1,27 @@
+
+<div class="cont01" style="color:red">
+Giao dịch thanh toán không thành công do :  
+        {{#BILL_RESULT__2}}
+        Dữ liệu không hợp lệ
+        {{/BILL_RESULT__2}}
+        {{#BILL_RESULT__3}}
+        Bạn không đủ tiền
+        {{/BILL_RESULT__3}}
+        {{#BILL_RESULT__4}}
+        Bạn đang thực hiện giao dịch trái phép
+        {{/BILL_RESULT__4}}
+        {{#BILL_RESULT__5}}
+        Bạn đã thực hiện giao dịch này rồi
+        {{/BILL_RESULT__5}}
+        {{#BILL_RESULT_OTHER}}
+        Yêu cầu không hợp lệ
+        {{/BILL_RESULT_OTHER}}
+    </div>
+      <script type="text/javascript" >
+        function closePayment(){
+            callbackPaymentHelper('{{REFID}}',1,-2);
+        }
+    </script>
+<div class="paging">
+    	<input type='submit' class="btnsubmit2" value='Đóng lại' onclick="closePayment()">
+    </div>

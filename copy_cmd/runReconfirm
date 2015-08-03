@@ -1,0 +1,19 @@
+#!/bin/sh
+HOST=10.30.22.140
+
+PROJECT=BankingGateway
+JAR=$PROJECT.jar
+MAINCLASS=vng.bankinggateway.client.RunReconfirmStatus
+
+CURDIR=`pwd`
+HOME=$CURDIR
+CONF=$HOME/conf
+DEPLOY_DIR=$HOME/dist
+CLASSPATH=$DEPLOY_DIR/$JAR
+for jar in $DEPLOY_DIR/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+echo "Run Reconfirm"
+java -cp $CLASSPATH -Dzname=$PROJECT -Dconfig=$CONF -Dday=$DAY $MAINCLASS $1 $2
+echo "Done!"

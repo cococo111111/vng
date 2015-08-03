@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn_bankinggateway/!svn/ver/54/BankingAdmin/src/view/admin
+END
+layout_monitor.xtm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/view/admin/layout_monitor.xtm
+END
+logTask.xtm
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_bankinggateway/!svn/ver/30/BankingAdmin/src/view/admin/logTask.xtm
+END
+tranxbyConfirmStatus.xtm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/54/BankingAdmin/src/view/admin/tranxbyConfirmStatus.xtm
+END
+tranxbyStatus.xtm
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_bankinggateway/!svn/ver/54/BankingAdmin/src/view/admin/tranxbyStatus.xtm
+END

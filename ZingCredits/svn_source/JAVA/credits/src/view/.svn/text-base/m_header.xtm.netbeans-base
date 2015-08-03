@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.wapforum.org/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ <title>{{PAYTITLE}}</title>
+<meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link type="text/css" rel="stylesheet" href="{{CREDITS_URL}}/m/css/screen.css">
+ <script>
+            var zme_avatar_width=75;
+            var zme_avatar_heigth = 75;
+            var zme_avatar_tag = "span";
+            var zme_avatar_size = "160";
+        </script>
+</head>
+
+<body>
+
+<div class="header bgzme">
+	<div class="headshad"></div>
+	<div class="inshead">
+    	<a href="{{BACKURL}}" class="btnhback"></a>
+        <div class="htitle1">Quản Lý Ví Zing Me</div>
+
+    </div>
+
+
+
+
+</div>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="BankingGatewayCommon" default="default" basedir=".">
+    <description>Builds, tests, and runs the project BankingGatewayCommon.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar-with-manifest:    JAR building (if you are using a manifest)
+      -do-jar-without-manifest: JAR building (if you are not using a manifest)
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="BankingGatewayCommon-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+    
+    <property name="dest.dir" value="build" />
+
+	<property name="dest.dir.classes" value="${dest.dir}/classes" />
+
+	<property name="dest.dir.lib" value="${dest.dir}/lib" />
+
+	<property name="axis2.home" value="/zserver/java/lib/axis2" />
+        
+        <property name="wsdl_zion" value="http://10.30.22.138:8080/axis2/services/BankingGatewayService?wsdl" />
+        
+        <property name="wsdl_esale" value="http://10.30.17.193:9001/ConfirmOrderBankService.asmx?wsdl" />
+
+	<property name="repository.path" value="${axis2.home}/repository/services" />
+
+	<path id="build.class.path">
+                <fileset dir="${axis2.home}">
+			<include name="*.jar" />
+		</fileset>
+                
+	</path>
+
+	<path id="client.class.path">
+		<fileset dir="${axis2.home}">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${dest.dir.lib}">
+			<include name="*.jar" />
+		</fileset>
+                <fileset dir="${dest.dir.lib}">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+       
+	<target name="clean">
+		<delete dir="${dest.dir}" />
+		<!--delete dir="src" includes="vng/bankinggateway/stub/**"/ -->
+	</target>
+
+	<target name="prepare">
+
+		<mkdir dir="${dest.dir}" />
+
+		<mkdir dir="${dest.dir.classes}" />
+
+		<mkdir dir="${dest.dir.lib}" />
+
+		<mkdir dir="${dest.dir.classes}/META-INF" />
+
+	</target>
+
+	<target name="generate.service" depends="clean,compile,prepare">
+
+		<copy file="src/META-INF/services.xml" tofile="${dest.dir.classes}/META-INF/services.xml" overwrite="true" />
+
+		<javac srcdir="src" destdir="${dest.dir.classes}" includes="vng/bankinggateway/service/**,vng/bankinggateway/stub/**,vng/bankinggateway/esaleservice/stub/**">
+			<classpath refid="build.class.path" />
+		</javac>
+
+		<jar basedir="${dest.dir.classes}" destfile="${dest.dir}/BankingGatewayService.aar" />
+
+		<!--copy file="${dest.dir}/PaymentService.aar" tofile="${repository.path}/PaymentService.aar" overwrite="true" /-->
+
+	</target>
+
+	<target name="check-parameters">
+		<condition property="parameters.set">
+			<and>
+				<isset property="wsdl_zion" />
+			</and>
+		</condition>
+		<!-- This is a hack to get a if-else working in ant. Some much more "ANTy" person is welcome to improve this -->
+		<antcall target="print-usage" />
+	</target>
+
+	<target name="print-usage" unless="parameters.set">
+		<echo message="ant adb.client -Dwsdl='http://&lt;yourhost>:&lt;yourport>/axis2/services/AddMoneyService?wsdl'" />
+	</target>
+
+	<target name="adb.client" depends="check-parameters, compile" if="parameters.set">
+
+		<!--antcall target="clean" /-->
+		<!--antcall target="prepare" /-->
+		<!--antcall target="adb.client.codegen-stub">
+			<param name="wsdl" value="${wsdl}"/>
+		</antcall-->
+
+		<antcall target="adb.client.compile" />
+
+		<antcall target="adb.client.jar" />
+
+		<antcall target="adb.client.run" />
+
+	</target>
+        
+        <target name="adb.client_esale" depends="check-parameters, compile" if="parameters.set">
+
+		<!--antcall target="clean" /-->
+		<!--antcall target="prepare" /-->
+		<!--antcall target="adb.client.codegen-stub">
+			<param name="wsdl" value="${wsdl}"/>
+		</antcall-->
+
+		<antcall target="adb.client.compile" />
+
+		<antcall target="adb.client.jar" />
+
+		<antcall target="adb.client.run_esale" />
+
+	</target>
+        
+        <target name="adb.client.codegen-stub-zion" depends="prepare">
+		<java classname="org.apache.axis2.wsdl.WSDL2Java">
+			<arg value="-uri" />
+			<arg value="${wsdl_zion}" />
+			<arg value="-p" />
+			<arg value="vng.bankinggateway.stub" />
+			<arg value="-o" />
+			<arg value="src" />
+			<arg value="-f" />
+			<classpath refid="build.class.path" />
+		</java>
+	</target>
+        
+        <target name="adb.client.codegen-stub-esale" depends="prepare">
+		<java classname="org.apache.axis2.wsdl.WSDL2Java">
+			<arg value="-uri" />
+			<arg value="${wsdl_esale}" />
+			<arg value="-p" />
+			<arg value="vng.bankinggateway.esaleservice.stub" />
+			<arg value="-o" />
+			<arg value="src" />
+			<arg value="-f" />
+			<classpath refid="build.class.path" />
+		</java>
+	</target>
+
+	<target name="adb.client.compile">
+		<javac srcdir="src" destdir="${dest.dir.classes}" includes="vng/bankinggateway/client/**,vng/bankinggateway/service/**,vng/bankinggateway/stub/**,vng/bankinggateway/esaleservice/stub/**">
+			<classpath refid="build.class.path" />
+		</javac>
+	</target>
+
+	<target name="adb.client.jar">
+		<jar basedir="${dest.dir.classes}" destfile="${dest.dir.lib}/zion-adb-client.jar" includes="vng/bankinggateway/client/**,vng/bankinggateway/service/**,vng/bankinggateway/stub/**,vng/bankinggateway/esaleservice/stub/**" />
+	</target>
+
+	<target name="adb.client.run" depends="compile">
+		<java classname="vng.bankinggateway.client.BankingGatewayServiceADBClient">
+			<classpath refid="client.class.path" />
+		</java>
+	</target>
+        
+        <target name="adb.client.run_esale" depends="compile">
+		<java classname="vng.bankinggateway.client.ConfirmOrderBankServiceADBClient">
+			<classpath refid="client.class.path" />
+		</java>
+	</target>
+</project>

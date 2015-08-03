@@ -1,0 +1,21 @@
+<div id="footer">
+<div class="vers">
+    	Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558</strong>
+    </div>
+	<div class="vers">Đi đến: <a href="{{CREDITS_URL}}/m" class="curnav">Ví Zing Me</a></div>
+
+	
+    <div class="copyright">© 2011 Zing </div>
+</div>
+
+<!--<div data-grid="c" data-role="navbar" class="ui-navbar ui-mini" role="navigation">
+    <ul class="ui-grid-c">
+        <li class="ui-block-a"><a class="ui-btn-active ui-btn ui-btn-inline ui-btn-up-c" href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">One</span></span></a></li>
+        <li class="ui-block-b"><a href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Two</span></span></a></li>
+        <li class="ui-block-c"><a href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Three</span></span></a></li>
+        <li class="ui-block-d"><a href="#" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="c" data-inline="true" class="ui-btn ui-btn-inline ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Four</span></span></a></li>
+    </ul>
+</div>-->
+
+</body>
+</html>

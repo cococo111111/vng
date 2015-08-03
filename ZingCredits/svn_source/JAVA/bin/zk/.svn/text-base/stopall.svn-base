@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sh /zserver/java/zookeeper-3.3.2/bin/zkServer.sh stop zingcredits_zoo1.cfg
+sh /zserver/java/zookeeper-3.3.2/bin/zkServer.sh stop zingcredits_zoo2.cfg
+sh /zserver/java/zookeeper-3.3.2/bin/zkServer.sh stop zingcredits_zoo3.cfg

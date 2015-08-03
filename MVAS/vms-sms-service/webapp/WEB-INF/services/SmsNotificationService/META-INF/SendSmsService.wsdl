@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="parlayx_sms_send_service" targetNamespace="http://www.csapi.org/wsdl/parlayx/sms/send/v2_2/service" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.csapi.org/wsdl/parlayx/sms/send/v2_2/service" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:interface="http://www.csapi.org/wsdl/parlayx/sms/send/v2_2/interface">
+  <import namespace="http://www.csapi.org/wsdl/parlayx/sms/send/v2_2/interface" location="parlayx_sms_send_interface_2_2.wsdl">
+    </import>
+  <binding name="SendSmsBinding" type="interface:SendSms">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="sendSms">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:header message="interface:RequestSOAPHeader" part="RequestSOAPHeader" use="literal">
+        </soap:header>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="PolicyException">
+        <soap:fault name="PolicyException" use="literal"/>
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="sendSmsLogo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="PolicyException">
+        <soap:fault name="PolicyException" use="literal"/>
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="sendSmsRingtone">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="PolicyException">
+        <soap:fault name="PolicyException" use="literal"/>
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="getSmsDeliveryStatus">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+      <fault name="PolicyException">
+        <soap:fault name="PolicyException" use="literal"/>
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+      </fault>
+    </operation>
+  </binding>
+  <service name="SendSmsService">
+    <port name="SendSms" binding="tns:SendSmsBinding">
+      <soap:address location="http://localhost:9080/ParlayXSms/services/SendSms"/>
+    </port>
+  </service>
+</definitions>

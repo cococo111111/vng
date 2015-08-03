@@ -1,0 +1,5 @@
+<div class="cont01 wcomt">
+        <div class="num02"><img alt="" src="{{STATIC_URL}}/images/{{APPICON}}"></div>
+        <div class="trans02"> Bạn đang sử dụng <strong>Ví Zing Me </strong>để thanh toán cho ứng dụng <strong>{{APPNAME}}</strong></div>
+     	<br class="clear">
+    </div>

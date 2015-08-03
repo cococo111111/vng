@@ -1,0 +1,80 @@
+<script>
+ var newwindow;
+ function poptastic()
+ {
+  var width  = 550;
+  var height = 530;
+  var left   = (screen.width  - width)/2;
+  var top    = (screen.height - height)/2;
+  var params = 'width='+width+', height='+height;
+  params += ', top='+top+', left='+left;
+  params += ', directories=no';
+  params += ', location=no';
+  params += ', menubar=no';
+  params += ', resizable=no';
+  params += ', scrollbars=no';
+  params += ', status=no';
+  params += ', toolbar=no';
+
+  newwindow=window.open("http://www.zing.vn/feedback/?p=me",'name',params);
+  if (window.focus) {newwindow.focus()}
+ }
+{{#ME2JS}}
+ function callbackPaymentHelper(billNo,step,result){
+  try{
+   parent.callbackPayment(billNo,step,result);
+  }
+  catch(exception){}
+  try{
+   window.close();
+  }
+  catch(exception){}
+ }
+{{/ME2JS}}
+</script>
+
+{{#ME3JS}}
+<script  type='text/javascript' src="http://static.me.zing.vn/v3/js/zm.xcall-1.01.js"></script>
+<script type='text/javascript'>
+function callbackPaymentHelper(billNo,step,result){
+    zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+}
+
+</script>
+{{/ME3JS}}
+
+{{#ME4JS}}
+<script type='text/javascript' src="http://static.me.zing.vn/v3/sdk-js/zm.xcall-1.15.min.js"></script>
+<script type='text/javascript'>
+function callbackPaymentHelper(billNo,step,result){
+    var _url = '{{_url}}';
+    var _t = '{{_t}}';
+    switch (_t) {
+        case  '1' : // popup
+            try {
+                if(_url) {
+                    window.opener.location.href = _url;
+                } else {
+                    window.opener.location.reload();
+                }
+            } catch(exception){}
+            window.close();
+            break;
+        case  '2' : // boxy
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+        case  '3' : // direct page
+            window.location.href = _url;
+            break;
+        case  '4' : // iframe
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+        default :
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+    }
+}
+
+</script>
+{{/ME4JS}}
+<div class="clear"></div>

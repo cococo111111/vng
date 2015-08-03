@@ -1,0 +1,185 @@
+/**
+ * Class: IndexController * Copyright (c) 2010-2011 VNG corp. All Rights
+ * Reserved.
+ */
+package vng.zingme.payment.frontend.credits.service;
+
+import hapax.*;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.logging.Level;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.log4j.Logger;
+import org.apache.thrift.TException;
+import vng.zingme.payment.bo.thrift.BalanceCacheHandler;
+import vng.zingme.payment.frontend.credits.config.Configuration;
+import vng.zingme.payment.frontend.credits.utils.HttpHelper;
+import vng.zingme.payment.frontend.credits.utils.LogUtil;
+import vng.zingme.payment.frontend.credits.utils.Monitor;
+import vng.zingme.payment.frontend.credits.utils.Utils;
+import vng.zingme.payment.thrift.T_AccResponse;
+
+/**
+ * @version 1.
+ * Support 2 tabs for ZingXu and ATM
+ * @author: Lentd
+ * 
+ */
+public class DepositZingXuController extends CreditsCore {
+
+    private final String PARAM_STATS = "stats";
+    private static Logger logger_ = Logger.getLogger(DepositZingXuController.class);
+    private final Monitor readStats = new Monitor();
+    private final int ZING_CARD	= 0;
+    private final int ATM_CARD	= 1;
+
+    public DepositZingXuController() {
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        this.doPost(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        try {
+            processRequest(request, response);
+        } catch (Exception ex) {
+            logger_.error(LogUtil.stackTrace(ex));
+            this.echo(Configuration.SYSTEM_MAINTAIN_TEXT, response);
+        }
+    }
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) 
+            throws TException, TemplateException {
+        long startTime = System.nanoTime();
+        String stats = request.getParameter(PARAM_STATS);
+        if (stats != null && stats.equals(PARAM_STATS)) {
+            this.echo(this.readStats.dumpHtmlStats(), response);
+            return;
+        }
+        if (!this.validUser(request, response)) {
+            return;
+        }
+
+        int userID = Integer.parseInt(request.getAttribute("zme.viewerId").toString());
+        Double balance = getBalance(userID);
+        
+        if (request.getParameter("creditscmd") != null) {
+            if ("napzingxu".equals(request.getParameter("creditscmd"))) {
+                    echoAndStats(startTime, this.renderNapXuForm(balance, userID, ZING_CARD, request, response), response);
+                    return;
+            } else if ("napatm".equals(request.getParameter("creditscmd"))) {
+                    echoAndStats(startTime, this.renderNapXuForm(balance, userID, ATM_CARD, request, response), response);
+                    return;
+            }
+        } 
+
+        echoAndStats(startTime, this.renderNapXuForm(balance, userID, ZING_CARD, request, response), response);
+    }
+
+    private void echoAndStats(long startTime, String html, HttpServletResponse response) {
+        this.echo(html, response);
+        this.readStats.addMicro((System.nanoTime() - startTime) / 1000);
+    }
+
+    private Double getBalance(int userID) {
+        int hope_count = 3;
+        boolean flag = false;
+        Double obj = new Double(0);
+        while (hope_count > 0 && !flag) {
+            try {
+                BalanceCacheHandler balanceCacheHandler = BalanceCacheHandler.getMainInstance(Configuration.BALANCE_HOST, Configuration.BALANCE_PORT);
+                T_AccResponse balance = balanceCacheHandler.getBalance(userID);
+
+                if (balance != null && balance.getCode() >= 0) {
+                    obj = balance.getCurrentBalance();
+                    flag = true;
+                }
+            } catch (Exception ex) {
+                logger_.warn(ex);
+            }
+            --hope_count;
+        }
+        return obj;
+    }
+
+    private String renderNapXuForm(Double balance, int userID, int inputType, HttpServletRequest request, HttpServletResponse response) throws TemplateException {
+        String balancestr = Utils.formatMoney(balance);
+		
+        TemplateLoader templateLoader	= TemplateResourceLoader.create("view/");
+        Template template		= templateLoader.getTemplate("deposit_layout");
+        TemplateDataDictionary dic	= TemplateDictionary.create();
+	String section			= "";
+		
+	//set variables 
+        dic.setVariable("BALANCE", balancestr);
+        dic.setVariable("CREDITS_TITLE", Configuration.SYSTEM_TITLE);
+        dic.setVariable("CREDITS_URL", Configuration.SYSTEM_URL);
+        dic.setVariable("STATIC_URL", Configuration.STATIC_URL);
+        dic.setVariable("MEURL", Configuration.SYSTEM_ME_URL);
+        dic.setVariable("CREDITS_APPNAME", Configuration.SYSTEM_APPNAME);
+        dic.setVariable("USERID", userID + "");
+        dic.setVariable("USERNAME", request.getAttribute("zme.viewerName") + "");
+        dic.setVariable("NAPTHEURL", Configuration.NAPTHE_URL + request.getAttribute("zme.viewerName"));
+        dic.setVariable("CSSVERSION", Configuration.CSS_VERSION);
+        
+        
+        String _t = request.getParameter("_t");
+        if (_t == null || (_t != null && _t.trim().length() == 0)) {
+            _t = "2";
+        }
+        
+        String _url = request.getParameter("_url");
+        
+        dic.setVariable("_t", _t);
+        dic.setVariable("_url", (_url != null) ? _url : "");
+        
+        String url_redirect = request.getParameter("url_redirect");
+        try {
+            dic.setVariable("url_redirect", (url_redirect != null) ? URLEncoder.encode(url_redirect.toString(),"UTF-8") : "");
+        } catch (UnsupportedEncodingException ex) {
+            logger_.error("vinh log --> " + ex.getMessage());
+        }
+
+        if (url_redirect == null) {
+            dic.showSection("CLOSE");
+        } else {
+            dic.showSection("BILL");
+        }
+
+        switch (inputType) {
+            case ZING_CARD: 
+            {
+                    dic.setVariable("QUICKPAY_URL", Configuration.NAPTHE_URL + request.getAttribute("zme.viewerName"));
+                    dic.setVariable("QUICKPAY_HEIGHT", "250px");
+                    section = "ZINGCARD_ACTIVE";
+                    break;
+            }
+            case ATM_CARD:
+            {
+                    String atm_errorcode = HttpHelper.getCookie(request, "atm_errorcode");
+                    if (atm_errorcode != null && (!atm_errorcode.equals("3"))) {
+                        dic.setVariable("QUICKPAY_URL", Configuration.NAPATM_THANKYOU_URL + "." + atm_errorcode + ".html");
+                    } else {
+                        dic.setVariable("QUICKPAY_URL", Configuration.NAPATM_URL);
+                    }
+                    HttpHelper.removeCookie(request, response, "atm_errorcode");
+                    dic.setVariable("QUICKPAY_HEIGHT", "510px");
+                    section = "ATM_ACTIVE";
+                    break;
+            }
+        }
+
+        //load section
+        dic.showSection("deposit_tabs");
+        dic.showSection(section);
+        return template.renderToString(dic);
+    }
+}

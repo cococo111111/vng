@@ -1,0 +1,33 @@
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate[0]?></li></ul>
+<?php 
+}
+?>
+<form name="frmCreateUser" id="frmCreateUser" action="admineditusersubmit" method="post">
+<table class="mainTab" width="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="hligh2" width="20%"><label for="viewname">ID Đăng nhập</label><span
+				class="require">*</span></td>
+			<td class="hligh2"><input name="txtUserName" id="txtUserName"
+				type="hidden" value='<?=$this->userData['txtUserName']?>'><label><?=$this->userData['txtUserName']?></td>
+		</tr>
+		<tr>
+			<td class="hligh1" width="20%"><label for="viewname">Tên Admin</label><span
+				class="require">*</span></td>
+			<td class="hligh1"><input name="txtName" id="txtName"
+				style="width: 200px;" maxlength="50" title="Please Enter Name"
+				class="required" type="text" value='<?=$this->userData['txtName']?>'></td>
+		</tr>		
+		
+		
+		<tr>
+			<td class="hligh2"></td>
+			<td class="hligh2"><input name="btnCreate" id="btnCreate"
+				value="Thay Đổi Tài Khoản Này" class="button" type="submit"></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn_zingcredits/!svn/ver/2403/JAVA/db
+END
+create_db_whitelist.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/1995/JAVA/db/create_db_whitelist.sql
+END
+create_db_old.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_zingcredits/!svn/ver/1225/JAVA/db/create_db_old.sql
+END
+create_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/1225/JAVA/db/create_db.sql
+END
+create_db_app.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_zingcredits/!svn/ver/1604/JAVA/db/create_db_app.sql
+END
+create_db_old
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/1225/JAVA/db/create_db_old
+END
+create_db_remain_balance.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/2071/JAVA/db/create_db_remain_balance.sql
+END
+create_db
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn_zingcredits/!svn/ver/1225/JAVA/db/create_db
+END
+create_db_report_admin.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/1731/JAVA/db/create_db_report_admin.sql
+END
+verify_db
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn_zingcredits/!svn/ver/1225/JAVA/db/verify_db
+END
+pre_create_db_app.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/1605/JAVA/db/pre_create_db_app.sql
+END
+zingcredits_app_apps_sort.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/2403/JAVA/db/zingcredits_app_apps_sort.sql
+END
+alter_db_report_admin.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/2212/JAVA/db/alter_db_report_admin.sql
+END
+create_db_mod_admin.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/2089/JAVA/db/create_db_mod_admin.sql
+END
+generate_rolling_table.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_zingcredits/!svn/ver/1606/JAVA/db/generate_rolling_table.php
+END
+pre-create-db-8.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn_zingcredits/!svn/ver/1225/JAVA/db/pre-create-db-8.sql
+END

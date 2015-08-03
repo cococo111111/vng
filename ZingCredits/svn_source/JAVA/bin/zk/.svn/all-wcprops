@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn_zingcredits/!svn/ver/1225/JAVA/bin/zk
+END
+stopall
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_zingcredits/!svn/ver/1225/JAVA/bin/zk/stopall
+END

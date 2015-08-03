@@ -1,0 +1,8 @@
+tickTime=2000
+initLimit=10
+syncLimit=5
+dataDir=/data/zookeeper/server2
+clientPort=2184
+server.1=localhost:2888:3887
+server.2=localhost:2888:3888
+server.3=localhost:2888:3889

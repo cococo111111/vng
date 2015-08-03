@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn_zingcredits/!svn/ver/2019/PHP/pay_credits/application/etc
+END
+staging.global.ini
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/2019/PHP/pay_credits/application/etc/staging.global.ini
+END
+development.global.ini
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn_zingcredits/!svn/ver/2017/PHP/pay_credits/application/etc/development.global.ini
+END
+production.global.ini
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/2018/PHP/pay_credits/application/etc/production.global.ini
+END

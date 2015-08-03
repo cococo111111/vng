@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/Operation
+END
+DeleteAll.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/Operation/DeleteAll.php
+END
+Insert.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/Operation/Insert.php
+END
+Truncate.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Test/PHPUnit/Db/Operation/Truncate.php
+END

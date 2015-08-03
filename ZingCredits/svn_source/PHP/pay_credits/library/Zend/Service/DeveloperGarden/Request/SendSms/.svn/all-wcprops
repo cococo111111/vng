@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/SendSms
+END
+SendFlashSMS.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/SendSms/SendFlashSMS.php
+END
+SendSMS.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/SendSms/SendSMS.php
+END
+SendSmsAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/SendSms/SendSmsAbstract.php
+END

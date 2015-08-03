@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#mysql -uroot -prootrootroot@  < create_db.sql
+mysql -uroot -S /data/mysql1/mysql1.sock < create_db.sql
+mysql -uroot -S /data/mysql1/mysql1.sock < pre-create-db-8.sql

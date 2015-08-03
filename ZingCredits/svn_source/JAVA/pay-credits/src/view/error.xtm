@@ -1,0 +1,33 @@
+<div class="right_mexu">
+    <div style='color:red;padding-bottom: 6px;text-align:center;font-size:16px'>{{billing-error}}:
+        {{#BILL_RESULT__2}}
+        Dữ liệu không hợp lệ
+        {{/BILL_RESULT__2}}
+        {{#BILL_RESULT__3}}
+        Bạn không đủ tiền
+        {{/BILL_RESULT__3}}
+        {{#BILL_RESULT__4}}
+        Bạn đang thực hiện giao dịch trái phép
+        {{/BILL_RESULT__4}}
+        {{#BILL_RESULT__5}}
+        Bạn đã thực hiện giao dịch này rồi
+        {{/BILL_RESULT__5}}
+        {{#BILL_RESULT_OTHER}}
+        Yêu cầu không hợp lệ
+        {{/BILL_RESULT_OTHER}}
+        {{#BILL_RESULT__6}}
+        ID của giao dịch thanh toán quá dài (tối đa 50 kí tự)  
+        {{/BILL_RESULT__6}}
+    </div>
+    <div style='color:green;padding-bottom: 6px;text-align:center;font-size:16px'>Xem lại các <a href="{{CREDITSURL}}" target="_blank">giao dịch</a>.</div>
+    <br>
+    <table width='100%'>
+        <tr><td align='center'>
+                <input type="button" class="btsbmzc" value="&nbsp;&nbsp;Đóng&nbsp;&nbsp;" onclick="closePayment();"/></td></table>
+    <script type="text/javascript" >
+        function closePayment(){
+            callbackPaymentHelper('{{REFID}}',1,-2);
+        }
+    </script>
+    <br>
+</div>

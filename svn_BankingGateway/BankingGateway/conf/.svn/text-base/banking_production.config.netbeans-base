@@ -1,0 +1,49 @@
+#Configuation for BankingGateway service
+##########################################################################
+# INTERNAL
+#BankingGateway-service info
+bankinggatewayPort=20118
+workerThreads = 10
+
+# millisecond
+duration_time_pending=600000
+time_sleep_worker=300000
+
+# Storage
+storage_host = 10.30.56.52
+storage_port = 9778
+
+# Scribe Info
+scribe_host = 10.30.22.60
+scribe_port = 1463
+
+#Proxy
+proxy_host = noproxy
+proxy_port = 80
+
+##########################################################################
+# ESALE
+ESALE_URL=http://10.30.8.224/eSaleAPIv2/ConfirmOrderBankService.asmx
+sha1_shared_key=Unhjunasd!#$!#jda123
+
+##########################################################################
+# HDBank
+# URL
+HDBank_url=http://10.0.119.7:6789/ZION/services/OnlinePayment
+
+# shared key 3 des
+sharedkey = 9,7,3,5,7,11,6,17,9,17,12,11,7,2,4,8,1,5,4,5,7,4,13,8
+sharedvector = 9,2,7,5,7,11,14,17
+reporter = tranduclen
+private_key_reconcile=oTHVLotiexFH9EM
+folder_reconcile = /data/transaction_log/
+
+##########################################################################
+# vietTinBank
+# HCM
+TerminalCode1   = 10007901
+# HaNoi
+TerminalCode2   = 10007902
+SecretKey       = D9256F32E6E7DDBA1E86A36426E80642
+VietTinBank_url = http://demo.vnpayment.vn/MerchantServer/MerchantSvc.asmx
+PaymentMethod   = VNMART

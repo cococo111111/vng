@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Auth/Storage
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Auth/Storage/Exception.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Auth/Storage/Interface.php
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Auth/Storage/Session.php
+END
+NonPersistent.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Auth/Storage/NonPersistent.php
+END

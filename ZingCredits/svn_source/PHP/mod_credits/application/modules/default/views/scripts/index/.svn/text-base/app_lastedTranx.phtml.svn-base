@@ -1,0 +1,146 @@
+<div id="centerCont"> 
+		<strong>Payment Admin&gt;&gt; </strong> Giao Dịch Gần Nhất
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate?></li></ul>
+<?php 
+}
+$param=$this->param;
+
+?>
+<?php if(isset($this->messages)){?>
+<ul style='color:#009DDC'><li><?=$this->messages?></li></ul>
+<?php }?>
+<br>Nhập thông tin mã user name để in tất cả các giao dịch gần nhất.
+<br><br><form action="/app/lastedtranx" method="post" name="frmuseradjust" id="frmuseradjust"><table>
+<tr>
+  <td>Mã User   <span class='require'>*</span></td>
+  <td><input name='username' value='<?=$param['username']?>'><span style='background:#EFEFEF;color:#009DDC;padding-bottom:2px;padding-right:6px;padding-top:4px;'><input <?php if($param['isuid']=='1'){echo 'checked="checked"';}?> value='1' name='isuid' type='checkbox'><strong>là UserID</strong></span></td>  
+</tr>
+<tr>
+  <td></td>
+  <td><input type='submit' value='Xem giao dịch'></td>
+</tr>
+</table>
+</form>
+<?php
+if(isset($this->tranxs)){
+?>
+<br>Giao Dịch Của : <?=$this->tranxs[0]->userName ?></strong><br>
+<?php
+}
+?>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0" >
+<tbody>
+	<tr height='30px' <?php if(isset($param['ajax'])){echo 'style="background:wheat" ';}?> class="tabTit">	    
+	 <?php if(!isset($param['ajax'])){?>
+	 <td width="2%"></td>
+	 <?php }?>
+                    <td width="13%">Thời gian</td>
+                    <td width="10%">Loại</td>
+                    <td width="5%">Mã GD</td>
+		    <td width="10%">$ Trước GD</td>                
+                    <td width="10%">Giá trị GD</td> 
+                    <td width="8%">Ứng dụng</td>
+                    <td width="10%">Tình trạng</td>
+		    <td width='35%'>Chi Tiết</td>
+  	</tr>
+  	<?php
+  	if(isset($this->tranxs)){
+	  $i=0;
+	  foreach($this->tranxs as $tx){
+	      $i++;
+	      ?>
+	      <tr id='row_<?= $tx->txID ?>' <?php if($i%2==0)echo 'class="hligh2"';?>  <?php if(isset($param['ajax'])){echo 'style="background:wheat" ';}?>>
+	      <?php 
+	      if(!isset($param['tranxid']) || $param['tranxid']==''){
+	      ?>
+	      <td></td>
+	      <?php
+	      }else{
+	      ?>
+	      <?php if(!isset($param['ajax'])){?>
+	      <td align='center'><?=$i?></td>
+	      
+	      <?php
+	      }
+	      }
+	      ?>
+	     <td align='center'><?=date('H:i, d/m/Y',$tx->txTime)?></td>
+	     <td  align='center'>
+                        <?php  
+                        $type = '';
+                        $detail = '';                       
+                       // var_dump($tx->responseCode);
+                        switch ($tx->txType) {
+			  case '2': $type = 'Admin';
+                                $detail = 'Thay đổi ' . '<span class="zc-noiconzc">' . ($tx->amount). '</span> Zing Xu trong tài khoản';
+
+                                break;
+                            case '101': $type = 'Nạp tiền';
+                                $detail = 'Chuyển ' . '<span class="zc-noiconzc">' . ($tx->amount). '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '102': $type = 'Chuyển tiền';
+                                $detail = 'Được Chuyển ' . '<span class="zc-noiconzc">' .($tx->amount) . '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '103': $type = 'Tặng tiền';
+                                $detail = 'Được tặng ' . '<span class="zc-noiconzc">' .($tx->amount). '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '201': $type = 'Thanh toán';
+                                $detail = 'Mua ' . $tx->itemQuantities . ' <b>' .$tx->itemNames  . '</b> tốn ' . '<span class="zc-noiconzc">' . ($tx->amount) . '</span> Zing Xu';
+
+                                break;
+                            case '202': $type = 'Hoàn tiền';
+                                $detail = 'Được hoàn lại ' . '<span class="zc-noiconzc">' .($tx->amount). '</span> Zing Xu';
+                                break;
+                        }
+                        echo $type;
+                        ?></td>
+                        <td align='center' ><?= $tx->txID ?></td>
+			 <td style='text-align:center'><?= ($tx->currentBalance) ?></td>
+                        <td style='text-align:center'><?= ($tx->amount) ?></td>
+                      
+                        <td align='center'><?=$tx->agentID?></td>
+                        <td  style='text-align:center'>
+                        <?php 
+                        switch ($tx->responseCode) {
+                            case '1':
+                            case '3'://gd dang xu ly
+                        ?>Đang Xử Lý<?php
+                                break;
+
+                            case '2':
+                                if ($tx->txType == '2' || $tx->txType == '101' || $tx->txType == '102' || $tx->txType == '103' || $tx->txType == '202') {
+                                    //gd thanh cong
+                        ?>Thành Công<?php
+                                }
+                                if ($tx->txType == '201') {//gd dang xu ly
+                        ?>txStatus<?php
+                                }
+                                else{
+                                 $detail =$tx->description;
+			       }
+                                break;
+                            case '101':
+                            case '102':
+                        ?>Thành Công<?php
+                                break;
+                            case '-103':
+                            case '-104'://gd that bai & rollback
+                                 $detail =$tx->description;
+                        ?>Gd Thất Bại<?php
+                                break;
+                        }
+                        ?>
+                    </td>
+                    <td><?=$detail?></td>
+	     </tr>
+	     <?php
+	  }
+  	}
+	?>
+
+</tbody>
+</table>

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+#mysql -uroot -prootrootroot@ -e "drop database if exists zingffs; create database if not exists zingffs;"
+mysql -uroot -S /data/mysql1/mysql1.sock -e "drop database if exists zingffs; create database if not exists zingffs;"
+
+mysql -uroot -S /data/mysql1/mysql1.sock < tbpayment_1_500000.sql
+mysql -uroot -S /data/mysql1/mysql1.sock < tbpayment_owner.sql
+mysql -uroot -S /data/mysql1/mysql1.sock < tbpayment_rand.sql
+
+mysql -uroot -S /data/mysql1/mysql1.sock -e "grant all on zingffs.* to zingffs@'10.30.22.135' identified by 'BhVlAAABAQCm7tP';flush privileges;"
+mysql -uroot -S /data/mysql1/mysql1.sock -e "grant all on zingffs.* to zingffs@'10.30.22.155' identified by 'BhVlAAABAQCm7tP';flush privileges;"
+
+mysql -uroot -S /data/mysql1/mysql1.sock -e "show databases; select user,host from mysql.user where user='zingffs'; select user,host,db from mysql.db where user='zingffs';"
+

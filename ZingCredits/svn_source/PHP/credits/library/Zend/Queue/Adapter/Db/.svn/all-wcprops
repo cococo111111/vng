@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db
+END
+postgresql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db/postgresql.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db/mysql.sql
+END
+queue_sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db/queue_sqlite.sql
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db/Message.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Queue/Adapter/Db/Queue.php
+END

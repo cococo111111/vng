@@ -1,0 +1,10 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+sh ./8_start_PaymentAppsService
+sh ./1_start_TokenServer
+sh ./2_start_Storage
+sh ./5_start_PaymentZKBackEnd_push
+sh ./12_start_PaymentAdmin
+sh ./ws/start

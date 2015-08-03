@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 17.1-b03 (Sun Microsystems Inc.)
+Main-Class: vng.zingme.payment.frontend.credits.service.CreditsDaemon
+Class-Path: /zserver/java/lib/zingcredits/Common-1.0.jar /zserver/java
+ /lib/zingcredits/Util-1.0.jar /zserver/java/lib/clhm-production-depre
+ cated-0.1.jar /zserver/java/lib/jetty/jetty-continuation-7.1.6.v20100
+ 715.jar /zserver/java/lib/jetty/jetty-http-7.1.6.v20100715.jar /zserv
+ er/java/lib/jetty/jetty-io-7.1.6.v20100715.jar /zserver/java/lib/jett
+ y/jetty-jmx-7.1.6.v20100715.jar /zserver/java/lib/jetty/jetty-server-
+ 7.1.6.v20100715.jar /zserver/java/lib/jetty/jetty-servlet-7.1.6.v2010
+ 0715.jar /zserver/java/lib/jetty/jetty-util-7.1.6.v20100715.jar /zser
+ ver/java/lib/zingcredits/PaymentGateway-1.0.jar /zserver/java/lib/com
+ mons-cli-1.1.jar /zserver/java/lib/commons-codec-1.2.jar /zserver/jav
+ a/lib/commons-collections-3.2.1.jar /zserver/java/lib/commons-configu
+ ration-1.6.jar /zserver/java/lib/commons-lang-2.5.jar /zserver/java/l
+ ib/commons-io-1.4.jar /zserver/java/lib/commons-logging-1.1.1.jar /zs
+ erver/java/lib/commons-pool-1.5.5.jar /zserver/java/lib/high-scale-li
+ b-1.0.jar /zserver/java/lib/libthrift-0.5.0.jar /zserver/java/lib/log
+ 4j-1.2.14.jar /zserver/java/lib/slf4j-api-1.5.8.jar /zserver/java/lib
+ /perf4j-0.9.12.jar /zserver/java/lib/slf4j-log4j12-1.5.8.jar /zserver
+ /java/lib/zm_corelib/ZME_JCoreLib-1.0.jar /zserver/java/lib/servlet-a
+ pi-2.5.jar /zserver/java/lib/sw/zcypher/jzcypher-sw-1.0.jar /zserver/
+ java/lib/thrift/stdprofile/vng.stdprofile-1.0.jar /zserver/java/lib/s
+ w/zcommon/jzcommon-sw-1.0.jar /Projects/svn_zingcredits/JAVA/pay-cred
+ its-balance/build/classes
+

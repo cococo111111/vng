@@ -1,0 +1,68 @@
+<definitions name='ReceiverMOImplService' targetNamespace='http://tempuri.org/' xmlns='http://schemas.xmlsoap.org/wsdl/' xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' xmlns:tns='http://tempuri.org/' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+ <types>
+  <xs:schema targetNamespace='http://tempuri.org/' version='1.0' xmlns:tns='http://tempuri.org/' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+   <xs:element name='Exception' type='tns:Exception'/>
+   <xs:element name='receiveMO' type='tns:receiveMO'/>
+   <xs:element name='receiveMOResponse' type='tns:receiveMOResponse'/>
+   <xs:complexType name='receiveMO'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='RequestID' type='xs:string'/>
+     <xs:element minOccurs='0' name='UserID' type='xs:string'/>
+     <xs:element minOccurs='0' name='ServiceID' type='xs:string'/>
+     <xs:element minOccurs='0' name='CommandCode' type='xs:string'/>
+     <xs:element minOccurs='0' name='Message' type='xs:string'/>
+     <xs:element minOccurs='0' name='MobileOperator' type='xs:string'/>
+     <xs:element minOccurs='0' name='UserName' type='xs:string'/>
+     <xs:element minOccurs='0' name='Password' type='xs:string'/>
+     <xs:element minOccurs='0' name='RequestTime' type='xs:dateTime'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='receiveMOResponse'>
+    <xs:sequence>
+     <xs:element name='Result' type='xs:int'/>
+    </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name='Exception'>
+    <xs:sequence>
+     <xs:element minOccurs='0' name='message' type='xs:string'/>
+    </xs:sequence>
+   </xs:complexType>
+  </xs:schema>
+ </types>
+ <message name='ReceiverMO_receiveMOResponse'>
+  <part element='tns:receiveMOResponse' name='receiveMOResponse'></part>
+ </message>
+ <message name='Exception'>
+  <part element='tns:Exception' name='Exception'></part>
+ </message>
+ <message name='ReceiverMO_receiveMO'>
+  <part element='tns:receiveMO' name='receiveMO'></part>
+ </message>
+ <portType name='ReceiverMO'>
+  <operation name='receiveMO' parameterOrder='receiveMO'>
+   <input message='tns:ReceiverMO_receiveMO'></input>
+   <output message='tns:ReceiverMO_receiveMOResponse'></output>
+   <fault message='tns:Exception' name='Exception'></fault>
+  </operation>
+ </portType>
+ <binding name='ReceiverMOBinding' type='tns:ReceiverMO'>
+  <soap:binding style='document' transport='http://schemas.xmlsoap.org/soap/http'/>
+  <operation name='receiveMO'>
+   <soap:operation soapAction=''/>
+   <input>
+    <soap:body use='literal'/>
+   </input>
+   <output>
+    <soap:body use='literal'/>
+   </output>
+   <fault name='Exception'>
+    <soap:fault name='Exception' use='literal'/>
+   </fault>
+  </operation>
+ </binding>
+ <service name='ReceiverMOImplService'>
+  <port binding='tns:ReceiverMOBinding' name='ReceiverMOPort'>
+   <soap:address location='http://esb-dev.vng.com.vn:8080/SMSWS/ReceiverMO'/>
+  </port>
+ </service>
+</definitions>

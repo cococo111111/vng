@@ -1,0 +1,2025 @@
+2011-03-23T09:31:43+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:31:49+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:35:22+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:36+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:36:37+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:37:09+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:37:10+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:38:55+07:00 ERR (3): 
+Uncautch exception: script 'index/app_frmsearch.phtml' not found in path (/home/admin_credits/application/modules/default/views/scripts/)#0 /zserver/php/lib/Zend/View/Abstract.php(816): Zend_View_Abstract->_script('index/app_frmse...')
+#1 /home/admin_credits/application/modules/default/controllers/AppController.php(20): Zend_View_Abstract->render('index/app_frmse...')
+#2 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#3 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#4 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#6 {main}
+
+2011-03-23T09:38:55+07:00 ERR (3): 
+Uncautch exception: script 'index/app_frmsearch.phtml' not found in path (/home/admin_credits/application/modules/default/views/scripts/)#0 /zserver/php/lib/Zend/View/Abstract.php(816): Zend_View_Abstract->_script('index/app_frmse...')
+#1 /home/admin_credits/application/modules/default/controllers/AppController.php(20): Zend_View_Abstract->render('index/app_frmse...')
+#2 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#3 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#4 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#5 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#6 {main}
+
+2011-03-23T09:39:57+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:40:00+07:00 ERR (3): 
+Uncautch exception: Action "" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('Action', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('Action')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:43:51+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:38+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:38+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:39+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:44:40+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:49:02+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:49:06+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:49:12+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:49:22+07:00 ERR (3): 
+Uncautch exception: Action "app" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('appAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('appAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:57:05+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:57:08+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:57:57+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:57:58+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:57:58+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:58:02+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:58:07+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:58:35+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:58:48+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:58:49+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:01+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:01+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:02+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:12+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:13+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:13+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:13+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:31+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T09:59:36+07:00 ERR (3): 
+Uncautch exception: No default module defined for this application#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(203): Zend_Controller_Dispatcher_Standard->getControllerClass(Object(Zend_Controller_Request_Http))
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(237): Zend_Controller_Dispatcher_Standard->isDispatchable(Object(Zend_Controller_Request_Http))
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T10:02:33+07:00 ERR (3): 
+Uncautch exception: TSocket: timed out reading 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(166): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(134): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), 'e08515c236f547d...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(73): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), 'e08515c236f547d...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->registerappsubmitAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('registerappsubm...')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-23T10:09:27+07:00 ERR (3): 
+Uncautch exception: Action "changepass" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('changepassActio...', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changepassActio...')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-23T10:36:58+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signout)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T10:37:37+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signout)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T10:37:40+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T10:37:46+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:05:44+07:00 ERR (3): 
+Uncautch exception: Method "forward" does not exist and was not trapped in __call()#0 [internal function]: Zend_Controller_Action->__call('forward', Array)
+#1 /home/admin_credits/application/modules/default/controllers/IndexController.php(24): IndexController->forward('signin')
+#2 /home/admin_credits/application/modules/default/controllers/IndexController.php(11): IndexController->auth()
+#3 /zserver/php/lib/Zend/Controller/Action.php(123): IndexController->init()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(261): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http), Array)
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-03-23T11:05:46+07:00 ERR (3): 
+Uncautch exception: Method "forward" does not exist and was not trapped in __call()#0 [internal function]: Zend_Controller_Action->__call('forward', Array)
+#1 /home/admin_credits/application/modules/default/controllers/IndexController.php(24): IndexController->forward('signin')
+#2 /home/admin_credits/application/modules/default/controllers/IndexController.php(11): IndexController->auth()
+#3 /zserver/php/lib/Zend/Controller/Action.php(123): IndexController->init()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(261): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http), Array)
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-03-23T11:05:47+07:00 ERR (3): 
+Uncautch exception: Method "forward" does not exist and was not trapped in __call()#0 [internal function]: Zend_Controller_Action->__call('forward', Array)
+#1 /home/admin_credits/application/modules/default/controllers/IndexController.php(24): IndexController->forward('signin')
+#2 /home/admin_credits/application/modules/default/controllers/IndexController.php(11): IndexController->auth()
+#3 /zserver/php/lib/Zend/Controller/Action.php(123): IndexController->init()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(261): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http), Array)
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-03-23T11:05:59+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:06:02+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:06:13+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:06:32+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:08:06+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (signin)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-23T11:17:26+07:00 ERR (3): 
+Uncautch exception: Action "changepass" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('changepassActio...', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changepassActio...')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:22+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:24+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:25+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:33:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T08:46:46+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T09:15:01+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-24T16:30:35+07:00 ERR (3): 
+Uncautch exception: Action "disable" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('disableAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('disableAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-25T09:56:35+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:56:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:26+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:52+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:54+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T09:57:55+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:44:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-25T12:44:32+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-25T12:44:45+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:44:50+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:45:21+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:45:22+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:45:31+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:45:32+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T12:47:41+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:00+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:08+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:08+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:09+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:09+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:09+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:09+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:09+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:10+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:10+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:10+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T12:48:10+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not read 4 bytes from 10.199.18.36:10114#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(135): TSocket->readAll(4)
+#1 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(102): TFramedTransport->readFrame()
+#2 /home/admin_credits/Lib/Apache/Thrift/transport/TTransport.php(87): TFramedTransport->read(4)
+#3 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(300): TTransport->readAll(4)
+#4 /home/admin_credits/Lib/Apache/Thrift/protocol/TBinaryProtocol.php(192): TBinaryProtocol->readI32(NULL)
+#5 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(168): TBinaryProtocol->readMessageBegin(NULL, 0, 0)
+#6 /home/admin_credits/Lib/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php(136): TAdminServerClient->recv_registerGameServer()
+#7 /home/admin_credits/application/models/AppInfo.php(62): TAdminServerClient->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#8 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->registerGameServer(Object(vng_zingme_payment_thrift_T_AppInfo), '4IUVwjb1R9OBP2W...')
+#9 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#10 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#11 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#12 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#13 {main}
+
+2011-03-25T13:18:48+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:35:46+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(73): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(29): AppInfo->getAllAppInfo()
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-03-25T13:35:51+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(73): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(29): AppInfo->getAllAppInfo()
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-03-25T13:38:08+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:38:10+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:38:12+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:38:12+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:38:13+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T13:38:13+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-03-25T14:46:23+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-25T14:58:42+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-28T16:25:03+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-28T16:25:07+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:55:59+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:56:08+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:56:19+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:56:30+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:57:26+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T12:57:30+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T16:08:58+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-03-29T16:09:31+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-04T08:13:19+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-04T13:18:09+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-04T13:34:55+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-04T17:20:14+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T07:55:36+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T09:58:08+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T10:23:48+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:48+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:48+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:49+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:49+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:49+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:50+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(49): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(96): AppInfo->getAppInfo('we')
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->changeAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('changeAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:55+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T10:23:57+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(73): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(31): AppInfo->getAllAppInfo()
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:23:59+07:00 ERR (3): 
+Uncautch exception: TSocket: Could not connect to 10.199.18.36:10114 (Connection refused [111])#0 /home/admin_credits/Lib/Apache/Thrift/transport/TFramedTransport.php(83): TSocket->open()
+#1 /home/admin_credits/application/models/AppInfo.php(73): TFramedTransport->open()
+#2 /home/admin_credits/application/modules/default/controllers/AppController.php(31): AppInfo->getAllAppInfo()
+#3 /zserver/php/lib/Zend/Controller/Action.php(503): AppController->indexAction()
+#4 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('indexAction')
+#5 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#6 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#7 {main}
+
+2011-04-05T10:29:27+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-05T10:29:29+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (change)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-05T10:30:27+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T10:50:08+07:00 ERR (3): 
+Uncautch exception: Invalid controller class ("AppController")#0 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(255): Zend_Controller_Dispatcher_Standard->loadClass('AppController')
+#1 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#2 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#3 {main}
+
+2011-04-05T10:52:46+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (app)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-05T12:47:05+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T12:47:09+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T12:57:29+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T12:57:32+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T12:57:32+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-05T15:20:20+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T08:12:02+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T09:06:12+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T09:06:13+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T09:06:14+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T17:20:33+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T17:20:36+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-06T17:20:36+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-07T08:47:03+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T10:26:38+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T10:26:45+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T10:27:30+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T10:29:08+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T10:29:08+07:00 ERR (3): 
+Uncautch exception: Action "r" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('rAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('rAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:39+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:40+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:41+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:41+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:41+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:41+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:16:41+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:18:04+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:19:08+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-08T13:19:10+07:00 ERR (3): 
+Uncautch exception: Action "signin" does not exist and was not trapped in __call()#0 /zserver/php/lib/Zend/Controller/Action.php(505): Zend_Controller_Action->__call('signinAction', Array)
+#1 /zserver/php/lib/Zend/Controller/Dispatcher/Standard.php(285): Zend_Controller_Action->dispatch('signinAction')
+#2 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#3 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#4 {main}
+
+2011-04-14T14:34:47+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:34:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:34:53+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:35:36+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:35:37+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:35:38+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:35:38+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:35:39+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:04+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:04+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:05+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:06+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:06+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:06+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+
+2011-04-14T14:36:06+07:00 ERR (3): 
+Uncautch exception: Invalid controller specified (changeapp)#0 /zserver/php/lib/Zend/Controller/Front.php(934): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/admin_credits/public_html/index.php(55): Zend_Controller_Front->dispatch()
+#2 {main}
+

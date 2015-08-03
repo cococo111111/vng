@@ -1,0 +1,59 @@
+[general]
+
+;Database connection settings
+db.adapter=PDO_MYSQL
+db.host=localhost
+db.username=root
+db.password=85a0849cd59ed08eac28b8e765e53ad8
+db.dbname=me_pa
+
+[DBconfiguration]
+;profile db
+profile.adapter         = mysqli
+profile.params.host     = 10.199.36.90
+profile.params.port     = 3306
+profile.params.dbname   = me_pa
+profile.params.username = mepa
+profile.params.password = mepa@
+profile.params.driver_options.MYSQLI_INIT_COMMAND = "SET NAMES UTF8"
+
+[DBAdmin]
+;profile db
+profile.adapter         = mysqli
+profile.params.host     = 10.199.18.36
+profile.params.port     = 3306
+profile.params.dbname   = me_pa
+profile.params.username = admin
+profile.params.password = 11111
+profile.params.driver_options.MYSQLI_INIT_COMMAND = "SET NAMES UTF8"
+
+[DBUser]
+;profile db
+profile.adapter         = mysqli
+profile.params.host     = 10.199.36.90
+profile.params.port     = 3306
+profile.params.dbname   = me_pa
+profile.params.username = user
+profile.params.password = 11111
+profile.params.driver_options.MYSQLI_INIT_COMMAND = "SET NAMES UTF8"
+
+[caching]
+cache.type			= memcache
+cache.key			= appid
+cache.caching			= true
+cache.lifetime			= 3600
+cache.memcache.host		= 10.199.18.199
+cache.memcache.port		= 11211
+cachingfarm.list		= pa
+cachingfarm.pa.enable		= true
+cachingfarm.pa.host		= 10.199.18.199
+cachingfarm.pa.port		= 11211
+cache.maxpage			= 10
+
+[thrift]
+thrift.host			= 10.199.36.90
+thrift.port			= 8052
+thrift.buffer.rsize		= 1024
+thrift.buffer.wsize		= 1024
+thrift.timeout.send		= 10000
+thrift.timeout.recv 		= 10000

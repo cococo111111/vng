@@ -1,0 +1,38 @@
+Guide to start the whole zingcredits service
+
+server1: 10.30.22.158
+server2: 10.30.22.153
+server3: 10.30.22.155
+
+1. ZooKeeper
+	sh ./zk/bin1/start (server1)
+	sh ./zk/bin2/start (server3)
+	sh ./zk/bin3/start (server2)
+2. ActiveMQ
+	sh ./activemq/start (server1)
+3. TokenServer
+	sh ./1_start_TokenServer (server2)
+4. Storage
+	sh ./2_start_Storage (server2)
+5. AccountBalanceCache
+	sh ./3_start_AccountBalanceCache (server1)
+6. LatestTranxCache
+	sh ./4_start_LatestTranxCache (server1)
+7. PaymentZKBackEnd (PUSH)
+	sh ./5_start_PaymentZKBackEnd_push (server2)
+8. PaymentZKBackEnd (BILL)
+	sh ./6_start_PaymentZKBackEnd_bill (server1)
+9. PaymentGateway (BILL)
+	sh ./7_start_PaymentGateway (server1)
+10. PaymentAppsService
+	sh ./8_start_PaymentAppsService (server2)
+11. Web-service for PUSH
+	sh ./ws/start (server2)
+12. PaymentAdmin
+	sh ./12_start_PaymentAdmin (server2)
+13. PaymentReport
+	sh ./9_start_PaymentReport (server3)
+14. (FrontEnd) API getBalance
+	sh ./10_start_paycreditsBalance
+15. (FrontEnd) pay-credits
+	sh ./11_start_pay-credits

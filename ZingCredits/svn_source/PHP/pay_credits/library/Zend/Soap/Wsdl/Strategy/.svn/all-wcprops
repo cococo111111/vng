@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy
+END
+ArrayOfTypeComplex.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/ArrayOfTypeComplex.php
+END
+ArrayOfTypeSequence.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/ArrayOfTypeSequence.php
+END
+DefaultComplexType.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/DefaultComplexType.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/Interface.php
+END
+Composite.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/Composite.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/Abstract.php
+END
+AnyType.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl/Strategy/AnyType.php
+END

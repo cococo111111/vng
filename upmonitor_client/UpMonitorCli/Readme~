@@ -1,0 +1,92 @@
+Mô tả:
+UpMonitorClient dùng để lưu thông tin, monitor (up/down) & notification Service.
+UpMonitorClient sử dụng zookeeper client khi start sẽ register node (create data) lên zookeeper server, khi service down, mất kết nối, zookeeper server sẽ notify báo service down.
+Theo dõi thông tin service trên http://ticket.zapps.vn/service.php
+
+Init service:
+  String zkaddress = Config.getParam("upmonitor", "address");
+  String zname  = System.getProperty("zname"); //zname define trong runserver/service.in.sh (theo format /$PRODUCT-CHÍNH/$GROUP-SERVICE(nếu cần)/$SUB-GROUP-SERVICE(Nếu cần)/$SERICE( là zname)
+  new ZooKeeperZClient(zname,zkaddress).run();
+  
+Configure: $HOME/conf/production.config.ini
+
+[upmonitor]
+;server monitor:
+address=10.30.12.56:2183,10.30.12.68:2183,10.30.12.72:2183,10.30.12.80:2183,10.30.12.71:2183  
+
+;mô tả chức năng, thông tin service (String)
+description=Test Test Tests test test
+
+;notify bằng uid zingme khi service down/up/register (String Uid)
+zme_contacts=
+
+;notify bằng sms khi service down/up/register (String SDT)
+sms_contacts=
+
+;notify bằng mail khi service down/up/register (String email)
+mail_contacts=
+
+;url của service trên live (String)
+url_live=http://me.zing.vn
+
+;các host,port quan trọng cần kiểm tra kết nối (host:port & 2 service cách nhau dấu ,)
+service_dependencies=10.30.12.133:3306,10.30.12.133:8080
+
+;thông tin khác cần theo dõi, truyền vào jsonString/jsonArray
+extras=
+
+
+
+Example:
+
+package system;
+
+import com.vng.jcore.common.Config;
+import com.vng.jcore.common.LogUtil;
+import java.io.File;
+import org.apache.log4j.Logger;
+import upzkclient.UpClient;
+
+public class ServiceDaemon {
+
+    private static final Logger logger_ = Logger.getLogger(ServiceDaemon.class);
+    
+    private static void initUpMonitor() {
+        try {
+            String upmonitor = System.getProperty("upmonitor"); // Khi deploy lên LIVE SO sẽ tự động add thêm JVM opt này vô.
+            if (upmonitor != null) {
+                int isEnableUpmonitor = Integer.valueOf(upmonitor);
+                if (isEnableUpmonitor > 0) {
+                    String zkaddress = Config.getParam("upmonitor", "address");
+                    String zname = System.getProperty("zname"); //zname define trong runserver/service.in.sh (theo format /$PRODUCT-CHÍNH/$GROUP-SERVICE(nếu cần)/$SUB-GROUP-SERVICE(Nếu cần)/$SERICE( là APPNAME/ZNAME)
+                    UpClient upClient = new UpClient(zname, zkaddress);
+                    new Thread((Runnable) upClient);
+                }
+            }
+        } catch (NumberFormatException ex) {
+            logger_.error(ex.getMessage(), ex);
+        }
+    }
+    
+    public static void main(String[] args) throws Exception {
+        LogUtil.init();
+        String pidFile = System.getProperty("pidfile");
+      
+        try {
+            if (pidFile != null) {
+                new File(pidFile).deleteOnExit();
+            }
+            initUpMonitor();
+            WebServer webserver = new WebServer();
+            new Thread(webserver).start();
+        } catch (Throwable e) {
+            String msg = "Exception encountered during startup.";
+            logger_.error(msg, e);
+            logger_.error("Uncaught exception: " + e.getMessage());
+            System.exit(3);
+        }
+    }
+    
+}
+
+

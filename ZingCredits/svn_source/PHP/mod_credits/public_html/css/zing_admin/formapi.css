@@ -1,0 +1,133 @@
+
+
+formapi 
+{
+	margin-top: 0em;
+	margin-bottom: 0.5em;	
+}
+
+.form-item {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.form-item .form-required
+{
+	color:#ff0000;
+}
+
+.login-box
+{
+	border: solid 1px #cecece;
+	background: #f5f5f5;
+	padding-bottom:20px;
+	margin-top:30px;	
+	width:400px;
+	min-width:300px;
+}
+
+.form-item input.error,  .form-item select.error {
+  border: 2px solid red;
+}
+
+input.error, select.error {
+  border: 2px solid red;
+}
+
+.form-item .description {
+  font-size: 0.85em;  
+}
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+.formapi input
+{
+	width:350px;
+}
+
+.formapi .checkbox
+{
+	width:15px;
+}
+
+.formapi .radio
+{
+	width:15px;
+}
+
+.formapi select, .formapi textarea {
+  font: 12px/160% Verdana, sans-serif;
+  color: #494949;
+}
+
+.formapi input.submit
+{
+	width:auto;
+}
+
+.formapi .label
+{
+	display: block;
+	font-weight: bold;
+}
+
+.formapi .label_inline
+{
+	display: block;
+	font-weight: bold;
+}
+
+.formapi input.error, .formapi textarea.error, .formapi select.error {
+  border: 2px solid red;
+}
+
+input.error, textarea.error, select.error {
+  border: 2px solid red;
+}
+
+.formapi .label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+.formapi .description
+{
+	font-size: 0.85em;
+	padding-top:5px;
+	width:95%;
+	max-width:720px;
+	color: #898989;
+	line-height: 150%;
+}
+
+fieldset {
+  margin: 0em 1em 1em 0em;
+  padding: 0em 1em 1em 1em;
+  border: 1px solid #d9eaf5;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;  
+  
+}
+
+
+/* Targets IE 7. Fixes background image in field sets. */
+*:first-child+html fieldset {
+  padding: 0 1em 1em;
+  background-position: 0 .75em;
+  background-color: transparent;
+}
+
+*:first-child+html fieldset > .description, *:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 1em;
+}
+
+
+fieldset legend {
+  /* Fix disappearing legend in FFox */
+   display: block;
+}

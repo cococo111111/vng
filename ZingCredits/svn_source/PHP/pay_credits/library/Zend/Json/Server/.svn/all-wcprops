@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server
+END
+Cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Cache.php
+END
+Smd.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Smd.php
+END
+Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Request.php
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Error.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Exception.php
+END
+Response.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Json/Server/Response.php
+END

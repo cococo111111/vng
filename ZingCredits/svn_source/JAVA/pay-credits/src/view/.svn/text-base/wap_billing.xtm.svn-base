@@ -1,0 +1,34 @@
+          <div class="fr">
+            <p>Bạn cần xác nhận trước khi thanh toán để chắc chắn những thông tin sau là chính xác:</p>
+            <p>• Tên sản phẩm</p>
+            <p>• Giá của từng sản phẩm</p>
+            <p>• Số lượng của từng sản phẩm</p>
+            <p>• Tổng tiền thanh toán của sản phẩm</p>
+          </div>
+          {{#ITEM}}
+            <div class="fr">
+            <p>Tên sản phẩm: {{ITEMNAME}}</p>
+            <p>Số lượng: {{QUANTITY}}</p>
+            <p>Đơn giá: {{PRICE}}</p>
+          </div>
+{{/ITEM}}
+<p><strong>Tổng thanh toán: {{PAYTOTAL}} Zing Xu</strong></p>
+
+<div class="fr">
+ <form name="frm" id="frm" method="post" action="/wap/bill">
+<input type="hidden" name="appID" value="{{APPID}}">
+ <input type="hidden" name="userID" value="{{USERID}}">
+ <input type="hidden" name="data" value="{{DATA}}">
+ <input type="hidden" name="pToken" value="{{PTOKEN}}">
+ <input type="hidden" name="refID" value="{{REFID}}">
+<input type='submit' class="btnsubmit2" value='Thanh toán'>&nbsp;&nbsp;<a href='{{APPFULLURL}}'><input type='button' class="btnsubmit2" value='Hủy' onclick="closePayment()"></a>
+</form>
+		    </div>
+      <div class="cont03 fzs"> Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558 </strong></div>
+      
+      <script type="text/javascript" >
+  function closePayment(){
+   callbackPaymentHelper('{{REFID}}',1,-1);
+   //history.go(-1);
+  }
+ </script>

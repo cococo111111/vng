@@ -1,0 +1,9 @@
+<div id="centerCont"> 
+		<strong>Payment Admin&gt;&gt; </strong> Apps Management
+		<br>
+<form action="/app/registerapp" method="get" name="frmSearch" id="frmSearch">
+<?php if(isset($this->messages)){?>
+<ul style='color:#009DDC'><li><?=$this->messages?></li></ul>
+<?php }?>
+<input type='submit' value='Đăng Ký Ứng Dụng'>
+</form>

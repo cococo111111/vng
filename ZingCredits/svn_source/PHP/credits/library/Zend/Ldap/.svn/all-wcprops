@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap
+END
+Attribute.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Attribute.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Filter.php
+END
+Node.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Node.php
+END
+Converter.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Converter.php
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Collection.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Exception.php
+END
+Dn.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Ldap/Dn.php
+END

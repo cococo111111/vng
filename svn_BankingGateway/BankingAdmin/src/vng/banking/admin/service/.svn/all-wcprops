@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/service
+END
+BankingCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/vng/banking/admin/service/BankingCore.java
+END
+BankingServerMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/vng/banking/admin/service/BankingServerMBean.java
+END
+BankingDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_bankinggateway/!svn/ver/18/BankingAdmin/src/vng/banking/admin/service/BankingDaemon.java
+END
+BankingServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_bankinggateway/!svn/ver/54/BankingAdmin/src/vng/banking/admin/service/BankingServer.java
+END

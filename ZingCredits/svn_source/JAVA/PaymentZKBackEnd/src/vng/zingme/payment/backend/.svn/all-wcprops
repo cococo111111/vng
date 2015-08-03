@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend
+END
+BackEndData.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/BackEndData.java
+END
+ZookeeperListenerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1708/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZookeeperListenerManager.java
+END
+GeneratorServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/2698/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/GeneratorServiceClient.java
+END
+ZKBackEndMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/2680/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZKBackEndMain.java
+END
+ZKBackEndMainWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZKBackEndMainWorker.java
+END
+ZKBackendHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_zingcredits/!svn/ver/1934/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZKBackendHandler.java
+END
+UpdateCacheWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn_zingcredits/!svn/ver/2776/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/UpdateCacheWorker.java
+END
+ZKListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZKListener.java
+END
+ReturnBillingAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ReturnBillingAdapter.java
+END
+GameResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/GameResponse.java
+END
+ZKBackEndMainWorkerMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/ZKBackEndMainWorkerMBean.java
+END
+SendToGameWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_zingcredits/!svn/ver/2773/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/SendToGameWorker.java
+END
+RecycleZKWorker.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn_zingcredits/!svn/ver/2425/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/RecycleZKWorker.java
+END
+UpdateCacheWorkerData.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/2680/JAVA/PaymentZKBackEnd/src/vng/zingme/payment/backend/UpdateCacheWorkerData.java
+END

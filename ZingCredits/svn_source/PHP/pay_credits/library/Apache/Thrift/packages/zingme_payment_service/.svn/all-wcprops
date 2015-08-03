@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1286/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service
+END
+TGameServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TGameServer.php
+END
+TLatestCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TLatestCache.php
+END
+TToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TToken.php
+END
+TBalanceCaching.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TBalanceCaching.php
+END
+TStorage.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TStorage.php
+END
+TZKFrontEnd.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TZKFrontEnd.php
+END
+zingme_payment_service_types.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/zingme_payment_service_types.php
+END
+TStatCaching.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TStatCaching.php
+END
+TReport.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/1286/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TReport.php
+END
+TZKBackEnd.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TZKBackEnd.php
+END
+TPayment.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1286/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TPayment.php
+END
+TAdminServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Apache/Thrift/packages/zingme_payment_service/TAdminServer.php
+END

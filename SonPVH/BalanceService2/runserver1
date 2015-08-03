@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Startup script for Main
+
+
+for jar in /home/sonhoang/NetBeansProjects/BalanceService/dist/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+for jar in /home/sonhoang/NetBeansProjects/BalanceService/dist/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+
+echo $CLASSPATH

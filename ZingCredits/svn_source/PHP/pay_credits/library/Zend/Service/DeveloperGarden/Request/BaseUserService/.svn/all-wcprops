@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/BaseUserService
+END
+GetQuotaInformation.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/BaseUserService/GetQuotaInformation.php
+END
+GetAccountBalance.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/BaseUserService/GetAccountBalance.php
+END
+ChangeQuotaPool.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Request/BaseUserService/ChangeQuotaPool.php
+END

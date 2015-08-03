@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/storage
+END
+StorageFaceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn_bankinggateway/!svn/ver/62/BankingStorage/src/vng/bankinggateway/storage/StorageFaceImpl.java
+END
+StorageDaemon.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_bankinggateway/!svn/ver/12/BankingStorage/src/vng/bankinggateway/storage/StorageDaemon.java
+END
+StorageFaceImplMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_bankinggateway/!svn/ver/12/BankingStorage/src/vng/bankinggateway/storage/StorageFaceImplMBean.java
+END

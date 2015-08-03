@@ -1,0 +1,39 @@
+{
+  "servers" : [ {
+    "port" : "{{JMX_PORT}}",
+    "host" : "{{JMX_HOST}}",
+    "queries" : [ {
+      "obj" : "java.lang:type=Memory",
+      "attr" : [ "HeapMemoryUsage", "NonHeapMemoryUsage" ],
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+        "settings" : {
+          "port" : {{GRAPHITE_PORT}},
+          "host" : "{{GRAPHITE_HOST}}"
+        }
+      } ]
+    },{
+      "obj" : "java.lang:type=Threading",
+      "attr" : [ "DaemonThreadCount", "PeakThreadCount", "ThreadCount", "TotalStartedThreadCount" ],
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+        "settings" : {
+          "port" : {{GRAPHITE_PORT}},
+          "host" : "{{GRAPHITE_HOST}}"
+        }
+      } ]
+    },{
+      "obj" : "java.lang:type=OperatingSystem",
+      "attr" : [ "ProcessCpuLoad", "SystemCpuLoad", "SystemLoadAverage"],
+      "outputWriters" : [ {
+        "@class" : "com.googlecode.jmxtrans.model.output.GraphiteWriter",
+        "settings" : {
+          "port" : {{GRAPHITE_PORT}},
+          "host" : "{{GRAPHITE_HOST}}"
+        }
+      } ]
+    }
+    ],
+    "numQueryThreads" : 2
+  } ]
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_zingcredits/!svn/ver/2313/JAVA/deploy/config2/zserver/java/apache-tomcat-7.0.8/conf
+END
+paymentgateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1978/JAVA/deploy/config2/zserver/java/apache-tomcat-7.0.8/conf/paymentgateway.config
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/2313/JAVA/deploy/config2/zserver/java/apache-tomcat-7.0.8/conf/config.xml
+END
+scribe.ini
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn_zingcredits/!svn/ver/1225/JAVA/deploy/config2/zserver/java/apache-tomcat-7.0.8/conf/scribe.ini
+END

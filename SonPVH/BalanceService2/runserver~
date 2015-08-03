@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# Startup script for Main
+
+export HOME=/zserver/japps/zingcredits/testgame
+cd $HOME
+export ZNAME=BalanceService
+export ZPORT=8850
+export INCLUDE=$HOME/cmd/service.in.sh
+export CLASSMAIN=zingme.testgame.server.ZAppDaemon
+export XMX=256M
+export JMXHOST=10.30.12.188
+export JMXPORT=14286
+#export APPENV=production
+export APPENV=development
+
+pid_file=$HOME/tmp/service.pid
+log_file=$HOME/tmp/runserver.log
+
+case "$1" in
+    start)
+        # Main startup
+        echo -n "Starting $ZNAME System (port $ZPORT): "
+        $HOME/cmd/service -p $pid_file > $log_file 2>&1
+        echo "OK"
+        ;;
+    stop)
+        # Main shutdown
+        echo -n "Shutdown $ZNAME System (port $ZPORT): "
+        kill `cat $pid_file`
+        echo "OK"
+        ;;
+    reload|restart)
+        $0 stop
+        $0 start
+        ;;
+    status)
+        ;;
+    *)
+        echo "Usage: `basename $0` start|stop|restart|reload"
+        exit 1
+esac
+
+exit 0
+
+# vi:ai sw=4 ts=4 tw=0 et
+

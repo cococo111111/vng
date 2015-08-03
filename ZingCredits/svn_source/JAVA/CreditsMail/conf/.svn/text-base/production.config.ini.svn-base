@@ -1,0 +1,28 @@
+[SMTP]
+host        =   10.30.12.52
+port        =   25
+sender      =   credits-report@zing.vn
+name        =   Ví Zing Me
+
+[MYSQL]
+driver      =   com.mysql.jdbc.Driver
+host        =   10.30.22.155
+port        =   3307
+username    =   creditsmail
+password    =   Guez1BvcLlOOv9
+dbname      =   creditsmail
+
+[REPORT]
+;bengin of day
+bod         = 1
+duration    = 86400
+chart_dir   = /zserver/japps/zingcredits/CreditsMail/chart/
+app_url     = http://creditsmail.zing.vn
+sign_key    = sdaklfjdsslkajflkjslkfjalks
+sysadmin    = 1
+admin       = 2
+
+;[ADMIN]
+;name        = admin
+;hash        = hash@zing@credits
+;password    = 6aec19cf86b055b577c3b801fbefc089

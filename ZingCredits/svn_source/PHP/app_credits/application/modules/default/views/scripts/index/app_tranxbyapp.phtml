@@ -1,0 +1,126 @@
+<?php
+$param=$this->param;
+$config = Zend_Registry::get('configuration');
+$url=$config->admin->url;
+?>
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+Thống kê giao dịch của ứng dụng trên hệ thống:<br>
+
+<form method='post' action='tranxbyappsubmit'>
+<table><tr><td>Tên Ứng Dụng  :</td>
+<td>
+<b>  <?=$this->appname?></b>
+</td>
+<td/><td/></tr>
+<tr><td>Từ Ngày   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+<td>Đến Ngày   <span class='require'>*</span></td><td><input type='text' id='todate' name='todate' value='<?=$param['todate']?>'></td></tr>
+<tr/>
+
+<tr><td></td><td colspan='3'><input type='submit' value='Thống Kê Chi Tiết' name='detail'  onclick='document.getElementById("page").value=0'></td></tr>
+</table>
+<input type='hidden' id='page' name='page' value='<?=$param['page']?>'>	
+
+<?php if(count($this->tranxs)!=0){
+?>
+<input type='submit' value='Next' onclick='document.getElementById("page").value="<?=$param['page']+1?>"'>
+<?php }?>
+<?php if($param['page']!="" && $param['page']!=1){?>
+<input type='submit' value='Back' onclick='document.getElementById("page").value="<?=$param['page']-1?>"'>
+<?php } ?>
+</form>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+	<tr>
+		  
+                    <td class="tabTit" width="13%">Thời gian</td>                   
+                    <td class="tabTit" width="5%">Mã GD</td>
+                    <td class="tabTit" width="9%">Giá trị GD</td>
+		    <td class="tabTit" width="10%">Vật Phẩm</td>
+                    <td class="tabTit" width="5%">Giá VP</td>
+                    <td class="tabTit" width="5%">Số lượng</td>                    
+                    <td class="tabTit" width="10%">Tình trạng</td>
+		   
+  	</tr>
+<?php
+  	if(isset($this->tranxs)){
+	  $i=0;
+	  foreach($this->tranxs as $txs){
+	      foreach($txs as $tx){
+	      $i++;
+	      ?>
+	      <tr <?php if($i%2==0)echo 'class="hligh2"';?>  >
+
+	      
+	     <td align='center'><?=$tx['txTime']?></td>
+	    
+                        <td align='center' ><?= $tx['refID'] ?></td>
+                        <td style='text-align:center'><?= $tx['amount'] ?></td>
+			<td style='text-align:center'><?= trim($tx['itemNames'],'"') ?></td>
+			<td style='text-align:center'><?= $tx['itemPrices'] ?></td>
+			<td style='text-align:center'><?= $tx['itemQuantities'] ?></td>
+                     
+                       
+                       <td <?= $class ?> style='text-align:center'>
+                        <?php
+
+                        if($tx['resultCode']>1000 || ($tx['resultCode']==0 && $this->appID=='zing') || ($tx['resultCode']==0 && $this->appID=='admin')) {                            
+                                
+                        ?>Thành công<?php                             
+                        }
+ 			if($tx['resultCode']==0 && $this->appID!='zing' && $this->appID!='admin') {                            
+                                
+                        ?>Đang XL<?php                             
+                        }
+			if($tx['resultCode']<-1000) {                            
+                                
+                        ?>Thất bại<?php                             
+                        }
+			if($tx['resultCode']==-108) {                            
+                                
+                        ?>Thành công(timeout)<?php                             
+                        }
+			if($tx['resultCode']<=-101  && $tx['resultCode']>=-107) {                            
+                                
+                        ?>Thất bại(<?=$tx['resultCode']?>)<?php                             
+                        }
+                        ?>
+                    </td>
+		
+	     </tr>
+	     <?php
+	  }
+	  }
+  	}
+	?>
+</tbody>
+</table>
+<script>
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+	</script>
+
+<script>
+
+function getTranxDetail(tranxID,tranxType,txLocalTime){
+    if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td align='center' ><img src='/images/zing_admin/indicator3.gif'></td>");
+      }
+      else{
+      $('#row_'+tranxID).after("<tr class='temp'><td align='center'><img src='/images/zing_admin/indicator3.gif'></td></tr>");
+      }
+
+    $.get('<?=$url?>/app/tranxbyusersubmit', { ajax:1, tranxid:tranxID,tranxtype:tranxType, localtime: txLocalTime },
+    function(data){
+      if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td></td><td colspan='10' >"+data+"</td>");
+      }else{
+      $('#row_'+tranxID).after("<tr class='temp'><td></td><td colspan='10' >"+data+"</td></tr>");
+      }
+    });
+  }
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+  
+</script>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn_zingcredits/!svn/ver/2523/JAVA/TranxFilter/conf
+END
+production.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/2523/JAVA/TranxFilter/conf/production.config.ini
+END
+staging.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/2509/JAVA/TranxFilter/conf/staging.log4j.ini
+END
+development.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/2509/JAVA/TranxFilter/conf/development.log4j.ini
+END
+staging.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/2522/JAVA/TranxFilter/conf/staging.config.ini
+END
+production.log4j.ini
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/2509/JAVA/TranxFilter/conf/production.log4j.ini
+END
+development.config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/2509/JAVA/TranxFilter/conf/development.config.ini
+END

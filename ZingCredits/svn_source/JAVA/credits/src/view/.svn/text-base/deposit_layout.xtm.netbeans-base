@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{{CREDITS_TITLE}}</title>
+        <meta http-equiv="description" content="" />
+        <meta http-equiv="keywords" content="" />
+        <link href="{{STATIC_URL}}/layout/css/credits-1.0.css" rel="stylesheet" type="text/css" />
+        <link href="{{STATIC_URL}}/layout/css/screen-1.0.css" rel="stylesheet" type="text/css" />
+        <link href="{{STATIC_URL}}/layout/css/dhtmlwindow-1.0.css" rel="stylesheet" type="text/css" />
+        <link href="{{STATIC_URL}}/layout/css/catmenu-{{CSSVERSION}}.css" rel="stylesheet" type="text/css" />
+        
+        <!-- For standard pupup -->
+        <link href="http://css.me.zdn.vn/zmjs/zm.ui-1.46.css" media="screen" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://static.me.zing.vn/v3/sdk-js/zmCore-1.54.min.js" ></script>
+        <script type="text/javascript" src="http://static.me.zing.vn/v3/sdk-js/zm.xcall-1.15.min.js" ></script>
+        <script type="text/javascript" src="http://static.me.zing.vn/v3/sdk-js/zm.ui-1.75.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="http://static.me.zing.vn/v3/sdk-js/sdkjs-1.00.min.js" charset="utf-8"></script>
+                
+        <script>
+            var _url = '{{_url}}';
+            var _t = '{{_t}}';
+            
+            zmXCall.register('reload', function(url) {
+                if(url == undefined || url == "") { 
+                    window.location.reload();
+                } else { 
+                    if(url.indexOf("index?_v=3") > 0) { 
+                        processCallBack();
+                        return;
+                    } else {
+                        window.location.href = url;
+                    }
+                }
+                // auto close afer 5 seconds
+                setTimeout(processCallBack, 3000);
+
+            });
+            
+            function back2Billing(bill_url)
+            {
+                 window.location.href = bill_url;
+        
+            }
+            
+            function processCallBack () {
+                switch (_t) {
+                    case  '1' : // popup
+                        try {
+                            if(_url) {
+                                window.opener.location.href = _url;
+                            } else {
+                                window.opener.location.reload();
+                            }
+                        } catch(exception){}
+                        
+                        window.close();
+                        break;
+                     case  '2' : // boxy
+                        zmXCall.callParent('callbackDeposit', _url, {host: "{{CREDITS_URL}}"});
+                        break;
+                     case  '3' : // direct page
+                        window.location.href = _url;
+                        break;
+                     case  '4' : // iframe
+                        zmXCall.callParent('callbackDeposit', _url, {host: "{{CREDITS_URL}}"});
+                        break;
+                     default :
+                        zmXCall.callParent('callbackDeposit', _url, {host: "{{CREDITS_URL}}"});
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <style type="text/css" >
+        .btsbmzc {
+            background: none repeat scroll 0 0 #80A5D5;
+            border: 1px solid #486DA4;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: bold;
+            line-height: 16px;
+            padding: 2px 6px;
+            text-align: center;
+            margin:5px;
+            cursor:pointer;
+
+        }
+        </style>
+        <div class="title-pub"> <span class="txt"><a href="#"><span class="name" id='fn_{{USERID}}'></span></a></span><span class=" skin icon"></span> <span class="txt">Quản lý Ví Zing Me</span><div class="clr"></div></div>
+        <div id="credit">
+        <div class="desc">
+                <p class="name"></p>
+                <p>Số dư tài khoản:</p>
+                <p class="yel"><span class="zc-ico1 bgs"></span> {{BALANCE}}</p>
+        </div>
+        <div class="conR">
+                <p><b>Ví Zing Me</b> hỗ trợ thanh toán cho các ứng dụng trên Zing Me. <br>
+                <b>Ví Zing Me</b> bảo đảm an toàn, tiện lợi, bảo mật thanh toán và nhanh chóng giúp bạn thỏa sức khám phá các ứng dụng tuyệt vời trên Zing Me. 
+                {{#BILL}}
+                <input type='button' class="btsbmzc" value='Quay lại thanh toán' onclick="back2Billing('{{url_redirect}}');">
+                {{/BILL}}
+                {{#CLOSE}}
+                <input type="button" value=" Đóng " onclick="processCallBack(); return false;" class="btsbmzc"/>
+                {{/CLOSE}}
+                </p>
+                
+        </div>
+        <div class="clr"></div>
+
+        <!--Tabs menu-->
+        {{>deposit_tabs}}
+        <!--End of Tabs menu-->
+
+        <div id="credit" style='margin-top:-2px'>
+
+                <!--Quickpay iframe-->
+                <iframe id='quickpay' src='{{QUICKPAY_URL}}' 
+                                width='100%' scrolling='no' height='{{QUICKPAY_HEIGHT}}' 
+                                frameborder='0' allowtransparency='true'>
+                </iframe>
+                <!--End of Quickpay iframe-->
+                <table width="100%" class="mt8">
+                        <tbody>
+                                <tr>
+                                        <td width="50%" align="left"><a href="http://me.zing.vn/bi/credits.support/index/showinfo?v=blog" target="_blank">Hướng dẫn</a>  | <a href="http://me.zing.vn/b/credits.support?t=fp_credits.support" target="_blank">Câu hỏi thường gặp</a> | <a href="http://me.zing.vn/b/credits.support?t=fp_credits.support" target="_blank">Báo lỗi</a></td>
+                                        <td width="50%" align="right">Đường dây nóng: <b>1900.561.558</b></td>
+                                </tr>
+                        </tbody>
+                </table>
+        </div>
+        <div class="clr"></div>
+        <script type="text/javascript">
+            zm.ready( function() {
+                zmXCall.resizeParent("credits");
+                zwg.addItem("fn_{{USERID}}" ,"ZMED_{{USERID}}?id=1&l=3&m=1");
+                zwg.fillWg();
+            });
+        </script>
+    </body>
+</html>

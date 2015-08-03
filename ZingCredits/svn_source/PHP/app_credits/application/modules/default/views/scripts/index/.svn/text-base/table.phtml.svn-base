@@ -1,0 +1,194 @@
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+	<tr>
+	    <td class="tabTit" width="5%">#</td>
+	    <td class="tabTit" width="51%">Content</td>
+		<td class="tabTit" width="10%">Remove
+		<input class="removeAll" type="checkbox" id="removeAll" name="removeAll" value="removeAll"/>
+		</td>
+		<td class="tabTit" width="10%">Approve
+		<input class="approveAll" type="checkbox" id="approveAll" name="approveAll" value="approveAll"/>
+		</td>	
+		<td class="tabTit" width="24%">User</td>	
+  	</tr>
+
+	<?php 
+
+		if(count($this->filterData)>0)
+		{
+			$size=count($this->filterData);			
+			for ( $counter = 0; $counter < $size; $counter ++)
+			{
+				if($counter%2==0)
+				{
+					$data = $this->filterData[$counter];
+					
+					?>
+									<tr <?php if(!empty($data->countProfanity)) echo "class='profanity'";?>>
+										<!-- <td class="hligh1" align="center"><?php if($data->countProfanity==null) echo 0; else echo "<span class='profanity'>".$data->countProfanity."</span>";?></td> -->
+										<td class="hligh1" align="center"><?php echo $counter+1;?></td>
+										<td class="hligh1">
+											<textarea rows="2" cols="60"><?php echo $data->content;?></textarea>
+										</td>
+										<td class="hligh1" align="center">
+											<input class="remove" type="checkbox" id="chkRemove_" name="chkRemove_" value="
+												<?php echo $data->systemId."_"
+														.$data->appId."_"
+														.$data->objectId."_"
+														.$data->contentId."_"
+														.$data->parentId."_"
+														.$data->toUserId
+														;?>"
+														
+												<?php if($data->countProfanity>0) echo "checked"?>
+												/>
+										</td>
+										<td class="hligh1" align="center">											
+											<input  class="approve" type="checkbox" id="chkApprove_" name="chkApprove_" value="
+											<?php echo $data->systemId."_"
+													.$data->appId."_"
+													.$data->objectId."_"
+													.$data->contentId."_"
+													.$data->parentId."_"
+													.$data->toUserId
+													;?>"											
+											/>
+										</td>
+										<td class="hligh1" align="center">
+										<!-- <span rel="ZMEA_<?php echo $data->ownerId;?>?l=1&id=1&width=50&height=50" target="_top"></span> -->
+										<span rel="ZMED_<?php echo $data->ownerId;?>?l=1&id=1" target="_top"></span>
+										</td>
+									</tr>
+					<?php 
+					
+				}
+				else
+				{
+					$data = $this->filterData[$counter];
+					
+					?>
+									<tr <?php if(!empty($data->countProfanity)) echo "class='profanity'";?>>
+										<!-- <td class="hligh2" align="center"><?php if($data->countProfanity==null) echo 0; else echo "<span class='profanity'>".$data->countProfanity."</span>";?></td> -->
+										<td class="hligh2" align="center"><?php echo $counter+1;?></td>
+										<td class="hligh2">
+											<textarea rows="2" cols="60"><?php echo $data->content;?></textarea>
+										</td>
+										<td class="hligh2" align="center">
+											<input class="remove" type="checkbox" id="chkRemove_" name="chkRemove_" value="
+											<?php echo $data->systemId."_"
+													.$data->appId."_"
+													.$data->objectId."_"
+													.$data->contentId."_"
+													.$data->parentId."_"
+													.$data->toUserId
+													;?>"
+														
+												<?php if($data->countProfanity>0) echo "checked"?>
+												/>
+										</td>
+										<td class="hligh2" align="center">
+											<input class="approve" type="checkbox" id="chkApprove_" name="chkApprove_" value="
+											<?php echo $data->systemId."_"
+													.$data->appId."_"
+													.$data->objectId."_"
+													.$data->contentId."_"
+													.$data->parentId."_"
+													.$data->toUserId
+													;?>"
+											/>
+										</td>
+										<td class="hligh2" align="center">
+										<!-- <span rel="ZMEA_<?php echo $data->ownerId;?>?l=1&id=1&width=50&height=50" target="_top"></span> -->
+										<span rel="ZMED_<?php echo $data->ownerId;?>?l=1&id=1" target="_top"></span>
+										</td>
+									</tr>
+					<?php 
+					
+				}
+			}
+		}
+	?>   
+</tbody>
+</table>
+
+	<script type="text/javascript">
+	function submitFilter()
+	{
+		var checkboxRemove = $('input[name^="chkRemove_"]');
+		var checkboxApprove = $('input[name^="chkApprove_"]');
+		
+		var strRemove = "";
+		var strApprove = "";
+		
+		for (var i = 0; i < checkboxRemove.length; i++)
+	    {
+			if(checkboxRemove[i].checked==true)
+			{
+				strRemove += checkboxRemove[i].value+";";
+			}
+	    }		
+		
+		for (var i = 0; i < checkboxApprove.length; i++)
+	    {
+			if(checkboxApprove[i].checked==true)
+			{
+				strApprove += checkboxApprove[i].value+";";
+			}			
+	    }
+
+		$("#hidRemoveString").val(strRemove+"");		
+		$("#hidApproveString").val(strApprove+"");
+		
+		if( !isEmpty($("#hidRemoveString").val()) || !isEmpty($("#hidApproveString").val()) )
+			$("#frmSubmit").submit();
+		else
+			alert("You must check a checkbox first");
+	}		
+
+	function isEmpty(text) {
+		   if ((text.length==0) ||
+		   (text==null)) {
+		      return true;
+		   }
+		   else { return false; }
+	}
+
+	$( function() {
+		$( '.approveAll' ).live( 'change', function() {
+			$( '.approve' ).attr( 'checked', $( this ).is( ':checked' ) ? 'checked' : '' );
+			$( this ).next().text( $( this ).is( ':checked' ) ? 'Uncheck All' : 'Check All' );
+
+			$( '.removeAll' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+			$( '.remove' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+		});
+		$( '.approve' ).live( 'change', function() {
+			$( '.approve' ).length == $( '.approve:checked' ).length ? $( '.approveAll' ).attr( 'checked', 'checked' ).next().text( 'Uncheck All' ) : $( '.approveAll' ).attr( 'checked', '' ).next().text( 'Check All' );
+//			new for chrome
+			$(this).parent().prev().find(":checkbox").attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+//			old
+//			$( ':checkbox.remove[value="'+$( this ).val()+'"]' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+			if($( this ).is( ':checked' ))
+				$( ':checkbox.removeAll' ).attr( 'checked', '');
+		});
+
+		$( '.removeAll' ).live( 'change', function() {
+			$( '.remove' ).attr( 'checked', $( this ).is( ':checked' ) ? 'checked' : '' );
+			$( this ).next().text( $( this ).is( ':checked' ) ? 'Uncheck All' : 'Check All' );
+
+			$( '.approveAll' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+			$( '.approve' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+		});
+		$( '.remove' ).live( 'change', function() {
+			$( '.remove' ).length == $( '.remove:checked' ).length ? $( '.removeAll' ).attr( 'checked', 'checked' ).next().text( 'Uncheck All' ) : $( '.removeAll' ).attr( 'checked', '' ).next().text( 'Check All' );
+//			new for chrome
+			$(this).parent().next().find(":checkbox").attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+//			old
+//			$( ':checkbox.approve[value="'+$( this ).val()+'"]' ).attr( 'checked', $( this ).is( ':checked' ) ? '' : 'checked' );
+			if($( this ).is( ':checked' ))
+				$( ':checkbox.approveAll' ).attr( 'checked', '');	
+		});
+	});
+		
+	</script>

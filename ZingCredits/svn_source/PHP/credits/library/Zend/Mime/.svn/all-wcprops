@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Mime
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Mime/Exception.php
+END
+Decode.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Mime/Decode.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Mime/Message.php
+END
+Part.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Mime/Part.php
+END

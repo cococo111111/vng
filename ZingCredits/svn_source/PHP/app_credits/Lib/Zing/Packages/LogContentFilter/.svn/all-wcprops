@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter
+END
+LogCommentFilter_types.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/LogCommentFilter_types.php
+END
+ViewPointChangeLog_types.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/ViewPointChangeLog_types.php
+END
+LogCommentFilterWriteService.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/LogCommentFilterWriteService.php
+END
+LogCommentFilterReadService.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/LogCommentFilterReadService.php
+END
+LogCommentFilterWriteServiceExt.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/LogCommentFilterWriteServiceExt.php
+END
+LogCommentFilterReadServiceExt.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/LogCommentFilterReadServiceExt.php
+END
+ViewPointChangeLogReadService.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn_zingcredits/!svn/ver/1587/PHP/app_credits/Lib/Zing/Packages/LogContentFilter/ViewPointChangeLogReadService.php
+END

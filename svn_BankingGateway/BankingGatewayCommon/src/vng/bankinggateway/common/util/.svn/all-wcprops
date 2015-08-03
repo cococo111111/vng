@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_bankinggateway/!svn/ver/56/BankingGatewayCommon/src/vng/bankinggateway/common/util
+END
+CommonDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_bankinggateway/!svn/ver/66/BankingGatewayCommon/src/vng/bankinggateway/common/util/CommonDef.java
+END
+ScriberBankingGateway.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/src/vng/bankinggateway/common/util/ScriberBankingGateway.java
+END
+ScribeServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/src/vng/bankinggateway/common/util/ScribeServiceClient.java
+END
+Base64Coder.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/src/vng/bankinggateway/common/util/Base64Coder.java
+END
+ConfigUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/src/vng/bankinggateway/common/util/ConfigUtil.java
+END
+Encryption.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn_bankinggateway/!svn/ver/37/BankingGatewayCommon/src/vng/bankinggateway/common/util/Encryption.java
+END

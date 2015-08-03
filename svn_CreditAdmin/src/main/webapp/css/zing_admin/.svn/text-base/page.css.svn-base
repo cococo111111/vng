@@ -1,0 +1,88 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font: 12px/170% Verdana, sans-serif;
+  color: #494949;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 100%;
+  padding: 0 0 0 10px;
+  margin-top:10px;
+}
+
+form
+{
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: #027AC6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0062A0;
+  text-decoration: underline;
+}
+
+a:active, a.active {
+  color: #5895be;
+}
+
+img
+{
+	border:0;
+}
+
+
+#wrapper {
+ width:99%;
+}
+
+#header-status
+{
+	min-height: 1em;
+	background: #dddddd repeat-x 50% 100%;
+	text-align:right;
+	padding-right:10px;
+}
+
+.admin_login
+{	
+	text-align:center;	
+}
+
+#content 
+{
+	margin-left: 250px;		
+	text-align:left;
+	height:100%;
+}
+
+#sidebar-left
+{
+	margin: 0px 0.5em 0em 0em;
+	width: 250px;
+	float: left;	
+	background: #efefef;	
+	border-right: #a1a1a4 thin dashed;
+	border-top: #a1a1a4 thin dashed;
+	border-left: #a1a1a4 thin dashed;
+	border-bottom: #a1a1a4 thin dashed;
+	min-height:600px;
+	height:100%;
+}
+
+/*Khanv update*/
+#content-full
+{
+	margin-left: 40px;		
+	text-align:left;
+	height:100%;
+}
+

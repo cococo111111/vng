@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Token.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Config.php
+END
+Consumer.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Consumer.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Client.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Exception.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Oauth/Http.php
+END

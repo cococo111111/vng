@@ -1,0 +1,51 @@
+{{>wap_header}}
+<div class="contain">
+    <div class="main">
+        <div style="padding:2px 5px;" class="head01">
+            <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_vi.png" alt="" width="25" height="25">
+            <strong>Quản lý Ví Zing Me</strong></div>
+
+        <div class="profile">
+            <div class="cont01">
+                <div class="bavatar">
+                    <img width="75" height="75" style="margin-bottom:2px" src="{{AVATA}}" alt="{{USERNAME}}" onerror="this.src='http://widget.me.zing.vn/images/75.gif';">
+                </div>
+                <strong>{{DISPLAYNAME}}</strong>
+                <p class="txtdiem">Đang có: <span>{{BALANCE}}</span><img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_zxu.png" alt="" width="24" height="24"/></p>
+                <div style="clear: both;"></div>
+
+            </div>
+        </div>
+        <div class="fr">
+            <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_exchange.png" alt="" width="24" height="24" /> <a  href="https://pay.zing.vn/zingxu/doizingxu.zingcredit.html">Chuyển Xu về Ví Zing Me</a>          </div>
+        <div class="fr"><span class="txtdiem"><img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_zxu.png" alt="" width="24" height="24"/></span><a href="https://pay.zing.vn/zingxu/index.html"> Nạp thêm Zing Xu</a> </div>
+        <div class="fr">
+
+            <img src="{{STATIC_URL}}/m/images/images_mobile/zxu/ico_transaction.png" alt="" width="24" height="24" /> <a href="{{CREDITS_URL}}/wap{{TX_URL}}">Xem lịch sử giao dịch </a></div>
+        <div class="fr fzs">
+            <strong>Ví Zing Me</strong> hỗ trợ việc thanh toán cho các ứng dụng trên Zing Me trở nên đơn giản và thuận tiện hơn.
+        </div>
+        <div class="fr">
+            <p><strong>Game/Ứng dụng đang dùng Ví Zing Me</strong></p>
+            {{#APP}}
+
+            <p><a href="#">{{INDEX}}. {{NAME}}</a></p>
+            {{/APP}}
+            <p>
+                {{#AFTER}}
+                <a href="{{CREDITS_URL}}/wap?page={{NEXTPAGE}}">Sau »</a>
+
+                <br>
+                {{/AFTER}}
+                {{#BEFORE}}
+                <a href="{{CREDITS_URL}}/wap?page={{PREPAGE}}">« Trước</a>
+                {{/BEFORE}}
+            </p>
+        </div>
+        <div class="cont03 fzs">
+            Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558
+            </strong></div>
+
+    </div>
+</div>
+{{>wap_footer}}

@@ -1,0 +1,37 @@
+#Configuation for AccBalCache service
+
+##########################################################################
+#accbal-cache info
+
+accbalPort=5131
+
+#cache-size 1M
+cachesize=4000000
+
+zkHostPort.1=localhost:2183
+zkHostPort.2=localhost:2184
+zkHostPort.3=localhost:2185
+
+##########################################################################
+#working-path
+
+vng.zingme.payment.pull.tranx.path=/vng/zingme/payment/pull/tranx
+
+vng.zingme.payment.push.tranx.path=/vng/zingme/payment/push/tranx
+
+vng.zingme.payment.bill.tranx.path=/vng/zingme/payment/bill/tranx
+
+
+##########################################################################
+#storage-service info
+
+storageHost=localhost
+storagePort=9702
+
+
+##########################################################################
+#event - mode: 0 using watcher-event; else: using thrift (call one-way)
+eventmode=1
+
+zkBEHost=localhost
+zkBEPort=4118

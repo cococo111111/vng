@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Response/SecurityTokenServer
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Response/SecurityTokenServer/Interface.php
+END
+GetTokensResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Response/SecurityTokenServer/GetTokensResponse.php
+END
+SecurityTokenResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Response/SecurityTokenServer/SecurityTokenResponse.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Service/DeveloperGarden/Response/SecurityTokenServer/Exception.php
+END

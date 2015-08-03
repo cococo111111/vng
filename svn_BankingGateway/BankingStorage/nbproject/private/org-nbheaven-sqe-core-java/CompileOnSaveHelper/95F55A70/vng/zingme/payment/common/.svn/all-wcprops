@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common
+END
+PaymentReturnCode$GameCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$GameCode.class
+END
+PaymentReturnCode$PayletterReturnCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$PayletterReturnCode.class
+END
+CommonDef$TRANX_STAT.class
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/CommonDef$TRANX_STAT.class
+END
+CommonDef$TRANX_FAIL_DESCRIPTION.class
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/CommonDef$TRANX_FAIL_DESCRIPTION.class
+END
+CommonDef.class
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/CommonDef.class
+END
+PaymentCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentCode.class
+END
+PaymentReturnCode$BillingCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$BillingCode.class
+END
+PaymentReturnCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode.class
+END
+CommonDef$TRANX_TYPE.class
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/CommonDef$TRANX_TYPE.class
+END
+ResponseCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/ResponseCode.class
+END
+PaymentReturnCode$BalCacheCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$BalCacheCode.class
+END
+CommonDef$TRANX_RES_CODE.class
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/CommonDef$TRANX_RES_CODE.class
+END
+PaymentReturnCode$DatabaseCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$DatabaseCode.class
+END
+PaymentReturnCode$AdminCode.class
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn_bankinggateway/!svn/ver/2/BankingStorage/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/95F55A70/vng/zingme/payment/common/PaymentReturnCode$AdminCode.class
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/xml-resources/axis2/META-INF
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/xml-resources/axis2/META-INF/services.xml
+END
+MerchantSVC.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/xml-resources/axis2/META-INF/MerchantSVC.wsdl
+END

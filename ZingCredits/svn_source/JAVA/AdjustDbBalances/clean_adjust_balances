@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+
+ant -f build.xml clean
+
+rm -rf build
+rm -rf dist

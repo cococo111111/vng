@@ -1,0 +1,153 @@
+<?php
+$param=$this->param;
+$config = Zend_Registry::get('configuration');
+$url=$config->admin->url;
+unset($this->uApps['zing']);
+unset($this->uApps['admin']);
+$uApps = array_keys($this->uApps);
+?>
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+<DIV STYLE='TEXT-ALIGN:CENTER;FONT-SIZE:13PT'><STRONG>VÍ ZING ME - BÁO CÁO CHI TIẾT NHẬP XUẤT TỒN ZINGXU</STRONG><BR><BR><BR></DIV>
+
+<form method='post' action='<?=$url?>/app/reportdetail'>
+<table>
+<tr><td>Từ Ngày   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;Đến Ngày   <span class='require'>*</span></td><td><input type='text' id='todate' name='todate' value='<?=$param['todate']?>'></td></tr>
+<?php /*
+<tr><td>Report được nhóm theo</td><td colspan='3'><input type='radio' name='radiogroup' id='radiogroup' value='1'   <?php if($param['radiogroup']==1){echo 'checked="checked"';}?>>Ngày
+<input type='radio' name='radiogroup' id='radiogroup' value='2'  <?php if($param['radiogroup']==2){echo 'checked="checked"';}?>>Khoảng thời gian
+</td></tr>
+*/?>
+<tr><td></td><td colspan='3'><input type='submit'  name='summary' value='Report' onclick='document.getElementById("page").value=0'></td></tr>
+</table>
+<input type='hidden' id='page' name='page' value='<?=$param['page']?>'>	
+
+<?php /*if(count($this->tranxs)!=0){
+?>
+<input type='submit' value='Cũ Hơn' onclick='document.getElementById("page").value=<?=$param['page']+1?>'>
+<?php }?>
+<?php if($param['page']!=1){?>
+<input type='submit' value='Mới Hơn' onclick='document.getElementById("page").value=<?=$param['page']-1?>'>
+<?php } */?>
+</form>
+<?php if(!empty($this->data)){?>
+<a target='_blank' href='<?=$url?>/app/reportdetail?export=csv&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+<table class="mainTab" width="110%" border="0" cellpadding="0" cellspacing="0">
+<style>
+.bo{
+background:#CCCCCC;
+color:black;
+}
+.bo td{
+border: 1px dotted white;
+}
+.bo2{
+//background:#EFEFEF;
+color:black;
+text-align:right;
+}
+.bo2 td{
+border: 1px dotted #CCCCCC;
+}
+</style>
+<tbody>
+	
+			<tr class="tabTit bo"><td rowspan=2>Ngày</td><td rowspan=2>Tồn đầu kỳ</td><td>Nhập trong kỳ</td>
+<td colspan='<?=count($uApps)+1?>'>Xuất trong kỳ</td><td rowspan=2>Tồn cuối kỳ</td>
+</tr>
+<tr class="tabTit bo">
+                    <td>TỔNG NHẬP</td>
+
+<?php
+
+foreach($uApps as $app){
+if($app=='zing'||$app=='admin'){continue;}
+?>
+<td><b><?=$app?></b></td>
+<?php }?>
+
+<td>TỔNG XUẤT</td>
+		</tr>
+
+
+
+<?php
+$data=$this->data;
+$fromDate=$param['fromdate'];
+$toDate=$param['todate'];
+$exeDate=$param['fromdate'];
+$i=0;
+while(true){
+$dateData = $data[$exeDate.' 00:00:00'];
+$i++;
+$a='';
+$total=0;
+foreach($uApps as $app){
+if($app=='zing'||$app=='admin'){continue;}
+$total+=$dateData[$app];
+
+$a.="<td>".($dateData[$app]==0?'':$dateData[$app])."</td>";
+}
+
+$prevDate= date('Y-m-d', strtotime($exeDate." -1 day"));
+$tonDauKy=$data[$prevDate.' 00:00:00']['remainbalance'];
+?>
+<tr class='bo2 <?=($i%2==0)?'hligh2':''?>'><td style='text-align:center'><?=$exeDate?></td><td><?=$tonDauKy<=0?"":$tonDauKy?></td>
+<td><?=$dateData['zing']?></td>
+
+<?=$a?>
+<td><b><?=$total==0?'':$total?></b></td><td><?=$dateData['remainbalance']?></td>
+
+</tr>
+<?php
+if($exeDate==$toDate){
+break;
+}
+$exeDate=date("Y-m-d",strtotime("+1 day", strtotime($exeDate.' 00:00:00')));
+
+}
+
+
+?>
+
+
+
+</tbody>
+</table>
+<a target='_blank' href='<?=$url?>/app/reportdetail?export=csv&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+
+<?php }else{
+?>
+<font color='red'>Chưa có data hiển thị</font>
+<?php
+}?>
+<script>
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+	</script>
+
+<script>
+
+function getTranxDetail(tranxID,tranxType,txLocalTime){
+    if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td align='center' ><img src='/images/zing_admin/indicator3.gif'></td>");
+      }
+      else{
+      $('#row_'+tranxID).after("<tr class='temp'><td align='center'><img src='/images/zing_admin/indicator3.gif'></td></tr>");
+      }
+
+    $.get('<?=$url?>/app/tranxbyusersubmit', { ajax:1, tranxid:tranxID,tranxtype:tranxType, localtime: txLocalTime },
+    function(data){
+      if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td></td><td colspan='10' >"+data+"</td>");
+      }else{
+      $('#row_'+tranxID).after("<tr class='temp'><td></td><td colspan='10' >"+data+"</td></tr>");
+      }
+    });
+  }
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+  
+</script>

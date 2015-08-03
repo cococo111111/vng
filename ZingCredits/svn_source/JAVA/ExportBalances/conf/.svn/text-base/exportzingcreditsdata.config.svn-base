@@ -1,0 +1,4 @@
+#Configuation for ExportZingcreditsData service
+
+
+export_path=/data/zingcredits/export/balances

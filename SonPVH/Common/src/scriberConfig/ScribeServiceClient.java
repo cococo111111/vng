@@ -1,0 +1,126 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package scriberConfig;
+
+import common.Common;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import org.apache.log4j.Logger;
+import scribe.thrift.LogEntry;
+import scribe.thrift.scribeUPool;
+import scribe.thrift.zscribeUPool;
+
+/**
+ *
+ * @author root
+ */
+public class ScribeServiceClient {
+
+    private static Logger log = Logger.getLogger("exception");
+    private static final Lock createLock_ = new ReentrantLock();
+    private static final scribeUPool poolInst;
+    private static final zscribeUPool zpoolInst;
+    private static String host = "";
+    private static String port = "";
+    private static ScribeServiceClient _instance;
+
+    static {
+
+        if (Common.SCRIBE_HOST != null && Common.SCRIBE_PORT != null) {
+            host = Common.SCRIBE_HOST;
+            port = Common.SCRIBE_PORT;
+        } else {
+            log.info("No config for scribe");
+            System.exit(1);
+        }
+        poolInst = scribeUPool.getInstance(host + ":" + port + "::" + "scribeUPool", host + ":" + port, host + ":" + port);
+        zpoolInst = zscribeUPool.getInstance(host + ":" + port + "::" + "zscribeUPool", host + ":" + port, host + ":" + port);
+    }
+
+    public static ScribeServiceClient getInstance() {
+        if (_instance == null) {
+            createLock_.lock();
+            try {
+                if (_instance == null) {
+                    _instance = new ScribeServiceClient();
+                }
+            } finally {
+                createLock_.unlock();
+            }
+        }
+        return _instance;
+    }
+
+    public boolean writeLog(String category, String message) {
+        String[] messages = new String[1];
+        messages[0] = message;
+        return this.writeLog(category, messages);
+    }
+
+    public boolean writeLog(String category, String[] messages) {
+
+        boolean ret = true;
+        if (messages == null || messages.length == 0) {
+            return ret;
+        }
+        try {
+
+            try {
+                List<LogEntry> logs = new LinkedList<LogEntry>();
+
+                for (int i = 0; i < messages.length; i++) {
+                    LogEntry le = new LogEntry();
+                    le.category = category;
+                    le.message = messages[i];
+                    logs.add(le);
+                }
+                poolInst.Log(logs);
+                return ret;
+            } catch (Exception ex) {
+                throw ex;
+            }
+        } catch (Exception e) {
+            log.error("Exception getUid: " + e.getMessage());
+            return false;
+        }
+
+    }
+
+    public boolean writeLog2(String category, String message) {
+        String[] messages = new String[1];
+        messages[0] = message;
+        return this.writeLog(category, messages);
+    }
+
+    public boolean writeLog2(String category, String[] messages) {
+
+        boolean ret = true;
+        if (messages == null || messages.length == 0) {
+            return ret;
+        }
+        try {
+            try {
+                List<LogEntry> logs = new LinkedList<LogEntry>();
+
+                for (int i = 0; i < messages.length; i++) {
+                    LogEntry le = new LogEntry();
+                    le.category = category;
+                    le.message = messages[i];
+                    logs.add(le);
+                }
+                zpoolInst.Log2(logs);
+                return ret;
+            } catch (Exception ex) {
+                throw ex;
+            }
+        } catch (Exception e) {
+            log.error("Exception writeLog2: " + e.getMessage());
+            return false;
+        }
+
+    }
+}

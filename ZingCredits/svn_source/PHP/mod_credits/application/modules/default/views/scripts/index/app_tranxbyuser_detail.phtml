@@ -1,0 +1,67 @@
+<?php
+$param=$this->param;
+?>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0" >
+<tbody>
+	<tr height='30px' class="tabTit">
+		<td width="20%">Last Update</td>
+		    <td width="10%">Result Code</td>
+		    <td width="40%">Status</td>
+		   <td width='30%'>Message</td>
+                    
+                    
+                    
+                  
+  	</tr>
+  	<?php
+  	if(isset($this->tranxs)){
+	  $i=0;
+	  foreach($this->tranxs as $tx){
+	      $i++;
+	      ?>
+	      <tr <?php if($i%2==0)echo 'class="hligh2"';?>  style='text-align:center'>	  
+	      <td style='text-align:center'><?= $tx->lastUpdate?></td>
+	      <td style='text-align:center'><?= $tx->resultCode!='32767'? $tx->resultCode:""?></td>
+	      
+	       <td style='text-align:left'><?php 
+                        switch ($tx->txStatus) {
+                            case '1':
+                            ?>Khởi tạo giao dịch<?php
+                            break;
+                            case '3'://gd dang xu ly
+                        ?>Chuẩn bị gửi REST request<?php
+                                break;
+
+                            case '2':
+                                if ($param['tranxtype'] == '201' || $param['tranxtype']=='2' || $param['tranxtype'] == '101' || $param['tranxtype'] == '102' || $param['tranxtype'] == '103' || $param['tranxtype'] == '202') {
+                                    //gd thanh cong
+                        ?>Đã cập nhật số tiền vào tài khoản<?php
+                                }
+                               
+                                break;
+                            case '101':
+				 ?>Game/app trả lời mã thành công<?php
+                            break;
+                            case '102':
+                        ?>Gửi request REST cho game/app timeout<?php
+                                break;
+                            case '-103':
+				?>Game/app trả lời mã thất bại<?php
+			break;	
+                            case '-104'://gd that bai & rollback
+                                 $detail =$tx->description;
+                        ?>Lỗi mạng khi gửi request REST cho game/app<?php
+                                break;
+                        }
+                        ?></td>
+                        <td ><?=$tx->message?></td>
+                
+	     </tr>
+	     <?php
+	  }
+  	}
+	?>
+
+</tbody>
+</table>
+ 

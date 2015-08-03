@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:tns="http://paymentgateway.payment.zingme.vng/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="AddMoneyService" targetNamespace="http://paymentgateway.payment.zingme.vng/">
+
+    <message name="AddMoney_in">
+        <part name="userID" type="xsd:string"/>
+        <part name="Money" type="xsd:string"/>
+        <part name="Transactionid" type="xsd:string"/>
+        <part name="Sig" type="xsd:string"/>
+    </message>
+    <message name="AddMoney_out">
+        <part name="code" type="xsd:string"/>
+        <part name="Money" type="xsd:string"/>
+        <part name="BonusMoney" type="xsd:string"/>
+        <part name="userID" type="xsd:string"/>
+        <part name="Transactionid" type="xsd:string"/>
+    </message>
+
+    <message name="GetMoney_in">
+        <part name="userID" type="xsd:string"/>
+        <part name="Sig" type="xsd:string"/>
+    </message>
+    <message name="GetMoney_out">
+        <part name="code" type="xsd:string"/>
+        <part name="Money" type="xsd:string"/>
+    </message>
+
+    <message name="PushMoney_in">
+        <part name="agentid" type="xsd:string"/>
+        <part name="agenttime" type="xsd:string"/>
+        <part name="username" type="xsd:string"/>
+        <part name="money" type="xsd:string"/>
+        <part name="transactionid" type="xsd:string"/>
+        <part name="sig" type="xsd:string"/>
+    </message>
+    <message name="PushMoney_out">
+        <part name="code" type="xsd:string"/>
+        <part name="money" type="xsd:string"/>
+        <part name="bonusmoney" type="xsd:string"/>
+        <part name="username" type="xsd:string"/>
+        <part name="transactionid" type="xsd:string"/>
+        <part name="zingcreditstxid" type="xsd:string"/>
+    </message>
+    
+    <message name="GetUser_in">
+        <part name="userID" type="xsd:string"/>
+        <part name="sig" type="xsd:string"/>
+    </message>
+    <message name="GetUser_out">
+        <part name="code" type="xsd:string"/>
+        <part name="userID" type="xsd:string"/>
+    </message>
+    
+    
+    <message name="GetSum_in">
+        <part name="from" type="xsd:string"/>
+        <part name="to" type="xsd:string"/>
+        <part name="sig" type="xsd:string"/>
+    </message>
+    <message name="GetSum_out">
+        <part name="code" type="xsd:string"/>
+        <part name="totalMoney" type="xsd:string"/>
+        <part name="totalTransaction" type="xsd:string"/>
+    </message>
+
+    <portType name="AddMoneyPortType">
+        <operation name="AddMoney">
+            <input message="tns:AddMoney_in"/>
+            <output message="tns:AddMoney_out"/>
+        </operation>
+        <operation name="GetMoney">
+            <input message="tns:GetMoney_in"/>
+            <output message="tns:GetMoney_out"/>
+        </operation>
+        <operation name="PushMoney">
+            <input message="tns:PushMoney_in"/>
+            <output message="tns:PushMoney_out"/>
+        </operation>
+        <operation name="GetUser">
+            <input message="tns:GetUser_in"/>
+            <output message="tns:GetUser_out"/>
+        </operation>
+        <operation name="GetSum">
+            <input message="tns:GetSum_in"/>
+            <output message="tns:GetSum_out"/>
+        </operation>
+    </portType>
+    
+    <binding name="AddMoneySOAPBinding" type="tns:AddMoneyPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="AddMoney">
+            <soap:operation soapAction="urn:paymentgateway.payment.zingme.vng#AddMoney"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </output>
+        </operation>
+        <operation name="GetMoney">
+            <soap:operation soapAction="urn:paymentgateway.payment.zingme.vng#GetMoney"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </output>
+        </operation>
+        <operation name="PushMoney">
+            <soap:operation soapAction="urn:paymentgateway.payment.zingme.vng#PushMoney"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </output>
+        </operation>
+        <operation name="GetUser">
+            <soap:operation soapAction="urn:paymentgateway.payment.zingme.vng#GetUser"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </output>
+        </operation>
+        <operation name="GetSum">
+            <soap:operation soapAction="urn:paymentgateway.payment.zingme.vng#GetSum"/>
+            <input>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </input>
+            <output>
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:paymentgateway.payment.zingme.vng"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="AddMoneyService">
+        <port name="AddMoneyServicePort" binding="tns:AddMoneySOAPBinding">
+            <soap:address location="http://10.30.22.153:8080/axis2/services/AddMoneyService"/>
+        </port>
+    </service>
+</definitions>

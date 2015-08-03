@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Tranx Filter</title>
+        <link href="{{domain}}/css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet"/>
+        <script src="{{domain}}/js/jquery-1.7.2.min.js"></script>
+        <script src="{{domain}}/js/jquery-ui-1.8.21.custom.min.js"></script>        
+        <script type="text/javascript">
+            $(function () { 
+                $("#time").datepicker({
+                    dateFormat: 'dd/mm/yy'
+                }); 
+            }); 
+        </script>
+        <style type="text/css">
+            #ui-datepicker-div {
+                font-family: "Arial";
+                font-size: small !important;
+            }
+            table {
+                text-align: center;
+                font-family: "Arial";
+                font-size: x-small;
+                border-color: #000000;
+                border-style: solid;
+                border-width: 1px;                
+            }
+            table tr td {
+                border-color: #000000;
+                border-style: solid;
+                border-width: 1px;                
+            }
+        </style>
+    </head>	
+    <body>
+        <div class="fform">
+            <form method="post">
+                Ngày: <input id="time" name="time" type="text" value="{{time}}" readonly style="width: 100px;"/>
+                <input type="submit" value="Kiểm tra"/>
+            </form>
+        </div>
+        <br>
+        <div>
+            <table cols="7" cellspacing="0" style="width: 750px;">
+                <tbody>
+                    <tr>
+                        <td>Ứng dụng</td>
+                        <td>Mã GD</td>
+                        <td>Thời gian</td>
+                        <td>Giá trị GD</td>
+                        <td>Vật Phẩm</td>
+                        <td>Giá VP</td>
+                        <td>Số lượng</td>
+                    </tr>
+                    {{#TRANS}}
+                    <tr>
+                        <td>{{agentID}}</td>
+                        <td>{{txID}}</td>
+                        <td>{{txTime}}</td>
+                        <td>{{amount}}</td>
+                        <td>{{itemNames}}</td>
+                        <td>{{prices}}</td>
+                        <td>{{quantities}}</td>
+                    </tr>
+                    {{/TRANS}}
+                </tbody>
+            </table>
+        </div>    
+    </body>
+</html>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol
+END
+Imap.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol/Imap.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol/Exception.php
+END
+Pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol/Pop3.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol/Abstract.php
+END
+Smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Mail/Protocol/Smtp.php
+END

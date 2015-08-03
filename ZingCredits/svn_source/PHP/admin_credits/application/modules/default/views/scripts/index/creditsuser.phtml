@@ -1,0 +1,85 @@
+<a href="adminnewuser"><input type="button" class="button" value="Thêm Tài Khoản" /></a>
+<form action="submit" method="post" name="frmSubmit" id="frmSubmit">
+<table class="mainTab" width="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="tabTit" width="5%">#</td>
+			<td class="tabTit" width="20%">ID đăng nhập</td>
+			<td class="tabTit" width="20%">Tên Admin</td>					
+			<td class="tabTit" width="10%">Action</td>
+		</tr>
+		<?php
+		if(!empty($this->allUser))
+		{
+			
+			for($i=0;$i<count($this->allUser);$i++)
+			{			
+				?>
+		<tr class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center">
+			<td><?php echo ($i+1);?></td>
+			<td ><?php echo $this->allUser[$i]['adminID'];?></td>
+			<td ><?php echo $this->allUser[$i]['adminName'];?></td>
+					
+			<td class="<?php if($i%2==0)echo "hligh1";else echo "hligh2";?>"
+				align="center"><a
+				href="adminedituser?userId=<?php echo $this->allUser[$i]['adminID'];?>"
+				nowrap=""> <img src="<?php echo IMAGE_URL;?>/zing_admin/edit.png" alt="Edit"
+				title="Edit"> </a> <a href="#"> <img
+				src="<?php echo IMAGE_URL;?>/zing_admin/delete.png" alt="Delete" title="Delete"
+				onclick="deleteUser('<?php echo $this->allUser[$i]['adminID'];?>');"> </a>
+			<a href="#"> <img src="<?php echo IMAGE_URL;?>/zing_admin/reset.png"
+				alt="Reset Password" title="Reset Password"
+				onclick="resetUserPass('<?php echo $this->allUser[$i]['adminID'];?>');">
+			</a></td>
+		</tr>
+		<?php
+			}
+		}
+		?>
+
+	</tbody>
+</table>
+
+</form>
+
+
+<div id="paginationControl" align="right"><?php if(!empty($this->paginationLink)) echo $this->paginationLink;?>
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+	function deleteUser(userId)
+	{
+		
+		if(confirm("Are you sure to delete this account?")==true)
+		{
+			window.location = "/app/admindeluser?userId="+userId;
+		}
+	}
+
+	function resetUserPass(userId)
+	{
+		if(confirm("Are you sure to reset password for this account?\nDefault password: <?=$this->defaultPass?>")==true)
+		{
+			$.ajax({
+				   type: "POST",
+				   url: "/app/adminresetpass",
+				   	data: { userId: userId
+			   				 },
+				   	error: function (){
+						alert("There's an unknown error occured!");
+					},		   
+				   	success: function(stringData){						
+						
+				 }});			 
+//window.location = '/app/appuser';
+		}
+	}
+	
+</script>

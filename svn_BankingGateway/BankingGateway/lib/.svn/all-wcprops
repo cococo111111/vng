@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn_bankinggateway/!svn/ver/60/BankingGateway/lib
+END
+commons-pool-1.5.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_bankinggateway/!svn/ver/7/BankingGateway/lib/commons-pool-1.5.5.jar
+END
+zthrift-0.9.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/zthrift-0.9.0.jar
+END
+slf4j-api-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_bankinggateway/!svn/ver/7/BankingGateway/lib/slf4j-api-1.5.8.jar
+END
+BankingStorage.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_bankinggateway/!svn/ver/60/BankingGateway/lib/BankingStorage.jar
+END
+slf4j-log4j12-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_bankinggateway/!svn/ver/7/BankingGateway/lib/slf4j-log4j12-1.5.8.jar
+END
+BankingGatewayCommon.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_bankinggateway/!svn/ver/64/BankingGateway/lib/BankingGatewayCommon.jar
+END
+scribe-upool-thrift9-1.02.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/scribe-upool-thrift9-1.02.jar
+END
+zthriftpool-thrift9-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/zthriftpool-thrift9-1.2.0.jar
+END
+clhm-production-deprecated-0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/clhm-production-deprecated-0.1.jar
+END
+hdbank-adb-client.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/hdbank-adb-client.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_bankinggateway/!svn/ver/8/BankingGateway/lib/log4j-1.2.16.jar
+END
+scribe-uppool-thrift6-1.02.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn_bankinggateway/!svn/ver/2/BankingGateway/lib/scribe-uppool-thrift6-1.02.jar
+END

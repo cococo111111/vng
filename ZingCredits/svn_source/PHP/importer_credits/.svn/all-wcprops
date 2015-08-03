@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn_zingcredits/!svn/ver/1688/PHP/importer_credits
+END
+run_daily
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn_zingcredits/!svn/ver/1632/PHP/importer_credits/run_daily
+END
+run_old_day
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn_zingcredits/!svn/ver/1632/PHP/importer_credits/run_old_day
+END
+CreditImporter.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1688/PHP/importer_credits/CreditImporter.php
+END

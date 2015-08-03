@@ -1,0 +1,15 @@
+#!/bin/sh
+
+. ./set_env
+PROJECT=credits
+JAR=$PROJECT-1.5.3.jar
+PIDFILE=pid_$PROJECT
+APP_ENV=production
+
+CURDIR=`pwd`
+HOME=$CURDIR/../$PROJECT
+CONF=$HOME/conf
+
+java -Dappenv=$APP_ENV -Dapppath="$HOME/" -Dzname=$PROJECT -Dconfig="$CONF" -jar "$DEPLOY_DIR/$JAR" &
+/bin/echo -n $! > "$PIDFILE"
+

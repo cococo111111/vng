@@ -1,0 +1,42 @@
+{{>wap_header}}
+
+<div class="contain">
+{{#TRANXS_FOUND}}
+		<div class="main">
+          <div class="head01" style="padding:2px 5px;"><strong>Mã giao dịch: {{TX_ID}}</strong></div>
+   	  	  <div class="fr">
+            <p class="clrg1"><span class="fzs clrg1"><em>Vào lúc: {{TX_TIME}}</em></span></p>
+            <p>Tên ứng dụng: <strong>{{TX_APPNAME}}</strong></p>
+            <p>Giá trị giao dịch: <strong>{{TX_AMOUNT}} xu</strong></p>
+            <p>Trạng thái:
+
+{{#TX_DXL}}
+<span class="transwait">Đang xử lý</span>
+{{/TX_DXL}}
+{{#TX_TC}}
+<span class="transok">Thành công</span>
+{{/TX_TC}}
+{{#TX_TB}}
+<span class="transfail">Thất bại</span>
+{{/TX_TB}}
+</p>
+            <p>Loại: {{#NAPTIEN}}Nạp tiền{{/NAPTIEN}}{{#CHUYENTIEN}}Chuyển tiền{{/CHUYENTIEN}}{{#TANGTIEM}}Tặng tiền{{/TANGTIEM}}{{#THANHTOAN}}Thanh toán{{/THANHTOAN}}{{#HOANTIEN}}Hoàn tiền{{/HOANTIEN}}{{#THEMTIEN}}Thêm tiền{{/THEMTIEN}}{{#GIAMTIEN}}Giảm tiền{{/GIAMTIEN}}</p>
+            <p>Mô tả: {{#DETAIL_NAPTIEN}}Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_NAPTIEN}}{{#DETAIL_CHUYENTIEN}}Được Chuyển <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_CHUYENTIEN}}{{#DETAIL_TANGTIEN}}Được tặng <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu vào tài khoản{{/DETAIL_TANGTIEN}}{{#DETAIL_THANHTOAN}}Mua {{TX_ITEMQUANTITIES}} <b>{{TX_ITEMNAMES}}</b> tốn <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu{{/DETAIL_THANHTOAN}}{{#DETAIL_HOANTIEN}}Được hoàn lại <span class="zc-noiconzc">{{TX_AMOUNT}}</span> Zing Xu{{/DETAIL_HOANTIEN}}{{DETAIL_OTHER_DESC}}</p>
+          </div>
+      <div class="fr">
+				<p>
+{{#AFTER}}
+<a href="{{CREDITS_URL}}/wap{{TX_DETAIL_NEXT_URL}}">Sau »</a><br>
+{{/AFTER}}
+{{#BEFORE}}
+				  <a href="{{CREDITS_URL}}/wap{{TX_DETAIL_BACK_URL}}">« Trước</a>
+{{/BEFORE}}
+</p>
+				<p><a href="{{CREDITS_URL}}/wap">« Trở về<br>
+			    </a></p>
+			</div>
+      <div class="cont03 fzs"> Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558 </strong></div>
+	  </div>
+{{/TRANXS_FOUND}}
+    </div>
+ {{>wap_footer}}

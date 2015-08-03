@@ -1,0 +1,81 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package vng.bankinggateway.hdbankservice.client;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import vng.bankinggateway.service.BankingGatewayHandler;
+import vng.bankinggateway.util.InitUtil;
+
+/**
+ *
+ * @author root
+ */
+public class HDBankServiceADBClient {
+
+    private static String URL_HDBank = "http://118.69.222.207:8088/ZION/services/OnlinePayment";
+    private static String URL_Zion = "http://10.30.22.138:8080/axis2/services/BankingGatewayService";
+
+    public static void main(String[] args) {
+//        testHDBankService();
+        String ss = new String(InitUtil.sharedkey);
+        System.out.println(ss);
+        for (int i = 0; i < ss.length(); i++) {
+            int ascii_z = (int) ss.charAt(i);
+            System.out.print(ascii_z + ",");
+        }
+    }
+
+    private static void testHDBankService() {
+        try {
+             String key = "123456" + "020613151515" + "tranduclen" + "127.0.0.1";
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            md5.update(key.getBytes());
+            String verifySig = md5.digest().toString();
+//                T_Response response = BankingServiceClient.getMainInstance("10.30.22.138", 20118).requestTransfer(
+//                        "123456", "020613151515", "tranduclen", "tranduclen", 10000, "127.0.0.1", "Test ", verifySig);
+                
+                BankingGatewayHandler object1 = new BankingGatewayHandler();
+//               T_Response response =  object1.requestTransfer(
+//                        "123456", "020613151515", "tranduclen", "tranduclen", "ZIONBAC", 10000, "127.0.0.1", "Test ", verifySig);
+//               System.out.println(response.getRedirectURL());
+//               
+//               HDBankServiceHandler.getInstance(URL_HDBank).callOnlinePaymentService("abc");
+
+        } catch (Exception ex) {
+//            ex.printStackTrace();
+            System.out.print(ex.getMessage());
+
+        }
+    }
+    
+    private static void testBankingGatewayService() {
+        try {
+//            BankingGatewayServiceStub stub  = new BankingGatewayServiceStub(URL_Zion);
+//            
+//            hdbank.stub.BankingGatewayServiceStub.ReqExecute reqExecute = new hdbank.stub.BankingGatewayServiceStub.ReqExecute();
+//            reqExecute.setReq("abcd!!!");
+//            hdbank.stub.BankingGatewayServiceStub.ReqExecuteResponse reqExecuteResponse = stub.reqExecute(reqExecute);
+//
+//            System.out.println("Response =    :" + reqExecuteResponse.get_return());
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        }
+    }
+    
+    
+    private static MessageDigest getMessageDigest() {
+        MessageDigest digest = null;
+        try {
+            digest = java.security.MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException ex) {
+        } catch (Exception ex) {
+        }
+
+        return digest;
+    }
+}

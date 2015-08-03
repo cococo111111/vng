@@ -1,0 +1,19 @@
+#!/bin/sh
+sh ./13_stop_credits
+sh ./11_stop_pay-credits
+sh ./10_stop_paycreditsBalance
+sh ./9_stop_PaymentReport
+sh ./ws/stop
+sh ./12_stop_PaymentAdmin
+sh ./7_stop_PaymentGateway
+sh ./6_stop_PaymentZKBackEnd_bill
+sh ./5_stop_PaymentZKBackEnd_push
+sh ./4_stop_LatestTranxCache
+sh ./3_stop_AccountBalanceCache
+sh ./2_stop_Storage
+sh ./1_stop_TokenServer
+sh ./8_stop_PaymentAppsService
+
+ps -ef|grep  apache-tomcat|grep -v grep |  awk '{print $2}'| xargs -i -t kill -9 {}
+
+cat guide_stop

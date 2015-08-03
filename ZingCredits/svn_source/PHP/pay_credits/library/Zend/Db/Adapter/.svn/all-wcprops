@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Abstract.php
+END
+Oracle.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Oracle.php
+END
+Db2.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Db2.php
+END
+Sqlsrv.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Sqlsrv.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Exception.php
+END
+Mysqli.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Db/Adapter/Mysqli.php
+END

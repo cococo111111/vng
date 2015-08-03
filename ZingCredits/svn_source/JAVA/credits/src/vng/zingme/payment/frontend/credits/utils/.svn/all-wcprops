@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn_zingcredits/!svn/ver/2537/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils
+END
+STDProfile2Factory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/2037/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/STDProfile2Factory.java
+END
+Monitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/Monitor.java
+END
+ZAuthHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/ZAuthHandler.java
+END
+STDProfile2Handler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/2292/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/STDProfile2Handler.java
+END
+EstimatedHistogram.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/EstimatedHistogram.java
+END
+HugeListReadHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/HugeListReadHandler.java
+END
+HttpHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn_zingcredits/!svn/ver/2537/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/HttpHelper.java
+END
+LogUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/LogUtil.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/2292/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/Utils.java
+END
+ZAuthStruct.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/ZAuthStruct.java
+END
+HugListReadFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/HugListReadFactory.java
+END
+ZAuthFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn_zingcredits/!svn/ver/1825/JAVA/credits/src/vng/zingme/payment/frontend/credits/utils/ZAuthFactory.java
+END

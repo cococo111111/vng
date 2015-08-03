@@ -1,0 +1,7 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+sh ./9_start_PaymentReport
+sh ./10_start_paycreditsBalance
+

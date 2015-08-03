@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry kind="lib" path="lib/axis.jar"/>
+	<classpathentry kind="lib" path="lib/classes12.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/http_client.jar"/>
+	<classpathentry kind="lib" path="lib/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.5-bin.jar"/>
+	<classpathentry kind="lib" path="lib/primrose.jar"/>
+	<classpathentry kind="lib" path="lib/processserver.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-0.9.0RC3.jar"/>
+	<classpathentry kind="lib" path="lib/saaj.jar"/>
+	<classpathentry kind="lib" path="lib/smtp.jar"/>
+	<classpathentry kind="lib" path="lib/soap.jar"/>
+	<classpathentry kind="lib" path="lib/wsdl4j-1.5.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/tomcat_libs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/TomcatLib"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

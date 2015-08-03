@@ -1,0 +1,21 @@
+<div class="admin_login">
+	<center>
+		<div class="login-box">			
+			<h2>Admin Login</h2>
+			<form action="/index/signin" method="post" id="frmSignIn">
+				<div>
+					<div id="edit-name-wrapper" class="form-item">
+						<label for="username">Username: <span title="This field is required." class="form-required">*</span></label>
+						<input type="text" class="form-text required" value="" size="15" id="username" name="username" maxlength="60">
+					</div>
+				
+					<div id="edit-pass-wrapper" class="form-item">
+						<label for="password">Password: <span title="This field is required." class="form-required">*</span></label>
+						<input type="password" class="form-text required" size="15" maxlength="60" id="password" name="password">
+					</div>
+					<input type="submit" value="submit" name="submit"/>
+				</div>
+			</form>
+		</div>
+	</center>
+</div>

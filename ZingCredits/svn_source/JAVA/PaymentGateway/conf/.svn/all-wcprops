@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn_zingcredits/!svn/ver/2694/JAVA/PaymentGateway/conf
+END
+paymentgateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_zingcredits/!svn/ver/2694/JAVA/PaymentGateway/conf/paymentgateway.config
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/conf/log4j.properties
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn_zingcredits/!svn/ver/1225/JAVA/PaymentGateway/conf/config.xml
+END

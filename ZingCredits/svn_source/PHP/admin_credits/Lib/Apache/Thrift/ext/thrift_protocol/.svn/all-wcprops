@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/admin_credits/Lib/Apache/Thrift/ext/thrift_protocol
+END
+php_thrift_protocol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1219/PHP/admin_credits/Lib/Apache/Thrift/ext/thrift_protocol/php_thrift_protocol.cpp
+END
+php_thrift_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn_zingcredits/!svn/ver/1219/PHP/admin_credits/Lib/Apache/Thrift/ext/thrift_protocol/php_thrift_protocol.h
+END
+config.m4
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn_zingcredits/!svn/ver/1219/PHP/admin_credits/Lib/Apache/Thrift/ext/thrift_protocol/config.m4
+END

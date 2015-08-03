@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Text
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Text/Exception.php
+END
+MultiByte.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Text/MultiByte.php
+END
+Table.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Text/Table.php
+END
+Figlet.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Text/Figlet.php
+END

@@ -1,0 +1,21 @@
+#!/bin/sh
+PROJECT=BankingGateway
+JAR=$PROJECT.jar
+MAINCLASS=vng.bankinggateway.client.ExportDataForReconcile
+
+CURDIR=`pwd`
+HOME="/zserver/japps/zingcredits/BankingGateway"
+CONF=$HOME/conf
+DEPLOY_DIR=$HOME/dist
+CLASSPATH=$DEPLOY_DIR/$JAR
+export TIMEZONE="Asia/Ho_Chi_Minh"
+DAY=`date -d "-1 days" +"%m%d%y"`
+echo $DAY
+echo $TIMEZONE
+
+for jar in $DEPLOY_DIR/lib/*.jar; do
+    CLASSPATH=$CLASSPATH:$jar
+done
+echo "Run Reconcile"
+/zserver/java/jdk1.6.0_23/bin/java -cp $CLASSPATH -Dzname=$PROJECT -Dconfig=$CONF -Dday=$DAY $MAINCLASS $1 $2
+echo "Done for Run Reconcile !!!"

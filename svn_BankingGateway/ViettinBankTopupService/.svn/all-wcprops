@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn_bankinggateway/!svn/ver/63/ViettinBankTopupService
+END
+catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/catalog.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn_bankinggateway/!svn/ver/44/ViettinBankTopupService/build.xml
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/38/ViettinBankTopupService/manifest.mf
+END

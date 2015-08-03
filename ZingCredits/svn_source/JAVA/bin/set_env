@@ -1,0 +1,4 @@
+#!/bin/sh
+
+HOST=localhost
+DEPLOY_DIR=/zserver/java/lib/zingcredits

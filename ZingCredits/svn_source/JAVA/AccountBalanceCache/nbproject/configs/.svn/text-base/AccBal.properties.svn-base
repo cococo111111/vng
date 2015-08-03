@@ -1,0 +1,2 @@
+main.class=vng.zingme.payment.cache.accountbalance.AccBalCacheMain
+run.jvmargs=-Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.port=9876 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false

@@ -1,0 +1,200 @@
+<?php
+$param=$this->param;
+$config = Zend_Registry::get('configuration');
+$url=$config->admin->url;
+?>
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+Thống kê giao dịch của ứng dụng trên hệ thống<br>
+<?php /*
+<ul>
+<li>1. Bắt buộc chọn tên ứng dụng</li>
+<li>2. Bắt buộc chọn khoãng thời gian để thống kê</li>
+<li>3. Bắt buộc chọn Trạng Thái Giao Dịch</li>
+<li>4. Bắt buộc chọn Loại Giao Dịch</li>
+<li>5. Nhấn Thống kê giao dịch.</li>
+</ul>
+*/?>
+<?php if(isset($this->validate)){?>
+<ul style='color:red'><li><?=$this->validate[0]?></li></ul>
+<?php 
+}
+?>
+
+<form method='post' action='tranxbyappsubmit'>
+<table><tr><td>Tên Ứng Dụng   <span class="require">*</span></td>
+<td>
+  <select name='appid' id='appid' onchange='disablefn()'>
+<?php /*    <option value='0'>--Tất cả--</option>*/?>
+    <?php 
+
+      foreach($this->allApps as $app){
+	//if($app->appID=='zing' ||$app->appID=='admin')continue;
+	?><option value='<?=$app->appID?>' <?php if($param['appid']==$app->appID){echo 'selected="selected"';}?>><?=$app->appName?> (<?=$app->appID?>)</option><?php
+      }
+    ?>   
+  </select>
+</td>
+<td/><td/></tr>
+<tr><td>Từ Ngày   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+<td>Đến Ngày   <span class='require'>*</span></td><td><input type='text' id='todate' name='todate' value='<?=$param['todate']?>'></td></tr>
+<tr><td>Trạng Thái</td>
+<td colspan='3'>
+  <select name='status' id='status'>
+    <option <?php if($param['status']==0){echo 'selected="selected"';}?> value='0'>--Tất cả--</option>
+    <option <?php if($param['status']=='101'){echo 'selected="selected"';}?> value='101'>Game/app trả lời mã thành công</option>
+    <option <?php if($param['status']=='102'){echo 'selected="selected"';}?> value='102'>Đã gửi request REST cho game/app, nhưng không nhận được trả lời</option>
+    <option <?php if($param['status']=='-103'){echo 'selected="selected"';}?> value='-103'>Game/app trả lời mã thất bại</option>
+    <option <?php if($param['status']=='-104'){echo 'selected="selected"';}?> value='-104'>Lỗi mạng khi gửi request REST cho game/app</option>
+  </select>
+</td>
+</tr>
+<?php /*
+<td>Loại Giao Dịch</td>
+<td>
+  <select id='tranxtype' name='tranxtype'>
+    <option <?php if($param['tranxtype']==0){echo 'selected="selected"';}?> value='0'>--Tất cả--</option>
+    <option <?php if($param['tranxtype']==201){echo 'selected="selected"';}?> value='201'>Thanh Toán</option>
+    <option <?php if($param['tranxtype']==101){echo 'selected="selected"';}?> value='101'>Nạp Tiền</option>
+    <option <?php if($param['tranxtype']==202){echo 'selected="selected"';}?> value='202'>Hoàn Tiền</option>
+    <option <?php if($param['tranxtype']==102){echo 'selected="selected"';}?> value='102'>Chuyển Tiền</option>
+    <option <?php if($param['tranxtype']==103){echo 'selected="selected"';}?> value='103'>Tặng Tiền</option>
+    <option <?php if($param['tranxtype']==2){echo 'selected="selected"';}?> value='2'>Admin</option>
+  </select>
+</td></tr>
+<tr/>
+*/?>
+<tr><td></td><td colspan='3'><input type='submit' value='Thống Kê Chi Tiết' name='detail'  onclick='document.getElementById("page").value=0'></td></tr>
+</table>
+<input type='hidden' id='page' name='page' value='<?=$param['page']?>'>	
+
+<?php if(count($this->tranxs)!=0){
+?>
+<input type='submit' value='Mới Hơn' onclick='document.getElementById("page").value=<?=$param['page']+1?>'>
+<?php }?>
+<?php if($param['page']!=1){?>
+<input type='submit' value='Củ Hơn' onclick='document.getElementById("page").value=<?=$param['page']-1?>'>
+<?php }?>
+</form>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+	<tr>
+		    <td class="tabTit" width="10%">Ứng Dụng</td>
+                    <td class="tabTit" width="13%">Thời gian</td>
+                    <td class="tabTit" width="8%">User</td>
+                    <td class="tabTit" width="8%">Loại</td>
+                    <td class="tabTit" width="5%">Mã GD</td>
+                    <td class="tabTit" width="9%">Giá trị GD</td>
+		    <td class="tabTit" width="10%">Vật Phẩm</td>
+                    <td class="tabTit" width="5%">Giá VP</td>
+                    <td class="tabTit" width="15%">Số lượng</td>                    
+                    <td class="tabTit" width="10%">Tình trạng</td>
+  	</tr>
+<?php
+  	if(isset($this->tranxs)){
+	  $i=0;
+	  foreach($this->tranxs as $tx){
+	      $i++;
+	      ?>
+	      <tr id='row_<?= $tx->txID ?>' <?php if($i%2==0)echo 'class="hligh2"';?>  <?php if(isset($param['ajax'])){echo 'style="background:wheat" ';}?>>
+ <td align='center'><?=$tx->agentID?></td>
+	      
+	     <td align='center'><?=date('H:i, d/m/Y',$tx->txTime)?></td>
+	     <td align='center'><?=($tx->userName)?></td>
+	     <td  align='center'>
+                        <?php  
+                        $type = '';
+                        $detail = '';                       
+                        
+                        switch ($tx->txType) {
+                            case '101': $type = 'Nạp tiền';
+                                $detail = 'Chuyển ' . '<span class="zc-noiconzc">' . ($tx->amount). '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '102': $type = 'Chuyển tiền';
+                                $detail = 'Được Chuyển ' . '<span class="zc-noiconzc">' .($tx->amount) . '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '103': $type = 'Tặng tiền';
+                                $detail = 'Được tặng ' . '<span class="zc-noiconzc">' .($tx->amount). '</span> Zing Xu vào tài khoản';
+
+                                break;
+                            case '201': $type = 'Thanh toán';
+                                $detail = 'Mua ' . $tx->itemQuantities . ' <b>' .$tx->itemNames  . '</b> tốn ' . '<span class="zc-noiconzc">' . ($tx->amount) . '</span> Zing Xu';
+
+                                break;
+                            case '202': $type = 'Hoàn tiền';
+                                $detail = 'Được hoàn lại ' . '<span class="zc-noiconzc">' .($tx->amount). '</span> Zing Xu';
+                                break;
+                             case '2': 
+                            {  
+                            if($tx->amount>0){
+                             $type = 'Thêm tiền';
+                             }
+                            else{
+                            $type = 'Giảm tiền';
+                            }
+			    $detail =$tx->description;
+			     break;   
+			     } 
+                        }
+                        echo $type;
+                        ?></td>
+                        <td align='center' ><?= $tx->txID ?></td>
+                        <td style='text-align:center'><?= ($tx->amount) ?></td>
+			<td style='text-align:center'><?= ($tx->itemNames) ?></td>
+			<td style='text-align:center'><?= ($tx->itemPrices) ?></td>
+			<td style='text-align:center'><?= ($tx->itemQuantities) ?></td>
+                      <?php /*  <td style='text-align:center'><?= ($tx->currentBalance) ?></td> */?>
+
+                       
+                        <td  style='text-align:center'>
+                        <a  href='javascript:getTranxDetail("<?= $tx->txID ?>","<?= $tx->txType ?>","<?=$tx->txLocalTime?>")'>Chi Tiết</a>
+                    </td>
+	     </tr>
+	     <?php
+	  }
+  	}
+	?>
+</tbody>
+</table>
+<script>
+	$(function() {
+$( "#fromdate" ).datetimepicker({ dateFormat: 'yy-mm-dd' });
+$( "#todate" ).datetimepicker({ dateFormat: 'yy-mm-dd' });
+	});
+	</script>
+
+<script>
+
+function getTranxDetail(tranxID,tranxType,txLocalTime){
+    if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td align='center' ><img src='/images/zing_admin/indicator3.gif'></td>");
+      }
+      else{
+      $('#row_'+tranxID).after("<tr class='temp'><td align='center'><img src='/images/zing_admin/indicator3.gif'></td></tr>");
+      }
+
+    $.get('<?=$url?>/app/tranxbyusersubmit', { ajax:1, tranxid:tranxID,tranxtype:tranxType, localtime: txLocalTime },
+    function(data){
+      if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td></td><td colspan='10' >"+data+"</td>");
+      }else{
+      $('#row_'+tranxID).after("<tr class='temp'><td></td><td colspan='10' >"+data+"</td></tr>");
+      }
+    });
+  }
+	
+  
+
+function disablefn(){
+var value=$('#appid').val();
+if(value=='zing' || value=='admin'){
+$('#status').val('0').attr('disabled', 'disabled');
+}
+else{
+$('#status').removeAttr('disabled');
+}
+
+}
+disablefn();
+</script>

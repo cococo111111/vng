@@ -1,0 +1,63 @@
+<project name="CPNEWReceiverMT" default="dist" basedir=".">
+    <description>
+    	CPNEWReceiverMT build file
+    </description>
+  <!-- set global properties for this build -->
+	<property name="src" value="src"/>
+	<property name="build" value="build"/>
+	<property name="lib" value="lib"/>
+ 	<property name="dist"  value="dist"/>
+ 	<property name="webapps"  value="c:/Tomcat5.0/webapps/axis/WEB-INF/lib"/>
+ 	<property name="ws_name"  value="CPRMTNEW.jar"/>
+	
+	<path id="WebService.class.path">
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+  	
+    <javac srcdir="${src}" destdir="${build}">
+   		<classpath refid="WebService.class.path"/>
+    	<include name="**/*.java"/>
+    </javac>
+  </target>
+
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+  	<!--
+    <mkdir dir="${build}/com/vng/ads/server/resources"/>
+  	<copy file="${src}/com/vng/cpnew/server/resources/CPNEW_config.properties" todir="${build}/com/vng/cpnew/server/resources"></copy> 
+	-->
+  	<!--<copy file="${src}/log4j.xml" todir="${build}"></copy> -->
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${dist}/lib/${ws_name}" basedir="${build}">
+    	<include name="**/*.class"/>
+    	<!-- <include name="**/CPNEW_config.properties"/> -->    	
+    </jar>
+  </target>
+
+	<target name="deploy" depends="dist" description="Deploy to Tomcat server" >
+	  	<copy file="${dist}/lib/${ws_name}" todir="${webapps}"></copy> 
+	</target>
+	
+	
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

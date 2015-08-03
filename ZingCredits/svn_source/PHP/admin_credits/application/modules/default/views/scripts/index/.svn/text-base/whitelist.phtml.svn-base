@@ -1,0 +1,59 @@
+Bạn đang xem WhiteList cho ứng dụng: <b><?=$this->appName?>(<?=$this->appID?>)</b><br>
+
+
+
+<form action="addwhitelist" method="post" name="frmSubmit" id="frmSubmit">
+Thêm User: <input type='text' value='' name='username'><span style='background:#EFEFEF;color:#009DDC;padding-bottom:2px;padding-right:6px;padding-top:4px;'><input value='1' name='isuid' type='checkbox' <?php if($param['isuid']=='1'){echo 'checked="checked"';}?>><strong>là UserID</strong></span><br>
+<input type='hidden' value='<?=$this->appID?>' name='appid'>
+<input type="submit" class="button" value="Thêm" />
+<table class="mainTab" border="0" cellpadding="0"
+	cellspacing="0">
+	<tbody>
+		<tr>
+			<td class="tabTit" width="5%">#</td>
+			<td class="tabTit" width="20%">UserID</td>
+			<td class="tabTit" width="20%">UserName</td>
+			<td class="tabTit" width="10%">Action</td>
+		</tr>
+		<?php
+		$profile=new Zing_Me_Profile_Profile();
+		
+		for($i=0;$i<count($this->wl);$i++){
+			$wl=$this->wl[$i];
+			$userprofile=$profile->getStdProfile($wl);
+			if($userprofile->error==0){
+				$username = $userprofile->value->userName;
+			}
+			?>
+			<tr <?php if($i%2==0)echo 'class="hligh2"';?> ><td style='text-align:right'><?=$i+1?></td><td style='text-align:right'><?=$wl?></td><td style='text-align:center'><?=$username?></td>
+<td style='text-align:center'><a href="#"> <img onclick="deleteUser('<?=$this->appID?>','<?=$wl?>','<?=$this->appName?>');" title="Delete" alt="Delete" src="http://admin-credits-me.zing.vn/images/zing_admin/delete.png"></a></td></tr>
+			<?php
+	
+		}
+?>
+	</tbody>
+</table>
+
+</form>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript">
+
+	function deleteUser(appid,userid,appname)
+	{
+		
+		if(confirm("Delete User "+userid+" của ứng dụng "+appname+"?")==true)
+		{
+			window.location = "/app/removewhitelist?u="+userid+"&appid="+appid;
+		}
+	}
+
+	
+	
+</script>

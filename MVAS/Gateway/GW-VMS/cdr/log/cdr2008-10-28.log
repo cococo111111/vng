@@ -1,0 +1,16 @@
+28/10/2008 18:6:42 : INFO: CDRServer:@Getting data from queue table
+28/10/2008 18:6:42 : INFO: queuery database@SELECT ID, USER_ID, SERVICE_ID, MOBILE_OPERATOR,   COMMAND_CODE, INFO, DATE_FORMAT(SUBMIT_DATE,'%Y%m%d%H%i%s') SUBMIT_DATE, DATE_FORMAT(DONE_DATE,'%Y%m%d%H%i%s') DONE_DATE,  TOTAL_SEGMENTS , process_result,Message_Type ,SUBMIT_DATE SUBMIT_DATE_TIMESTAMP , DONE_DATE DONE_DATE_TIMESTAMP,REQUEST_ID,CPID FROM cdr_queue  where MOBILE_OPERATOR='VMS'  and  USER_ID not in (select PhoneNumber from _cc_phone ) and (Message_Type like '2%'  or Message_Type ='1'  or Message_Type ='3') 
+28/10/2008 18:6:42 : INFO: FTP:@ starting FTP cdr file
+28/10/2008 18:6:42 : INFO: FTP: true
+28/10/2008 18:6:42 : INFO: backup file: from: CDROUT/vinagame_20081028_2929.cdr to: ./CDRSENT/2008-10-28/vinagame_20081028_2929.cdr
+28/10/2008 18:6:42 : INFO: FTP : file name: vinagame_20081028_2929.cdr# filesize: 231 bytes
+28/10/2008 18:8:5 : INFO: CDRServer:@Getting data from queue table
+28/10/2008 18:8:5 : INFO: queuery database@SELECT ID, USER_ID, SERVICE_ID, MOBILE_OPERATOR,   COMMAND_CODE, INFO, DATE_FORMAT(SUBMIT_DATE,'%Y%m%d%H%i%s') SUBMIT_DATE, DATE_FORMAT(DONE_DATE,'%Y%m%d%H%i%s') DONE_DATE,  TOTAL_SEGMENTS , process_result,Message_Type ,SUBMIT_DATE SUBMIT_DATE_TIMESTAMP , DONE_DATE DONE_DATE_TIMESTAMP,REQUEST_ID,CPID FROM cdr_queue  where MOBILE_OPERATOR='VMS'  and  USER_ID not in (select PhoneNumber from _cc_phone ) and (Message_Type like '2%'  or Message_Type ='1'  or Message_Type ='3') 
+28/10/2008 18:8:5 : INFO: FTP:@ starting FTP cdr file
+28/10/2008 18:8:5 : INFO: FTP @No CDR file found, sleep in 1 min
+28/10/2008 18:12:3 : INFO: CDRServer:@Getting data from queue table
+28/10/2008 18:12:3 : INFO: queuery database@SELECT ID, USER_ID, SERVICE_ID, MOBILE_OPERATOR,   COMMAND_CODE, INFO, DATE_FORMAT(SUBMIT_DATE,'%Y%m%d%H%i%s') SUBMIT_DATE, DATE_FORMAT(DONE_DATE,'%Y%m%d%H%i%s') DONE_DATE,  TOTAL_SEGMENTS , process_result,Message_Type ,SUBMIT_DATE SUBMIT_DATE_TIMESTAMP , DONE_DATE DONE_DATE_TIMESTAMP,REQUEST_ID,CPID FROM cdr_queue  where MOBILE_OPERATOR='VMS'  and  USER_ID not in (select PhoneNumber from _cc_phone ) and (Message_Type like '2%'  or Message_Type ='1'  or Message_Type ='3') 
+28/10/2008 18:12:3 : INFO: FTP:@ starting FTP cdr file
+28/10/2008 18:12:3 : INFO: FTP: true
+28/10/2008 18:12:3 : INFO: backup file: from: CDROUT/vinagame_20081028_2930.cdr to: ./CDRSENT/2008-10-28/vinagame_20081028_2930.cdr
+28/10/2008 18:12:3 : INFO: FTP : file name: vinagame_20081028_2930.cdr# filesize: 231 bytes

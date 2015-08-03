@@ -1,0 +1,30 @@
+<br>
+
+<div class="catmenu radius">	
+    {{#ZINGCARD_ACTIVE}}
+        <a class='featuredcat_title' style='margin-left : 2px;' href='{{CREDITS_URL}}/v2/deposit?creditscmd=napzingxu&_url={{_url}}&_t={{_t}}&url_redirect={{url_redirect}}'>
+            <h2 style='text-align:center;width:120px;'>Nạp thẻ Zing</h2>
+        </a>
+
+        <a class='featuredcat_title3 featuredcat_title2' href='{{CREDITS_URL}}/v2/deposit?creditscmd=napatm&_url={{_url}}&_t={{_t}}&url_redirect={{url_redirect}}'>
+            <h2 style='color:#006699;text-align:center;width:120px;'>Nạp thẻ ATM <span style="position: relative; top:0px; left:1px;"><img src="{{STATIC_URL}}/layout/images/iconnew_money.gif" alt=""></span></h2>
+        </a>
+    {{/ZINGCARD_ACTIVE}}
+
+    {{#ATM_ACTIVE}}
+        <a class='featuredcat_title3 featuredcat_title2' href='{{CREDITS_URL}}/v2/deposit?creditscmd=napzingxu&_url={{_url}}&_t={{_t}}&url_redirect={{url_redirect}}'>
+            <h2 style='color:#006699;text-align:center;width:120px;'>Nạp thẻ Zing</h2>
+        </a>
+
+        <a class='featuredcat_title' style='margin-left : 2px;' href='{{CREDITS_URL}}/v2/deposit?creditscmd=napatm&_url={{_url}}&_t={{_t}}&url_redirect={{url_redirect}}'>
+            <h2 style='text-align:center;width:120px;'>Nạp thẻ ATM <span style="position: relative; top:0px; left:1px;"><img src="{{STATIC_URL}}/layout/images/iconnew_money.gif" alt=""></span></h2>
+        </a>
+    {{/ATM_ACTIVE}}
+</div>
+<div class="clr"></div>
+{{#ZINGCARD_ACTIVE}}
+<div style="padding: 10px; width: 778px; margin: 0px auto -5px; border-left: 1px solid rgb(202, 214, 228); border-right: 1px solid rgb(202, 214, 228);"><div style="background: none repeat scroll 0% 0% rgb(255, 255, 153); padding: 5px 10px; border: 1px dashed rgb(204, 204, 0); margin: 10px auto 0px;"><strong>HOT</strong>: Giảm ngay <strong>3%</strong> khi nạp từ <strong style="color: red">50.000VNĐ</strong> trở lên qua <a href='{{CREDITS_URL}}/v2/deposit?creditscmd=napatm&_url={{_url}}&_t={{_t}}'><strong>thẻ ATM</strong></a>.</div></div>
+{{/ZINGCARD_ACTIVE}}
+{{#ATM_ACTIVE}}
+<div style="padding: 10px; width: 97,8%; margin: 0px auto -5px; border-left: 1px solid rgb(202, 214, 228); border-right: 1px solid rgb(202, 214, 228);"><div style="background: none repeat scroll 0% 0% rgb(255, 255, 153); padding: 5px 10px; border: 1px dashed rgb(204, 204, 0); margin: 10px auto 0px;"><strong>HOT</strong>: Giảm ngay <strong>3%</strong> khi nạp từ <strong style="color: red">50.000VNĐ</strong> trở lên qua <a href='{{CREDITS_URL}}/v2/deposit?creditscmd=napatm&_url={{_url}}&_t={{_t}}'><strong>thẻ ATM</strong></a>.</div></div>
+{{/ATM_ACTIVE}}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="MerchantSVC">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.tempuri.MerchantSVCMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">vng.bankinggateway.service.MerchantSVC</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="HelloWorld" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://tempuri.org/">
+            <actionMapping>http://tempuri.org/HelloWorld</actionMapping>
+            <outputActionMapping>http://tempuri.org/MerchantSVCSoap/HelloWorldResponse</outputActionMapping>
+        </operation>
+        <operation name="Execute" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://tempuri.org/">
+            <actionMapping>http://tempuri.org/Execute</actionMapping>
+            <outputActionMapping>http://tempuri.org/MerchantSVCSoap/ExecuteResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,61 @@
+#
+# BankingGateway Logging Configuration
+#
+
+# Format is "<default threshold> (, <appender>)+
+
+# DEFAULT: console appender only
+#log4j.rootLogger=DEBUG, CONSOLE
+
+# Example with rolling log file
+#log4j.rootLogger=INFO, CONSOLE
+
+# Example with rolling log file and tracing
+#log4j.rootLogger=TRACE, CONSOLE, ROLLINGFILE, TRACEFILE
+
+#
+# Log INFO level and above messages to the console
+#
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLE.Threshold=INFO
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+log4j.appender.CONSOLE.layout.ConversionPattern=%d{ISO8601} - %-5p [%t:%C{1}@%L] - %m%n
+
+#
+# Add ROLLINGFILE to rootLogger to get log file output
+#    Log DEBUG level and above messages to a log file
+log4j.appender.ROLLINGFILE=org.apache.log4j.RollingFileAppender
+log4j.appender.ROLLINGFILE.Threshold=DEBUG
+log4j.appender.ROLLINGFILE.File=/zserver/log/bankinggateway/banking_gateway_system.log
+
+# Max log file size of 10MB
+log4j.appender.ROLLINGFILE.MaxFileSize=10MB
+# uncomment the next line to limit number of backup files
+#log4j.appender.ROLLINGFILE.MaxBackupIndex=10
+log4j.appender.ROLLINGFILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.ROLLINGFILE.layout.ConversionPattern=%d{ISO8601} - %-5p [%t:%C{1}@%L] - %m%n
+
+# Define log file for "system Actions"
+log4j.appender.systemActionsAppender = org.apache.log4j.FileAppender
+log4j.logger.systemActions = INFO, systemActions
+log4j.logger.systemActions.additivity = false
+log4j.appender.systemActions = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.systemActions.File = /zserver/log/bankinggateway/systemActions.log
+log4j.appender.systemActions.Append = true
+log4j.appender.systemActions.Threshold=INFO
+log4j.appender.systemActions.DatePattern = '.'yyyy-MM-dd
+log4j.appender.systemActions.layout = org.apache.log4j.PatternLayout
+log4j.appender.systemActions.layout.ConversionPattern = %d{ISO8601} - %-5p [%t:%C{1}@%L] - %m%n
+
+
+# Define log file for "gateway Actions"
+log4j.appender.gatewayActionsAppender = org.apache.log4j.FileAppender
+log4j.logger.gatewayActions = INFO, gatewayActions
+log4j.logger.gatewayActions.additivity = false
+log4j.appender.gatewayActions = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.gatewayActions.File = /zserver/log/bankinggateway/gatewayActions.log
+log4j.appender.gatewayActions.Append = true
+log4j.appender.gatewayActions.Threshold=INFO
+log4j.appender.gatewayActions.DatePattern = '.'yyyy-MM-dd
+log4j.appender.gatewayActions.layout = org.apache.log4j.PatternLayout
+log4j.appender.gatewayActions.layout.ConversionPattern = %d{ISO8601} - %-5p [%t:%C{1}@%L] - %m%n

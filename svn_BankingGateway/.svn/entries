@@ -1,0 +1,101 @@
+10
+
+dir
+63
+http://10.30.12.112:443/svn_bankinggateway
+http://10.30.12.112:443/svn_bankinggateway
+
+
+
+2013-07-23T09:52:05.203842Z
+63
+lentd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ee9aa900-c88c-4b4f-8a6a-ae4b0b34dfb5
+
+BankingAdmin
+dir
+
+BankingGateway
+dir
+
+BankingGatewayCommon
+dir
+
+BankingGatewayService
+dir
+
+BankingGatewayWeb
+dir
+
+
+
+add
+
+BankingStorage
+dir
+
+ConfirmOrderFrom123Pay
+dir
+
+
+
+add
+
+SMSClient
+dir
+
+
+
+add
+
+ViettinBankTopupService
+dir
+
+bkGateways.txt
+file
+
+
+
+
+2013-05-21T06:42:10.507615Z
+300f21fc6a221542ff9868bb8919089d
+2013-05-21T05:00:41.224331Z
+1
+hungnv4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+54
+

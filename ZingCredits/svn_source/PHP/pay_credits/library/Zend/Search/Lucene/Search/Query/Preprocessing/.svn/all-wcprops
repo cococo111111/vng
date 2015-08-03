@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Query/Preprocessing
+END
+Phrase.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Query/Preprocessing/Phrase.php
+END
+Fuzzy.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Query/Preprocessing/Fuzzy.php
+END
+Term.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Search/Lucene/Search/Query/Preprocessing/Term.php
+END

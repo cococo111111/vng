@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Client.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Server.php
+END
+AutoDiscover.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/AutoDiscover.php
+END
+Wsdl.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Soap/Wsdl.php
+END

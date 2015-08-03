@@ -1,0 +1,78 @@
+<!-- Spring namespace-based configuration -->
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<!-- ====================================================== -->
+	<!-- For catching the @Secured annotation methods -->
+	<!-- Tells the Spring Security engine that we will use Spring Security's -->
+	<!-- pre and post invocation Java annotations (@PreFilter, @PreAuthorize, -->
+	<!-- @PostFilter, -->
+	<!-- @PostAuthorize) to secure service layer methods.. -->
+	<!-- Look in GFCBaseCtrl.java onEvent() method. -->
+	<!-- ====================================================== -->
+
+	<!-- Enable the @Secured annotation to secure service layer methods -->
+	<global-method-security secured-annotations="enabled" />
+
+	<http auto-config="true" use-expressions="true">
+
+
+		<!-- ====================================================== -->
+		<!-- If we have our own LoginPage. So we must -->
+		<!-- tell Spring the name and the place. -->
+		<!-- In our case we take the same page -->
+		<!-- for a error message by a failure. -->
+		<!-- Further the page after a successfully login. -->
+		<!-- ====================================================== -->
+		<form-login login-page="/index" default-target-url="/layout"
+			authentication-failure-url="/index" />
+
+		<intercept-url pattern="/index" access="isAnonymous()" />
+		<intercept-url pattern="/logout" access="isAnonymous()" />
+		<!-- <intercept-url pattern="/decorators/**" access="permitAll" /> -->
+		
+		<intercept-url pattern="/personal/*"  access="hasAnyRole('LOGGINED')" />
+		<intercept-url pattern="/zul/login.zul" access="isAnonymous()" />
+		<intercept-url pattern="/admin/*" access="hasAnyRole('ADMIN')" />
+		<intercept-url pattern="/app/*" access="hasAnyRole('ADMIN','ROLE_CS')" />
+		<intercept-url pattern="/reportdetail/tranxbyapp" access="hasAnyRole('ADMIN','ROLE_REPORT')" />
+		<intercept-url pattern="/superadmin/*" access="hasAnyRole('SUPER_ADMIN')" />
+		<intercept-url pattern="/reportsum/tranxbyappsummary" access="hasAnyRole('ROLE_REPORT','ADMIN')" />
+		<intercept-url pattern="/zk/*" access="isRememberMe()" />
+		<intercept-url pattern="/report/*" access="hasAnyRole('CREDIT_REPORT')" />
+		<access-denied-handler error-page="/index" />
+		<!-- <logout logout-success-url="/zul/login.zul" invalidate-session="true" 
+			/> -->
+		<logout logout-success-url="/index" invalidate-session="true" />
+
+
+		<!-- <logout logout-success-url="/login.zul" /> <custom-filter ref="requestSingleLogoutFilter" 
+			before="LOGOUT_FILTER" /> <custom-filter ref="singleLogoutFilter" before="CAS_FILTER" 
+			/> -->
+
+	</http>
+
+	<!-- Usernames/Passwords are rod/koala dianne/emu scott/wombat peter/opal -->
+
+	<authentication-manager>
+		<authentication-provider user-service-ref="myUserDetailsService">
+			<password-encoder ref="passwordEncoder"/>
+		</authentication-provider>
+	</authentication-manager>
+
+	<beans:bean id="myUserDetailsService"
+		class="vng.zingme.stats.service.MyUserDetailsService">
+	</beans:bean>
+	
+	<beans:bean id="passwordEncoder"
+		class="vng.zingme.stats.encoder.MyPasswordEncoder">
+	</beans:bean>
+</beans:beans>
+
+

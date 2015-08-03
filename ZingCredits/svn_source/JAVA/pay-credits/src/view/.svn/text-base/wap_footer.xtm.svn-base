@@ -1,0 +1,37 @@
+<div id="footer">
+</div>
+
+<script type='text/javascript' src="http://static.me.zing.vn/v3/sdk-js/zm.xcall-1.15.min.js"></script>
+<script type='text/javascript'>
+function callbackPaymentHelper(billNo,step,result){
+    var _url = '{{_url}}';
+    var _t = '{{_t}}';
+    switch (_t) {
+        case  '1' : // popup
+            try {
+                if(_url) {
+                    window.opener.location.href = _url;
+                } else {
+                    window.opener.location.reload();
+                }
+            } catch(exception){}
+            window.close();
+            break;
+        case  '2' : // boxy
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+        case  '3' : // direct page
+            window.location.href = _url;
+            break;
+        case  '4' : // iframe
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+        default :
+            zmXCall.callParent('callbackPayment', {billNo: billNo, step: step, result: result}, {host: "{{APPURL}}"});
+            break;
+    }
+}
+</script>
+
+</body>
+</html>

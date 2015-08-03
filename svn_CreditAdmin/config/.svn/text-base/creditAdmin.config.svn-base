@@ -1,0 +1,46 @@
+		# Admin DB (new instance of DB on real env)
+		driver=com.mysql.jdbc.Driver
+		url=jdbc:mysql://10.30.22.138:3306
+		userName=staging
+		passWord= urubHnJAL8UAES
+		dbName=test
+		timeOut=2000
+		maxPoolSize=1000
+		maxQueueSize=1000
+		
+		# App Info service
+		appinfohost=10.30.22.138
+		appinfoport=10114
+		
+		# std profile 
+		stdprofile2host=10.30.22.173
+		stdprofile2port=9281
+		stdprofile2source=credits
+		stdprofile2auth=9EpNVY
+		
+		# Balance service
+		balancehost=10.30.22.135
+		balanceport=6161
+		
+		# Latest Tranx Cache Service
+		latestcachedhost=10.30.22.135
+		latestcachedport=5121
+		
+		# Report Service
+		reporthost=10.30.22.140
+		reportport=10116
+		
+		# Admin signature Key
+		adminsignatureKey= 4IUVwjb1R9OBP2W7EDSsByeECeznZtH+QoHImp+xD6Adkj9JryDclfAOf4wrGyo2
+	
+		# Mem cache service		
+		memcachehost=10.30.22.135
+		memcacheport=11212
+		
+		#admin Service
+		adminhost=10.30.22.138
+		adminport=10118
+		
+		#2 URL 
+		tranxfilter=http://tranxfilter.zing.vn/index
+		autoreport=http://creditsmail.zing.vn/index

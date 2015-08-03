@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/QuartzSchedulerJob
+END
+SendEmailNotifyTaskJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn_bankinggateway/!svn/ver/59/BankingAdmin/src/QuartzSchedulerJob/SendEmailNotifyTaskJob.java
+END
+DailyUpdateTaskJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn_bankinggateway/!svn/ver/26/BankingAdmin/src/QuartzSchedulerJob/DailyUpdateTaskJob.java
+END
+QuartzScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn_bankinggateway/!svn/ver/54/BankingAdmin/src/QuartzSchedulerJob/QuartzScheduler.java
+END

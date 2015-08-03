@@ -1,0 +1,67 @@
+<div>
+    <div class="box_mexu">{{app_name}}</div>
+    <div style="text-align: center">
+        <table width="975px" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">   
+                        <b><i>Biểu đồ GD</i></b>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><img src="cid:image{{app_id}}"/></p>
+                        <br/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <div style="min-height: 190px;" class="table_mexu">
+            <table width="750px" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;" colspan="8">   
+                            <b><i>Bảng thống kê doanh thu</i></b>
+                        </td>
+                    </tr>
+                    <tr style="height: 5px;">
+                        <td colspan="8" style="height: 5px !important">                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lstitle">Ngày &nbsp;&nbsp;</td>
+                        <td class="lstitle">Tổng số GD</td>
+                        <td class="lstitle">Thành công</td>
+                        <td class="lstitle">Thất bại</td>
+                        <td class="lstitle">Lỗi</td>
+                        <td class="lstitle">Tổng số ZingXu</td>
+                        <td class="lstitle">Tổng số User</td>
+                    </tr>                
+                    {{#REPORT_ROW}}
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{transaction}}</td>
+                        <td>{{success}}</td>
+                        <td>{{unsuccess}}</td>
+                        <td>{{error}}</td>
+                        <td><span class="zc-noiconzc">{{zingxu}}</span></td>                        
+                        <td>{{user}}</td>                     
+                    </tr>
+                    {{/REPORT_ROW}}
+                    <tr>
+                        <td>Tổng kết</td>                    
+                        <td>{{total_transaction}}</td>
+                        <td>{{total_success}}</td>
+                        <td>{{total_unsuccess}}</td>
+                        <td>{{total_error}}</td>
+                        <td>{{total_zingxu}}</td>
+                        <td>{{total_user}}</td>
+                    </tr>                
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>

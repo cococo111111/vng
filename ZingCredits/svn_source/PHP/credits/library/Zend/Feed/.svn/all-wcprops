@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed
+END
+Atom.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Atom.php
+END
+Reader.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Reader.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Abstract.php
+END
+Builder.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Builder.php
+END
+Rss.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Rss.php
+END
+Pubsubhubbub.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Pubsubhubbub.php
+END
+Element.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Element.php
+END
+Writer.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Writer.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Feed/Exception.php
+END

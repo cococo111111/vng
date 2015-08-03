@@ -1,0 +1,53 @@
+{{>wap_header}}
+<div class="contain">
+		<div class="main">
+          <div class="head01" style="padding:2px 5px;"><strong>Lịch sử giao dịch</strong></div>
+   {{#TRANXS_NOTFOUND}}
+<div class="cont01" style='color:#FF5A00'>
+KHÔNG TỒN TẠI GIAO DỊCH NÀO GẦN ĐÂY!
+</div>
+{{/TRANXS_NOTFOUND}}
+
+{{#TRANXS_FOUND_PAGE}}
+ <div class="paging">Trang {{PAGE}}</div>
+{{/TRANXS_FOUND_PAGE}}
+{{#TRANXS_FOUND}}
+         <div class="fr">
+            <p>{{INDEX}}. Mã giao dịch: <strong>{{TX_ID}}</strong></p>
+            <p class="fzs clrg1"><em>Vào lúc: {{TX_TIME}}</em></p>
+            <p>Giá trị giao dịch: <strong>{{TX_AMOUNT}} xu</strong></p>
+            <p>{{TX_APPNAME}}: 
+{{#TX_DXL}}
+<span class="transwait">Đang xử lý</span>
+{{/TX_DXL}}
+{{#TX_TC}}
+<span class="transok">Thành công</span>
+{{/TX_TC}}
+{{#TX_TB}}
+<span class="transfail">Thất bại</span>
+{{/TX_TB}}
+</p>
+            <p><a class="fzs" href="{{CREDITS_URL}}/wap{{TX_DETAIL_URL}}">Xem thêm</a></p>
+          </div>
+{{/TRANXS_FOUND}}
+         
+       
+			<div class="fr">
+
+				<p>
+{{#AFTER}}
+<a href="{{CREDITS_URL}}/wap{{TX_URL}}&page={{NEXTPAGE}}">Sau »</a>
+
+<br>
+{{/AFTER}}
+{{#BEFORE}}
+<a href="{{CREDITS_URL}}/wap{{TX_URL}}&page={{PREPAGE}}">« Trước</a>
+{{/BEFORE}}
+</p>
+				<p><a href="{{CREDITS_URL}}/wap">« Trở về<br>
+			    </a></p>
+			</div>
+            <div class="cont03 fzs"> Nếu có vấn đề xin gửi email liên hệ hoặc gọi vào đường dây nóng: <strong>1900.561.558 </strong></div>
+	  </div>
+    </div>
+ {{>wap_footer}}

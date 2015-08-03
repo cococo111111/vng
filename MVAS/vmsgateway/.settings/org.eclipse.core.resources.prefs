@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/org/csapi/www/schema/parlayx/common/v2_1/ChargingInformation.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/common/v2_1/PolicyException.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/common/v2_1/ServiceException.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/common/v2_1/SimpleReference.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/sms/v2_2/DeliveryInformation.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/sms/v2_2/DeliveryStatus.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/sms/v2_2/SmsFormat.java=UTF-8
+encoding//src/org/csapi/www/schema/parlayx/sms/v2_2/SmsMessage.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/_interface/SmsNotification.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationBindingStub.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationService.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/notification/v2_2/service/SmsNotificationServiceLocator.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/send/v2_2/_interface/SendSms.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/send/v2_2/service/SendSmsBindingStub.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/send/v2_2/service/SendSmsService.java=UTF-8
+encoding//src/org/csapi/www/wsdl/parlayx/sms/send/v2_2/service/SendSmsServiceLocator.java=UTF-8

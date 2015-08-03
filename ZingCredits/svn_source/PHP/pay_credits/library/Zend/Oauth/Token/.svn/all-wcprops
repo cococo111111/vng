@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Oauth/Token
+END
+AuthorizedRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Oauth/Token/AuthorizedRequest.php
+END
+Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Oauth/Token/Request.php
+END
+Access.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/pay_credits/library/Zend/Oauth/Token/Access.php
+END

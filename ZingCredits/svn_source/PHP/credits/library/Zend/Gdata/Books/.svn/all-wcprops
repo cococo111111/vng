@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books
+END
+VolumeEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books/VolumeEntry.php
+END
+VolumeFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books/VolumeFeed.php
+END
+CollectionEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books/CollectionEntry.php
+END
+VolumeQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books/VolumeQuery.php
+END
+CollectionFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn_zingcredits/!svn/ver/1219/PHP/credits/library/Zend/Gdata/Books/CollectionFeed.php
+END

@@ -1,0 +1,33 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 29
+/svn_bankinggateway/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn_bankinggateway/!svn/ver/60/BankingGateway
+END
+130402_TRANS_Zion.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn_bankinggateway/!svn/ver/2/BankingGateway/130402_TRANS_Zion.txt
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn_bankinggateway/!svn/ver/40/BankingGateway/build.xml
+END
+OnlinePayment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn_bankinggateway/!svn/ver/2/BankingGateway/OnlinePayment.xml
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn_bankinggateway/!svn/ver/2/BankingGateway/manifest.mf
+END

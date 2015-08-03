@@ -1,0 +1,479 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift
+END
+TBankingService$getTranxs_args.class
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args.class
+END
+TBankingService$getTranxStatus_result.class
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result.class
+END
+T_Transaction$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$_Fields.class
+END
+T_TransactionReport.class
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport.class
+END
+TBankingService$getTranxs_args$getTranxs_argsTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args$getTranxs_argsTupleSchemeFactory.class
+END
+TBankingService$Processor$getTranxStatus.class
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Processor$getTranxStatus.class
+END
+TBankingService$requestTransfer_args$requestTransfer_argsTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args$requestTransfer_argsTupleScheme.class
+END
+TBankingService$AsyncClient$Factory.class
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncClient$Factory.class
+END
+T_Transaction$T_TransactionStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$T_TransactionStandardScheme.class
+END
+TBankingService$requestTransfer_args.class
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args.class
+END
+T_TranStat$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$_Fields.class
+END
+TBankingService$getTranxStatus_args$getTranxStatus_argsStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args$getTranxStatus_argsStandardSchemeFactory.class
+END
+TBankingService$getTranxs_result.class
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result.class
+END
+TBankingService$getTranxs_result$getTranxs_resultTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result$getTranxs_resultTupleScheme.class
+END
+TBankingService$Client.class
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Client.class
+END
+T_TransactionReport$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$1.class
+END
+TBankingService$AsyncClient$requestTransfer_call.class
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncClient$requestTransfer_call.class
+END
+T_Transaction$T_TransactionTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$T_TransactionTupleSchemeFactory.class
+END
+TBankingService$requestTransfer_result.class
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result.class
+END
+TBankingService$AsyncClient$getTranxStatus_call.class
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncClient$getTranxStatus_call.class
+END
+T_Transaction$T_TransactionStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$T_TransactionStandardSchemeFactory.class
+END
+T_Transaction$T_TransactionTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$T_TransactionTupleScheme.class
+END
+T_TranStat$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$1.class
+END
+TBankingService$Iface.class
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Iface.class
+END
+T_Response$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$_Fields.class
+END
+TBankingService$requestTransfer_result$requestTransfer_resultStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 234
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result$requestTransfer_resultStandardSchemeFactory.class
+END
+TBankingService$Client$Factory.class
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Client$Factory.class
+END
+TBankingService$getTranxs_args$getTranxs_argsTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args$getTranxs_argsTupleScheme.class
+END
+TBankingService$getTranxStatus_args.class
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args.class
+END
+TBankingService$getTranxStatus_result$getTranxStatus_resultTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result$getTranxStatus_resultTupleScheme.class
+END
+TBankingService$requestTransfer_result$requestTransfer_resultStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result$requestTransfer_resultStandardScheme.class
+END
+T_Response$T_ResponseStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$T_ResponseStandardSchemeFactory.class
+END
+T_Response$T_ResponseTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$T_ResponseTupleScheme.class
+END
+TBankingService$getTranxs_args$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args$_Fields.class
+END
+T_TranStat$T_TranStatStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$T_TranStatStandardSchemeFactory.class
+END
+T_TranStat$T_TranStatTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$T_TranStatTupleScheme.class
+END
+TBankingService$getTranxStatus_result$getTranxStatus_resultStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result$getTranxStatus_resultStandardScheme.class
+END
+TBankingService$getTranxStatus_result$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result$_Fields.class
+END
+T_TransactionReport$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$_Fields.class
+END
+T_TransactionReport$T_TransactionReportStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$T_TransactionReportStandardScheme.class
+END
+TBankingService$Processor$requestTransfer.class
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Processor$requestTransfer.class
+END
+TBankingService$requestTransfer_result$requestTransfer_resultTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result$requestTransfer_resultTupleSchemeFactory.class
+END
+T_Response$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$1.class
+END
+TBankingService$requestTransfer_args$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args$_Fields.class
+END
+TBankingService$requestTransfer_args$requestTransfer_argsStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args$requestTransfer_argsStandardSchemeFactory.class
+END
+TBankingService$AsyncIface.class
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncIface.class
+END
+T_Transaction.class
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction.class
+END
+TBankingService$getTranxs_result$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result$_Fields.class
+END
+TBankingService$getTranxStatus_result$getTranxStatus_resultTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result$getTranxStatus_resultTupleSchemeFactory.class
+END
+TBankingService.class
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService.class
+END
+TBankingService$AsyncClient$getTranxs_call.class
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncClient$getTranxs_call.class
+END
+TBankingService$getTranxStatus_args$getTranxStatus_argsTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args$getTranxStatus_argsTupleScheme.class
+END
+TBankingService$requestTransfer_args$requestTransfer_argsStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 223
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args$requestTransfer_argsStandardScheme.class
+END
+TBankingService$getTranxs_result$getTranxs_resultStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result$getTranxs_resultStandardSchemeFactory.class
+END
+TBankingService$Processor.class
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Processor.class
+END
+T_TranStat.class
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat.class
+END
+T_TransactionReport$T_TransactionReportTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$T_TransactionReportTupleSchemeFactory.class
+END
+TBankingService$getTranxStatus_args$getTranxStatus_argsStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args$getTranxStatus_argsStandardScheme.class
+END
+TBankingService$requestTransfer_result$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result$_Fields.class
+END
+TBankingService$getTranxs_result$getTranxs_resultStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result$getTranxs_resultStandardScheme.class
+END
+T_TransactionReport$T_TransactionReportStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$T_TransactionReportStandardSchemeFactory.class
+END
+T_TransactionReport$T_TransactionReportTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TransactionReport$T_TransactionReportTupleScheme.class
+END
+T_Response$T_ResponseStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$T_ResponseStandardScheme.class
+END
+T_Transaction$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Transaction$1.class
+END
+T_TranStat$T_TranStatStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$T_TranStatStandardScheme.class
+END
+TBankingService$requestTransfer_args$requestTransfer_argsTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_args$requestTransfer_argsTupleSchemeFactory.class
+END
+TBankingService$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$1.class
+END
+TBankingService$getTranxStatus_args$getTranxStatus_argsTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args$getTranxStatus_argsTupleSchemeFactory.class
+END
+TBankingService$getTranxs_result$getTranxs_resultTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_result$getTranxs_resultTupleSchemeFactory.class
+END
+TBankingService$getTranxStatus_args$_Fields.class
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_args$_Fields.class
+END
+TBankingService$getTranxs_args$getTranxs_argsStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args$getTranxs_argsStandardSchemeFactory.class
+END
+TBankingService$requestTransfer_result$requestTransfer_resultTupleScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$requestTransfer_result$requestTransfer_resultTupleScheme.class
+END
+T_Response$T_ResponseTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response$T_ResponseTupleSchemeFactory.class
+END
+TBankingService$AsyncClient.class
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$AsyncClient.class
+END
+T_Response.class
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_Response.class
+END
+T_TranStat$T_TranStatTupleSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/T_TranStat$T_TranStatTupleSchemeFactory.class
+END
+TBankingService$getTranxStatus_result$getTranxStatus_resultStandardSchemeFactory.class
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxStatus_result$getTranxStatus_resultStandardSchemeFactory.class
+END
+TBankingService$getTranxs_args$getTranxs_argsStandardScheme.class
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$getTranxs_args$getTranxs_argsStandardScheme.class
+END
+TBankingService$Processor$getTranxs.class
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn_bankinggateway/!svn/ver/2/BankingGateway/nbproject/private/org-nbheaven-sqe-core-java/CompileOnSaveHelper/30FE75B6/vng/bankinggateway/thrift/TBankingService$Processor$getTranxs.class
+END

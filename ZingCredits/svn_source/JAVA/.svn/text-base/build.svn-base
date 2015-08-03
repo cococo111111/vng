@@ -1,0 +1,95 @@
+#!/bin/sh
+
+. /zserver/java/set_env
+
+sh clean
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#rebuild & deploy to /zserver dir
+#ant -f Util/build.xml -Djavac.debug=false -Ddist.jar=dist/Util.jar jar
+#cp -f Util/dist/Util.jar /zserver/java/lib/zingcredits/Util-1.0.jar
+ant -f Common/build.xml -Djavac.debug=false -Ddist.jar=dist/Common.jar jar
+cp -f Common/dist/Common.jar /zserver/java/lib/zingcredits/Common-1.5.jar
+ant -f jdbcModel/build.xml -Djavac.debug=false -Ddist.jar=dist/jdbcModel.jar jar
+cp -f jdbcModel/dist/jdbcModel.jar /zserver/java/lib/zingcredits/jdbcModel-1.5.jar
+ant -f PaymentAdmin/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentAdmin.jar jar
+cp -f PaymentAdmin/dist/PaymentAdmin.jar /zserver/java/lib/zingcredits/PaymentAdmin-1.5.jar
+ant -f PaymentAppsService/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentAppsService.jar jar
+cp -f PaymentAppsService/dist/PaymentAppsService.jar /zserver/java/lib/zingcredits/PaymentAppsService-1.5.jar
+#main projects
+ant -f AccountBalanceCache/build.xml -Djavac.debug=false -Ddist.jar=dist/AccountBalanceCache.jar jar
+cp -f AccountBalanceCache/dist/AccountBalanceCache.jar /zserver/java/lib/zingcredits/AccountBalanceCache-1.5.jar
+ant -f LatestTranxCache/build.xml -Djavac.debug=false -Ddist.jar=dist/LatestTranxCache.jar jar
+cp -f LatestTranxCache/dist/LatestTranxCache.jar /zserver/java/lib/zingcredits/LatestTranxCache-1.5.jar
+ant -f PaymentGateway/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentGateway.jar jar
+cp -f PaymentGateway/dist/PaymentGateway.jar /zserver/java/lib/zingcredits/PaymentGateway-1.5.jar
+ant -f PaymentZKBackEnd/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentZKBackEnd.jar jar
+cp -f PaymentZKBackEnd/dist/PaymentZKBackEnd.jar /zserver/java/lib/zingcredits/PaymentZKBackEnd-1.5.2.jar
+ant -f Storage/build.xml -Djavac.debug=false -Ddist.jar=dist/Storage.jar jar
+cp -f Storage/dist/Storage.jar /zserver/java/lib/zingcredits/Storage-1.5.jar
+ant -f TokenServer/build.xml -Djavac.debug=false -Ddist.jar=dist/TokenServer.jar jar
+cp -f TokenServer/dist/TokenServer.jar /zserver/java/lib/zingcredits/TokenServer-1.5.jar
+
+ant -f PaymentReport/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentReport.jar jar
+cp -f PaymentReport/dist/PaymentReport.jar /zserver/java/lib/zingcredits/PaymentReport-1.5.jar
+
+ant -f pay-credits-balance/build.xml -Djavac.debug=false -Ddist.jar=dist/pay-credits-balance.jar jar
+cp -f pay-credits-balance/dist/pay-credits-balance.jar /zserver/java/lib/zingcredits/pay-credits-balance-1.5.jar
+
+ant -f PaymentDailyReport/build.xml -Djavac.debug=false -Ddist.jar=dist/PaymentDailyReport.jar jar
+cp -f PaymentDailyReport/dist/PaymentDailyReport.jar /zserver/java/lib/zingcredits/PaymentDailyReport-1.5.jar
+
+ant -f pay-credits/build.xml -Djavac.debug=false -Ddist.jar=dist/pay-credits.jar jar
+cp -f pay-credits/dist/pay-credits.jar /zserver/java/lib/zingcredits/pay-credits-1.5.1.jar
+
+ant -f credits/build.xml -Djavac.debug=false -Ddist.jar=dist/credits.jar jar
+cp -f credits/dist/credits.jar /zserver/java/lib/zingcredits/credits-1.5.2.jar
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#build & deploy webservice
+#copy libs to axis (prepare to build)
+cp -f PaymentGateway/dist/PaymentGateway.jar /zserver/java/axis2-1.5.6/repository/services/vng.zingme.payment.paymentgateway.PaymentGatewayServerHandler.aar
+cp -f /zserver/java/lib/zingcredits/Common-1.5.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/zingcredits/Util-1.0.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/libthrift-0.5.0.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/zookeeper/zookeeper-3.3.2.jar /zserver/java/axis2-1.5.6/lib/
+
+cp -f /zserver/java/lib/commons-lang-2.5.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/commons-lang3-3.0.1.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/commons-pool-1.5.5.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/commons-configuration-1.6.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/clhm-production-deprecated-0.1.jar /zserver/java/axis2-1.5.6/lib/
+
+cp -f /zserver/java/lib/commons-collections-3.2.1.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/slf4j-api-1.5.8.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/slf4j-log4j12-1.5.8.jar /zserver/java/axis2-1.5.6/lib/
+
+cp -f /zserver/java/lib/thrift/scribe/vng.scribe.thrift-0.1.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/high-scale-lib-1.0.jar /zserver/java/axis2-1.5.6/lib/
+#cp -f /zserver/java/lib/commons-codec-1.2.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/thrift/common/vng.zingpakages-wtcommon-0.1.jar /zserver/java/axis2-1.5.6/lib/
+
+cp -f /zserver/java/lib/memcached-2.5.jar /zserver/java/axis2-1.5.6/lib/
+
+cp -f /zserver/java/lib/thrift/zthriftpool-1.0.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/thrift/stdprofile2/jzcommon-thrift-1.0.jar /zserver/java/axis2-1.5.6/lib/
+cp -f /zserver/java/lib/thrift/stdprofile2/jstdprofile2-thrift-1.0.jar /zserver/java/axis2-1.5.6/lib/
+
+#axis build
+ant -f /zserver/java/axis2-1.5.6/webapp/build.xml create.war
+#final deploy to tomcat
+rm -rf /zserver/java/apache-tomcat-7.0.8/webapps/axis2
+cp -f /zserver/java/axis2-1.5.6/dist/axis2.war /zserver/java/apache-tomcat-7.0.8/webapps/
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#final clean-up
+sh clean
+
+echo "### /zserver/java/lib/zingcredits/ ####"
+echo "Count: `ls -lah  /zserver/java/lib/zingcredits/ |grep jar| wc -l`"
+echo "List:"
+ls -lah  /zserver/java/lib/zingcredits/ |grep jar
+ 
+echo "### /zserver/java/apache-tomcat-7.0.8/webapps/"
+ls -lah  /zserver/java/apache-tomcat-7.0.8/webapps/ |grep war
+
+

@@ -1,0 +1,138 @@
+package vng.zingme.payment.backend;
+
+import java.util.ArrayList;
+import java.util.Properties;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import org.apache.log4j.Logger;
+import org.apache.thrift.TException;
+import vng.zingme.payment.bo.thrift.AppServiceHandler;
+import vng.zingme.payment.bo.thrift.LatestTranxCacheHandler;
+import vng.zingme.payment.common.PaymentReturnCode;
+import vng.zingme.payment.common.worker.IWorkerRunable;
+import vng.zingme.payment.thrift.T_AppInfo;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author root
+ */
+public class UpdateCacheWorker implements IWorkerRunable {
+
+    private static ArrayBlockingQueue<UpdateCacheWorkerData> workerQueue = null;
+    private static ConcurrentHashMap<String, ArrayList<Long>> mapAppTimeout = null; // Lentd: apply to disable an app when timeout
+
+    public UpdateCacheWorker() {
+        int _updateCacheQueueSize = Integer.parseInt(System.getProperty("updatecachequeuesize", "512"));
+        workerQueue = new ArrayBlockingQueue<UpdateCacheWorkerData>(_updateCacheQueueSize, true);
+        lastCacheHandler = LatestTranxCacheHandler.getMainInstance();
+        mapAppTimeout = new ConcurrentHashMap<String, ArrayList<Long>>();
+    }
+
+    public void run() {
+        while (!stoped) {
+            try {
+                UpdateCacheWorkerData data = workerQueue.take();
+                if (data != null) {
+                    if (data.resCode == PaymentReturnCode.GameCode.G_ERROR_RESPONSE_TIMEOUT
+                            || data.resCode == PaymentReturnCode.GameCode.G_ERROR_SERVICE_INVALID
+                            || data.resCode == PaymentReturnCode.GameCode.G_ERROR_NOT_COMPATIBLE) {
+                        checkTimeoutToDisableAnApp(data.agentID);
+                    }
+                    int res = PaymentReturnCode.ERROR_OPERATOR_FAIL;
+                    for (int i = 0; i < HOPE_COUNT && res != PaymentReturnCode.SUCCESS; ++i) {
+                        try {
+                            res = lastCacheHandler.updateTransactionStat(data.userID, data.txID, data.stat, data.description, data.currentbalance);
+                        } catch (TException ex) {
+                            log.info(ex.getMessage());
+                        }
+                    }
+                    if (res != PaymentReturnCode.SUCCESS) {
+                        pushJob(data);
+                    }
+                }
+            } catch (InterruptedException ex) {
+                log.warn(ex.getMessage());
+            }
+        }
+    }
+
+    private void checkTimeoutToDisableAnApp(String agentID) {
+        ArrayList<Long> listTimeoutForApp = (ArrayList<Long>) mapAppTimeout.get(agentID);
+        if (listTimeoutForApp == null) {
+            listTimeoutForApp = new ArrayList();
+            listTimeoutForApp.add(System.currentTimeMillis());
+            mapAppTimeout.put(agentID, listTimeoutForApp);
+            return;
+        }
+        listTimeoutForApp.add(System.currentTimeMillis());
+        while (listTimeoutForApp.size() > 0) {
+            if ((System.currentTimeMillis() - listTimeoutForApp.get(0)) > Long.valueOf(System.getProperty("max_duration")).longValue()) { // 30 phut
+                listTimeoutForApp.remove(0);
+            } else {
+                if (listTimeoutForApp.size() > Long.valueOf(System.getProperty("maxsize_timeout"))) {
+                    try {
+                        // diable app
+                        AppServiceHandler appHandler = AppServiceHandler.getMainInstance(System.getProperty("appHost"), Integer.parseInt(System.getProperty("appPort")));
+                        T_AppInfo appinfo = appHandler.getAppInfo(agentID);
+                        
+                        boolean isDisableBefore = (appinfo.getIsEnabled() == 0);
+                        if(!isDisableBefore) {
+                            appinfo.setIsEnabled(new Byte("0"));
+                            appHandler.registerGameServer(appinfo, System.getProperty("signatureKey"), false);
+                            // send email
+                            sendNotify(agentID, appinfo.getAppName());
+                        }
+                    } catch (TException ex) {
+                    }
+                }
+                break;
+            }
+        }
+    }
+
+    public void stop() {
+        stoped = true;
+    }
+    static boolean stoped = false;
+
+    public void pushJob(Object obj) {
+        try {
+            workerQueue.put((UpdateCacheWorkerData) obj);
+        } catch (InterruptedException ex) {
+            log.info(ex.getMessage());
+        }
+    }
+
+    public void sendNotify(String appID, String appName) {
+        try {
+            Properties properties = System.getProperties();
+            properties.setProperty("mail.smtp.host", System.getProperty("email_host"));
+            properties.setProperty("mail.smtp.port", System.getProperty("email_port"));
+            Session session = Session.getDefaultInstance(properties);
+
+            MimeMessage message = new MimeMessage(session);
+            message.setFrom(new InternetAddress("notifycation@zing.vn", "Notification From ZingCredits", "utf-8"));
+
+            message.addRecipients(Message.RecipientType.TO, System.getProperty("notification_email_list"));
+            message.addRecipients(Message.RecipientType.CC, "lentd@vng.com.vn, vinhcq@vng.com.vn");
+
+            message.setSubject("Disable Appplication/Game " + appName);
+            message.setText("Disable Appplication/Game with AppID = " + appID + " because of Network Error. \n ZingCredits can not send response message. \n Contact admin to Enable!!!");
+            Transport.send(message);
+        } catch (Exception ex) {
+        }
+    }
+
+    private static final int HOPE_COUNT = 2;
+    private static final Logger log = Logger.getLogger("appActions");
+    private static LatestTranxCacheHandler lastCacheHandler = null;
+}

@@ -1,0 +1,121 @@
+<?php
+$param=$this->param;
+$config = Zend_Registry::get('configuration');
+$url=$config->admin->url;
+?>
+<script src="<?php echo "http://widget.me.zing.vn";?>/js/zingme_widget_ex_1.3.min.js"></script>
+<DIV STYLE='TEXT-ALIGN:CENTER;FONT-SIZE:13PT'><STRONG>VÍ ZING ME - BÁO CÁO TỔNG HỢP NHẬP XUẤT TỒN ZINGXU</STRONG><BR><BR><BR></DIV>
+
+<form method='post' action='<?=$url?>/app/reportsummary'>
+<table>
+<tr><td>Từ Ngày   <span class='require'>*</span></td><td><input type='text' id='fromdate' name='fromdate' value='<?=$param['fromdate']?>'></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;Đến Ngày   <span class='require'>*</span></td><td><input type='text' id='todate' name='todate' value='<?=$param['todate']?>'></td></tr>
+<?php /*
+<tr><td>Report được nhóm theo</td><td colspan='3'><input type='radio' name='radiogroup' id='radiogroup' value='1'   <?php if($param['radiogroup']==1){echo 'checked="checked"';}?>>Ngày
+<input type='radio' name='radiogroup' id='radiogroup' value='2'  <?php if($param['radiogroup']==2){echo 'checked="checked"';}?>>Khoảng thời gian
+</td></tr>
+*/?>
+<tr><td></td><td colspan='3'><input type='submit'  name='summary' value='Report' onclick='document.getElementById("page").value=0'></td></tr>
+</table>
+<input type='hidden' id='page' name='page' value='<?=$param['page']?>'>	
+
+<?php /*if(count($this->tranxs)!=0){
+?>
+<input type='submit' value='Cũ Hơn' onclick='document.getElementById("page").value=<?=$param['page']+1?>'>
+<?php }?>
+<?php if($param['page']!=1){?>
+<input type='submit' value='Mới Hơn' onclick='document.getElementById("page").value=<?=$param['page']-1?>'>
+<?php } */?>
+</form>
+<?php if(!empty($this->data)){?>
+<a target='_blank' href='<?=$url?>/app/reportsummary?export=csv&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+<table class="mainTab" width="100%" border="0" cellpadding="0" cellspacing="0">
+<style>
+.bo{
+background:#CCCCCC;
+color:black;
+}
+.bo td{
+border: 1px dotted white;
+}
+.bo2{
+//background:#EFEFEF;
+color:black;
+text-align:right;
+}
+.bo2 td{
+border: 1px dotted #CCCCCC;
+}
+</style>
+<tbody>
+	<tr class="tabTit bo">		   
+                    <td style='width:20%'>Ngày</td><td style='width:20%'>Tồn đầu kỳ</td><td style='width:20%'>Nhập</td><td style='width:20%'>Xuất</td><td style='width:20%'>Tồn cuối kỳ</td>
+		</tr>
+
+
+
+<?php
+$data=$this->data;
+$fromDate=$param['fromdate'];
+$toDate=$param['todate'];
+$exeDate=$param['fromdate'];
+$i=0;
+while(true){
+$dateData = $data[$exeDate.' 00:00:00'];
+$i++;
+$prevDate= date('Y-m-d', strtotime($exeDate." -1 day"));
+$tonDauKy=$data[$prevDate.' 00:00:00']['remainbalance'];
+?>
+<tr class='bo2 <?=($i%2==0)?'hligh2':''?>'><td style='text-align:center'><?=$exeDate?></td><td><?=$tonDauKy<=0?"":$tonDauKy?></td><td><?=$dateData['zing']?></td><td><?=$dateData['total']?></td><td><?=$dateData['remainbalance']?></td></tr>
+<?php
+if($exeDate==$toDate){
+break;
+}
+$exeDate=date("Y-m-d",strtotime("+1 day", strtotime($exeDate.' 00:00:00')));
+
+}
+
+
+?>
+
+
+
+</tbody>
+</table>
+<a target='_blank' href='<?=$url?>/app/reportsummary?export=csv&fromdate=<?=$param['fromdate']?>&todate=<?=$param['todate']?>'>Xuất CSV</a>
+
+<?php }else{
+?>
+<font color='red'>Chưa có data hiển thị</font>
+<?php
+}?>
+<script>
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+	</script>
+
+<script>
+
+function getTranxDetail(tranxID,tranxType,txLocalTime){
+    if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td align='center' ><img src='/images/zing_admin/indicator3.gif'></td>");
+      }
+      else{
+      $('#row_'+tranxID).after("<tr class='temp'><td align='center'><img src='/images/zing_admin/indicator3.gif'></td></tr>");
+      }
+
+    $.get('<?=$url?>/app/tranxbyusersubmit', { ajax:1, tranxid:tranxID,tranxtype:tranxType, localtime: txLocalTime },
+    function(data){
+      if( $('#row_'+tranxID).next().hasClass('temp')){
+	$('#row_'+tranxID).next().html("<td></td><td colspan='10' >"+data+"</td>");
+      }else{
+      $('#row_'+tranxID).after("<tr class='temp'><td></td><td colspan='10' >"+data+"</td></tr>");
+      }
+    });
+  }
+	$(function() {
+		$( "#fromdate" ).datepicker({ dateFormat: 'yy-mm-dd' });$( "#todate" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	});
+  
+</script>

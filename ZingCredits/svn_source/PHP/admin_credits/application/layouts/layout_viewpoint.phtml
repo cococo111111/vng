@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <?php foreach($this->cssLinks as $css) {?>
+		<link href="<?php print CSS_URL.'/'.$css;?>" rel="stylesheet" type="text/css"/>
+			<?php }?>
+
+		<?php foreach($this->jsLinks as $js) {?>
+			
+		<script type="text/javascript" src="<?php print JS_URL.'/'.$js; ?>" ></script>
+			<?php }?>
+
+</head>
+<body>
+
+	<div id="wrapper">
+			<div id="header">
+				<div style="text-align: left;">
+					<a title="Content Filter System" href="http://dev.contentfilter.me.zing.vn/r">
+						<img alt="Content Filter System" src="<?= BASE_URL?>/images/zing_admin/zing_framework_logo.gif" id="logo">
+					</a>
+				</div>
+				<div style="width: 100%;" id="header-status" class="clear-block">
+					
+				</div>
+			</div>
+
+			<div id="container">
+				<?php echo $this->left;?>
+				<?php echo $this->content;?>
+			</div>
+		</div>
+
+</body>
+</html>
+
+
+
+
